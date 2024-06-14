@@ -1,0 +1,49 @@
+.Banner_Home_Main{
+    width: 100%;
+    background-image: url("");
+    height: 513px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.Banner_video{
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    animation: playVideo 1s linear infinite; 
+    filter:brightness(70%);
+}
+
+.Banner_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    color: var(--text-color);
+}
+
+.Banner_content p{
+    font-size: var(--font-size-extralarge);
+    margin: 0 0 1rem 0;
+}
+
+.Banner_content h1{
+    font-size: var(--font-size-big);
+    margin: 0 0 1rem 0;
+}
+
+/*______________________________________________Responsive______________________________________________*/
+@media (max-width: 768px){
+    .Banner_Home_Main{
+        height: 27rem;
+    }
+}

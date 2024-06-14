@@ -1,0 +1,140 @@
+.Contenedor_Header_Planes{
+    height: 350px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 2rem;
+}
+
+.Contenedor_h1_plan_Header{
+    height: 200px;
+    font-size: 50px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.contenedor_h5_plan_Header{
+    font-size: 20px;
+    margin: 1rem 0 2rem 0;
+}
+
+/*Card Precios*/
+
+.contenedor_Principal_Planes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor_cards_Planes{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenedor_Card_Precios{
+    border: 1px solid #848484;
+    border-radius: 7px;
+    width: 19%;
+}
+
+.contenedor_1_card_Precios{
+    border-bottom: 1px solid #848484;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.titulo_4_Planes{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 3rem 1rem 1.5rem 1rem;
+}
+
+.titulo_5_Planes{
+    font-size: 40px;
+}
+
+.texto_1_Planes{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contenedor_texto_2_Planes{
+    font-size: 14px;
+    font-weight: 800;
+    padding: 1rem;
+}
+
+.Boton_seleccion_Precio{
+    width: 90%;
+    height: 35px;
+    margin: 1rem 0;
+    border-radius: 7px;
+    background-color: #ff7300;
+    border: none;
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.contenedor_2_card_Precios{
+    padding: 1.3rem 1rem;
+}
+
+.contenedor_2_card_Precios p {
+    text-align: left;
+}
+
+.titulo_Principal_Planes{
+    font-size: 30px;
+    padding: 2rem 0;
+}
+
+.titulo_5_2_Planes{
+    font-weight: 900;
+    font-size: 16px;
+}
+.contenido_Card_Beneficios{
+    display: flex;
+    padding: 5px 0;
+}
+
+.contenido_Card_Beneficios img{
+    width: 20px;
+    margin: 5px 7px;
+    height: 20px;
+}
+
+.contenedor_consulta_Planes{
+    font-size: 14px;
+    color: #848484;
+    padding: 30px 0;
+}
+
+
+/*Productos y Servicios*/
+
+.imagen_servicios{
+    height: 200px;
+}
+
+.contenedor_servicios_Planes{
+    background-image: url(../assets/images/Servicios/centro.jpg);
+    background-position: 50%;
+    width: 100%;
+    height: 400px;
+    margin: 2rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.contenedor_Texto_Servicios{
+    
+    
+    
+}

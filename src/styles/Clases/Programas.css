@@ -1,0 +1,84 @@
+.Clases_titulo_Container{
+    background-color: #ffa600;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.contenido_clases_detalle{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0 0 0;
+    padding: 0 1.5rem;
+    flex-wrap: wrap;
+}
+
+.detalle_clase{
+    
+    font-size: 15px;
+    padding: 0.4rem 0.4rem;
+    border-radius: 10px;
+    margin: 0.2rem;
+}
+
+.Iconos_detalle{
+    width: 1.5rem;
+    opacity: 50%;
+}
+
+.detalle_title{
+    font-weight: 500;
+    
+}
+
+.detalle_descripcion{
+    font-size: 12px;
+    margin: 0;
+}
+
+.contenedor_Apartador{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Apartador{
+    width: 90%;
+    margin: 18px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+}
+
+.contenedor_Texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Text_programas{
+    padding: 0 0.6rem 1rem 0.6rem;
+    width: 80%;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+
+
+/*______________________________________________Responsive______________________________________________*/
+
+
+@media (max-width: 768px) {
+    .Programas_container {
+        width: 100%;
+    }
+
+
+    .Text_programas {
+        width: 100%;
+        font-size: 14px;
+    }
+}

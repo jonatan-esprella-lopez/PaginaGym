@@ -1,0 +1,77 @@
+.Container_Main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor_buscador_gimnasio{
+    width: 100%;
+    padding: 3rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor_buscador{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    padding: 1rem;
+}
+
+.contenedor_buscador input{
+    width: 50%;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #9a9a9a;
+    margin-right: 1.5rem;
+    background-image: url('../assets/images/correo_electronico.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    padding-left: 60px;
+    font-weight: 400;
+    text-align: start; 
+}
+
+
+
+
+
+
+.contendor_principal_gym{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.contenedor_1_gimnasios{
+    margin-top: 2rem;
+}
+
+.Lista-filtro{
+    width: 15rem;
+    display: flex;
+    margin-bottom: 10px;
+    border-left: 2px solid #ff9d00;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Lista-filtro:hover{
+    border-left: 2px solid #070707;
+}
+
+.Lista-filtro input{
+    width: 18px;
+    margin-right: 10px;
+}
+
+.Lista-filtro label{
+    font-size: 15px;
+}
+

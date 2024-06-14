@@ -1,0 +1,412 @@
+
+
+
+
+
+/* Membrecias del gimnasio tabla*/
+
+.head_Colum_Prices{
+    border-bottom: 1px solid #999;
+    display: flex;
+    min-height: 80px;
+    max-height: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 0;
+    width: 200px;
+}
+
+.table_Prices_Service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 50px auto 30px; 
+}
+
+
+
+.colum_Prices_Service_up{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style: none;
+    padding-top: 1.5rem;
+}
+
+.colum_Prices_Service{
+    list-style: none;
+}
+
+.row_Prices_Services_up{
+    border-top: 2px solid transparent;
+}
+
+.row_Prices_Services{
+    align-items: center;
+    padding: 15px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #999;
+    
+}
+
+.row_Prices_Services_titles{
+    font-weight: 700;
+    min-height: 50px;
+    max-height: 50.9px;
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    align-items: center;
+    padding: 15px 5px;
+    font-size: 15px;
+    border-bottom: 1px solid #999;
+}
+
+.row_Prices_Services_Final{
+    align-items: center;
+    padding: 50px 0;
+    font-size: 15px; 
+}
+
+.row_Prices_Services_principal{
+    border: 2px solid #ffa600;
+    border-radius: 15px;
+    
+}
+
+.detalle_descripcion_Prices{
+    font-size: 12px;
+    min-height: 40px;
+}
+
+.row_Prices_Services_title{
+    align-items: center;
+    min-height: 30px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/*Section de App Mobil*/
+.contenedor_App_Mobil{
+    background-color: #ffe6af;
+    padding: 1rem 8rem;
+    width: 100%;
+    display: flex;
+    margin: 7rem 0;
+   
+}
+
+.contenedor_titulo_App{
+    width: 40%;
+    max-width: 400px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.texto_titulo_App{
+    text-align: left;
+    font-size: 25px;
+    padding-bottom: 1rem;
+}
+
+.texto_descripcion_App{
+    text-align: left;
+    font-size: 18px;
+    padding: 1rem 0 0 0;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .contenedor_App_Mobil {
+        padding: 1rem 4rem;
+    }
+
+    .contenedor_titulo_App {
+        width: 60%;
+    }
+
+    .texto_titulo_App {
+        font-size: 22px;
+    }
+
+    .texto_descripcion_App {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor_App_Mobil {
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contenedor_imagen_App{
+        width: 40%;
+        justify-content:center;
+        
+    }
+
+    .contenedor_titulo_App {
+        width: 80%;
+    }
+
+    .texto_titulo_App {
+        font-size: 20px;
+    }
+
+    .texto_descripcion_App {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor_App_Mobil {
+        padding: 1rem;
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+    }
+
+    .contenedor_titulo_App {
+        width: 100%;
+    }
+
+    .texto_titulo_App {
+        font-size: 18px;
+        text-align: center; /* Opcional: Centrar el texto en dispositivos pequeños */
+    }
+
+    .texto_descripcion_App {
+        font-size: 14px;
+        text-align: center; /* Opcional: Centrar el texto en dispositivos pequeños */
+    }
+}
+
+
+/*Tarjetas de Complementos ofrecidos*/
+
+.Complementos_tarjetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+
+.complementos_container{
+    width: 22%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border: 0.7px solid #ffffff;
+    border-radius: 10px;
+    outline: 2px solid transparent;
+    box-shadow: 0 3px 17px rgba(0,0,0,.1);
+    transition: .25s;
+    cursor: pointer;
+}
+
+.complementos_container:hover{
+    border: 0.7px solid #ffa600;
+}
+
+.Titulo_complemento{
+    min-height: 40px;
+    padding-top: 10px;
+    max-height: 100px;
+}
+
+.icono_container_complemento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 75px;
+    max-height: 20rem;
+
+}
+
+.Text_programas{
+    min-height: 100px;
+}
+
+.contenido_inferior_complemento{
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px solid #999;
+}
+
+/*Redes para bajar Apps*/
+.descripcion_App{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.contenedor_Links_App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenido_App{
+    margin-top: auto;
+    width: 100%;
+    height: 150px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 10px;
+}
+
+.imagen_qr{
+    margin-right: 2rem;
+    width: 120px;
+    height: 120px;
+}
+
+
+/*Prices*/
+
+.container_price{
+    display: flex;
+
+}
+
+.Boton_Prices{
+    padding: 10px 45px ;
+    border-radius: 8px;
+    background-color: #ffa600;
+    font-size: 15px;
+    font-weight: 500;
+    color: #3b3b3b;
+    border: none;
+
+}
+
+
+/*Promociones*/
+
+
+.contenedor_Registro_Main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor_Registro_Home{
+    width: 100%;
+    max-width: 655px;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 1rem 0;
+    
+}
+
+
+.input_correo_home{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #9a9a9a;
+    margin-right: 1.5rem;
+    background-image: url('../assets/images/correo_electronico.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    padding-left: 55px; 
+}
+
+
+.input_correo_home:hover{
+    border: 1px solid #ff7801;
+}
+
+
+
+    
+/*Footer*/
+footer {
+    background-color: #000000;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .conteiner_footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+
+  .footer-section.about {
+    width: 90%;
+    margin:1rem 0 2rem 0;
+  }
+  
+  .footer-section.about h3 {
+    color: #818181;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section.about p {
+    color: #666;
+    font-size: 1rem; 
+    line-height: 1.5;
+  }
+
+  .container_redesSociales{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Icono_Redes_Sociales{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 6px;
+    background-color: #fff;
+  }
+
+
+
+  .columna_Nuestras_Clases{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem 2rem;
+  }
+
+  .Texto_Footer_n_c{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+
+  /* Estilos para responsive */
+  .contenedor_imagen_App{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.imagen_mockup_App{
+    width: 550px;
+    margin-right: 3rem;
+}
+
