@@ -1,41 +1,45 @@
 import React from "react";
-import "../App.css"
+import { ReactComponent as Fb } from "../assets/images/facebook.svg";
+import { ReactComponent as IG } from "../assets/images/instagram.svg";
+import { ReactComponent as Spotify } from "../assets/images/instagram.svg";
+import { ReactComponent as Twitter } from "../assets/images/instagram.svg";
+import { ReactComponent as YouTube } from "../assets/images/instagram.svg";
 import "../styles/home_styles.css"
-import Fb from "../assets/images/facebook.svg"
-import IG from "../assets/images/instagram.svg"
-
-
-function FooterMain(){
-
-    
-    return( 
-        <footer>
-            
-            <div className="footer-section about">
-                <h3>Acerca de CEC-FGI</h3>
-                <p>En Mundo Nutrición queremos ayudarte con tus entrenamientos, para ello te ofrecemos varios ejemplos de programas que puedes seguir para poder alcanzar tus objetivos. Es importante que tengas en cuenta que en Mundo Nutrición creamos estos programas a modo de sugerencia, para que tengas una guía de cómo puedes entrenar. Cada persona tiene condiciones físicas y mentales distintas, por lo que puede que algunos de estos programas no se ajusten a tus necesidades, intenta conocer y respetar tus límites para evitar lesiones y otro tipo de daños.</p>
-            </div>
-            <img src="" alt="" />
-            <div className="conteiner_footer">
-                <div>
-                    <div className="columna_Nuestras_Clases">
-                        <h3>Clases</h3>
-                        <a href="" className="Texto_Footer_n_c">Acerca de nuestras clases</a>
-                        
-                        <a href="" className="Texto_Footer_n_c">Programas</a>
-                        <a href="" className="Texto_Footer_n_c">Horarios</a>
-                        <a href="" className="Texto_Footer_n_c">Instructores</a>
-                        <a href="" className="Texto_Footer_n_c">Precios</a>
-                    </div>
+function FooterMain() {
+    return (
+        <footer className="footer">
+            <div className="footer-top">
+                <h3 className="footer-title">Síguenos</h3>
+                <div className="footer-social-links">
+                    <a href="#" className="social-link"><Fb className="social-icon" /> FACEBOOK</a>
+                    <a href="#" className="social-link"><IG className="social-icon" /> INSTAGRAM</a>
+                    <a href="#" className="social-link"><Spotify className="social-icon" /> SPOTIFY</a>
+                    <a href="#" className="social-link"><Twitter className="social-icon" /> TWITTER</a>
+                    <a href="#" className="social-link"><YouTube className="social-icon" /> YOUTUBE</a>
                 </div>
-                <div className="container_redesSociales">
-                    <img src={Fb} alt="" className="Icono_Redes_Sociales"/>
-                    <img src={IG} alt="" className="Icono_Redes_Sociales"/>
-                    <img src={Fb} alt="" className="Icono_Redes_Sociales"/>
-                    <img src={IG} alt="" className="Icono_Redes_Sociales"/>
+            </div>
+            <div className="footer-bottom">
+                <div className="footer-column">
+                    <h4>CEC - FGI</h4>
+                    <a href="#">Quienes somos</a>
+                    <a href="#">Hable con nosotros</a>
+                    <a href="#">Aviso de Privacidad</a>
+                </div>
+                <div className="footer-column">
+                    <h4>Planes</h4>
+                    <a href="#">Planes</a>
+                    <a href="#">Documentos</a>
+                </div>
+                <div className="footer-column">
+                    <h4>Nuestra Compañía</h4>
+                    <a href="#">Quiero ser franquiciatario</a>
+                    <a href="#">Promociona tu marca</a>
+                    <a href="#">Indica un local</a>
+                    <a href="#">Trabaja con nosotros</a>
                 </div>
             </div>
         </footer>
-    )
+    );
 }
-export default FooterMain
+
+export default FooterMain;
