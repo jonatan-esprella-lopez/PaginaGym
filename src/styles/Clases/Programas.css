@@ -1,4 +1,5 @@
 .Clases_titulo_Container{
+    width: 100%;
     background-color: #ffa600;
     padding: 10px 0;
     font-size: 20px;
@@ -23,7 +24,7 @@
 }
 
 .Iconos_detalle{
-    width: 1.5rem;
+    width: 2rem;
     opacity: 50%;
 }
 
@@ -57,8 +58,7 @@
     align-items: center;
 }
 .Text_programas{
-    padding: 0 0.6rem 1rem 0.6rem;
-    width: 80%;
+    padding: 0 0.2rem 0 0.2rem;
     font-size: 13px;
     font-weight: 500;
     text-align: center;

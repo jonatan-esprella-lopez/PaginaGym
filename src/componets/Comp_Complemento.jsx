@@ -1,101 +1,75 @@
 import React from "react";
-import "../App.css"
-import "../styles/home_styles.css"
+import "../styles/home_styles.css";
+import "../styles/Complementos/complementos.css";
 
+import App from "../assets/images/Complementos/app.svg";
+import Energy from "../assets/images/Complementos/Energy.svg";
+import NutriComp from "../assets/images/Complementos/Nutricion.svg";
 
-import App from "../assets/images/Complementos/app.svg"
-import Energy from "../assets/images/Complementos/Energy.svg"
-import NutriComp from "../assets/images/Complementos/Nutricion.svg"
-
-function Complementos(){
-
-    
-    return( 
-        <section className="estructura-principal-cards">
-            <div className="container-head-section">
-                <div>            
-                    <h4>
-                        Complementa tu  <span>Entrenamiento</span>
-                        <div className="underline"></div>
-                    </h4>
-                    
+const Card = ({ icon, title, description, benefit, price, buttonText, special }) => (
+    <article className={`estructure-card-1 ${special ? "estructure-card-especial" : ""}`}>
+        <div className="contenedor-iconos-type-1">
+            <img src={icon} alt={title} className="Iconos_detalle" />
+        </div>
+        <h4>{title}</h4>
+        <div className="contenedor-texto-1">
+            <p className="Text_programas">{description}</p>
+        </div>
+        <div className="contenido_inferior_complemento">
+            <p className="descripcion_App">{benefit}</p>
+            {price && (
+                <div className="container_price">
+                    <p>Bs</p>
+                    <h2>{price.amount}</h2>
+                    <h5>{price.cents}</h5>
+                    <p>/{price.period}</p>
                 </div>
+            )}
+            <button className="estructure-size estructure-button-1 button-type-4">
+                {buttonText}
+            </button>
+        </div>
+    </article>
+);
 
-                <a href="">
-                    Encuentra mas ambientes...
-                </a>
+const Complementos = () => (
+    <section className="estructura-principal-cards">
+        <div className="container-head-section">
+            <div>            
+                <h4>
+                    Complementa tu <span>Entrenamiento</span>
+                    <div className="underline"></div>
+                </h4>
             </div>
+            <a href="">Encuentra todos los complementos...</a>
+        </div>
+        <section className="container-cards">
+            <Card
+                icon={App}
+                title="CEC-RX55"
+                description="Lleva tu entrenamiento a donde quieras y cuando quieras con nuestra plataforma virtual de clases y contenido fitness."
+                benefit="Beneficio gratuito para los clientes."
+                buttonText="Tienda"
+            />
+            <Card
+                icon={NutriComp}
+                title="Nutri-Fit by CEC"
+                description="Si quieres resultados rápidos, también debes cuidar la alimentación. Prueba de nuestras comidas, con los macronutrientes necesarios para progresar."
+                benefit="Come saludable"
+                price={{ amount: 150, cents: '.99', period: 'Mes' }}
+                buttonText="Más información"
+                special
+            />
+            <Card
+                icon={Energy}
+                title="Lacto Bar Energy"
+                description="Disfruta de bebidas especiales, mantente hidratado y mejora tu rendimiento al entrenar."
+                benefit="Sientente muy bien al entrenar."
+                price={{ amount: 150, cents: '.99', period: 'Mes' }}
+                buttonText="Conoce más"
+            />
+        </section>
+    </section>
+);
 
-                <div className="container-cards" >
-                    <div className="complementos_container">
-                        <div className="icono_container_complemento">
-                            <img src={App} alt="" className="Iconos_detalle"/>
-                        </div>
-                        <h4 className="Titulo_complemento">CEC-RX55</h4>
-                        <p className="Text_programas">Lleva tu entrenamiento a donde quieras y cuando quieras con nuestra plataforma virtual de clases y contenido fitness.</p>
-                        
-                        <div className="contenido_inferior_complemento">
-                            <p className="descripcion_App">Beneficio gratuito para los clientes. </p>
-                            <a href="https://play.google.com/store/apps/details?id=com.eokoe.smartfitcoach"  className="GooplePlay">
-                                <img src="https://assets.smartfit.com.br/production/newHome/google-play-badge-es.png" alt="Icone Google Play" ></img>
-                            </a>
-                            <a href="https://apps.apple.com/app/smart-fit-app/id1308265270" target="_blank">
-                                <img src="https://assets.smartfit.com.br/production/newHome/apple-badge-es.png" alt="Icone Apple Store"></img>
-                            </a>
-                        </div>    
-                    </div>
-                    <div className="complementos_container">
-                        <div className="icono_container_complemento">
-                            <img src={NutriComp} alt="" className="Iconos_detalle" />
-                        </div>
-                        <h4 className="Titulo_complemento">Nutri-Fit CEC</h4>
-                        <p className="Text_programas">Descarga nuestra app de nutrición, agenda consultas en línea con nutriólogos y dale seguimiento a tus resultados con nuestro analizador corporal Smart Body.</p>
-                        <div className="contenido_inferior_complemento">
-                            <p className="descripcion_App">Beneficio gratuito para los clientes. </p>   
-                            <div className="container_price">
-                                <p className="Text_programas">$</p>
-                                <h2>
-                                    39
-                                </h2>
-                                <h5>
-                                    .45
-                                </h5>
-                                <p className="Text_programas">
-                                    /Mensuales
-                                </p>
-                            </div>
-                            <button className="Boton_Prices">
-                                Conoce mas
-                            </button>
-                        </div> 
-                    </div>
-                    <div className="complementos_container">
-                        <div className="icono_container_complemento">
-                            <img src={Energy} alt="" />
-                        </div>
-                        <h4 className="Titulo_complemento">Lacto Bar Energy</h4>
-                        <p className="Text_programas">Disfruta de bebidas especiales, mantente hidratado y mejora tu rendimiento al entrenar.</p>
-                        <div className="contenido_inferior_complemento">
-                            <p className="descripcion_App">Beneficio gratuito para los clientes. </p>   
-                            <div className="container_price">
-                                <p className="Text_programas">$</p>
-                                <h2>
-                                    39
-                                </h2>
-                                <h5>
-                                    .45
-                                </h5>
-                                <p className="Text_programas">
-                                    /Mensuales
-                                </p>
-                            </div>
-                            <button className="Boton_Prices">
-                                Conoce mas
-                            </button>
-                        </div>  
-                    </div>
-                </div>
-            </section>
-    )
-}
-export default Complementos
+export default Complementos;

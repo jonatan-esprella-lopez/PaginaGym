@@ -26,7 +26,7 @@ function ProgramaMain(){
         </div>
 
         <section className="container-cards">
-            <article className="Diseno-tarjetas-1 estructure-card-1">
+            <article className="estructure-card-1">
                 <img src={Entrenamiento} alt="" className="imagen_Instalacion"/>
                 <div className="Clases_titulo_Container">
                     <a>Entrenamiento Funcional</a>
@@ -52,7 +52,7 @@ function ProgramaMain(){
                     </p>
                 </div>
             </article>
-            <article className="Diseno-tarjetas-1 estructure-card-1">
+            <article className="estructure-card-1">
                 <img src={FullKombat} alt="" className="imagen_Instalacion"/>
                 <div className="Clases_titulo_Container">
                     <a>Aeróbicos</a>
@@ -77,7 +77,7 @@ function ProgramaMain(){
                     </p>
                 </div>
             </article>
-            <article className="Diseno-tarjetas-1 estructure-card-1">
+            <article className="estructure-card-1">
                 <img src={Fexibilidad} alt="" className="imagen_Instalacion"/>
                 <div className="Clases_titulo_Container">
                     <a>Flexibilidad</a>

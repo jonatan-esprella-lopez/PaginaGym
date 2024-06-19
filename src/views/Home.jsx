@@ -2,11 +2,6 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import BannerVideoHome from "../assets/videos/BannerHome.mp4"
 
-import "../App.css"
-
-
-
-
 import "../styles/home_styles.css"
 
 import Header from "../componets/Header_Main"
@@ -36,8 +31,8 @@ function Home(){
             <SectionProgramas/>
             <Descarga/>
             <Complemento/>
-            <Novedades/>
             <BuscarcentroCEC/>
+            <Novedades/>
             <Footer/>
         </div>
     )
