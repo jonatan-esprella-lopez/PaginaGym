@@ -67,17 +67,18 @@
 
 .titulo-card h3{
     margin: 0;
+    padding: 0;
 }
 
 .card p {
     padding: 25px 25px 0 25px;
     text-align: left;
     font-size: 0.9em;
-    color: #666;
 }
 
 .highlighted-card {
     background-color: #ff6200;
+    border: 1px solid #ff6200;
     color: #fff;
     border: none;
     display: flex;
@@ -86,6 +87,13 @@
     padding: 0;
     max-width: 300px;
 }
+
+.highlighted-card h3 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: var(--font-size-medium);
+}
+
 
 .trainer-image {
     width: 100%;
@@ -103,9 +111,9 @@
 
 .highlighted-button {
     background-color: #ff6200;
-    border: 2px solid #fff;
     color: #fff;
     padding: 10px 20px;
+    border: 0;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -120,4 +128,6 @@
 
 .contend-card-text{
     background-color: #000;
+    padding: 0 10px 25px 10px;
+    border-radius: 0 0 10px 10px;
 }
