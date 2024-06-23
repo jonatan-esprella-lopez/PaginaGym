@@ -5,6 +5,13 @@ import "../styles/Rutinas/Training.css"
 import Header from "../componets/Header_Main"
 import Footer from "../componets/Footer_Main"
 
+
+
+import Imagen_C1 from "../assets/images/Rutinas/ImagenC1.png"
+import Imagen_Intensidad from "../assets/images/Rutinas/Intensidad.png"
+import Imagen_C2 from "../assets/images/Rutinas/ImagenC2.png"
+import Imagen_IntensidadC1 from "../assets/images/Rutinas/IntensidadC1.png"
+
 import TrainerImage from "../assets/images/Rutinas/trainer.png"; 
 
 import MetHipertrofia from "../assets/images/Rutinas/Metodologia.png"
@@ -69,6 +76,178 @@ function RutinasPage() {
                   </div>
               </div>
         </section>
+          <div>
+            <div>
+              <h3>
+                Entrenamiento Semanal
+                <div className='underline'></div>
+              </h3>
+              <p>19 de Junio de 2024</p>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th> </th>
+                  <th>Musculos</th>
+                  <th>Tipo de entrenamiento</th>
+                  <th>Duración</th>
+                  <th>Intensidad</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <th>
+                    <div>
+                      <p>
+                        dia 1
+                      </p>
+                      <div className='underline-dia'></div>
+                    </div>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                  </th>
+                  <th>
+                    <p>CHIPPER</p>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                    <p>30/40 min</p>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                    <p>Moderada</p>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                    <button>Mas información</button>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <div>
+                      <p>
+                        dia 2
+                      </p>
+                      <div className='underline-dia'></div>
+                    </div>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                  </th>
+                  <th>
+                    <p>CHIPPER</p>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                    <p>30/40 min</p>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                    <p>Moderada</p>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                    <button>Mas información</button>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <div>
+                      <p>
+                        dia 3
+                      </p>
+                      <div className='underline-dia'></div>
+                    </div>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                  </th>
+                  <th>
+                    <p>CHIPPER</p>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                    <p>30/40 min</p>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                    <p>Moderada</p>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                    <button>Mas información</button>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <div>
+                      <p>
+                        dia 4
+                      </p>
+                      <div className='underline-dia'></div>
+                    </div>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                  </th>
+                  <th>
+                    <p>CHIPPER</p>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                    <p>30/40 min</p>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                    <p>Moderada</p>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                    <button>Mas información</button>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <div>
+                      <p>
+                        dia 5
+                      </p>
+                      <div className='underline-dia'></div>
+                    </div>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                  </th>
+                  <th>
+                    <p>CHIPPER</p>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                    <p>30/40 min</p>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                    <p>Moderada</p>
+                  </th>
+                  <th>
+                    <img src="" alt="" />
+                    <button>Mas información</button>
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+
+
+
+
+
+
+
 
         <section className='contenedor_tipos_entrenamiento'>
           <div className='contenedor_metodologia'>
