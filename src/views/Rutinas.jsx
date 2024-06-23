@@ -5,54 +5,69 @@ import "../styles/Rutinas/Training.css"
 import Header from "../componets/Header_Main"
 import Footer from "../componets/Footer_Main"
 
-import TrainerImage from "../assets/images/Rutinas/Training.png"; 
+import TrainerImage from "../assets/images/Rutinas/trainer.png"; 
 
 import MetHipertrofia from "../assets/images/Rutinas/Metodologia.png"
 
 function RutinasPage() {
   return (
-    <div>
+    <div className='container-rutinas'>
       <Header/>
+      
+      <div className="container-head-section">
+            <div>            
+                <h4>
+                    Entrenamiento del día
+                    <div className="underline"></div>
+                </h4>
+            </div>
+        </div>
+      
       <section className="training-section">
-            <h2 className="training-title">Entrenamiento del día</h2>
-            <div className="training-content">
-                <div className="training-intro">
+        <div className="training-content">
+          
+            <div className="training-intro">
+                <p>
+                    Bienvenido a la sección de entrenamientos de <strong>CEC - FGI</strong>. Aquí, encontrarás una
+                    selección personalizada de planes de entrenamiento diseñados específicamente para nuestros alumnos.
+                    Cada programa ha sido creado por nuestros expertos en fitness para ayudarte a alcanzar tus metas de
+                    salud y rendimiento.
+                </p>
+            </div>
+            <div className="training-cards">
+                <div className="card">
+                  <div className='titulo-card'>
+                    <h3>Entrenamiento del día</h3>    
+                  </div>
+                    
                     <p>
-                        Bienvenido a la sección de entrenamientos de <strong>CEC - FGI</strong>. Aquí, encontrarás una
-                        selección personalizada de planes de entrenamiento diseñados específicamente para nuestros alumnos.
-                        Cada programa ha sido creado por nuestros expertos en fitness para ayudarte a alcanzar tus metas de
-                        salud y rendimiento.
+                        Nuestros entrenamientos están adaptados a diferentes niveles de habilidad y objetivos,
+                        ya sea que estés buscando mejorar tu resistencia, ganar masa muscular, perder peso o
+                        simplemente mantenerte en forma.
                     </p>
                 </div>
-                <div className="training-cards">
-                    <div className="card">
-                        <h3>Entrenamiento del día</h3>
-                        <p>
-                            Nuestros entrenamientos están adaptados a diferentes niveles de habilidad y objetivos,
-                            ya sea que estés buscando mejorar tu resistencia, ganar masa muscular, perder peso o
-                            simplemente mantenerte en forma.
-                        </p>
-                    </div>
-                    <div className="card">
-                        <h3>Seguimiento de Progreso</h3>
-                        <p>
-                            En cada entrenamiento, podrás registrar tu progreso y realizar un seguimiento de tus mejoras
-                            a lo largo del tiempo. Esta funcionalidad te permitirá mantenerte motivado y ajustar tu rutina
-                            según tus necesidades.
-                        </p>
-                    </div>
-                    <div className="card highlighted-card">
-                        <img src={TrainerImage} alt="Entrenador" className="trainer-image" />
-                        <div className="highlighted-content">
-                            <h3>Encuentra un entrenador</h3>
-                            <p>
-                                Un entrenador personal te podrá ayudar a llegar mucho más rápido a tu objetivo.
-                            </p>
-                            <button className="highlighted-button">Encontrar Entrenador</button>
-                        </div>
-                    </div>
+                <div className="card">
+                  <div className='titulo-card'>
+                    <h3>Seguimiento de Progreso</h3>
+                  </div>
+                    <p>
+                        En cada entrenamiento, podrás registrar tu progreso y realizar un seguimiento de tus mejoras
+                        a lo largo del tiempo. Esta funcionalidad te permitirá mantenerte motivado y ajustar tu rutina
+                        según tus necesidades.
+                    </p>
                 </div>
             </div>
+        </div>
+        <div className="card highlighted-card">
+                  <img src={TrainerImage} alt="Entrenador" className="trainer-image" />
+                  <div className="highlighted-content">
+                      <h3>Encuentra un entrenador</h3>
+                      <p>
+                          Un entrenador personal te podrá ayudar a llegar mucho más rápido a tu objetivo.
+                      </p>
+                      <button className="highlighted-button">Encontrar Entrenador</button>
+                  </div>
+              </div>
         </section>
 
         <section className='contenedor_tipos_entrenamiento'>

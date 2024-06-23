@@ -1,8 +1,15 @@
-/* Training.css */
+.container-rutinas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
 .training-section {
     padding: 20px;
-    background-color: #f5f5f5;
     text-align: center;
+    display: flex;
 }
 
 .training-title {
@@ -15,6 +22,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+}
+
+.training-intro{
+    width: 88%;
+    display: flex;
+
 }
 
 .training-intro p {
@@ -22,6 +36,7 @@
     color: #333;
     margin-bottom: 20px;
     max-width: 800px;
+    text-align: left;
 }
 
 .training-cards {
@@ -33,20 +48,30 @@
 
 .card {
     background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    max-width: 300px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    max-width: 350px;
     text-align: left;
 }
 
-.card h3 {
-    font-size: 1.2em;
-    color: #000;
-    margin-bottom: 10px;
+
+
+.titulo-card {
+    margin: 0;
+    border-radius: 14px 14px 0 0;
+    padding: 12px 0;
+    background-color: #000;
+    font-size: var(--font-size-medium);
+    color: #fff;
+}
+
+.titulo-card h3{
+    margin: 0;
 }
 
 .card p {
+    padding: 25px 25px 0 25px;
+    text-align: left;
     font-size: 0.9em;
     color: #666;
 }
