@@ -67,16 +67,21 @@ function RutinasPage() {
         </div>
         <div className="card highlighted-card">
                   <img src={TrainerImage} alt="Entrenador" className="trainer-image" />
-                  <div className="highlighted-content">
-                      <h3>Encuentra un entrenador</h3>
-                      <p>
-                          Un entrenador personal te podrá ayudar a llegar mucho más rápido a tu objetivo.
-                      </p>
+                  <h3>Encuentra un entrenador</h3>
+                  <div className="contend-card-text">
+                      
+                      <div className='contend-card-text'>
+                        <p>
+                            Un entrenador personal te podrá ayudar a llegar mucho más rápido a tu objetivo.
+                        </p>
+                      </div>
+                      
                       <button className="highlighted-button">Encontrar Entrenador</button>
                   </div>
               </div>
         </section>
-          <div>
+
+          <section>
             <div>
               <h3>
                 Entrenamiento Semanal
@@ -238,7 +243,7 @@ function RutinasPage() {
                 </tr>
               </tbody>
             </table>
-          </div>
+          </section>
 
 
 

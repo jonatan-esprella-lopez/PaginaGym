@@ -93,16 +93,7 @@
     border-radius: 5px 5px 0 0;
 }
 
-.highlighted-content {
-    padding: 20px;
-    text-align: center;
-}
 
-.highlighted-content h3 {
-    font-size: 1.2em;
-    color: #fff;
-    margin-bottom: 10px;
-}
 
 .highlighted-content p {
     font-size: 0.9em;
@@ -122,4 +113,11 @@
 
 .highlighted-button:hover {
     background-color: #ff4500;
+}
+
+
+
+
+.contend-card-text{
+    background-color: #000;
 }
