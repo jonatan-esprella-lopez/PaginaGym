@@ -5,6 +5,9 @@ import "../styles/Rutinas/Training.css"
 import Header from "../componets/Header_Main"
 import Footer from "../componets/Footer_Main"
 
+import Duracion from "../assets/images/duracion-clases.svg";
+import Intensidad from "../assets/images/intensidad.svg";
+import iconFuerza from "../assets/images/Rutinas/Fuerza.png";
 
 
 import Imagen_C1 from "../assets/images/Rutinas/ImagenC1.png"
@@ -13,6 +16,7 @@ import Imagen_C2 from "../assets/images/Rutinas/ImagenC2.png"
 import Imagen_IntensidadC1 from "../assets/images/Rutinas/IntensidadC1.png"
 
 import TrainerImage from "../assets/images/Rutinas/trainer.png"; 
+
 
 import MetHipertrofia from "../assets/images/Rutinas/Metodologia.png"
 
@@ -102,145 +106,155 @@ function RutinasPage() {
                 </tr>
               </thead>
               <tbody>
-              <tr>
-                  <th>
-                    <div>
+              <tr className='cont-details'>
+                  <th className='cont-gen-dia'>
+                    <div className='cont-dia'>
                       <p>
-                        dia 1
+                        Dia 1
                       </p>
                       <div className='underline-dia'></div>
                     </div>
                   </th>
-                  <th>
-                    <img src="" alt="" />
-                  </th>
-                  <th>
-                    <p>CHIPPER</p>
-                  </th>
-                  <th>
-                    <img src="" alt="" />
-                    <p>30/40 min</p>
-                  </th>
-                  <th>
-                    <img src="" alt="" />
-                    <p>Moderada</p>
-                  </th>
-                  <th>
-                    <img src="" alt="" />
-                    <button className='highlighted-button'>Mas información</button>
-                  </th>
+                    <div className='cont-espaciado'>
+                    <th>
+                      <img src={Imagen_C1} alt="" />
+                    </th>
+                    <th>
+                      <p className='tipo-entrenamiento'>CHIPPER</p>
+                    </th>
+                    <th>
+                      <img src={Duracion} alt="" className='icono-duracion-rutina'/>
+                      <p>30/40 min</p>
+                    </th>
+                    <th>
+                      <img src={Imagen_Intensidad} alt="" className='icono-duracion-rutina' />
+                      <p>Moderada</p>
+                    </th>
+                    <th className='cont-button-rutinas'>
+                      <img src={iconFuerza} alt=""/>
+                      <button className='highlighted-button'>Mas información</button>
+                    </th>
+                  </div>
                 </tr>
-                <tr>
-                  <th>
-                    <div>
+                <tr className='cont-details'>
+                  <th className='cont-gen-dia'>
+                    <div className='cont-dia'>
                       <p>
-                        dia 2
+                        Dia 2
                       </p>
                       <div className='underline-dia'></div>
                     </div>
                   </th>
-                  <th>
-                    <img src="" alt="" />
-                  </th>
-                  <th>
-                    <p>CHIPPER</p>
-                  </th>
-                  <th>
-                    <img src="" alt="" />
-                    <p>30/40 min</p>
-                  </th>
-                  <th>
-                    <img src="" alt="" />
-                    <p>Moderada</p>
-                  </th>
-                  <th>
-                    <img src="" alt="" />
-                    <button className='highlighted-button'>Mas información</button>
-                  </th>
+                    <div className='cont-espaciado'>
+                    <th>
+                      <img src={Imagen_C1} alt="" />
+                    </th>
+                    <th>
+                      <p className='tipo-entrenamiento'>CHIPPER</p>
+                    </th>
+                    <th>
+                      <img src={Duracion} alt="" className='icono-duracion-rutina'/>
+                      <p>30/40 min</p>
+                    </th>
+                    <th>
+                      <img src={Imagen_Intensidad} alt="" className='icono-duracion-rutina' />
+                      <p>Moderada</p>
+                    </th>
+                    <th className='cont-button-rutinas'>
+                      <img src={iconFuerza} alt=""/>
+                      <button className='highlighted-button'>Mas información</button>
+                    </th>
+                  </div>
                 </tr>
-                <tr>
-                  <th>
-                    <div>
+                <tr className='cont-details'>
+                  <th className='cont-gen-dia'>
+                    <div className='cont-dia'>
                       <p>
-                        dia 3
+                        Dia 3
                       </p>
                       <div className='underline-dia'></div>
                     </div>
                   </th>
-                  <th>
-                    <img src="" alt="" />
-                  </th>
-                  <th>
-                    <p>CHIPPER</p>
-                  </th>
-                  <th>
-                    <img src="" alt="" />
-                    <p>30/40 min</p>
-                  </th>
-                  <th>
-                    <img src="" alt="" />
-                    <p>Moderada</p>
-                  </th>
-                  <th>
-                    <img src="" alt="" />
-                    <button className='highlighted-button'>Mas información</button>
-                  </th>
+                    <div className='cont-espaciado'>
+                    <th>
+                      <img src={Imagen_C1} alt="" />
+                    </th>
+                    <th>
+                      <p className='tipo-entrenamiento'>CHIPPER</p>
+                    </th>
+                    <th>
+                      <img src={Duracion} alt="" className='icono-duracion-rutina'/>
+                      <p>30/40 min</p>
+                    </th>
+                    <th>
+                      <img src={Imagen_Intensidad} alt="" className='icono-duracion-rutina' />
+                      <p>Moderada</p>
+                    </th>
+                    <th className='cont-button-rutinas'>
+                      <img src={iconFuerza} alt=""/>
+                      <button className='highlighted-button'>Mas información</button>
+                    </th>
+                  </div>
                 </tr>
-                <tr>
-                  <th>
-                    <div>
+                <tr className='cont-details'>
+                  <th className='cont-gen-dia'>
+                    <div className='cont-dia'>
                       <p>
-                        dia 4
+                        Dia 4
                       </p>
                       <div className='underline-dia'></div>
                     </div>
                   </th>
-                  <th>
-                    <img src="" alt="" />
-                  </th>
-                  <th>
-                    <p>CHIPPER</p>
-                  </th>
-                  <th>
-                    <img src="" alt="" />
-                    <p>30/40 min</p>
-                  </th>
-                  <th>
-                    <img src="" alt="" />
-                    <p>Moderada</p>
-                  </th>
-                  <th>
-                    <img src="" alt="" />
-                    <button className='highlighted-button'>Mas información</button>
-                  </th>
+                    <div className='cont-espaciado'>
+                    <th>
+                      <img src={Imagen_C1} alt="" />
+                    </th>
+                    <th>
+                      <p className='tipo-entrenamiento'>CHIPPER</p>
+                    </th>
+                    <th>
+                      <img src={Duracion} alt="" className='icono-duracion-rutina'/>
+                      <p>30/40 min</p>
+                    </th>
+                    <th>
+                      <img src={Imagen_Intensidad} alt="" className='icono-duracion-rutina' />
+                      <p>Moderada</p>
+                    </th>
+                    <th className='cont-button-rutinas'>
+                      <img src={iconFuerza} alt=""/>
+                      <button className='highlighted-button'>Mas información</button>
+                    </th>
+                  </div>
                 </tr>
-                <tr>
-                  <th>
-                    <div>
+                <tr className='cont-details'>
+                  <th className='cont-gen-dia'>
+                    <div className='cont-dia'>
                       <p>
-                        dia 5
+                        Dia 5
                       </p>
                       <div className='underline-dia'></div>
                     </div>
                   </th>
-                  <th>
-                    <img src="" alt="" />
-                  </th>
-                  <th>
-                    <p>CHIPPER</p>
-                  </th>
-                  <th>
-                    <img src="" alt="" />
-                    <p>30/40 min</p>
-                  </th>
-                  <th>
-                    <img src="" alt="" />
-                    <p>Moderada</p>
-                  </th>
-                  <th>
-                    <img src="" alt="" />
-                    <button className='highlighted-button'>Mas información</button>
-                  </th>
+                    <div className='cont-espaciado'>
+                    <th>
+                      <img src={Imagen_C1} alt="" />
+                    </th>
+                    <th>
+                      <p className='tipo-entrenamiento'>CHIPPER</p>
+                    </th>
+                    <th>
+                      <img src={Duracion} alt="" className='icono-duracion-rutina'/>
+                      <p>30/40 min</p>
+                    </th>
+                    <th>
+                      <img src={Imagen_Intensidad} alt="" className='icono-duracion-rutina' />
+                      <p>Moderada</p>
+                    </th>
+                    <th className='cont-button-rutinas'>
+                      <img src={iconFuerza} alt=""/>
+                      <button className='highlighted-button'>Mas información</button>
+                    </th>
+                  </div>
                 </tr>
               </tbody>
             </table>

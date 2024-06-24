@@ -163,7 +163,8 @@
     background-color: var(--secondary-color1);
     color: var(--text-color);
     margin: 0;
-   /* display: block;*/
+    display: flex;
+    justify-content: space-between;
 }
 
 .cond-head-column th{
@@ -175,11 +176,12 @@ tr{
     width: 66rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     border: 1px solid #ff4500;
     box-shadow: 0 2px 8px -3px ;
     margin: 20px 0;
 }
+
+
 
 th{
     padding: 10px 0;
@@ -187,3 +189,73 @@ th{
 }
 
 
+
+
+
+/*detalle del boton entrenamiento */
+
+.cont-dia{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    transform: rotate(-90deg);
+    height: 100px;
+}
+.cont-gen-dia{
+    width: 120px;
+}
+
+.cont-dia p{
+    padding-top: 20px;
+    margin: 0;
+}
+
+.underline-dia{
+    background-color: #ff4500;
+    height: 6px;
+    width: 60px;
+    margin-top: 26px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+}
+
+
+.tipo-entrenamiento{
+    border: 2px solid black;
+    padding: 7px 20px 5px;
+    border-radius: 15px;
+}
+
+
+.cont-details{
+    padding: 0;
+}
+
+
+.cont-espaciado{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 4rem;
+    justify-content: space-between;
+}
+
+
+.icono-duracion-rutina{
+    margin-top: 20px;
+    height: 25px;
+    opacity: 70%;
+}
+
+.cont-button-rutinas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cont-button-rutinas img{
+    padding-bottom: 10px;
+    width: 50px;
+}
