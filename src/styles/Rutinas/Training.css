@@ -8,7 +8,6 @@
 
 .training-section {
     padding: 20px;
-    text-align: center;
     display: flex;
 }
 
@@ -21,12 +20,12 @@
 .training-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
 }
 
 .training-intro{
-    width: 88%;
+    width: 89%;
     display: flex;
 
 }
@@ -41,7 +40,6 @@
 
 .training-cards {
     display: flex;
-    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -58,6 +56,9 @@
 
 .titulo-card {
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 14px 14px 0 0;
     padding: 12px 0;
     background-color: #000;
@@ -127,7 +128,62 @@
 
 
 .contend-card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #000;
     padding: 0 10px 25px 10px;
     border-radius: 0 0 10px 10px;
 }
+
+
+
+
+/*tabla*/
+
+.cont-head-table{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.cont-head-table p {
+    opacity: 66%;
+}
+
+.table-general{
+    
+    border-collapse: collapse;
+    display: block;
+
+}
+
+.cond-head-column{
+    background-color: var(--secondary-color1);
+    color: var(--text-color);
+    margin: 0;
+   /* display: block;*/
+}
+
+.cond-head-column th{
+}
+
+
+tr{
+    border-radius: 10px;
+    width: 66rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #ff4500;
+    box-shadow: 0 2px 8px -3px ;
+    margin: 20px 0;
+}
+
+th{
+    padding: 10px 0;
+    
+}
+
+

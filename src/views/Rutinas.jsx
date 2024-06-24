@@ -82,16 +82,17 @@ function RutinasPage() {
         </section>
 
           <section>
-            <div>
+            <div className='cont-head-table'>
               <h3>
                 Entrenamiento Semanal
                 <div className='underline'></div>
               </h3>
               <p>19 de Junio de 2024</p>
             </div>
-            <table>
+
+            <table className='table-general'>
               <thead>
-                <tr>
+                <tr className='cond-head-column'>
                   <th> </th>
                   <th>Musculos</th>
                   <th>Tipo de entrenamiento</th>
@@ -126,7 +127,7 @@ function RutinasPage() {
                   </th>
                   <th>
                     <img src="" alt="" />
-                    <button>Mas información</button>
+                    <button className='highlighted-button'>Mas información</button>
                   </th>
                 </tr>
                 <tr>
@@ -154,7 +155,7 @@ function RutinasPage() {
                   </th>
                   <th>
                     <img src="" alt="" />
-                    <button>Mas información</button>
+                    <button className='highlighted-button'>Mas información</button>
                   </th>
                 </tr>
                 <tr>
@@ -182,7 +183,7 @@ function RutinasPage() {
                   </th>
                   <th>
                     <img src="" alt="" />
-                    <button>Mas información</button>
+                    <button className='highlighted-button'>Mas información</button>
                   </th>
                 </tr>
                 <tr>
@@ -210,7 +211,7 @@ function RutinasPage() {
                   </th>
                   <th>
                     <img src="" alt="" />
-                    <button>Mas información</button>
+                    <button className='highlighted-button'>Mas información</button>
                   </th>
                 </tr>
                 <tr>
@@ -238,7 +239,7 @@ function RutinasPage() {
                   </th>
                   <th>
                     <img src="" alt="" />
-                    <button>Mas información</button>
+                    <button className='highlighted-button'>Mas información</button>
                   </th>
                 </tr>
               </tbody>
