@@ -9,11 +9,10 @@
 
  
 
-.contenedor_prin_Nutricion{
+.cont-general-Nutricion{
     padding-top: 4rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 .Titulo_Principal{
@@ -80,32 +79,36 @@ body {
     border: 1px solid #ddd;
     border-radius: 10px;
     margin: 20px;
-    padding: 20px;
     max-width: 300px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     vertical-align: top;
     background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .plan-header {
-    background-color: orange;
-    color: white;
-    padding: 10px;
-    border-radius: 10px 10px 0 0;
-    font-weight: bold;
+    position: absolute;
+    background-color: #ff8800;
+    color: black;
+    padding: 6px 16px;
+    border-radius:  0 0 10px 10px;
+    font-weight: 600;
+    font-size: small;
 }
 
 .plan img {
     width: 100%;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px 10px 0 0 ;
     max-height: 200px;
     object-fit: cover;
 }
 
 .plan h3 {
-    color: orange;
-    margin: 10px 0;
+    width: 100%;
+    background-color: #ff8800;
+    padding: 14px 0;
+    margin: 0;
 }
 
 .plan-details {
