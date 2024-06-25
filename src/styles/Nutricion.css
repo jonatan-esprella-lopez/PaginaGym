@@ -7,6 +7,7 @@
     border-radius: 10px 10px 0 0;
 }
 
+ 
 
 .contenedor_prin_Nutricion{
     padding-top: 4rem;
@@ -64,4 +65,75 @@
 .contenedor_tarjeta{
     padding: 0.5rem;
     font-size: 13px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.plan {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plan-header {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+}
+
+.plan img {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.plan h3 {
+    color: orange;
+    margin: 10px 0;
+}
+
+.plan-details {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.plan-details div {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.plan-details i {
+    color: orange;
+    margin-right: 5px;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkorange;
 }

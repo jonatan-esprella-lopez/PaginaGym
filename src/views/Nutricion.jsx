@@ -14,120 +14,70 @@ import Grasas from "../assets/images/Nutricion/Grasa.svg"
 
 
 
-
+ 
 function NutricionPage() {
   return (
     <div>
       <Header/>
+      
       <section className='contenedor_prin_Nutricion'>
-        <h1 className='Titulo_Principal'>TIPOS DE NUTRICIÓN</h1>
-        <div className='contenedor_Tarjetas'>
-
-          <div className='Listado_Tarjeta'>
-              <div>
-                  <img src={ImagenHipertrofia} alt="" className='Imagen_Tarjeta_Nutricion'/>    
-              </div>
-              <div className='Titulo_Tarjeta_Tipo_Nut'>
-                <h3 >Hipertrofia</h3>
-              </div>
-              <div className='Detalle_Tarjeta_Tipo_Nut'>
-                <p>Es una nutricion rica en proteinas para el crecimiento muscular</p>
-              </div>
-              <div className='contenedor_Porcion_Nutricional'>
-                  <div className='contenedor_tarjeta'>
-                      <img src={Proteina} alt="" className='Iconos_Nutricion'/>
-                      <h5>Proteina</h5>
-                      <p>300 gr</p>
-                      <p>600 gr</p>
-                  </div>
-                  <div className='contenedor_tarjeta'>
-                      <img src={Carbohidrato} alt="" className='Iconos_Nutricion'/>
-                      <h5>Carbohidrato</h5>
-                      <p>100 gr</p>
-                      <p>200 gr</p>
-                  </div>
-                  <div className='contenedor_tarjeta'>
-                      <img src={Grasas} alt="" className='Iconos_Nutricion'/>
-                      <h5>Grasas</h5>
-                      <p>30 gr</p>
-                      <p>60 gr</p>
-                  </div>
-                  
-              </div> 
-              <div >
-                <Link to="/Plan Nutricional">
-                  <button className="Boton_seleccion_Precio">
-                    
-                      Ver Tipo de nutricion
-                  </button>
-                </Link>
-              </div>
-          </div>
-        <div className='Listado_Tarjeta'>
-            <div>
-                <img src={ImagenHipertrofia} alt="" className='Imagen_Tarjeta_Nutricion'/>    
-            </div>
-            <div className='Titulo_Tarjeta_Tipo_Nut'>
-              <h3 >Hipertrofia</h3>
-            </div>
-            <div className='Detalle_Tarjeta_Tipo_Nut'>
-              <p>Es una nutricion rica en proteinas para el crecimiento muscular</p>
-            </div>
-            <div className='contenedor_Porcion_Nutricional'>
-                <div className='contenedor_tarjeta'>
-                    <img src={Proteina} alt="" className='Iconos_Nutricion'/>
-                    <h5>Proteina</h5>
-                    <p>300 gr</p>
-                    <p>600 gr</p>
-                </div>
-                <div className='contenedor_tarjeta'>
-                    <img src={Carbohidrato} alt="" className='Iconos_Nutricion'/>
-                    <h5>Carbohidrato</h5>
-                    <p>100 gr</p>
-                    <p>200 gr</p>
-                </div>
-                <div className='contenedor_tarjeta'>
-                    <img src={Grasas} alt="" className='Iconos_Nutricion'/>
-                    <h5>Grasas</h5>
-                    <p>30 gr</p>
-                    <p>60 gr</p>
-                </div>
-            </div>    
-        </div>
-        <div className='Listado_Tarjeta'>
-            <div>
-                <img src={ImagenHipertrofia} alt="" className='Imagen_Tarjeta_Nutricion'/>    
-            </div>
-            <div className='Titulo_Tarjeta_Tipo_Nut'>
-              <h3 >Hipertrofia</h3>
-            </div>
-            <div className='Detalle_Tarjeta_Tipo_Nut'>
-              <p>Es una nutricion rica en proteinas para el crecimiento muscular</p>
-            </div>
-            <div className='contenedor_Porcion_Nutricional'>
-                <div className='contenedor_tarjeta'>
-                    <img src={Proteina} alt="" className='Iconos_Nutricion'/>
-                    <h5>Proteina</h5>
-                    <p>300 gr</p>
-                    <p>600 gr</p>
-                </div>
-                <div className='contenedor_tarjeta'>
-                    <img src={Carbohidrato} alt="" className='Iconos_Nutricion'/>
-                    <h5>Carbohidrato</h5>
-                    <p>100 gr</p>
-                    <p>200 gr</p>
-                </div>
-                <div className='contenedor_tarjeta'>
-                    <img src={Grasas} alt="" className='Iconos_Nutricion'/>
-                    <h5>Grasas</h5>
-                    <p>30 gr</p>
-                    <p>60 gr</p>
-                </div>
-            </div>    
-        </div>
+        <h1 className='Titulo_Principal'>Planes Pre-armados</h1>
         
+    <article class="plan">
+      <div class="plan-header">Plan proteico</div>
+        <img src={ImagenHipertrofia} alt="Aumenta tu masa muscular"/>
+        <h3>Aumenta tu masa muscular</h3>
+        <p>Un plan nutricional diseñado para personas que buscan aumentar su masa muscular a través de una dieta rica en proteínas y calorías controladas.</p>
+        <div class="plan-details">
+            <div><i class="fas fa-drumstick-bite"></i> <strong>Proteínas:</strong> 150g por día</div>
+            <div><i class="fas fa-bread-slice"></i> <strong>Carbohidratos:</strong> 300g por día</div>
+            <div><i class="fas fa-cheese"></i> <strong>Grasas:</strong> 80g por día</div>
+            <div><i class="fas fa-fire"></i> <strong>Calorías:</strong> 3000 kcal por día</div>
         </div>
+        <button>Más Información</button>
+    </article>
 
+    <article class="plan">
+        <div class="plan-header">Plan bajo en grasa</div>
+        <img src={ImagenHipertrofia} alt="Pérdida de grasa"/>
+        <h3>Pérdida de grasa</h3>
+        <p>Un plan nutricional enfocado en la reducción de grasa corporal mediante un déficit calórico y la ingesta de alimentos saludables.</p>
+        <div class="plan-details">
+            <div><i class="fas fa-drumstick-bite"></i> <strong>Proteínas:</strong> 120g por día</div>
+            <div><i class="fas fa-bread-slice"></i> <strong>Carbohidratos:</strong> 200g por día</div>
+            <div><i class="fas fa-cheese"></i> <strong>Grasas:</strong> 60g por día</div>
+            <div><i class="fas fa-fire"></i> <strong>Calorías:</strong> 2000 kcal por día</div>
+        </div>
+        <button>Más Información</button>
+    </article>
+
+    <article class="plan">
+        <div class="plan-header">Plan de tonificación</div>
+        <img src={ImagenHipertrofia} alt="Tonificación"/>
+        <h3>Tonificación</h3>
+        <p>Un plan equilibrado que ayuda a mejorar la definición muscular y mantener una buena salud general.</p>
+        <div class="plan-details">
+            <div><i class="fas fa-drumstick-bite"></i> <strong>Proteínas:</strong> 130g por día</div>
+            <div><i class="fas fa-bread-slice"></i> <strong>Carbohidratos:</strong> 250g por día</div>
+            <div><i class="fas fa-cheese"></i> <strong>Grasas:</strong> 70g por día</div>
+            <div><i class="fas fa-fire"></i> <strong>Calorías:</strong> 2500 kcal por día</div>
+        </div>
+        <button>Más Información</button>
+    </article>
+
+    <article class="plan">
+        <div class="plan-header">Plan saludable</div>
+        <img src={ImagenHipertrofia} alt="Salud normal"/>
+        <h3>Salud normal (Alimentación cotidiana)</h3>
+        <p>Un plan nutricional para mantener un estilo de vida saludable y una dieta balanceada.</p>
+        <div class="plan-details">
+            <div><i class="fas fa-drumstick-bite"></i> <strong>Proteínas:</strong> 100g por día</div>
+            <div><i class="fas fa-bread-slice"></i> <strong>Carbohidratos:</strong> 300g por día</div>
+            <div><i class="fas fa-cheese"></i> <strong>Grasas:</strong> 70g por día</div>
+            <div><i class="fas fa-fire"></i> <strong>Calorías:</strong> 2200 kcal por día</div>
+        </div>
+        <button>Más Información</button>
+    </article>
       </section>
       <section>
         <div>
