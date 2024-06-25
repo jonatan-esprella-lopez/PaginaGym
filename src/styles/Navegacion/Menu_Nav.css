@@ -27,7 +27,7 @@
 .Link_Paginas{
     color: var(--text-color);
     margin: 0 25px;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     font-size: var(--font-size-large);
     justify-content: center;
 }

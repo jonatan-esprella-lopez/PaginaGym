@@ -11,6 +11,7 @@ import iconFuerza from "../assets/images/Rutinas/Fuerza.png";
 
 
 import Imagen_C1 from "../assets/images/Rutinas/ImagenC1.png"
+
 import Imagen_Intensidad from "../assets/images/Rutinas/Intensidad.png"
 import Imagen_C2 from "../assets/images/Rutinas/ImagenC2.png"
 import Imagen_IntensidadC1 from "../assets/images/Rutinas/IntensidadC1.png"
@@ -18,7 +19,10 @@ import Imagen_IntensidadC1 from "../assets/images/Rutinas/IntensidadC1.png"
 import TrainerImage from "../assets/images/Rutinas/trainer.png"; 
 
 
-import MetHipertrofia from "../assets/images/Rutinas/Metodologia.png"
+import MetHipertrofia from "../assets/images/Rutinas/Hipertrofia.svg"
+import MetMetabolico from "../assets/images/Rutinas/Metabolico.svg"
+import MetTonificacion from "../assets/images/Rutinas/Tonificacion.svg"
+import MetFuncional from "../assets/images/Rutinas/Funcional.svg"
 
 function RutinasPage() {
   return (
@@ -263,12 +267,6 @@ function RutinasPage() {
 
 
 
-
-
-
-
-
-
         <section className='contenedor_tipos_entrenamiento'>
           <div className='contenedor_metodologia'>
             <div>
@@ -276,20 +274,16 @@ function RutinasPage() {
               <h2>Hipertrofia</h2>
             </div>
             <div>
-              <img src={MetHipertrofia} alt="" className='Imagen_Metodologia'/>
+              <img src={MetMetabolico} alt="" className='Imagen_Metodologia'/>
               <h2>Metabolico</h2>
             </div>
             <div>
-              <img src={MetHipertrofia} alt="" className='Imagen_Metodologia'/>
-              <h2>Hipertrofia</h2>
+              <img src={MetTonificacion} alt="" className='Imagen_Metodologia'/>
+              <h2>Tonificacion</h2>
             </div>
             <div>
-              <img src={MetHipertrofia} alt="" className='Imagen_Metodologia'/>
-              <h2>Hipertrofia</h2>
-            </div>
-            <div>
-              <img src={MetHipertrofia} alt="" className='Imagen_Metodologia'/>
-              <h2>Hipertrofia</h2>
+              <img src={MetFuncional} alt="" className='Imagen_Metodologia'/>
+              <h2>Funcional</h2>
             </div>
           </div>
         </section>
