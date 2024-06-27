@@ -13,9 +13,9 @@ import Carbohidrato from "../assets/images/Nutricion/Carbohidrato.svg"
 import Grasas from "../assets/images/Nutricion/Grasa.svg"
 
 
-import planImage from '../assets/images/Nutricion/Proteina.svg'; // Asegúrate de tener la imagen en la ruta correcta
-import checkIcon from '../assets/images/Nutricion/Proteina.svg'; // Asegúrate de tener el icono en la ruta correcta
-import whatsappIcon from '../assets/images/Nutricion/Proteina.svg'; // Asegúrate de tener el icono en la ruta correcta
+import planImage from '../assets/images/Nutricion/plan-simple.png'; // Asegúrate de tener la imagen en la ruta correcta
+import checkIcon from '../assets/images/correcto.png'; // Asegúrate de tener el icono en la ruta correcta
+import whatsappIcon from '../assets/images/WhatsApp.png'; // Asegúrate de tener el icono en la ruta correcta
 
 
 
@@ -97,13 +97,15 @@ function NutricionPage() {
         <div className="group-plan">
             <h2>Consigue tus objetivos nutricionales en grupo</h2>
             <div className="plan-container">
-                <img src={planImage} alt="Reto de 30 Días" className="plan-image" />
+                <div className='cont-plan-image'>
+                  <img src={planImage} alt="Reto de 30 Días" className="plan-image" />
+                </div>
                 <div className="plan-details-v1">
                   <div className='cont-head-plan'>
                     <h3>Reto de <strong>30 Días</strong></h3> 
                     <div className="plan-type">GRUPAL</div>                
                   </div>
-                  <p>4 semanas</p>
+                    <p>4 semanas</p>
                     <p>Consigue todos tus objetivos nutricionales <strong>en grupo</strong> y adopta la vida saludable que buscas en solo un mes. Consigue todos tus objetivos nutricionales en grupo y adopta la vida saludable que buscas en solo un mes.</p>
                     <ul>
                         <li><img src={checkIcon} alt="check" /> Plan nutricional y lista de la compra quincenal</li>
@@ -112,13 +114,110 @@ function NutricionPage() {
                         <li><img src={checkIcon} alt="check" /> Guía y descuentos de suplementación</li>
                         <li><img src={checkIcon} alt="check" /> Recetas fáciles de hacer</li>
                     </ul>
+                    <p className="price">340 Bs</p>
                     <div className="plan-price">
                         <div className="whatsapp-group">
-                            <img src={whatsappIcon} alt="WhatsApp" /> Ingreso al grupo de WhatsApp
+                            <img src={whatsappIcon} alt="WhatsApp" /> 
+                            <p>Ingreso al grupo de WhatsApp</p>
                         </div>
-                        <div className="price">340 Bs</div>
+                        <button className="start-now">Empezar Ahora</button>
                     </div>
-                    <button className="start-now">Empezar Ahora</button>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <div className="group-plan">
+            <h2>Consigue tus objetivos nutricionales en grupo</h2>
+            <div className="plan-container">
+                <div className='cont-plan-image'>
+                  <img src={planImage} alt="Reto de 60 Días" className="plan-image" />
+                </div>
+                <div className="plan-details-v1">
+                  <div className='cont-head-plan'>
+                    <h3>Reto de <strong>60 Días</strong></h3> 
+                    <div className="plan-type">GRUPAL</div>                
+                  </div>
+                    <p>8 semanas</p>
+                    <p>Si buscas un <strong>seguimiento a largo plazo</strong> en el que además de seguir un plan nutricional durante dos meses, disfrutes de charlas online y los mejores ejercicios para combinar con tu dieta, sin duda el Reto grupal de 60 días es para ti.</p>
+                    <ul>
+                        <li><img src={checkIcon} alt="check" /> Plan nutricional y lista de la compra quincenal</li>
+                        <li><img src={checkIcon} alt="check" /> Menú adaptado a intolerantes y alérgicos</li>
+                        <li><img src={checkIcon} alt="check" /> Foto de platos especiales</li>
+                        <li><img src={checkIcon} alt="check" /> Guía y descuentos de suplementación</li>
+                        <li><img src={checkIcon} alt="check" /> Recetas fáciles de hacer</li>
+                        <li><img src={checkIcon} alt="check" /> Charla online sobre dieta Keto/Ayuno intermitente</li>
+                        <li><img src={checkIcon} alt="check" /> Recomendación de ejercicios</li>
+                    </ul>
+                    <p className="price">340 Bs</p>
+                    <div className="plan-price">
+                        <div className="whatsapp-group">
+                            <img src={whatsappIcon} alt="WhatsApp" /> 
+                            <p>Ingreso al grupo de WhatsApp</p>
+                        </div>
+                        <button className="start-now">Empezar Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<div className="container">
+      <div className="header">
+        <span>Un seguimiento </span>
+        <span className="bold">INDIVIDUAL Y A LA MEDIDA</span>
+        <span> junto a</span>
+      </div>
+      <div className="subheader">
+        <span>Un profesional de Fitness y nutrición.</span>
+      </div>
+      <div className="divider"></div>
+      <div className="content">
+        <span>Disfruta de un </span>
+        <span className="bold">plan nutricional personalizado</span>
+        <span> durante dos meses a través de nuestra </span>
+        <span className="bold">plataforma de nutrición.</span>
+      </div>
+    </div>
+
+
+
+        <div className="group-plan">
+            <h2>Consigue tus objetivos nutricionales en grupo</h2>
+            <div className="plan-container">
+                <div className='cont-plan-image'>
+                  <img src={planImage} alt="Reto Personalizado" className="plan-image" />
+                </div>
+                <div className="plan-details-v1">
+                  <div className='cont-head-plan'>
+                    <h3>Reto <strong>Personalizado</strong></h3> 
+                    <div className="plan-type">PERSONAL</div>                
+                  </div>
+                    <p>8 semanas</p>
+                    <p>Lograr tus objetivos puede ser más fácil de lo que siempre has pensado. Con nuestro <strong>plan nutricional online individual y personalizado</strong> podrás comenzar a alimentarte mejor, bajar de peso, establecer un estilo de vida saludable y ver los resultados que deseas. <strong>Todo esto a través de un plan preparado justo a la medida de tus necesidades.</strong></p>
+                    <ul>
+                        <li><img src={checkIcon} alt="check" /> 4 dietas progresivas personalizadas</li>
+                        <li><img src={checkIcon} alt="check" /> Guía y descuentos de suplementación</li>
+                        <li><img src={checkIcon} alt="check" /> Recetas fáciles de hacer</li>
+                        <li><img src={checkIcon} alt="check" /> Guía de mantenimiento final</li>
+                        <li><img src={checkIcon} alt="check" /> Charla online sobre dieta Keto/Ayuno intermitente</li>
+                        <li><img src={checkIcon} alt="check" /> Contenidos motivacionales</li>
+                        <li><img src={checkIcon} alt="check" /> Lista de la compra quincenal</li>
+                        <li><img src={checkIcon} alt="check" /> Plan adaptado a intolerantes y alérgicos</li>
+                        <li><img src={checkIcon} alt="check" /> Foto y videos de platos especiales</li>
+                        <li><img src={checkIcon} alt="check" /> Guía de ejercicios gym/casa</li>
+                        <li><img src={checkIcon} alt="check" /> Apoyo personal diario</li>
+                    </ul>
+                    <p className="price">800 Bs</p>
+                    <div className="plan-price">
+                        <div className="whatsapp-group">
+                            <img src={whatsappIcon} alt="WhatsApp" /> 
+                            <p>Seguimiento personalizado por videollamada, email y WhatsApp.</p>
+                        </div>
+                        <button className="start-now">Empezar Ahora</button>
+                    </div>
                 </div>
             </div>
         </div>

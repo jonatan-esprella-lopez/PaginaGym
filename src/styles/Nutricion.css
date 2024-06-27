@@ -180,6 +180,7 @@ button:hover {
 }
 
 .plan-container {
+    height: 100%;
     display: flex;
     align-items: center;
     background-color: white;
@@ -188,15 +189,25 @@ button:hover {
     overflow: hidden;
 }
 
+.cont-plan-image{
+    height: 470px;
+    background-color: #0056b3;
+}
+
 .plan-image {
-    width: 50%;
+    width: 370px;
+    height: 100%;   
     object-fit: cover;
+    background-color: #0056b3;
+
 }
 
 .plan-type {
-    background-color: #ff7f00;
-    color: white;
-    padding: 5px 10px;
+    border:2px solid #ff7f00;
+    color: #ff7f00;
+    font-weight: bold;
+    font-size: var(--font-size-small);
+    padding: 8px 10px 5px;
     border-radius: 5px;
     display: inline-block;
     margin-bottom: 10px;
@@ -232,13 +243,17 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
 }
 
 .whatsapp-group {
     display: flex;
     align-items: center;
 }
+
+.whatsapp-group p{
+    opacity: 70%;
+}
+
 
 .whatsapp-group img {
     width: 24px;
@@ -249,6 +264,8 @@ button:hover {
 .price {
     font-size: 24px;
     font-weight: bold;
+    display: flex;
+    justify-content: end;
 }
 
 .start-now {
@@ -264,3 +281,77 @@ button:hover {
 .start-now:hover {
     background-color: #0056b3;
 }
+
+
+.plan-details-v1{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+
+.plan-details-v1 h3 {
+    margin: 0;
+}
+
+.plan-details-v1 p {
+    text-align: left;
+    margin: 5px 0;
+}
+
+.plan-details-v1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan-details-v1 li {
+    margin: 10px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.plan-details-v1 li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+.container {
+    background-color: #fbe3a2; /* Background color similar to the image */
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    font-size: 24px;
+    color: #000;
+  }
+  
+  .subheader {
+    font-size: 24px;
+    color: #000;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin: 20px 0;
+  }
+  
+  .content {
+    font-size: 18px;
+    color: #000;
+  }
+  
