@@ -32,7 +32,7 @@ function AboutUsPage() {
     <div>
       <HeaderMain />
       <div className="about-us-container">
-        <div className="about-us-section" style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <div className="about-us-section">
           <div className="overlay">
               <h1>¿Quienes somos?</h1>
               <p>Bienvenido a CEC-FGI</p>
