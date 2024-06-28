@@ -4,10 +4,7 @@
   background-color: #e6e6e6;
   }
   
-  .about-us-header {
-    text-align: center;
-    
-  }
+
   
   .about-us-content {
     margin-top: 20px;
@@ -43,6 +40,7 @@
   /* aboutUsContent_styles.css */
 
 .about-us-content {
+  display: flex;
     margin-top: 40px; /* Aumentamos el espacio superior */
   }
   
