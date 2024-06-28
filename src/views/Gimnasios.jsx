@@ -85,9 +85,164 @@ function GimnasioPage() {
                         </div>
                     ))}
                 </div>
-                <div className='contenedor_2_gimnasios'>
-                    <div className="Instalacion_Containers">
-                        <div className="Diseno-tarjetas-1">
+                <div className='cont-gyms'>
+                    
+        <div className="card">
+      <img
+        src={RitmosFitness} // Replace with the actual image URL
+        alt="Gym"
+        className="card-image"
+      />
+      <div className="card-content">
+        <h2 className="card-title">Averanda</h2>
+        <p className="card-address">
+          AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR
+        </p>
+        <a href="#" className="card-link">
+          Ver gimnasio
+        </a>
+        <div className="card-offer">1ER MES GRATIS + INSCRIPCIÓN $10</div>
+        <div className="card-prices">
+          <div className="price">
+            <span className="price-type">SMART</span>
+            <span className="original-price">$499.00</span>
+            <span className="discounted-price">$0.00*</span>
+          </div>
+          <div className="price">
+            <span className="price-type">BLACK</span>
+            <span className="original-price">$599.00</span>
+            <span className="discounted-price">$0.00*</span>
+          </div>
+          <div className="price">
+            <span className="price-type">FIT</span>
+            <span className="original-price">$399.00</span>
+            <span className="discounted-price">$0.00*</span>
+          </div>
+        </div>
+        <button className="subscribe-button">¡Inscríbete ya!</button>
+      </div>
+    </div>
+    <div className="card">
+      <img
+        src={RitmosFitness} // Replace with the actual image URL
+        alt="Gym"
+        className="card-image"
+      />
+      <div className="card-content">
+        <h2 className="card-title">Averanda</h2>
+        <p className="card-address">
+          AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR
+        </p>
+        <a href="#" className="card-link">
+          Ver gimnasio
+        </a>
+        <div className="card-offer">1ER MES GRATIS + INSCRIPCIÓN $10</div>
+        <div className="card-prices">
+          <div className="price">
+            <span className="price-type">SMART</span>
+            <span className="original-price">$499.00</span>
+            <span className="discounted-price">$0.00*</span>
+          </div>
+          <div className="price">
+            <span className="price-type">BLACK</span>
+            <span className="original-price">$599.00</span>
+            <span className="discounted-price">$0.00*</span>
+          </div>
+          <div className="price">
+            <span className="price-type">FIT</span>
+            <span className="original-price">$399.00</span>
+            <span className="discounted-price">$0.00*</span>
+          </div>
+        </div>
+        <button className="subscribe-button">¡Inscríbete ya!</button>
+      </div>
+    </div>
+    <div className="card">
+      <img
+        src={RitmosFitness} // Replace with the actual image URL
+        alt="Gym"
+        className="card-image"
+      />
+      <div className="card-content">
+        <h2 className="card-title">Averanda</h2>
+        <p className="card-address">
+          AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR
+        </p>
+        <a href="#" className="card-link">
+          Ver gimnasio
+        </a>
+        <div className="card-offer">1ER MES GRATIS + INSCRIPCIÓN $10</div>
+        <div className="card-prices">
+          <div className="price">
+            <span className="price-type">SMART</span>
+            <span className="original-price">$499.00</span>
+            <span className="discounted-price">$0.00*</span>
+          </div>
+          <div className="price">
+            <span className="price-type">BLACK</span>
+            <span className="original-price">$599.00</span>
+            <span className="discounted-price">$0.00*</span>
+          </div>
+          <div className="price">
+            <span className="price-type">FIT</span>
+            <span className="original-price">$399.00</span>
+            <span className="discounted-price">$0.00*</span>
+          </div>
+        </div>
+        <button className="subscribe-button">¡Inscríbete ya!</button>
+      </div>
+    </div>
+    <div className="card">
+      <img
+        src={RitmosFitness} // Replace with the actual image URL
+        alt="Gym"
+        className="card-image"
+      />
+      <div className="card-content">
+        <h2 className="card-title">Averanda</h2>
+        <p className="card-address">
+          AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR
+        </p>
+        <a href="#" className="card-link">
+          Ver gimnasio
+        </a>
+        <div className="card-offer">1ER MES GRATIS + INSCRIPCIÓN $10</div>
+        <div className="card-prices">
+          <div className="price">
+            <span className="price-type">SMART</span>
+            <span className="original-price">$499.00</span>
+            <span className="discounted-price">$0.00*</span>
+          </div>
+          <div className="price">
+            <span className="price-type">BLACK</span>
+            <span className="original-price">$599.00</span>
+            <span className="discounted-price">$0.00*</span>
+          </div>
+          <div className="price">
+            <span className="price-type">FIT</span>
+            <span className="original-price">$399.00</span>
+            <span className="discounted-price">$0.00*</span>
+          </div>
+        </div>
+        <button className="subscribe-button">¡Inscríbete ya!</button>
+      </div>
+    </div>
+                    </div>
+            </div>
+
+
+       
+
+            <Novedades />
+            <Footer />
+        </div>
+  );
+}
+
+export default GimnasioPage;
+
+
+{/* <div className="Diseno-tarjetas-1">
                             <img src={RitmosFitness} alt="" className="imagen_Instalacion" />
                             <div className="Clases_titulo_Container">
                                 <a>CEC-FGI GOLD</a>
@@ -139,6 +294,7 @@ function GimnasioPage() {
                                 </p>
                             </div>
                         </div>
+                        
                         <div className="Diseno-tarjetas-1">
                             <img src={Rebound} alt="" className="imagen_Instalacion" />
                             <div className="Clases_titulo_Container">
@@ -164,15 +320,4 @@ function GimnasioPage() {
                                     Diviértete y combina el baile con una rutina de ejercicio al ritmo de la música, mejora tu condición y coordinación
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <Novedades />
-            <Footer />
-        </div>
-  );
-}
-
-export default GimnasioPage;
+                        </div> */}
