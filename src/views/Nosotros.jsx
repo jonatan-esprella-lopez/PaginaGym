@@ -73,25 +73,10 @@ function AboutUsPage() {
 
        
         
-        
-
-      <div className="about-us-content">
         <h2>Nuestros Instructores</h2>
+
+      
         <Tarjeta/>
-        <Tarjeta/>
-        <Tarjeta/>
-        <Tarjeta/>
-        <div className="instructor-cards-container">
-          {instructors.map((instructor) => (
-            <InstructorCard
-              key={instructor.id}
-              name={instructor.name}
-              photo={instructor.photo}
-              specialization={instructor.specialization}
-            />
-          ))}
-        </div>
-      </div>
       </div>
 
       <FooterMain />
@@ -100,3 +85,17 @@ function AboutUsPage() {
 }
 
 export default AboutUsPage;
+
+
+
+
+// <div className="instructor-cards-container">
+//           {instructors.map((instructor) => (
+//             <InstructorCard
+//               key={instructor.id}
+//               name={instructor.name}
+//               photo={instructor.photo}
+//               specialization={instructor.specialization}
+//             />
+//           ))}
+//         </div>

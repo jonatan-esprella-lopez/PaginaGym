@@ -32,11 +32,6 @@
   }
   /* aboutUsContent_styles.css */
 
-.about-us-content {
-  display: flex;
-    margin-top: 40px; /* Aumentamos el espacio superior */
-  }
-  
   .about-us-content h2 {
     font-size: 28px; /* Aumentamos el tamaño de la fuente */
     margin-top: 30px; /* Aumentamos el espacio superior */
