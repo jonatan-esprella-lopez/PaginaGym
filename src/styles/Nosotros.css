@@ -95,7 +95,9 @@
   
 
   .cont-Mis-Vis{
+    padding: 0 7rem;
     display: flex;
+    margin-bottom: 5rem;
   }
 
 
@@ -118,13 +120,26 @@
 }
 
 .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
+  padding: 40px 20px;
   text-align: center;
 }
+
+.underline-central{
+  height: 5px;
+  width: 400px;
+  margin: 15px 35rem;
+  border-radius: 10px;
+  background-color: #ff8800;
+}
+
+
+
 
 .overlay h1 {
   margin: 0;
@@ -133,8 +148,15 @@
 }
 
 .overlay p {
+  text-align: left;
+  width: 1200px;
   margin-top: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+.overlay-bienvenida{
+  text-align: left;
+  width: 85%;
+  font-weight: bold;
 }
 
 .overlay p:first-of-type {
@@ -158,12 +180,26 @@
 
 
 
+.cont-valores{
+  margin: 2rem 0 0 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont-valores p{
+  text-align: left;
+  width: 80%;
+}
+
+
 
 /* GymValues.css */
 
 .gym-values-section {
   position: relative;
-  background: url('./path_to_background_image.jpg') no-repeat center center/cover;
+  background: url('../assets//images/Nosotros/background1.jpg') no-repeat center center/cover;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -171,15 +207,16 @@
   color: white;
 }
 
-.overlay {
+.overlay1 {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 20px 200px;
   border-radius: 10px;
   text-align: center;
   display: flex;
+  align-items: center;
   justify-content: space-around;
   width: 100%;
-  max-width: 1200px;
+  height: 100%;
 }
 
 .value {
@@ -189,6 +226,7 @@
 }
 
 .value img {
+  filter:invert();
   width: 80px;
   height: 80px;
   margin-bottom: 10px;
@@ -211,7 +249,7 @@
     padding: 20px 0;
   }
 
-  .overlay {
+  .overlay1 {
     flex-direction: column;
   }
 

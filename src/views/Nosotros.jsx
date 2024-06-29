@@ -5,6 +5,7 @@ import HeaderMain from "../componets/Header_Main";
 import FooterMain from "../componets/Footer_Main";
 import InstructorCard from "../componets/Nosotros/Card_InstructorNosotros"; // Importamos el componente de la tarjeta del instructor
 import "../styles/Nosotros.css";
+import "../App.css"
 import Tarjeta from "../componets/Nosotros/Tarjeta-coach";
 import Mision from "../componets/Nosotros/Tarjeta-Mision";
 import Vision from "../componets/Nosotros/Tarjeta-Vision";
@@ -41,43 +42,64 @@ function AboutUsPage() {
       <div className="about-us-container">
         <div className="about-us-section">
           <div className="overlay">
-              <h1>¿Quienes somos?</h1>
-              <p>Bienvenido a CEC-FGI</p>
-              <p>
-                  Nuestra historia comenzó en 2020 con una misión clara: proporcionar un espacio donde las personas pudieran
-                  transformar sus vidas a través del fitness. Desde nuestros humildes comienzos, hemos crecido para convertirnos
-                  en un referente en la comunidad de Cochabamba, gracias a nuestro compromiso con la salud y el bienestar.
-              </p>
+            <p>Bienvenido a CEC-FGI</p>
+            <h1>¿Quienes somos?</h1>
+            <div className="underline-central"></div>
+            <p>
+                Nuestra historia comenzó en 2020 con una misión clara: proporcionar un espacio donde las personas pudieran
+                transformar sus vidas a través del fitness. Desde nuestros humildes comienzos, hemos crecido para convertirnos
+                en un referente en la comunidad de Cochabamba, gracias a nuestro compromiso con la salud y el bienestar.
+            </p>
           </div>
         </div>
 
 
+        <div className="cont-valores">            
+            <h4>
+              Conoce de nuestros valores
+              <div className="underline-central"></div>
+            </h4>
+            <p>
+            Somos un equipo de colaboradores trabajando juntos con emociones compartidas, buscando transformar el mundo, a través de la cultura fisica y haciendo la diferencia en cada uno de nosotros y de nuestros clientes.
+            </p>
+        </div>
+
+        <div className="cont-Mis-Vis">
+          <Mision/>
+          <Vision/>
+        </div>
+
+
+
+
+
+
         <div className="gym-values-section">
-            <div className="overlay">
+            <div className="overlay1">
                 <div className="value">
                     <img src={value1Icon} alt="Value 1" />
-                    <h3>2020</h3>
-                    <p>Compromiso</p>
+                    <h3>Disciplina</h3>
+                    <p>###########</p>
                 </div>
                 <div className="value">
                     <img src={value2Icon} alt="Value 2" />
-                    <h3>2019</h3>
-                    <p>Disciplina</p>
+                    <h3>Esfuerzo</h3>
+                    <p>###########</p>
                 </div>
                 <div className="value">
                     <img src={value3Icon} alt="Value 3" />
-                    <h3>2018</h3>
-                    <p>Innovación</p>
+                    <h3>Pasión</h3>
+                    <p>###########</p>
                 </div>
                 <div className="value">
                     <img src={value4Icon} alt="Value 4" />
-                    <h3>2016</h3>
-                    <p>Pasión</p>
+                    <h3>Compromiso</h3>
+                    <p>###########</p>
                 </div>
                 <div className="value">
                     <img src={value5Icon} alt="Value 5" />
-                    <h3>2014</h3>
-                    <p>Excelencia</p>
+                    <h3>Superación</h3>
+                    <p>###########</p>
                 </div>
             </div>
         </div>
@@ -85,10 +107,7 @@ function AboutUsPage() {
 
         
         <div className="about-us-container">
-        <div className="cont-Mis-Vis">
-          <Mision/>
-          <Vision/>
-        </div>
+        
         <ValoresCEC/>
   
 
