@@ -15,6 +15,7 @@ import Nosotros from './views/Nosotros';
 import Nosotro1 from './views/Evaluaciones_Alumnos';
 import Plan from "./views/PlanNutricional";
 import PerfilPublico from  "./views/Perfil/PerfilPublico"
+import Soporte from "./views/soporte"
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
             <Route path="/Plan Nutricional" element={<Plan />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/Registro" element={<Registro />} />
+            <Route path="/Soporte" element={<Soporte />}/>
+
             <Route path="/" element={<ProtectedRoute />}>
               <Route path="PerfilUser" element={<PerfilPublico />} />
             </Route>
