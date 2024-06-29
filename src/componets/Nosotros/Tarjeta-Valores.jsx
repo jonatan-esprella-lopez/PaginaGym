@@ -1,35 +1,39 @@
 import React from "react";
 import "../../styles/Nosotros/Tarjeta-Valores.css";
-import Compromiso from "../../assets/icons/Nosotros/compromiso.png";
-import Integridad from "../../assets/icons/Nosotros/el-respeto.png";
-import Respeto from "../../assets/icons/Nosotros/entrenamiento.png";
-import Innovación from "../../assets/icons/Nosotros/honestidad.png";
-import Trabajo from "../../assets/icons/Nosotros/Innovación.png";
+import value1Icon from '../../assets/images/Nosotros/respeto.png'; // Asegúrate de ajustar la ruta del icono
+import value2Icon from '../../assets/images/Nosotros/integridad.png';
+import value3Icon from '../../assets/images/Nosotros/amor.png';
+import value4Icon from '../../assets/images/Nosotros/compromiso.png';
+import value5Icon from '../../assets/images/Nosotros/humildad.png';
 
 function ValoresCEC() {
     return(
-    <section className="cont-valores-nos">
-        <h2>Nuestros Valores</h2>
-        <div>
-            <div className="cont-valores-ind">
-                <img src={Compromiso} alt="" className="Iconos_detalle" />
-                <p>Compromiso con la excelencia</p>
+    <section className="gym-values-section">
+        <div className="overlay1">
+            <div className="value">
+                <img src={value1Icon} alt="Value 1" />
+                <h3>Disciplina</h3>
+                <p>###########</p>
             </div>
-            <div className="cont-valores-ind">
-                <img src={Integridad} alt="" className="Iconos_detalle" />
-                <p>Integridad y ética profesional</p>
+            <div className="value">
+                <img src={value2Icon} alt="Value 2" />
+                <h3>Esfuerzo</h3>
+                <p>###########</p>
             </div>
-            <div className="cont-valores-ind">
-                <img src={Respeto} alt="" className="Iconos_detalle" />
-                <p>Respeto y empatía hacia nuestros miembros</p>
+            <div className="value">
+                <img src={value3Icon} alt="Value 3" />
+                <h3>Pasión</h3>
+                <p>###########</p>
             </div>
-            <div className="cont-valores-ind">
-                <img src={Innovación} alt="" className="Iconos_detalle" />
-                <p>Innovación y mejora continua</p>
+            <div className="value">
+                <img src={value4Icon} alt="Value 4" />
+                <h3>Compromiso</h3>
+                <p>###########</p>
             </div>
-            <div className="cont-valores-ind">
-                <img src={Trabajo} alt="" className="Iconos_detalle" />
-                <p>Trabajo en equipo y colaboración</p>
+            <div className="value">
+                <img src={value5Icon} alt="Value 5" />
+                <h3>Superación</h3>
+                <p>###########</p>
             </div>
         </div>
     </section>

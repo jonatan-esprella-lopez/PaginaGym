@@ -12,11 +12,7 @@ import Vision from "../componets/Nosotros/Tarjeta-Vision";
 import ValoresCEC from "../componets/Nosotros/Tarjeta-Valores";
 
 
-import value1Icon from '../assets/images/Nosotros/amor.png'; // Asegúrate de ajustar la ruta del icono
-import value2Icon from '../assets/images/Nosotros/amor.png';
-import value3Icon from '../assets/images/Nosotros/amor.png';
-import value4Icon from '../assets/images/Nosotros/amor.png';
-import value5Icon from '../assets/images/Nosotros/amor.png';
+
 
 function AboutUsPage() {
   // Datos de ejemplo de los instructores
@@ -68,73 +64,36 @@ function AboutUsPage() {
           <Mision/>
           <Vision/>
         </div>
-
-
-
-
-
-
-        <div className="gym-values-section">
-            <div className="overlay1">
-                <div className="value">
-                    <img src={value1Icon} alt="Value 1" />
-                    <h3>Disciplina</h3>
-                    <p>###########</p>
-                </div>
-                <div className="value">
-                    <img src={value2Icon} alt="Value 2" />
-                    <h3>Esfuerzo</h3>
-                    <p>###########</p>
-                </div>
-                <div className="value">
-                    <img src={value3Icon} alt="Value 3" />
-                    <h3>Pasión</h3>
-                    <p>###########</p>
-                </div>
-                <div className="value">
-                    <img src={value4Icon} alt="Value 4" />
-                    <h3>Compromiso</h3>
-                    <p>###########</p>
-                </div>
-                <div className="value">
-                    <img src={value5Icon} alt="Value 5" />
-                    <h3>Superación</h3>
-                    <p>###########</p>
-                </div>
-            </div>
-        </div>
-
-
-        
-        <div className="about-us-container">
         
         <ValoresCEC/>
-  
 
 
 
-  
 
-  <div className="about-us-content">
-    <h2>Nuestros Instructores</h2>
-    <Tarjeta/>
-    <Tarjeta/>
-    <Tarjeta/>
-    <Tarjeta/>
-    <div className="instructor-cards-container">
-      {instructors.map((instructor) => (
-        <InstructorCard
-          key={instructor.id}
-          name={instructor.name}
-          photo={instructor.photo}
-          specialization={instructor.specialization}
-        />
-      ))}
-    </div>
-  </div>
-</div>
 
+       
+        
+        
+
+      <div className="about-us-content">
+        <h2>Nuestros Instructores</h2>
+        <Tarjeta/>
+        <Tarjeta/>
+        <Tarjeta/>
+        <Tarjeta/>
+        <div className="instructor-cards-container">
+          {instructors.map((instructor) => (
+            <InstructorCard
+              key={instructor.id}
+              name={instructor.name}
+              photo={instructor.photo}
+              specialization={instructor.specialization}
+            />
+          ))}
+        </div>
       </div>
+      </div>
+
       <FooterMain />
     </div>
   );
