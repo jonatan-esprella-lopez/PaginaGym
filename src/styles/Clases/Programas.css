@@ -24,8 +24,9 @@
 }
 
 .Iconos_detalle{
-    width: 2rem;
-    opacity: 50%;
+    margin-top: 60px;
+    height: 36px;
+    opacity: 80%;
 }
 
 .detalle_title{

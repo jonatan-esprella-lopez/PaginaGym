@@ -1,0 +1,262 @@
+.container-rutinas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.training-section {
+    padding: 20px;
+    display: flex;
+}
+
+.training-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.training-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.training-intro{
+    width: 89%;
+    display: flex;
+
+}
+
+.training-intro p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+    max-width: 800px;
+    text-align: left;
+}
+
+.training-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    max-width: 350px;
+    text-align: left;
+}
+
+
+
+.titulo-card {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px 14px 0 0;
+    padding: 12px 0;
+    background-color: #000;
+    font-size: var(--font-size-medium);
+    color: #fff;
+}
+
+.titulo-card h3{
+    margin: 0;
+    padding: 0;
+}
+
+.card p {
+    padding: 25px 25px 0 25px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.highlighted-card {
+    background-color: #ff6200;
+    border: 1px solid #ff6200;
+    color: #fff;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    max-width: 300px;
+}
+
+.highlighted-card h3 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: var(--font-size-medium);
+}
+
+
+.trainer-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+
+
+.highlighted-content p {
+    font-size: 0.9em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.highlighted-button {
+    background-color: #ff6200;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.highlighted-button:hover {
+    background-color: #ff4500;
+}
+
+
+
+
+.contend-card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    padding: 0 10px 25px 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+
+/*tabla*/
+
+.cont-head-table{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.cont-head-table p {
+    opacity: 66%;
+}
+
+.table-general{
+    
+    border-collapse: collapse;
+    display: block;
+
+}
+
+.cond-head-column{
+    background-color: var(--secondary-color1);
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 21% 0 1%;
+}
+
+.cond-head-column th{
+}
+
+
+tr{
+    border-radius: 10px;
+    width: 66rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ff4500;
+    box-shadow: 0 2px 8px -3px ;
+    margin: 20px 0;
+}
+
+
+
+th{
+    padding: 10px 0;
+    
+}
+
+
+
+
+
+/*detalle del boton entrenamiento */
+
+.cont-dia{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    transform: rotate(-90deg);
+    height: 100px;
+}
+.cont-gen-dia{
+    width: 120px;
+}
+
+.cont-dia p{
+    padding-top: 20px;
+    margin: 0;
+}
+
+.underline-dia{
+    background-color: #ff4500;
+    height: 6px;
+    width: 60px;
+    margin-top: 26px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+}
+
+
+.tipo-entrenamiento{
+    border: 2px solid black;
+    padding: 7px 20px 5px;
+    border-radius: 15px;
+}
+
+
+.cont-details{
+    padding: 0;
+}
+
+
+.cont-espaciado{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 4rem;
+    justify-content: space-between;
+}
+
+
+.icono-duracion-rutina{
+    margin-top: 20px;
+    height: 25px;
+    opacity: 70%;
+}
+
+.cont-button-rutinas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cont-button-rutinas img{
+    padding-bottom: 10px;
+    width: 50px;
+}

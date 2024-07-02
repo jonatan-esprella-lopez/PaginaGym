@@ -286,6 +286,9 @@
 
 .container_price{
     display: flex;
+    width: 140px;
+    margin: 0 auto;
+    justify-content: space-around;
 }
 
 .Boton_Prices{
