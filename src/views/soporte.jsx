@@ -69,43 +69,45 @@ function SoportePage() {
           </div>
         </div>
 
-
-
-
-        
-        
-        <div>
+        <div className="video-tutorials-section">
           <h3>Tutoriales en Video</h3>
           <div className="video-container">
             <iframe 
               width="560" 
               height="315" 
-              src="https://www.youtube.com/embed/example1" 
-              title="Tutorial 1" 
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowFullScreen>
+              src="https://www.youtube.com/embed/k9W6g9LvXDI?si=7qrhsrxMImqDIhSf" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
             </iframe>
             <iframe 
               width="560" 
               height="315" 
-              src="https://www.youtube.com/embed/example2" 
-              title="Tutorial 2" 
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowFullScreen>
+              src="https://www.youtube.com/embed/Ty14ogq_Vok?si=W_1VlE9C5fs1geR9" 
+              title="YouTube video player" 
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
             </iframe>
           </div>
         </div>
+
+
         
-        <div className="additional-resources-section">
+        
+        
+
+        
+        {/* <div className="additional-resources-section">
           <h3>Recursos Adicionales</h3>
           <ul>
             <li><a href="https://www.example.com/guide" target="_blank" rel="noopener noreferrer">Guía de Usuario</a></li>
             <li><a href="https://www.example.com/docs" target="_blank" rel="noopener noreferrer">Documentación Técnica</a></li>
             <li><a href="https://www.example.com/community" target="_blank" rel="noopener noreferrer">Foro de la Comunidad</a></li>
           </ul>
-        </div>
+        </div> */}
       </div>
         <Footer/>
     </div>
