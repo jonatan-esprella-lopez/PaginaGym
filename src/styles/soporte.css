@@ -1,17 +1,25 @@
-/* Support.css */
-
 .support-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f2f5;
-  }
-  
+  background-color: #f0f2f5;
+}
+
+.cont-support{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-image: url(../assets//images/Soporte/background.jpg);
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-position: 0px -300px;
+  height: 300px;
+}
+
+
   .support-container h1 {
     text-align: center;
     margin-bottom: 40px;
-    color: #333;
+    color: #ffffff;
     font-size: 36px;
     font-weight: 700;
   }
@@ -60,7 +68,12 @@
   
   .faq-section, .contact-section, .video-tutorials-section, .additional-resources-section {
     margin-top: 30px;
+    background-color: #e3e3e3;
+    border-radius: 15px;
+    padding: 20px 40px 50px ;
   }
+
+  
   
   .faq-section ul {
     list-style-type: none;
@@ -68,6 +81,7 @@
   }
   
   .faq-section li {
+    text-align: start;
     margin: 10px 0;
     font-size: 16px;
   }
@@ -92,6 +106,8 @@
   }
   
   .contact-section form button {
+    
+    width: 200px;
     margin-top: 20px;
     padding: 12px 24px;
     border: none;
@@ -140,3 +156,31 @@
     color: #0056b3;
   }
   
+
+
+  .cont-form-support{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contact-form{
+    margin-left: 3rem;
+    width: 45%;
+  }
+
+  .contact-form label{
+    text-align: start;
+    padding-left: 10px;
+  }
+
+  
+  .contact-form input{
+    text-align: left;
+    color: black;
+    background-color: white;
+  }
+
+  .cont-img-from img{
+    height: 100%;
+  }

@@ -1,7 +1,8 @@
-import { useState } from 'react';
-import '../styles/soporte.css';
+import { useState } from "react";
+import "../styles/soporte.css";
 import Header from "../componets/Header_Main";
 import Footer from "../componets/Footer_Main";
+import IMGForm from "../assets/images/Nosotros/background.jpg"
 
 function SoportePage() {
     const [faqVisible, setFaqVisible] = useState(false);
@@ -10,10 +11,11 @@ function SoportePage() {
     setFaqVisible(!faqVisible);
   };
   return (
-    <div>
+    <div className="support-container">
       <Header/>
-      <div className="support-container">
-      <h1>Centro de Soporte</h1>
+      <div className="cont-support">
+        <h1>Centro de Soporte</h1>
+      </div>
       
       <div className="support-section">
         <h2>Ayuda y Soporte</h2>
@@ -31,8 +33,7 @@ function SoportePage() {
             <h3>Preguntas Frecuentes</h3>
             <ul>
               <li><strong>¿Cómo puedo restablecer mi contraseña?</strong> - Ve a la página de inicio de sesión y haz clic en "Olvidé mi contraseña".</li>
-              <li><strong>¿Cómo puedo actualizar mi perfil?</strong> - Dirígete a la sección de configuración de tu cuenta y actualiza tu información.</li>
-              <li><strong>¿Cómo contacto al soporte técnico?</strong> - Puedes enviarnos un correo electrónico a soporte@tuapp.com.</li>
+              <li><strong>¿Cómo contacto al soporte técnico?</strong> - Puedes enviarnos un correo electrónico a cec-fgi@gmail.com.</li>
             </ul>
           </div>
         )}
@@ -40,6 +41,10 @@ function SoportePage() {
         <div className="contact-section">
           <h3>Contactar Soporte</h3>
           <p>Si necesitas asistencia adicional, no dudes en contactarnos.</p>
+          <div className="cont-form-support">
+          <div className="cont-img-from">
+            <img src={IMGForm} alt="" />
+          </div>
           <form className="contact-form">
             <label htmlFor="name">Nombre:</label>
             <input type="text" id="name" name="name" required />
@@ -52,6 +57,7 @@ function SoportePage() {
             
             <button type="submit">Enviar</button>
           </form>
+          </div>
         </div>
         
         <div className="video-tutorials-section">
@@ -87,7 +93,6 @@ function SoportePage() {
           </ul>
         </div>
       </div>
-    </div>
         <Footer/>
     </div>
   );
