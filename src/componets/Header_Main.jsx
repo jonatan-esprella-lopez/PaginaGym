@@ -1,9 +1,9 @@
 import React, { useState, ReactNode} from "react";
+import "../styles/Navegacion/menu-principal.css"
 import { Link } from 'react-router-dom';
-import "../App.css"
 import Logo from "../assets/images/Logotipo-cec/Entrenamiento-Funcional.png"
 import Credenciales from "../componets/ElementosLogin/BotonInicioSesion"
-import "../styles/Navegacion/Menu_Nav.css"
+
 
 
 
@@ -26,7 +26,9 @@ function HeaderMain(){
   };
     return( 
     <header className="conteiner_header">
-        <div className="Contenedor_credenciales"><Credenciales/></div>
+        <div className="Contenedor_credenciales">
+            <Credenciales/>
+        </div>
             <a href="/">
                 <img src={Logo} alt="" className="logo_header"/>
             </a>
