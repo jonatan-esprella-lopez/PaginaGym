@@ -1,3 +1,10 @@
+.contenedor-coachs{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 12rem;
+}
+
+
 .cont-tarjeta-coach{
     width: 15rem;
     height: 26rem;
@@ -62,3 +69,4 @@
     padding: 4px 6px;
     margin-top: 0px;
 }
+
