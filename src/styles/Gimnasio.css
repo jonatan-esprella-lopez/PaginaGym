@@ -40,7 +40,7 @@
 
 
 .contendor_principal_gym{
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: center;
 }
@@ -76,11 +76,19 @@
 }
 
 
+.cont-gyms{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
 
 
 
 .card {
-    width: 300px;
+    width: 280px;
+    margin: 1rem 0.5rem;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
