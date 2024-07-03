@@ -27,7 +27,7 @@ function NutricionPage() {
       <h1 className='Titulo_Principal'>Planes Pre-armados</h1>
       <section className='cont-general-Nutricion'>
 
-        <article class="plan">
+        <article class="plan estructure-card-1">
           <p class="plan-header">Plan proteico</p>
           <img src={ImagenHipertrofia} alt="Aumenta tu masa muscular"/>
           <h3>Aumenta tu masa muscular</h3>
@@ -43,7 +43,7 @@ function NutricionPage() {
           </div>
         </article>
 
-        <article class="plan">
+        <article class="plan estructure-card-1">
             <div class="plan-header">Plan bajo en grasa</div>
             <img src={ImagenHipertrofia} alt="Pérdida de grasa"/>
             <h3>Pérdida de grasa</h3>
@@ -60,7 +60,7 @@ function NutricionPage() {
             </div>
         </article>
 
-        <article class="plan">
+        <article class="plan estructure-card-1">
             <div class="plan-header">Plan de tonificación</div>
             <img src={ImagenHipertrofia} alt="Tonificación"/>
             <h3>Tonificación</h3>
@@ -76,7 +76,7 @@ function NutricionPage() {
               </div>
         </article>
 
-        <article class="plan">
+        <article class="plan estructure-card-1">
             <div class="plan-header">Plan saludable</div>
             <img src={ImagenHipertrofia} alt="Salud normal"/>
             <h3>Nutricion Tradicional</h3>
@@ -120,7 +120,7 @@ function NutricionPage() {
                             <img src={whatsappIcon} alt="WhatsApp" /> 
                             <p>Ingreso al grupo de WhatsApp</p>
                         </div>
-                        <button className="start-now">Empezar Ahora</button>
+                        <button className="estructura-size2 button-type-4">Empezar Ahora</button>
                     </div>
                     
                 </div>
@@ -157,7 +157,7 @@ function NutricionPage() {
                             <img src={whatsappIcon} alt="WhatsApp" /> 
                             <p>Ingreso al grupo de WhatsApp</p>
                         </div>
-                        <button className="start-now">Empezar Ahora</button>
+                        <button className="estructura-size2 button-type-4">Empezar Ahora</button>
                     </div>
                 </div>
             </div>
@@ -216,7 +216,7 @@ function NutricionPage() {
                             <img src={whatsappIcon} alt="WhatsApp" /> 
                             <p>Seguimiento personalizado por videollamada, email y WhatsApp.</p>
                         </div>
-                        <button className="start-now">Empezar Ahora</button>
+                        <button className="estructura-size2 button-type-4">Empezar Ahora</button>
                     </div>
                 </div>
             </div>

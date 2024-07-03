@@ -29,19 +29,20 @@ function RutinasPage() {
     <div className='container-rutinas'>
       <Header/>
       
-      <div className="container-head-section">
-            <div>            
-                <h4>
+            <div className='rutinas-container'>            
+                <h3>
                     Entrenamiento del día
                     <div className="underline"></div>
-                </h4>
+                </h3>
             </div>
-        </div>
       
       <section className="training-section">
         <div className="training-content">
           
             <div className="training-intro">
+                <h3>
+                  Entrenamiento 
+                </h3>
                 <p>
                     Bienvenido a la sección de entrenamientos de <strong>CEC - FGI</strong>. Aquí, encontrarás una
                     selección personalizada de planes de entrenamiento diseñados específicamente para nuestros alumnos.
@@ -289,45 +290,26 @@ function RutinasPage() {
         </section>
 
         <section className='Container_footer_Rutinas'>
+          <div className="info-sections">
           <div>
             <h3>Entrenadores</h3>
             <div>
-              <p>¿Quien es el entrenador?</p>
+              <p>¿Quién es el entrenador?</p>
               <p>Lista de Staff</p>
-              <p>Personal Trainning</p>
+              <p>Personal Training</p>
               <p>Rutinas</p>
             </div>
           </div>
-
           <div>
-            <h3>Informacón</h3>
+            <h3>Información</h3>
             <div>
               <p>Sobre Nutrición</p>
               <p>Dieta y suplementación</p>
-              <p>Informe de condicón Fisica</p>
-              <p>Contactanos</p>
+              <p>Informe de condición Física</p>
+              <p>Contáctanos</p>
             </div>
           </div>
-
-          <div>
-            <h3>Preguntas Frecuentes</h3>
-            <div>
-              <p>¿Tienes dudas?</p>
-              <p>No sabes que tomar</p>
-              <p>Como realizo mi reserva</p>
-            </div>
-          </div>
-
-          <div>
-            <div>
-              <h3>¿Quieres reservar?</h3>
-              <input type="text" />
-            </div>
-            <div>
-              <h3>Siguenos</h3>
-            </div>
-
-          </div>
+        </div>
         </section>
         <Footer/>
     </div>
