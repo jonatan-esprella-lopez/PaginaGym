@@ -270,7 +270,7 @@ th{
 
 .info-sections {
     width: 80%;
-    margin-top: 20px;
+    margin: 30px 20px 30px;
     display: flex;
     justify-content: space-around;
   }
@@ -314,7 +314,7 @@ th{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../../assets//images/Nutricion/background.jpg");
+  background-image: url("../../assets//images/Rutinas/background.jpg");
   background-size: cover;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.5);

@@ -1,3 +1,22 @@
+.nutricion-container{
+        width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets//images/Nutricion/background.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 0px -150px;
+    height: 300px;
+}
+
+.nutricion-container h3{
+    font-size: var(--font-size-big);
+  }
+
 .Imagen_Tarjeta_Nutricion{
     display: flex;
     width: 100%;
@@ -16,7 +35,8 @@
 }
 
 .Titulo_Principal{
-    padding: 1rem;
+    margin: 3rem 0 0 0;
+
 }
 
 .Listado_Tarjeta{
@@ -175,8 +195,11 @@ body {
 }
 
 .group-plan h2 {
-    color: #ff7f00;
+    text-align: left;
+    color: #000000;
     margin-bottom: 20px;
+    padding: 5px 0 5px 20px;
+    border-left: 6px solid #000000;
 }
 
 .plan-container {
@@ -308,36 +331,56 @@ body {
 
 
 
+
+/* Contenedor principal */
 .container {
-    background-color: #fbe3a2; /* Background color similar to the image */
-    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #dfdfdf;
+    border: 1px solid #dddddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-family: Arial, sans-serif;
+    padding: 3rem;
   }
   
+  /* Encabezado */
   .header {
     font-size: 24px;
-    color: #000;
+    color: #f26f1d;
+    margin-bottom: 10px;
   }
   
+  .header .bold {
+    font-weight: 700;
+    color: #ec880d;
+  }
+  
+  /* Sub-encabezado */
   .subheader {
-    font-size: 24px;
-    color: #000;
+    font-size: 20px;
+    color: #657786;
+    margin-bottom: 20px;
   }
   
-  .bold {
-    font-weight: bold;
-  }
-  
+  /* Divisor */
   .divider {
-    width: 100%;
-    height: 1px;
-    background-color: #000;
+    width: 700px;
+    height: 2px;
+    background-color: #a2a2a2;
     margin: 20px 0;
   }
   
+  /* Contenido */
   .content {
     font-size: 18px;
-    color: #000;
+    color: #333;
   }
   
+  .content .bold {
+    font-weight: 700;
+    color: #ec8b0d;
+  }

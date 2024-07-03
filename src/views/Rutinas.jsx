@@ -19,10 +19,10 @@ import Imagen_IntensidadC1 from "../assets/images/Rutinas/IntensidadC1.png"
 import TrainerImage from "../assets/images/Rutinas/trainer.png"; 
 
 
-import MetHipertrofia from "../assets/images/Rutinas/Hipertrofia.svg"
-import MetMetabolico from "../assets/images/Rutinas/Metabolico.svg"
-import MetTonificacion from "../assets/images/Rutinas/Tonificacion.svg"
-import MetFuncional from "../assets/images/Rutinas/Funcional.svg"
+import {ReactComponent as MetHipertrofia} from "../assets/images/Rutinas/Hipertrofia.svg"
+import {ReactComponent as MetMetabolico} from "../assets/images/Rutinas/Metabolico.svg"
+import {ReactComponent as MetTonificacion} from "../assets/images/Rutinas/Tonificacion.svg"
+import {ReactComponent as MetFuncional} from "../assets/images/Rutinas/Funcional.svg"
 
 function RutinasPage() {
   return (
@@ -270,20 +270,20 @@ function RutinasPage() {
 
         <section className='contenedor_tipos_entrenamiento'>
           <div className='contenedor_metodologia'>
-            <div>
-              <img src={MetHipertrofia} alt="" className='Imagen_Metodologia'/>
+            <div className='container-metodologia'>
+              <MetHipertrofia className='Imagen_Metodologia'/>
               <h2>Hipertrofia</h2>
             </div>
-            <div>
-              <img src={MetMetabolico} alt="" className='Imagen_Metodologia'/>
+            <div className='container-metodologia'>
+              <MetMetabolico className='Imagen_Metodologia'/>
               <h2>Metabolico</h2>
             </div>
-            <div>
-              <img src={MetTonificacion} alt="" className='Imagen_Metodologia'/>
+            <div className='container-metodologia'>
+              <MetTonificacion className='Imagen_Metodologia'/>
               <h2>Tonificacion</h2>
             </div>
-            <div>
-              <img src={MetFuncional} alt="" className='Imagen_Metodologia'/>
+            <div className='container-metodologia'>
+              <MetFuncional className='Imagen_Metodologia'/>
               <h2>Funcional</h2>
             </div>
           </div>

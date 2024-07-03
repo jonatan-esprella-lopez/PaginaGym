@@ -24,6 +24,14 @@ function NutricionPage() {
   return (
     <div>
       <Header/>
+
+      <div className='nutricion-container'>            
+                <h3>
+                    Planes Nutricionales
+                    <div className="underline"></div>
+                </h3>
+            </div>
+      
       <h1 className='Titulo_Principal'>Planes Pre-armados</h1>
       <section className='cont-general-Nutricion'>
 
