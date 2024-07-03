@@ -13,7 +13,7 @@ const Card = ({ icon, title, description, benefit, price, buttonText, special })
         </div>
         <h4>{title}</h4>
         <div className="contenedor-texto-1">
-            <p className="Text_programas">{description}</p>
+            <p className="Text_complemento">{description}</p>
         </div>
         <div className="contenido_inferior_complemento">
             <p className="descripcion_App">{benefit}</p>

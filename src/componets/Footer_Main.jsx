@@ -25,11 +25,11 @@ const FooterColumn = ({ title, links }) => (
 
 function FooterMain() {
     const socialLinks = [
-        { href: "#", icon: Fb, text: "FACEBOOK" },
-        { href: "#", icon: IG, text: "INSTAGRAM" },
-        { href: "#", icon: Spotify, text: "SPOTIFY" },
-        { href: "#", icon: Twitter, text: "TWITTER" },
-        { href: "#", icon: YouTube, text: "YOUTUBE" }
+        { href: "https://www.facebook.com/CEC.FGI", icon: Fb, text: "FACEBOOK" },
+        { href: "https://www.instagram.com/cecfgi/", icon: IG, text: "INSTAGRAM" },
+        { href: "https://open.spotify.com/user/31g2vmorc4wigjwrhjrqiax7g3je", icon: Spotify, text: "SPOTIFY" },
+        { href: "https://x.com/Cec_Fgi", icon: Twitter, text: "TWITTER" },
+        { href: "https://www.youtube.com/@CecFGI", icon: YouTube, text: "YOUTUBE" }
     ];
 
     const footerColumns = [

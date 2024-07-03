@@ -39,7 +39,7 @@ function NutricionPage() {
                 <p> <strong>Grasas:</strong> 80g por día</p>
                 <p> <strong>Calorías:</strong> 3000 kcal por día</p>
             </div>
-            <button>Más Información</button>
+            <button className='button-nutricion'>Más Información</button>
           </div>
         </article>
 
@@ -56,7 +56,7 @@ function NutricionPage() {
                   <p> <strong>Calorías:</strong> 2000 kcal por día</p>
               </div>
             
-            <button>Más Información</button>
+            <button className='button-nutricion'>Más Información</button>
             </div>
         </article>
 
@@ -72,7 +72,7 @@ function NutricionPage() {
                   <p> <strong>Grasas:</strong> 70g por día</p>
                   <p> <strong>Calorías:</strong> 2500 kcal por día</p>
               </div>
-              <button>Más Información</button>
+              <button className='button-nutricion'>Más Información</button>
               </div>
         </article>
 
@@ -88,7 +88,7 @@ function NutricionPage() {
                   <p> <strong>Grasas:</strong> 70g por día</p>
                   <p> <strong>Calorías:</strong> 2200 kcal por día</p>
               </div>
-              <button>Más Información</button>
+              <button className='button-nutricion'>Más Información</button>
               </div>
         </article>
           </section>

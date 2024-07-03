@@ -25,8 +25,8 @@ function Home(){
     
     return( 
         <div className="App-header">
-           <Header/>
-           <Banner/>
+            <Header/>
+            <Banner/>
             <Instalaciones/>
             <SectionProgramas/>
             <Descarga/>
