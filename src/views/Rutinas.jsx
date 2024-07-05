@@ -74,7 +74,7 @@ function RutinasPage() {
                 </div>
             </div>
         </div>
-        <div className="card highlighted-card">
+        <div className="card-header highlighted-card">
                   <img src={TrainerImage} alt="Entrenador" className="trainer-image" />
                   <h3>Encuentra un entrenador</h3>
                   <div className="contend-card-text">
@@ -185,14 +185,14 @@ function RutinasPage() {
                       <img src={Imagen_C1} alt="" />
                     </th>
                     <th>
-                      <p className='tipo-entrenamiento'>CHIPPER</p>
+                      <p className='tipo-entrenamiento'>WOD</p>
                     </th>
                     <th>
                       <img src={Duracion} alt="" className='icono-duracion-rutina'/>
-                      <p>30/40 min</p>
+                      <p>40/50 min</p>
                     </th>
                     <th>
-                      <img src={Imagen_Intensidad} alt="" className='icono-duracion-rutina' />
+                      <img src={Imagen_IntensidadC1} alt="" className='icono-duracion-rutina' />
                       <p>Moderada</p>
                     </th>
                     <th className='cont-button-rutinas'>
@@ -215,11 +215,11 @@ function RutinasPage() {
                       <img src={Imagen_C1} alt="" />
                     </th>
                     <th>
-                      <p className='tipo-entrenamiento'>CHIPPER</p>
+                      <p className='tipo-entrenamiento'>SERIES</p>
                     </th>
                     <th>
                       <img src={Duracion} alt="" className='icono-duracion-rutina'/>
-                      <p>30/40 min</p>
+                      <p>20/40 min</p>
                     </th>
                     <th>
                       <img src={Imagen_Intensidad} alt="" className='icono-duracion-rutina' />
@@ -249,10 +249,10 @@ function RutinasPage() {
                     </th>
                     <th>
                       <img src={Duracion} alt="" className='icono-duracion-rutina'/>
-                      <p>30/40 min</p>
+                      <p>40/60 min</p>
                     </th>
                     <th>
-                      <img src={Imagen_Intensidad} alt="" className='icono-duracion-rutina' />
+                      <img src={Imagen_IntensidadC1} alt="" className='icono-duracion-rutina' />
                       <p>Moderada</p>
                     </th>
                     <th className='cont-button-rutinas'>

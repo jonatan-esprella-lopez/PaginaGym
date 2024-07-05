@@ -7,7 +7,7 @@ import Energy from "../assets/images/Complementos/Energy.svg";
 import NutriComp from "../assets/images/Complementos/Nutricion.svg";
 
 const Card = ({ icon, title, description, benefit, price, buttonText, special }) => (
-    <article className={`estructure-card-1 ${special ? "estructure-card-especial" : ""}`}>
+    <article className={`estructure-card-1 ${special ? "estructure-card-especial" : ""}`} >
         <div className="contenedor-iconos-type-1">
             <img src={icon} alt={title} className="Iconos_detalle" />
         </div>
@@ -33,15 +33,15 @@ const Card = ({ icon, title, description, benefit, price, buttonText, special })
 );
 
 const Complementos = () => (
-    <section className="estructura-principal-cards">
-        <div className="container-head-section">
+    <section className="estructura-principal-cards"  >
+        <div className="container-head-section">0
             <div>            
                 <h4>
                     Complementa tu <span>Entrenamiento</span>
                     <div className="underline"></div>
                 </h4>
             </div>
-            <a href="">Encuentra todos los complementos...</a>
+            <a href="/paginaExtra">Encuentra todos los complementos...</a>
         </div>
         <section className="container-cards">
             <Card

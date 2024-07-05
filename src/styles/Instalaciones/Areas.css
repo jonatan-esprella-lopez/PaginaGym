@@ -8,6 +8,7 @@
     padding: 0.5rem 0.4rem 0 0.4rem;
     font-size: 14px;
     font-weight: 500;
+    color: #111;
 }
 
 .imagen_Instalacion{
@@ -16,6 +17,8 @@
     position: relative;
     object-fit: cover;
     border-radius: 13px 13px 0 0;
+    filter: saturate(1.2);
+    filter: contrast(1.2);
 }
 
 
@@ -43,3 +46,78 @@
         width: 100%;
     }
 }
+
+
+
+/*Nuevo codigo a revisar refactorizar*/
+
+  .gym-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+
+  
+  .gym-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  .info-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .info-card {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-card h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .info-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .info-card a {
+    font-size: 16px;
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
+  .info-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .cta-button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px 0;
+  }
+  
+  .cta-button:hover {
+    background-color: #e63e00;
+  }
+  

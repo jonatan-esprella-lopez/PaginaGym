@@ -20,7 +20,7 @@ function ProgramaMain(){
                 
             </div>
 
-            <a href="">
+            <a href="/paginaExtra">
                 Encuentra mas Programas de entrenamiento...
             </a>
         </div>

@@ -41,7 +41,9 @@
 }
 
 .training-cards {
+    width: 90%;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -58,6 +60,14 @@
     min-width: 340px;
     text-align: left;
 }
+
+.card-header {
+    background-color: #fff;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    text-align: left;
+}
+
 
 
 
@@ -86,13 +96,13 @@
 
 .highlighted-card {
     background-color: #ff6200;
-    border: 1px solid #ff6200;
     color: #fff;
     border: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
+    max-height: 370px;
     max-width: 300px;
 }
 
@@ -175,8 +185,6 @@
     padding: 0 21% 0 1%;
 }
 
-.cond-head-column th{
-}
 
 
 tr{

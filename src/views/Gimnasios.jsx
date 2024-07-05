@@ -56,20 +56,35 @@ function GimnasioPage() {
     };
 
 
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const handleInputChange = (event) => {
+      setSearchTerm(event.target.value);
+    };
+
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      handleFilterSubmit(searchTerm);
+    };        
 
 
 
   return (
     <div className='Container_Main'>
             <Header />
-            <div className='contenedor_buscador_gimnasio'>
-                <h2>Elige Alguno de Nuestros Centros de Entrenamiento</h2>
-                <div className='contenedor_buscador'>
-                    <input type="text" placeholder="Encuentra un gimnasio" />
-                    <button onClick={handleFilterSubmit}>
-                        Filtrar
-                    </button>
-                </div>
+            <div className="contenedor-buscador-gimnasio">
+              <h2>Elige Alguno de Nuestros Centros de Entrenamiento</h2>
+              <form className="contenedor-buscador" onSubmit={handleSubmit}>
+                <input
+                  type="text"
+                  placeholder="Encuentra un gimnasio"
+                  value={searchTerm}
+                  onChange={handleInputChange}
+                />
+                <button type="submit">
+                  Filtrar
+                </button>
+              </form>
             </div>
 
             <div className='contendor_principal_gym'>
@@ -87,7 +102,7 @@ function GimnasioPage() {
                 </div>
                 <div className='cont-gyms'>
                     
-        <div className="card">
+        <div className="card-gym estructura-card-2">
       <img
         src={RitmosFitness} // Replace with the actual image URL
         alt="Gym"
@@ -122,7 +137,7 @@ function GimnasioPage() {
         <button className="subscribe-button">¡Inscríbete ya!</button>
       </div>
     </div>
-    <div className="card">
+    <div className="card-gym estructura-card-2">
       <img
         src={RitmosFitness} // Replace with the actual image URL
         alt="Gym"
@@ -157,7 +172,7 @@ function GimnasioPage() {
         <button className="subscribe-button">¡Inscríbete ya!</button>
       </div>
     </div>
-    <div className="card">
+    <div className="card-gym estructura-card-2">
       <img
         src={RitmosFitness} // Replace with the actual image URL
         alt="Gym"
@@ -192,7 +207,7 @@ function GimnasioPage() {
         <button className="subscribe-button">¡Inscríbete ya!</button>
       </div>
     </div>
-    <div className="card">
+    <div className="card-gym estructura-card-2">
       <img
         src={RitmosFitness} // Replace with the actual image URL
         alt="Gym"

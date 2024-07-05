@@ -1,0 +1,44 @@
+
+  /* Contenedor principal */
+  .construction-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+    background-color: #fff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  /* Título */
+  .construction-container h1 {
+    font-size: 32px;
+    color: #ff8c00;
+    margin-bottom: 20px;
+  }
+  
+  /* Texto */
+  .construction-container p {
+    font-size: 18px;
+    color: #657786;
+    margin-bottom: 40px;
+  }
+  
+  /* Loader (indicador de carga) */
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #ff8c00;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

@@ -82,7 +82,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 50px auto 30px; 
 }
 
 
@@ -100,12 +99,14 @@
 }
 
 .row_Prices_Services_up{
+    margin: 1rem 0;
     border-top: 2px solid transparent;
 }
 
 .row_Prices_Services{
     align-items: center;
     padding: 15px 0;
+    opacity: 0.7;
     font-size: 15px;
     border-bottom: 1px solid #999;
     
@@ -113,8 +114,8 @@
 
 .row_Prices_Services_titles{
     font-weight: 700;
-    min-height: 50px;
-    max-height: 50.9px;
+    min-height: 20px;
+    max-height: 50px;
     display: flex;
     justify-content: start;
     text-align: start;
@@ -126,13 +127,15 @@
 
 .row_Prices_Services_Final{
     align-items: center;
-    padding: 50px 0;
+    padding: 30px 0 0;
     font-size: 15px; 
 }
 
 .row_Prices_Services_principal{
-    border: 2px solid #ffa600;
+    border: 3px solid #ffa600;
     border-radius: 15px;
+    
+    margin: 1rem 0;
     
 }
 
@@ -142,11 +145,18 @@
 }
 
 .row_Prices_Services_title{
+
     align-items: center;
     min-height: 30px;
-    width: 100px;
     font-size: 15px;
     font-weight: 700;
+    background-color: #ffd78de5;
+    border: 2px solid #ffa600;
+    display: flex;
+    padding: 5px 15px 1px;
+    margin: 0 0 10px 0;
+    justify-content: center;
+    border-radius: 10px;
 }
 
 
