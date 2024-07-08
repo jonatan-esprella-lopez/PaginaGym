@@ -1,6 +1,6 @@
 .Clases_titulo_Container{
     width: 100%;
-    background-color: #ffa600;
+    background-color: var(--primary-color) ;
     padding: 10px 0;
     font-size: 20px;
     font-weight: 600;

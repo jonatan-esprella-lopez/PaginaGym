@@ -19,7 +19,6 @@ function Evaluation() {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
 
-    // Calcular datos ideales en tiempo real
     if (name === "weight" || name === "height" || name === "bodyFatPercentage") {
       calculateIdealData(name, value);
     }
@@ -39,11 +38,6 @@ function Evaluation() {
       const calculatedBMI = formData.weight / (heightInMeters * heightInMeters);
       setFormData({ ...formData, bmi: calculatedBMI.toFixed(2) });
     } else if (name === "bodyFatPercentage") {
-      // Aquí implementa la lógica para calcular el peso ideal y el BMI ideal basado en el porcentaje de grasa corporal
-      // Por ejemplo:
-      // idealWeight = ...;
-      // idealBMI = ...;
-      // idealBodyFatPercentage = ...;
     }
 
     setFormData({
@@ -56,7 +50,6 @@ function Evaluation() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes implementar la lógica para enviar los datos del formulario al servidor
     console.log(formData);
   };
 
@@ -118,7 +111,6 @@ function Evaluation() {
             required
           />
         </div>
-        {/* Campos de datos ideales */}
         <div className="form-group">
           <label htmlFor="idealWeight">Peso Ideal (kg)</label>
           <input

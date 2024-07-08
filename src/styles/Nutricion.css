@@ -60,7 +60,7 @@
 .Titulo_Tarjeta_Tipo_Nut{
     width: 100%;
     padding: 5px;
-    background-color: #ff8800;
+    background-color: var(--primary-color);;
 }
 
 .Detalle_Tarjeta_Tipo_Nut{
@@ -112,7 +112,7 @@ body {
 .plan-header {
     margin: 0;
     position: absolute;
-    background-color: #ff8800;
+    background-color: var(--primary-color);;
     color: black;
     padding: 6px 16px;
     border-radius:  0 0 10px 10px;
@@ -138,7 +138,7 @@ body {
 
 .plan h3 {
     width: 100%;
-    background-color: #ff8800;
+    background-color: var(--primary-color);;
     padding: 14px 0;
     margin: 0;
 }
@@ -156,7 +156,7 @@ body {
 
 
 .button-nutricion {
-    background-color: orange;
+    background-color:var(--primary-color);;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -166,7 +166,7 @@ body {
 }
 
 .button-nutricion:hover {
-    background-color: darkorange;
+    background-color: var(--primary-color);;
 }
 
 

@@ -5,8 +5,9 @@ import "../styles/Complementos/complementos.css";
 import App from "../assets/images/Complementos/app.svg";
 import Energy from "../assets/images/Complementos/Energy.svg";
 import NutriComp from "../assets/images/Complementos/Nutricion.svg";
+import { Link } from "react-router-dom";
 
-const Card = ({ icon, title, description, benefit, price, buttonText, special }) => (
+const Card = ({ icon, title, description, benefit, price, buttonText, link, special }) => (
     <article className={`estructure-card-1 ${special ? "estructure-card-especial" : ""}`} >
         <div className="contenedor-iconos-type-1">
             <img src={icon} alt={title} className="Iconos_detalle" />
@@ -25,16 +26,18 @@ const Card = ({ icon, title, description, benefit, price, buttonText, special })
                     <p>/{price.period}</p>
                 </div>
             )}
-            <button className="estructure-size estructure-button-1 button-type-4">
-                {buttonText}
-            </button>
+            <Link to={link}>
+                <button className="estructure-size estructure-button-1 button-type-4">
+                    {buttonText}
+                </button>
+            </Link>
         </div>
     </article>
 );
 
 const Complementos = () => (
     <section className="estructura-principal-cards"  >
-        <div className="container-head-section">0
+        <div className="container-head-section">
             <div>            
                 <h4>
                     Complementa tu <span>Entrenamiento</span>
@@ -50,6 +53,7 @@ const Complementos = () => (
                 description="Lleva tu entrenamiento a donde quieras y cuando quieras con nuestra plataforma virtual de clases y contenido fitness."
                 benefit="Beneficio gratuito para los clientes."
                 buttonText="Tienda"
+                link="/Shop CEC trainnig"
             />
             <Card
                 icon={NutriComp}
@@ -58,6 +62,7 @@ const Complementos = () => (
                 benefit="Come saludable"
                 price={{ amount: 150, cents: '.99', period: 'Mes' }}
                 buttonText="Más información"
+                link="/Shop CEC trainnig"
                 special
             />
             <Card
@@ -67,6 +72,7 @@ const Complementos = () => (
                 benefit="Sientente muy bien al entrenar."
                 price={{ amount: 150, cents: '.99', period: 'Mes' }}
                 buttonText="Conoce más"
+                link="/Shop CEC trainnig"
             />
         </section>
     </section>

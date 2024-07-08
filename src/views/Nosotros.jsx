@@ -3,7 +3,7 @@
 import React from "react";
 import HeaderMain from "../componets/Header_Main";
 import FooterMain from "../componets/Footer_Main";
-import InstructorCard from "../componets/Nosotros/Card_InstructorNosotros"; // Importamos el componente de la tarjeta del instructor
+import InstructorCard from "../componets/Nosotros/Card_InstructorNosotros"; 
 import "../styles/Nosotros.css";
 import "../App.css"
 import Tarjeta from "../componets/Nosotros/Tarjeta-coach";
@@ -15,7 +15,6 @@ import ValoresCEC from "../componets/Nosotros/Tarjeta-Valores";
 
 
 function AboutUsPage() {
-  // Datos de ejemplo de los instructores
   const instructors = [
     {
       id: 1,
@@ -29,7 +28,6 @@ function AboutUsPage() {
       photo: "url_de_la_foto",
       specialization: "Yoga y meditación",
     },
-    // Agrega más instructores según sea necesario
   ];
 
   return (

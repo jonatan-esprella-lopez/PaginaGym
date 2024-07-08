@@ -95,7 +95,7 @@
 }
 
 .highlighted-card {
-    background-color: #ff6200;
+    background-color: var(--primary-color);
     color: #fff;
     border: none;
     display: flex;
@@ -128,7 +128,7 @@
 }
 
 .highlighted-button {
-    background-color: #ff6200;
+    background-color: var(--primary-color);;
     color: #fff;
     padding: 10px 20px;
     border: 0;
@@ -226,7 +226,7 @@ th{
 }
 
 .underline-dia{
-    background-color: #ff4500;
+    background-color: var(--primary-color);;
     height: 6px;
     width: 60px;
     margin-top: 26px;
@@ -291,7 +291,7 @@ th{
     
     text-align: left;
     font-size: 18px;
-    color: #1DA1F2;
+    color: #000000;
     margin-bottom: 10px;
   }
   

@@ -37,7 +37,6 @@ function GimnasioPage() {
         const selectedFilters = checks.filter(check => check.isChecked).map(check => check.text);
         console.log('Selected filters:', selectedFilters);
 
-        // Enviar los filtros seleccionados al backend (asumimos que tienes un endpoint configurado)
         fetch('https://your-backend-url.com/filters', {
             method: 'POST',
             headers: {
@@ -48,7 +47,6 @@ function GimnasioPage() {
         .then(response => response.json())
         .then(data => {
             console.log('Success:', data);
-            // Actualizar la UI según los resultados filtrados si es necesario
         })
         .catch(error => {
             console.error('Error:', error);
@@ -104,7 +102,7 @@ function GimnasioPage() {
                     
         <div className="card-gym estructura-card-2">
       <img
-        src={RitmosFitness} // Replace with the actual image URL
+        src={RitmosFitness}
         alt="Gym"
         className="card-image"
       />
@@ -139,7 +137,7 @@ function GimnasioPage() {
     </div>
     <div className="card-gym estructura-card-2">
       <img
-        src={RitmosFitness} // Replace with the actual image URL
+        src={RitmosFitness} 
         alt="Gym"
         className="card-image"
       />
@@ -174,7 +172,7 @@ function GimnasioPage() {
     </div>
     <div className="card-gym estructura-card-2">
       <img
-        src={RitmosFitness} // Replace with the actual image URL
+        src={RitmosFitness} 
         alt="Gym"
         className="card-image"
       />
@@ -209,7 +207,7 @@ function GimnasioPage() {
     </div>
     <div className="card-gym estructura-card-2">
       <img
-        src={RitmosFitness} // Replace with the actual image URL
+        src={RitmosFitness} 
         alt="Gym"
         className="card-image"
       />

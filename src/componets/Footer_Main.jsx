@@ -1,8 +1,8 @@
 import React from "react";
 import { ReactComponent as Fb } from "../assets/images/facebook.svg";
 import { ReactComponent as IG } from "../assets/images/instagram.svg";
-import { ReactComponent as Spotify } from "../assets/images/instagram.svg";
-import { ReactComponent as Twitter } from "../assets/images/instagram.svg";
+import { ReactComponent as Spotify } from "../assets/images/spotify.svg";
+import { ReactComponent as Twitter } from "../assets/images/twitter.svg";
 import { ReactComponent as YouTube } from "../assets/images/instagram.svg";
 import "../styles/Footer/general-footer.css";
 
@@ -36,8 +36,8 @@ function FooterMain() {
         {
             title: "CEC - FGI",
             links: [
-                { href: "#", text: "Quienes somos" },
-                { href: "#", text: "Hable con nosotros" },
+                { href: "/Nosotros", text: "Quienes somos" },
+                { href: "/Nosotros", text: "Hable con nosotros" },
                 { href: "#", text: "Aviso de Privacidad" }
             ]
         },

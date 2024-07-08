@@ -16,6 +16,7 @@ import Plan from "./views/PlanNutricional";
 import PerfilPublico from  "./views/Perfil/PerfilPublico"
 import Soporte from "./views/soporte"
 import PaginaConstruccion from "./views/PaginasExtra/PaginaExtra.jsx";
+import Tienda from "./views/Tienda-clases/TiendaCEC.jsx"
 
 import AreaAerobica from "./views/Instalaciones/Aerobicos.jsx"
 
@@ -37,6 +38,8 @@ function App() {
             <Route path="/Soporte" element={<Soporte />}/>
             <Route path="/paginaExtra" element={<PaginaConstruccion/>}/>
             <Route path="/Aerobicos" element={<AreaAerobica/>}/>
+
+            <Route path="/Shop CEC trainnig" element={<Tienda/>}/>
 
 
             <Route path="/" element={<ProtectedRoute />}>
