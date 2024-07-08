@@ -12,7 +12,7 @@ import Descarga from "../componets/Comp_Descargar"
 import Novedades from "../componets/Comp_Noti_Nov"
 import Footer from "../componets/Footer_Main"
 import BuscarcentroCEC from "../componets/BuscarCentroCEC"
-import Banner from "../componets/Home/Banner-Principal";
+import Banner from "../componets/Home/Banner-principal";
 
 function Home(){
     const[data, setData] = React.useState(null);

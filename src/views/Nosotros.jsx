@@ -3,7 +3,6 @@
 import React from "react";
 import HeaderMain from "../componets/Header_Main";
 import FooterMain from "../componets/Footer_Main";
-import InstructorCard from "../componets/Nosotros/Card_InstructorNosotros"; 
 import "../styles/Nosotros.css";
 import "../App.css"
 import Tarjeta from "../componets/Nosotros/Tarjeta-coach";
@@ -15,20 +14,7 @@ import ValoresCEC from "../componets/Nosotros/Tarjeta-Valores";
 
 
 function AboutUsPage() {
-  const instructors = [
-    {
-      id: 1,
-      name: "María González",
-      photo: "url_de_la_foto",
-      specialization: "Entrenamiento de fuerza",
-    },
-    {
-      id: 2,
-      name: "Juan Pérez",
-      photo: "url_de_la_foto",
-      specialization: "Yoga y meditación",
-    },
-  ];
+  
 
   return (
     <div>

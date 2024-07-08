@@ -43,6 +43,7 @@
   .value p {
     margin-top: 5px;
     font-size: 1rem;
+    padding: 5px 15px;
   }
 
   .cont-valores{
