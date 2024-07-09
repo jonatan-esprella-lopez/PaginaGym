@@ -203,14 +203,12 @@
     text-align: center;
   }
   
-  /* Título */
   .contenedor-buscador-gimnasio h2 {
     font-size: 24px;
     color: #000000;
     margin-bottom: 20px;
   }
   
-  /* Formulario del buscador */
   .contenedor-buscador {
     width: 800px;
     display: flex;

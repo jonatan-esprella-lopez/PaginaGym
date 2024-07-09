@@ -1,29 +1,21 @@
 import React from 'react';
 import '../styles/Rutinas.css';
 import "../styles/Rutinas/Training.css"
-
 import Header from "../componets/Header_Main"
 import Footer from "../componets/Footer_Main"
-
 import Duracion from "../assets/images/duracion-clases.svg";
 import Intensidad from "../assets/images/intensidad.svg";
 import iconFuerza from "../assets/images/Rutinas/Fuerza.png";
-
-
 import Imagen_C1 from "../assets/images/Rutinas/ImagenC1.png";
-
 import Imagen_Intensidad from "../assets/images/Rutinas/Intensidad.png";
 import Imagen_C2 from "../assets/images/Rutinas/ImagenC2.png"
 import Imagen_IntensidadC1 from "../assets/images/Rutinas/IntensidadC1.png";
-
 import TrainerImage from "../assets/images/Rutinas/trainer.png"; 
-
-
 import MetHipertrofia from "../assets/images/Rutinas/Hipertrofia.svg";
 import MetMetabolico from "../assets/images/Rutinas/Metabolico.svg";
 import MetTonificacion from "../assets/images/Rutinas/Tonificacion.svg";
 import MetFuncional from '../assets/images/Rutinas/Funcional.svg';
-import Hola from '../assets/images/Nutricion/background.jpg';
+
 function RutinasPage() {
   return (
     <div className='container-rutinas'>
@@ -268,28 +260,28 @@ function RutinasPage() {
 
 
 
-        <section className='contenedor_tipos_entrenamiento'>
-          <div className='contenedor_metodologia'>
+        {/* <section className='contenedor-tipos-entrenamiento'>
+          <div className='contenedor-metodologia'>
             <div className='container-metodologia'>
-              <MetHipertrofia className='Imagen_Metodologia'/>
+              <MetHipertrofia className='Imagen-Metodologia'/>
               <h2>Hipertrofia</h2>
             </div>
             <div className='container-metodologia'>
-              <MetMetabolico className='Imagen_Metodologia'/>
+              <MetMetabolico className='Imagen-Metodologia'/>
               <h2>Metabolico</h2>
             </div>
             <div className='container-metodologia'>
-              <MetTonificacion className='Imagen_Metodologia'/>
+              <MetTonificacion className='Imagen-Metodologia'/>
               <h2>Tonificacion</h2>
             </div>
             <div className='container-metodologia'>
-              <MetFuncional className='Imagen_Metodologia'/>
+              <MetFuncional className='Imagen-Metodologia'/>
               <h2>Funcional</h2>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className='Container_footer_Rutinas'>
+        <section className='Container-footer-Rutinas'>
           <div className="info-sections">
           <div>
             <h3>Entrenadores</h3>

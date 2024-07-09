@@ -1,30 +1,21 @@
 import React from 'react';
 import '../styles/Nutricion.css';
-
 import {Link} from 'react-router-dom'
-
 import Header from "../componets/Header_Main"
 import Footer from "../componets/Footer_Main"
-
 import image from "../assets/images/Nutricion/NutricionHipertrofia.webp"
 import ImagenHipertrofia from "../assets/images/Nutricion/NutricionHipertrofia.webp"
 import Proteina from "../assets/images/Nutricion/Proteina.svg"
 import Carbohidrato from "../assets/images/Nutricion/Carbohidrato.svg"
 import Grasas from "../assets/images/Nutricion/Grasa.svg"
+import planImage from '../assets/images/Nutricion/plan-simple.png';
+import checkIcon from '../assets/images/correcto.png'; 
+import whatsappIcon from '../assets/images/WhatsApp.png'; 
 
-
-import planImage from '../assets/images/Nutricion/plan-simple.png'; // Asegúrate de tener la imagen en la ruta correcta
-import checkIcon from '../assets/images/correcto.png'; // Asegúrate de tener el icono en la ruta correcta
-import whatsappIcon from '../assets/images/WhatsApp.png'; // Asegúrate de tener el icono en la ruta correcta
-
-
-
- 
 function NutricionPage() {
   return (
     <div>
       <Header/>
-
       <div className='nutricion-container'>            
                 <h3>
                     Planes Nutricionales

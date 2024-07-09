@@ -32,6 +32,7 @@ function BusquedaCEC() {
             <div className="contenedor-titulo-FC">
               <p>Encuentra un centro</p>
             </div>
+
             <div className="contenedor-Busqueda">
               <img src={Busqueda} alt="Lupa" className="iconos" />
               <input

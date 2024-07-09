@@ -10,16 +10,16 @@ import { Link } from "react-router-dom";
 const Card = ({ icon, title, description, benefit, price, buttonText, link, special }) => (
     <article className={`estructure-card-1 ${special ? "estructure-card-especial" : ""}`} >
         <div className="contenedor-iconos-type-1">
-            <img src={icon} alt={title} className="Iconos_detalle" />
+            <img src={icon} alt={title} className="Iconos-detalle" />
         </div>
         <h4>{title}</h4>
         <div className="contenedor-texto-1">
-            <p className="Text_complemento">{description}</p>
+            <p className="Text-complemento">{description}</p>
         </div>
-        <div className="contenido_inferior_complemento">
-            <p className="descripcion_App">{benefit}</p>
+        <div className="contenido-inferior-complemento">
+            <p className="descripcion-App">{benefit}</p>
             {price && (
-                <div className="container_price">
+                <div className="container-price">
                     <p>Bs</p>
                     <h2>{price.amount}</h2>
                     <h5>{price.cents}</h5>
@@ -53,7 +53,7 @@ const Complementos = () => (
                 description="Lleva tu entrenamiento a donde quieras y cuando quieras con nuestra plataforma virtual de clases y contenido fitness."
                 benefit="Beneficio gratuito para los clientes."
                 buttonText="Tienda"
-                link="/Shop CEC trainnig"
+                link="/Shop CEC training"
             />
             <Card
                 icon={NutriComp}
@@ -62,17 +62,17 @@ const Complementos = () => (
                 benefit="Come saludable"
                 price={{ amount: 150, cents: '.99', period: 'Mes' }}
                 buttonText="Más información"
-                link="/Shop CEC trainnig"
+                link="/Shop CEC training"
                 special
             />
             <Card
                 icon={Energy}
                 title="Lacto Bar Energy"
                 description="Disfruta de bebidas especiales, mantente hidratado y mejora tu rendimiento al entrenar."
-                benefit="Sientente muy bien al entrenar."
+                benefit="Sientete muy bien al entrenar."
                 price={{ amount: 150, cents: '.99', period: 'Mes' }}
                 buttonText="Conoce más"
-                link="/Shop CEC trainnig"
+                link="/Shop CEC training"
             />
         </section>
     </section>

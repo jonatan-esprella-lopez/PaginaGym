@@ -1,5 +1,4 @@
 
-  /* Contenedor principal */
   .construction-container {
     display: flex;
     justify-content: center;
@@ -13,21 +12,18 @@
 
   }
   
-  /* Título */
   .construction-container h1 {
     font-size: 32px;
     color: #ff8c00;
     margin-bottom: 20px;
   }
   
-  /* Texto */
   .construction-container p {
     font-size: 18px;
     color: #657786;
     margin-bottom: 40px;
   }
   
-  /* Loader (indicador de carga) */
   .loader {
     border: 16px solid #f3f3f3;
     border-top: 16px solid #ff8c00;

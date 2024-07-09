@@ -178,10 +178,6 @@ body {
 }
 
 
-
-
-/**/
-
 .cont-head-plan{
     width: 100%;
     display: flex;
@@ -332,7 +328,6 @@ body {
 
 
 
-/* Contenedor principal */
 .container {
     
     display: flex;
@@ -347,7 +342,6 @@ body {
     padding: 3rem;
   }
   
-  /* Encabezado */
   .header {
     font-size: 24px;
     color: #f26f1d;
@@ -359,14 +353,12 @@ body {
     color: #ec880d;
   }
   
-  /* Sub-encabezado */
   .subheader {
     font-size: 20px;
     color: #657786;
     margin-bottom: 20px;
   }
   
-  /* Divisor */
   .divider {
     width: 700px;
     height: 2px;
@@ -374,7 +366,6 @@ body {
     margin: 20px 0;
   }
   
-  /* Contenido */
   .content {
     font-size: 18px;
     color: #333;

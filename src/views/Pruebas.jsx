@@ -77,7 +77,7 @@ function Evaluation() {
       setFormData((prevData) => ({ ...prevData, idealBMI: idealBMI.toFixed(2) }));
 
       // Calculadora de Porcentaje de Grasa Corporal Ideal
-      const idealBodyFatPercentage = formData.bodyFatPercentage < 15 ? 15 : 20; // Ajuste basado en recomendaciones generales
+      const idealBodyFatPercentage = formData.bodyFatPercentage < 15 ? 15 : 20;
       setFormData((prevData) => ({ ...prevData, idealBodyFatPercentage: idealBodyFatPercentage.toFixed(2) }));
     }
   };

@@ -9,43 +9,43 @@ function Planes(){
 
     
     return( 
-        <section className="table_Prices_Service">
+        <section className="table-Prices-Service">
             <div className='planes-title-container'>            
                 <h3>
                     Elige alguno de nuestros<span> mejores planes</span>
                     <div className="underline"></div>
                 </h3>
             </div>
-                <ul className="colum_Prices_Service_up">
-                    <li className="row_Prices_Services_up">
-                        <div className="head_Colum_Prices">
+                <ul className="colum-Prices-Service-up">
+                    <li className="row-Prices-Services-up">
+                        <div className="head-Colum-Prices">
                         </div>
-                        <ul className="colum_Prices_Service">
-                            <li className="row_Prices_Services_titles">Numero de Entradas</li>
-                            <li className="row_Prices_Services_titles">Entrenamiento Aerobico</li>
-                            <li className="row_Prices_Services_titles">Entrenamiento Funcional</li>
-                            <li className="row_Prices_Services_titles">Acceso a todos los centros</li>
-                            <li className="row_Prices_Services_titles">Invitar un amigo</li>
+                        <ul className="colum-Prices-Service">
+                            <li className="row-Prices-Services-titles">Numero de Entradas</li>
+                            <li className="row-Prices-Services-titles">Entrenamiento Aerobico</li>
+                            <li className="row-Prices-Services-titles">Entrenamiento Funcional</li>
+                            <li className="row-Prices-Services-titles">Acceso a todos los centros</li>
+                            <li className="row-Prices-Services-titles">Invitar un amigo</li>
                             
                         </ul>
                         <div>
 
                         </div>
                     </li>
-                    <li className="row_Prices_Services_principal">
-                        <div className="head_Colum_Prices">
-                            <p className="row_Prices_Services_title">Plan - Cobre</p>
-                            <p className="detalle_descripcion1">Toalla de regalo </p>
+                    <li className="row-Prices-Services-principal">
+                        <div className="head-Colum-Prices">
+                            <p className="row-Prices-Services-title">Plan - Cobre</p>
+                            <p className="detalle-descripcion1">Toalla de regalo </p>
                         </div>
-                        <ul className="colum_Prices_Service">
-                            <li className="row_Prices_Services">1</li>
-                            <li className="row_Prices_Services">Si</li>
-                            <li className="row_Prices_Services">No</li>
-                            <li className="row_Prices_Services">No</li>
-                            <li className="row_Prices_Services">No</li>
-                            <div className="row_Prices_Services_Final">
-                                <li className="detalle_descripcion3"><span>Desde</span></li>
-                                <p className="detalle_descripcion">Bs 15.00/Sesion</p>
+                        <ul className="colum-Prices-Service">
+                            <li className="row-Prices-Services">1</li>
+                            <li className="row-Prices-Services">Si</li>
+                            <li className="row-Prices-Services">No</li>
+                            <li className="row-Prices-Services">No</li>
+                            <li className="row-Prices-Services">No</li>
+                            <div className="row-Prices-Services-Final">
+                                <li className="detalle-descripcion3"><span>Desde</span></li>
+                                <p className="detalle-descripcion">Bs 15.00/Sesion</p>
                             </div>
                             <div className="estructure-div-1 button-prices">
                                 <button>Inscribirme</button>
@@ -55,20 +55,20 @@ function Planes(){
 
                         </div>
                     </li>
-                    <li className="row_Prices_Services_up">
-                        <div className="head_Colum_Prices">
-                            <p className="row_Prices_Services_title">Plan - Plata</p>
-                            <p className="detalle_descripcion1">Indumentaria de regalo</p>
+                    <li className="row-Prices-Services-up">
+                        <div className="head-Colum-Prices">
+                            <p className="row-Prices-Services-title">Plan - Plata</p>
+                            <p className="detalle-descripcion1">Indumentaria de regalo</p>
                         </div>
-                        <ul className="colum_Prices_Service">
-                            <li className="row_Prices_Services">8</li>
-                            <li className="row_Prices_Services">Si</li>
-                            <li className="row_Prices_Services">No</li>
-                            <li className="row_Prices_Services">No</li>
-                            <li className="row_Prices_Services">No</li>
-                            <div className="row_Prices_Services_Final">
-                                <li className="detalle_descripcion3"><span>Desde</span></li>
-                                <p className="detalle_descripcion">Bs 70.00/mes </p>
+                        <ul className="colum-Prices-Service">
+                            <li className="row-Prices-Services">8</li>
+                            <li className="row-Prices-Services">Si</li>
+                            <li className="row-Prices-Services">No</li>
+                            <li className="row-Prices-Services">No</li>
+                            <li className="row-Prices-Services">No</li>
+                            <div className="row-Prices-Services-Final">
+                                <li className="detalle-descripcion3"><span>Desde</span></li>
+                                <p className="detalle-descripcion">Bs 70.00/mes </p>
                             </div>
                             <div className="estructure-div-1 button-prices">
                                 <button>Inscribirme</button>
@@ -78,20 +78,20 @@ function Planes(){
 
                         </div>
                     </li>
-                    <li className="row_Prices_Services_up">
-                        <div className="head_Colum_Prices">
-                            <p className="row_Prices_Services_title">Plan - Platino</p>
-                            <p className="detalle_descripcion1">Entrena en más de 1.400 gimnasios en Latinoamérica</p>
+                    <li className="row-Prices-Services-up">
+                        <div className="head-Colum-Prices">
+                            <p className="row-Prices-Services-title">Plan - Platino</p>
+                            <p className="detalle-descripcion1">Entrena en más de 1.400 gimnasios en Latinoamérica</p>
                         </div>
-                        <ul className="colum_Prices_Service">
-                            <li className="row_Prices_Services">12</li>
-                            <li className="row_Prices_Services">Si</li>
-                            <li className="row_Prices_Services">Si</li>
-                            <li className="row_Prices_Services">No</li>
-                            <li className="row_Prices_Services">No</li>
-                            <div className="row_Prices_Services_Final">
-                                <li className="detalle_descripcion3"><span>Desde</span></li>
-                                <p className="detalle_descripcion">Bs 100.00/mes </p>
+                        <ul className="colum-Prices-Service">
+                            <li className="row-Prices-Services">12</li>
+                            <li className="row-Prices-Services">Si</li>
+                            <li className="row-Prices-Services">Si</li>
+                            <li className="row-Prices-Services">No</li>
+                            <li className="row-Prices-Services">No</li>
+                            <div className="row-Prices-Services-Final">
+                                <li className="detalle-descripcion3"><span>Desde</span></li>
+                                <p className="detalle-descripcion">Bs 100.00/mes </p>
                             </div>
                             <div className="estructure-div-1 button-prices">
                                 <button>Inscribirme</button>
@@ -101,20 +101,20 @@ function Planes(){
 
                         </div>
                     </li>
-                    <li className="row_Prices_Services_up">
-                        <div className="head_Colum_Prices">
-                            <p className="row_Prices_Services_title">Plan - Oro</p>
-                            <p className="detalle_descripcion1">Entrena todo lo que quieras en tu unidad y paga menos </p>
+                    <li className="row-Prices-Services-up">
+                        <div className="head-Colum-Prices">
+                            <p className="row-Prices-Services-title">Plan - Oro</p>
+                            <p className="detalle-descripcion1">Entrena todo lo que quieras en tu unidad y paga menos </p>
                         </div>
-                        <ul className="colum_Prices_Service">
-                            <li className="row_Prices_Services">21</li>
-                            <li className="row_Prices_Services">Si</li>
-                            <li className="row_Prices_Services">Si</li>
-                            <li className="row_Prices_Services">Si</li>
-                            <li className="row_Prices_Services">No</li>
-                            <div className="row_Prices_Services_Final">
-                                <li className="detalle_descripcion3"><span>Desde</span></li>
-                                <p className="detalle_descripcion">Bs 170.00/mes </p>
+                        <ul className="colum-Prices-Service">
+                            <li className="row-Prices-Services">21</li>
+                            <li className="row-Prices-Services">Si</li>
+                            <li className="row-Prices-Services">Si</li>
+                            <li className="row-Prices-Services">Si</li>
+                            <li className="row-Prices-Services">No</li>
+                            <div className="row-Prices-Services-Final">
+                                <li className="detalle-descripcion3"><span>Desde</span></li>
+                                <p className="detalle-descripcion">Bs 170.00/mes </p>
                             </div>
                             <div className="estructure-div-1 button-prices">
                                 <button>Inscribirme</button>
@@ -124,20 +124,20 @@ function Planes(){
 
                         </div>
                     </li>
-                    <li className="row_Prices_Services_up">
-                    <div className="head_Colum_Prices">
-                            <p className="row_Prices_Services_title">Plan - Diamante</p>
-                            <p className="detalle_descripcion1">Entrena cuando quieras en tu gimnasio de elección </p>
+                    <li className="row-Prices-Services-up">
+                    <div className="head-Colum-Prices">
+                            <p className="row-Prices-Services-title">Plan - Diamante</p>
+                            <p className="detalle-descripcion1">Entrena cuando quieras en tu gimnasio de elección </p>
                         </div>
-                        <ul className="colum_Prices_Service">
-                            <li className="row_Prices_Services">Ilimitadas</li>
-                            <li className="row_Prices_Services">Si</li>
-                            <li className="row_Prices_Services">Si</li>
-                            <li className="row_Prices_Services">Si</li>
-                            <li className="row_Prices_Services">Si</li>
-                            <div className="row_Prices_Services_Final">
-                                <li className="detalle_descripcion3"><span>Desde</span></li>
-                                <p className="detalle_descripcion">Bs 200.00/mes </p>
+                        <ul className="colum-Prices-Service">
+                            <li className="row-Prices-Services">Ilimitadas</li>
+                            <li className="row-Prices-Services">Si</li>
+                            <li className="row-Prices-Services">Si</li>
+                            <li className="row-Prices-Services">Si</li>
+                            <li className="row-Prices-Services">Si</li>
+                            <div className="row-Prices-Services-Final">
+                                <li className="detalle-descripcion3"><span>Desde</span></li>
+                                <p className="detalle-descripcion">Bs 200.00/mes </p>
                             </div>
                             <div className="estructure-div-1 button-prices">
                                 <button>Inscribirme</button>

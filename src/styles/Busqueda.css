@@ -66,7 +66,7 @@ Banner_boton_gimnasioBanner_boton_gimnasio.content_Find_Center{
 }
 
 .busqueda-input:focus {
-    border-color: #161a00; /* Color de borde al enfocar */
+    border-color: #161a00; 
   }
 
 .Banner_boton_gimnasio p{

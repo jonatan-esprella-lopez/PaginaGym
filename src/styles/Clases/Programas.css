@@ -1,4 +1,4 @@
-.Clases_titulo_Container{
+.Clases-titulo-container{
     width: 100%;
     background-color: var(--primary-color) ;
     padding: 10px 0;
@@ -7,7 +7,7 @@
     margin-bottom: 8px;
 }
 
-.contenido_clases_detalle{
+.contenido-clases-detalle{
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -15,7 +15,7 @@
     flex-wrap: wrap;
 }
 
-.detalle_clase{
+.detalle-clase{
     
     font-size: 15px;
     padding: 2rem 0.4rem 0.8rem 0.4rem;
@@ -23,17 +23,17 @@
     margin: 0.2rem;
 }
 
-.Iconos_detalle{
+.Iconos-detalle{
     height: 36px;
     opacity: 70%;
 }
 
-.detalle_title{
+.detalle-title{
     font-weight: 600;
     margin: 10px 0;
 }
 
-.detalle_descripcion{
+.detalle-descripcion{
     opacity: 1;
     margin-top: 3px;
     font-size: 14px;
@@ -41,14 +41,14 @@
     color: #000000;
 }
 
-.detalle_descripcion1{
+.detalle-descripcion1{
     opacity: 0.8;
     margin: 0;
     font-size: 12px;
     color: #000000;
 }
 
-.detalle_descripcion3{
+.detalle-descripcion3{
     opacity: 0.8;
     margin: 0;
     font-size: 15px;
@@ -57,7 +57,7 @@
 }
 
 
-.contenedor_Apartador{
+.contenedor-Apartador{
     width: 90%;
     display: flex;
     align-items: center;
@@ -71,12 +71,12 @@
     border-bottom: 1px solid #999;
 }
 
-.contenedor_Texto{
+.contenedor-Texto{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Text_programas{
+.Text-programas{
     color: #6c6c6c;
     padding: 0 2rem 0 2rem;
     font-size: 13px;
@@ -84,7 +84,7 @@
     text-align: center;
 }
 
-.Text_complemento{
+.Text-complemento{
     color: #6c6c6c;
     font-size: 13px;
     font-weight: 500;
@@ -114,16 +114,16 @@
   box-shadow: 0 0 10px 0px #00a6ff;
 }
 
-/*______________________________________________Responsive______________________________________________*/
+/*-__________________________________________Responsive______________________________________________*/
 
 
 @media (max-width: 768px) {
-    .Programas_container {
+    .Programas-container {
         width: 100%;
     }
 
 
-    .Text_programas {
+    .Text-programas {
         width: 100%;
         font-size: 14px;
     }

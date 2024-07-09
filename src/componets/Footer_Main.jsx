@@ -1,26 +1,29 @@
 import React from "react";
-import Fb  from '../assets/images/facebook.svg';
-import IG  from "../assets/images/instagram.svg";
-import Spotify  from "../assets/images/spotify.svg";
-import Twitter  from "../assets/images/twitter.svg";
-import YouTube  from "../assets/images/youtube.svg";
+import Fb from '../assets/images/facebook.svg';
+import IG from "../assets/images/instagram.svg";
+import Spotify from "../assets/images/spotify.svg";
+import Twitter from "../assets/images/twitter.svg";
+import YouTube from "../assets/images/youtube.svg";
 
 import "../styles/Footer/general-footer.css";
 
 const SocialLink = ({ href, icon: Icon, children }) => (
     <a href={href} className="social-link">
-        <img src={Icon} alt="social icon" className="social-icon" />{children}
+        <img src={Icon} alt="social icon" className="social-icon" />
+        {children}
     </a>
 );
 
 const FooterColumn = ({ title, links }) => (
     <div className="footer-column">
         <h4>{title}</h4>
-        {links.map((link, index) => (
-            <a href={link.href} key={index}>
-                {link.text}
-            </a>
-        ))}
+        <div>
+            {links.map((link, index) => (
+                <a href={link.href} key={index}>
+                    {link.text}
+                </a>
+            ))}
+        </div>
     </div>
 );
 
@@ -74,7 +77,7 @@ function FooterMain() {
             </div>
             <div className="footer-bottom">
                 {footerColumns.map((column, index) => (
-                    <FooterColumn title={column.title} links={column.links} key={index} />
+                    <FooterColumn key={index} title={column.title} links={column.links} />
                 ))}
             </div>
         </footer>

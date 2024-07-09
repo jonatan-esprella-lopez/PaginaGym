@@ -156,8 +156,6 @@
 
 
 
-/*tabla*/
-
 .cont-head-table{
     width: 60%;
     display: flex;
@@ -205,9 +203,6 @@ th{
 
 
 
-
-
-/*detalle del boton entrenamiento */
 
 .cont-dia{
     display: flex;

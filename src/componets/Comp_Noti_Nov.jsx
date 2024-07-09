@@ -1,32 +1,40 @@
 import React from "react";
-import "../App.css"
-import "../styles/home_styles.css"
+import "../App.css";
+import "../styles/home_styles.css";
 
+const TitleSection = ({ title, highlight }) => (
+    <div className="container-head-section1">
+        <div>
+            <h4>
+                {title} <span>{highlight}</span>
+                <div className="underline"></div>
+            </h4>
+        </div>
+    </div>
+);
 
-function Novedades(){
+const SubscriptionForm = () => (
+    <div className="contenedor-Registro-Home">
+        <input
+            type="serch"
+            placeholder="Ingresá tu correo electrónico"
+            id="input-correo"
+            className="input-correo-home"
+        />
+        <button className="button-type-4 estructura-size2">
+            Registrate
+        </button>
+    </div>
+);
 
-    
-    return( 
-        <section className="contenedor_Registro_Main">
-                
-                <div className="container-head-section1">    
-                    <div>   
-                        <h4>
-                            Recibie las novedades y promociones exclusivas de <span>CEC-FGI.</span>
-                            <div className="underline"></div>
-                        </h4>
-                    </div>
-                </div>
+const Novedades = () => (
+    <section className="contenedor-Registro-Main">
+        <TitleSection
+            title="Recibe las novedades y promociones exclusivas de"
+            highlight="CEC-FGI."
+        />
+        <SubscriptionForm />
+    </section>
+);
 
-                <div className="contenedor_Registro_Home">
-                    <input type="search" placeholder="Ingresá tu correo electrónico" id="input_correo" className="input_correo_home"/>
-                    
-
-                    <button className="button-type-4 estructura-size2">
-                        Registrate
-                    </button>
-                </div>
-            </section>
-    )
-}
-export default Novedades
+export default Novedades;

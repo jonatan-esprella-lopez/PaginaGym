@@ -1,6 +1,6 @@
 /*css Unico*/
 
-.contenedor_App_Mobil{
+.contenedor-App-Mobil{
     width: 100%;
     height: 650px;
     background-color: var(--backgrounf-color2);
@@ -10,23 +10,23 @@
     padding: 0 4rem;
 }
 
-.contenedor_App_Mobil article{
+.contenedor-App-Mobil article{
     max-width: 450px;
 }
  
-.texto_titulo_App{
+.texto-titulo-App{
     font-size: 25px;
     padding-bottom: 1rem;
 }
 
-.texto_descripcion_App{
+.texto-descripcion-App{
     text-align:left;
     font-size: 18px;
     padding: 1rem 0 0 0;
     margin-bottom: 2rem;
 }
 
-.contenido_App{
+.contenido-App{
     display: flex;
     width: 100%;
     height: 110px;
@@ -35,7 +35,7 @@
     align-items: start;
 }
 
-.contenedor_imagen_App{
+.contenedor-imagen-App{
     width: 100%;
     display: flex;
     justify-content: end;
@@ -43,7 +43,7 @@
     top: 13px;
 }
 
-.imagen_mockup_App{
+.imagen-mockup-App{
     width: 700px;
     margin-right: 3rem;
 }
@@ -63,9 +63,7 @@
 
 
 
-/* Membrecias del gimnasio tabla*/
-
-.head_Colum_Prices{
+.head-Colum-Prices{
     border-bottom: 1px solid #999;
     display: flex;
     min-height: 80px;
@@ -77,7 +75,7 @@
     width: 200px;
 }
 
-.table_Prices_Service{
+.table-Prices-Service{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +84,7 @@
 
 
 
-.colum_Prices_Service_up{
+.colum-Prices-Service-up{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -94,16 +92,16 @@
     padding-top: 1.5rem;
 }
 
-.colum_Prices_Service{
+.colum-Prices-Service{
     list-style: none;
 }
 
-.row_Prices_Services_up{
+.row-Prices-Services-up{
     margin: 1rem 0;
     border-top: 2px solid transparent;
 }
 
-.row_Prices_Services{
+.row-Prices-Services{
     align-items: center;
     padding: 15px 0;
     opacity: 0.7;
@@ -112,7 +110,7 @@
     
 }
 
-.row_Prices_Services_titles{
+.row-Prices-Services-titles{
     font-weight: 700;
     min-height: 20px;
     max-height: 50px;
@@ -125,13 +123,13 @@
     border-bottom: 1px solid #999;
 }
 
-.row_Prices_Services_Final{
+.row-Prices-Services-Final{
     align-items: center;
     padding: 30px 0 0;
     font-size: 15px; 
 }
 
-.row_Prices_Services_principal{
+.row-Prices-Services-principal{
     border: 3px solid #ffa600;
     border-radius: 15px;
     
@@ -139,12 +137,12 @@
     
 }
 
-.detalle_descripcion_Prices{
+.detalle-descripcion-Prices{
     font-size: 12px;
     min-height: 40px;
 }
 
-.row_Prices_Services_title{
+.row-Prices-Services-title{
 
     align-items: center;
     min-height: 30px;
@@ -164,74 +162,73 @@
 
 
 @media (max-width: 1024px) {
-    .contenedor_App_Mobil {
+    .contenedor-App-Mobil {
         padding: 1rem 4rem;
     }
 
-    .contenedor_titulo_App {
+    .contenedor-titulo-App {
         width: 60%;
     }
 
-    .texto_titulo_App {
+    .texto-titulo-App {
         font-size: 22px;
     }
 
-    .texto_descripcion_App {
+    .texto-descripcion-App {
         font-size: 16px;
     }
 }
 
 @media (max-width: 768px) {
-    .contenedor_App_Mobil {
+    .contenedor-App-Mobil {
         padding: 1rem 2rem;
         display: flex;
         flex-direction: column;
     }
     
-    .contenedor_imagen_App{
+    .contenedor-imagen-App{
         width: 40%;
         justify-content:center;
         
     }
 
-    .contenedor_titulo_App {
+    .contenedor-titulo-App {
         width: 80%;
     }
 
-    .texto_titulo_App {
+    .texto-titulo-App {
         font-size: 20px;
     }
 
-    .texto_descripcion_App {
+    .texto-descripcion-App {
         font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
-    .contenedor_App_Mobil {
+    .contenedor-App-Mobil {
         padding: 1rem;
-        flex-direction: column; /* Cambia la dirección del flex a columna */
+        flex-direction: column; 
     }
 
-    .contenedor_titulo_App {
+    .contenedor-titulo-App {
         width: 100%;
     }
 
-    .texto_titulo_App {
+    .texto-titulo-App {
         font-size: 18px;
-        text-align: center; /* Opcional: Centrar el texto en dispositivos pequeños */
+        text-align: center;
     }
 
-    .texto_descripcion_App {
+    .texto-descripcion-App {
         font-size: 14px;
-        text-align: center; /* Opcional: Centrar el texto en dispositivos pequeños */
+        text-align: center; 
     }
 }
 
 
-/*Tarjetas de Complementos ofrecidos*/
 
-.Complementos_tarjetas{
+.Complementos-tarjetas{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,7 +237,7 @@
 }
 
 
-.complementos_container{
+.complementos-container{
     width: 22%;
     display: flex;
     align-items: center;
@@ -256,14 +253,14 @@
     cursor: pointer;
 }
 
-.complementos_container:hover{
+.complementos-container:hover{
     border: 0.7px solid #ffa600;
 }
 
 
 
 
-.contenido_inferior_complemento{
+.contenido-inferior-complemento{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -271,13 +268,12 @@
     align-items: center;
 }
 
-/*Redes para bajar Apps*/
-.descripcion_App{
+.descripcion-App{
     color: #00000091;
     font-size: 14px;
 }
 
-.contenedor_Links_App{
+.contenedor-Links-App{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,23 +281,22 @@
 }
 
 
-.imagen_qr{
+.imagen-qr{
     margin-right: 2rem;
     width: 120px;
     height: 120px;
 }
 
 
-/*Prices*/
 
-.container_price{
+.container-price{
     display: flex;
     width: 140px;
     margin: 0 auto;
     justify-content: space-around;
 }
 
-.Boton_Prices{
+.Boton-Prices{
     padding: 10px 45px ;
     border-radius: 8px;
     background-color: #ffa600;
@@ -314,17 +309,16 @@
 }
 
 
-/*Promociones*/
 
 
-.contenedor_Registro_Main{
+.contenedor-Registro-Main{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 6rem;
 }
 
-.contenedor_Registro_Home{
+.contenedor-Registro-Home{
     width: 100%;
     max-width: 655px;
     display: flex;
@@ -334,7 +328,7 @@
     
 }
 
-.input_correo_home{
+.input-correo-home{
     width: 100%;
     padding: 0.6rem 0.9rem 0.5rem 2.4rem;
     font-size: 16px;
@@ -346,7 +340,7 @@
 }
 
 
-.input_correo_home:hover{
+.input-correo-home:hover{
     border: 1px solid #ff7801;
 }
 

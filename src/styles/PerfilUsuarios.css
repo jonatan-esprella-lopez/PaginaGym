@@ -50,8 +50,6 @@
 
 
 
-/*esta parte es del section*/
-
 .Contenedor-Imagen{
     
     background-image: url(../assets/images/Perfiles/Portada1.jpeg);
@@ -117,7 +115,6 @@
     flex-direction: column;
 }
 
-/*aqui*/
 .contenedorSection{
     height: 100%;
     display: flex;
@@ -158,8 +155,6 @@
 
 
 
-
-/*Boton de Ferfil - Redes sociales*/
 
 .BotonRedes{
     background-color: #ff9900;
