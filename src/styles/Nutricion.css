@@ -1,3 +1,22 @@
+.nutricion-container{
+        width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets//images/Nutricion/background.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 0px -150px;
+    height: 300px;
+}
+
+.nutricion-container h3{
+    font-size: var(--font-size-big);
+  }
+
 .Imagen_Tarjeta_Nutricion{
     display: flex;
     width: 100%;
@@ -7,16 +26,17 @@
     border-radius: 10px 10px 0 0;
 }
 
+ 
 
-.contenedor_prin_Nutricion{
+.cont-general-Nutricion{
     padding-top: 4rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 .Titulo_Principal{
-    padding: 1rem;
+    margin: 3rem 0 0 0;
+
 }
 
 .Listado_Tarjeta{
@@ -40,7 +60,7 @@
 .Titulo_Tarjeta_Tipo_Nut{
     width: 100%;
     padding: 5px;
-    background-color: #ff8800;
+    background-color: var(--primary-color);;
 }
 
 .Detalle_Tarjeta_Tipo_Nut{
@@ -65,3 +85,302 @@
     padding: 0.5rem;
     font-size: 13px;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.plan {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    max-width: 300px;
+    height: 580px;
+    max-height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: top;
+    background-color: white;
+}
+
+.plan-header {
+    margin: 0;
+    position: absolute;
+    background-color: var(--primary-color);;
+    color: black;
+    padding: 6px 16px;
+    border-radius:  0 0 10px 10px;
+    font-weight: 600;
+    font-size: small;
+}
+
+.cont-valor-nuttricional{
+    display: flex;
+    margin-bottom: 2rem;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.plan img {
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.plan h3 {
+    width: 100%;
+    background-color: var(--primary-color);;
+    padding: 14px 0;
+    margin: 0;
+}
+
+.plan-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+
+.plan-details p{
+    margin: 0;
+}
+
+
+.button-nutricion {
+    background-color:var(--primary-color);;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-nutricion:hover {
+    background-color: var(--primary-color);;
+}
+
+
+
+.plan-descripcion{
+    height: 370px;
+    padding: 10px 20px;
+    opacity: 70%;
+}
+
+
+
+
+/**/
+
+.cont-head-plan{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.group-plan {
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.group-plan h2 {
+    text-align: left;
+    color: #000000;
+    margin-bottom: 20px;
+    padding: 5px 0 5px 20px;
+    border-left: 6px solid #000000;
+}
+
+.plan-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.cont-plan-image{
+    height: 470px;
+    background-color: #0056b3;
+}
+
+.plan-image {
+    width: 370px;
+    height: 100%;   
+    object-fit: cover;
+    background-color: #0056b3;
+
+}
+
+.plan-type {
+    border:2px solid #ff7f00;
+    color: #ff7f00;
+    font-weight: bold;
+    font-size: var(--font-size-small);
+    padding: 8px 10px 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.plan-details h3 {
+    margin: 0;
+}
+
+.plan-details p {
+    margin: 5px 0;
+}
+
+.plan-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan-details li {
+    margin: 10px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.plan-details li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.plan-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whatsapp-group {
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-group p{
+    opacity: 70%;
+}
+
+
+.whatsapp-group img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+}
+
+
+.plan-details-v1{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+
+.plan-details-v1 h3 {
+    margin: 0;
+}
+
+.plan-details-v1 p {
+    text-align: left;
+    margin: 5px 0;
+}
+
+.plan-details-v1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan-details-v1 li {
+    margin: 10px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.plan-details-v1 li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+/* Contenedor principal */
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #dfdfdf;
+    border: 1px solid #dddddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 3rem;
+  }
+  
+  /* Encabezado */
+  .header {
+    font-size: 24px;
+    color: #f26f1d;
+    margin-bottom: 10px;
+  }
+  
+  .header .bold {
+    font-weight: 700;
+    color: #ec880d;
+  }
+  
+  /* Sub-encabezado */
+  .subheader {
+    font-size: 20px;
+    color: #657786;
+    margin-bottom: 20px;
+  }
+  
+  /* Divisor */
+  .divider {
+    width: 700px;
+    height: 2px;
+    background-color: #a2a2a2;
+    margin: 20px 0;
+  }
+  
+  /* Contenido */
+  .content {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .content .bold {
+    font-weight: 700;
+    color: #ec8b0d;
+  }

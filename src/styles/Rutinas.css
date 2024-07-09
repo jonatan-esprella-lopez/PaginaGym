@@ -1,98 +1,9 @@
-.main{
-    margin: 2rem 7rem;
-    padding: 2rem;
-}
-
-.contenedor_Text_Prin_Rutinas{
-    padding: 1rem;
-    padding: 2rem 1rem;
-}
-
-.Titulo_Lista_Rutinas{
-    margin: 0rem 0 2rem 0; 
-}
-
-.contenedor_de_tabla{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.Contenido_Table{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    
-}
-
-.contenido_Colum{
-    list-style: none;
-}
-
-.Fila_Principal{
-    background-color: black;
-    color: white;
-    padding: 0.5rem 4rem;
-    width: 100%;
-}
-
-.Fila_Principal_img{
-    background-color: black;
-    color: white;
-    padding: 0.5rem 1rem;
-    width: 100%;
-}
-
-.Fila_Secundaria{
-    background-color:rgb(234, 238, 255);
-    height: 100px;
-    display: flex;
-    padding: 1rem 2rem;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid black;
-}
-
-.Fila_Imagen{
-    background-color:rgb(184, 184, 184);
-    height: 100px;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    border-bottom: 1px solid black;
-}
-
-.Fila_Secundaria1{
-    background-color:rgb(255, 255, 255);
-    height: 100px;
-    display: flex;
-    padding: 1rem 2rem;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid black;
-}
-
-.Fila_Imagen1{
-    background-color:rgb(255, 255, 255);
-    height: 100px;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid black;
-}
-
-.imagen_Circuitos{
-    width: 55px;
-}
 
 .contenedor_tipos_entrenamiento{
     margin: 2rem 0;
-    background-color: rgb(220, 220, 220);
+    padding: 30px 0;
+    background-color: hsl(0, 0%, 84%);
     width: 100%;
-    height: 230px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,18 +13,39 @@
     width: 80%;
     display: flex;
     justify-content: space-around;
+    padding-top: 15px;
+}
+
+.container-metodologia h2{
+    
+    font-size: 20px;
+}
+
+.container-metodologia{
+    background-color: rgb(255, 255, 255);
+    padding: 0.7rem 2rem 0;
+    border-radius: 15px;
+}
+
+.container-metodologia:hover{
+    cursor: pointer;
+    background-color: rgb(183, 183, 183) ;
 }
 
 .Imagen_Metodologia{
-    width: 150px;
-    filter: grayscale(60%);
+    width: 130px;
+    height: 130px;
+    fill: black;
 }
 
 
 /*Footer Rutinas*/
 
 .Container_footer_Rutinas{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: center;
 }
+
+
+

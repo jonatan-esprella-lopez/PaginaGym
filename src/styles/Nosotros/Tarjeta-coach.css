@@ -1,10 +1,8 @@
-.cont-tarjeta-coach{
-    width: 15rem;
-    height: 26rem;
-    background-color: black;
-    border-radius: 23px 23px 23px 0;
-    border: 2px solid #ff6600;
-    box-shadow: 0 0 10px 3px #ff660079;
+.contenedor-coach{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
 }
 
 
@@ -62,3 +60,4 @@
     padding: 4px 6px;
     margin-top: 0px;
 }
+

@@ -1,15 +1,15 @@
+ 
 /* aboutUs_styles.css */
 
 .about-us-container {
   background-color: #e6e6e6;
-    padding: 20px;
   }
   
   .about-us-header {
     text-align: center;
     
   }
-  
+   
   .about-us-content {
     margin-top: 20px;
   }
@@ -21,12 +21,6 @@
   }
   
   /* instructorCard_styles.css */
-  
-  .instructor-card {
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    padding: 20px;
-  }
   
   .instructor-photo {
     width: 100%;
@@ -43,10 +37,6 @@
   }
   /* aboutUsContent_styles.css */
 
-.about-us-content {
-    margin-top: 40px; /* Aumentamos el espacio superior */
-  }
-  
   .about-us-content h2 {
     font-size: 28px; /* Aumentamos el tamaño de la fuente */
     margin-top: 30px; /* Aumentamos el espacio superior */
@@ -74,10 +64,16 @@
   /* instructorCard_styles.css */
   
   .instructor-card {
-    background-color: #f9f9f9; /* Cambiamos el color de fondo */
-    border-radius: 8px; /* Reducimos el radio de la esquina */
-    padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Agregamos sombra */
+    width: 15rem;
+    height: 26rem;
+    background-color: black;
+    border-radius: 23px 23px 23px 0;
+    border: 2px solid #ff6600;
+    box-shadow: 0 0 10px 3px #ff660079;
+    display: flex;
+    flex-direction: column;
+  
   }
   
   .instructor-photo {
@@ -98,5 +94,91 @@
   
 
   .cont-Mis-Vis{
+    padding: 0 7rem;
     display: flex;
+    margin-bottom: 5rem;
   }
+
+
+
+  /*Nuebvo codigo de head*/
+
+  /* AboutUs.css */
+
+.about-us-section {
+  background-image: url(../assets/images/Nosotros/background.jpg);
+  fill: #777;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.underline-central{
+  height: 5px;
+  width: 400px;
+  margin: 15px 35rem;
+  border-radius: 10px;
+  background-color: #ff8800;
+}
+
+
+
+
+.overlay h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.overlay p {
+  text-align: left;
+  width: 1200px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+.overlay-bienvenida{
+  text-align: left;
+  width: 85%;
+  font-weight: bold;
+}
+
+.overlay p:first-of-type {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .about-us-section {
+    height: 200px;
+  }
+
+  .overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+

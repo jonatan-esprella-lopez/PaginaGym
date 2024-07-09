@@ -11,10 +11,11 @@
 /*______________________________________________Variables______________________________________________*/
 
 :root{
-  --primary-color: #ffa600; 
+  --primary-color: #ff8400; 
   --secondary-color1: #000000; 
   --secondary-color2: #FAFF00;
   --background-color: #FAFF00; 
+  --backgrounf-color2: #ffe6af;
   --text-color: #ffffff; 
   --text-color2:#000000;
   --error-color: #e74c3c; 
@@ -40,6 +41,14 @@
   height: 2.3rem;
 }
 
+.estructura-size2{
+  width: 3rem;
+  height: 2.3rem;
+  margin: 0 1rem ;
+  border-radius: 6px;
+  border: 1px solid #00000000;
+}
+
 .estructure-button-1{
   display: flex;
   justify-content: center;
@@ -48,7 +57,7 @@
   font-weight: 550;
   font-size: var(--font-size-medium);
   margin: 10px;
-  cursor: pointer;
+  cursor: pointer;  
   border: none;
 }
 
@@ -89,6 +98,19 @@
   background-color: #ffcc00;
 }
 
+.button-type-4{
+  width: 12rem;
+  background-color: #008cff;
+  color: var(--text-color);
+  font-size: small+1  ;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button-type-4:hover {
+  border: 2px solid #008cff;
+  box-shadow: 0 0 10px 0px #00a6ff;
+}
 
 
 /*______________________________________________Tarjetas______________________________________________*/
@@ -97,16 +119,31 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
-  border: 0.7px solid #585858;
+  border: 0.3px solid #343434;
   border-radius: 15px;
   outline: 2px solid transparent;
-  box-shadow: 0 3px 17px rgba(22, 22, 22, 0.1);
-  transition: .25s;
+  box-shadow: 3px 3px 10px -1px rgba(22, 22, 22, 0.398);
+  transition: .30s;
   cursor: pointer;
-  width: 23.4%;
+  width: 290px;
+  align-items: center;
 }
 
-.estructure-card-1:hover{
+.estructura-card-2{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  border: 0.3px solid #343434;
+  border-radius: 15px;
+  outline: 2px solid transparent;
+  box-shadow: 3px 3px 10px -1px rgba(22, 22, 22, 0.398);
+  transition: .30s;
+  cursor: pointer;
+  align-items: center;
+  width: 350px;
+}
+
+.estructure-card-1:hover , .estructura-card-2:hover{
   border: 0.3px solid #ffcc00;
   box-shadow: 0 0 5px 1px var(--primary-color);
 }
@@ -125,21 +162,60 @@
 }
 
 
+/*iconos o imagenes*/
+
+.contenedor-iconos-type-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  max-height: 100px;
+
+}
+
+
+
 /*______________________________________________Titulos______________________________________________*/
 
 
 .container-head-section {
   width: 100%;
-  margin: 5rem 0 7rem 0;
+  margin: 3rem 0 3rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.container-head-section1 {
+  width: 100%;
+  margin: 5rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-head-section1 h4 {
+  position: relative;
+  margin: 0;
+  padding: 0 2rem 0 2rem;
+  font-size: var(--font-size-extralarge);
+  font-weight: normal;
+}
+
+.container-head-section1 .underline {
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-color); 
+}
+
 .container-head-section h4 {
   position: relative;
   margin: 0;
-  padding: 0 1rem 0 0.2rem;
+  padding: 0 1rem 0 5rem;
   font-size: var(--font-size-extralarge);
   font-weight: normal;
 }
@@ -201,3 +277,22 @@ a:hover{
   display: flex;
  justify-content: space-around;
 }
+
+.estructure-card-especial {
+  position: relative;
+}
+
+.estructure-card-especial::before {
+  content: "Suscripción mensual";
+  display: block;
+  width: 80%;
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 2px 0;
+  position: absolute;
+  top: -10px;
+  left: 50;
+  border-radius: 6px;
+}
+
+

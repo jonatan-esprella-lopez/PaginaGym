@@ -1,3 +1,63 @@
+/*css Unico*/
+
+.contenedor_App_Mobil{
+    width: 100%;
+    height: 650px;
+    background-color: var(--backgrounf-color2);
+    display: flex;
+    margin:4rem 0 0 0;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.contenedor_App_Mobil article{
+    max-width: 450px;
+}
+ 
+.texto_titulo_App{
+    font-size: 25px;
+    padding-bottom: 1rem;
+}
+
+.texto_descripcion_App{
+    text-align:left;
+    font-size: 18px;
+    padding: 1rem 0 0 0;
+    margin-bottom: 2rem;
+}
+
+.contenido_App{
+    display: flex;
+    width: 100%;
+    height: 110px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+}
+
+.contenedor_imagen_App{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 13px;
+}
+
+.imagen_mockup_App{
+    width: 700px;
+    margin-right: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -22,7 +82,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 50px auto 30px; 
 }
 
 
@@ -40,12 +99,14 @@
 }
 
 .row_Prices_Services_up{
+    margin: 1rem 0;
     border-top: 2px solid transparent;
 }
 
 .row_Prices_Services{
     align-items: center;
     padding: 15px 0;
+    opacity: 0.7;
     font-size: 15px;
     border-bottom: 1px solid #999;
     
@@ -53,8 +114,8 @@
 
 .row_Prices_Services_titles{
     font-weight: 700;
-    min-height: 50px;
-    max-height: 50.9px;
+    min-height: 20px;
+    max-height: 50px;
     display: flex;
     justify-content: start;
     text-align: start;
@@ -66,13 +127,15 @@
 
 .row_Prices_Services_Final{
     align-items: center;
-    padding: 50px 0;
+    padding: 30px 0 0;
     font-size: 15px; 
 }
 
 .row_Prices_Services_principal{
-    border: 2px solid #ffa600;
+    border: 3px solid #ffa600;
     border-radius: 15px;
+    
+    margin: 1rem 0;
     
 }
 
@@ -82,43 +145,23 @@
 }
 
 .row_Prices_Services_title{
+
     align-items: center;
     min-height: 30px;
-    width: 100px;
     font-size: 15px;
     font-weight: 700;
-}
-
-/*Section de App Mobil*/
-.contenedor_App_Mobil{
-    background-color: #ffe6af;
-    padding: 1rem 8rem;
-    width: 100%;
+    background-color: #ffd78de5;
+    border: 2px solid #ffa600;
     display: flex;
-    margin: 7rem 0;
-   
+    padding: 5px 15px 1px;
+    margin: 0 0 10px 0;
+    justify-content: center;
+    border-radius: 10px;
 }
 
-.contenedor_titulo_App{
-    width: 40%;
-    max-width: 400px;
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-}
- 
-.texto_titulo_App{
-    text-align: left;
-    font-size: 25px;
-    padding-bottom: 1rem;
-}
 
-.texto_descripcion_App{
-    text-align: left;
-    font-size: 18px;
-    padding: 1rem 0 0 0;
-    margin: 0;
-}
+
+
 
 @media (max-width: 1024px) {
     .contenedor_App_Mobil {
@@ -217,36 +260,21 @@
     border: 0.7px solid #ffa600;
 }
 
-.Titulo_complemento{
-    min-height: 40px;
-    padding-top: 10px;
-    max-height: 100px;
-}
 
-.icono_container_complemento{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 75px;
-    max-height: 20rem;
 
-}
-
-.Text_programas{
-    min-height: 100px;
-}
 
 .contenido_inferior_complemento{
-    margin-top: auto;
-    padding-top: 10px;
-    border-top: 1px solid #999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
 }
 
 /*Redes para bajar Apps*/
 .descripcion_App{
+    color: #00000091;
     font-size: 14px;
-    padding-bottom: 20px;
 }
 
 .contenedor_Links_App{
@@ -256,16 +284,6 @@
     
 }
 
-.contenido_App{
-    margin-top: auto;
-    width: 100%;
-    height: 150px;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding-top: 10px;
-}
 
 .imagen_qr{
     margin-right: 2rem;
@@ -278,7 +296,9 @@
 
 .container_price{
     display: flex;
-
+    width: 140px;
+    margin: 0 auto;
+    justify-content: space-around;
 }
 
 .Boton_Prices{
@@ -286,6 +306,7 @@
     border-radius: 8px;
     background-color: #ffa600;
     font-size: 15px;
+    margin: 0.5rem;
     font-weight: 500;
     color: #3b3b3b;
     border: none;
@@ -300,6 +321,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 6rem;
 }
 
 .contenedor_Registro_Home{
@@ -307,21 +329,20 @@
     max-width: 655px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 2rem 0 1rem 0;
     
 }
 
-
 .input_correo_home{
     width: 100%;
-    border-radius: 10px;
-    border: 1px solid #9a9a9a;
-    margin-right: 1.5rem;
-    background-image: url('../assets/images/correo_electronico.svg');
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: 20px center;
-    padding-left: 55px; 
+    padding: 0.6rem 0.9rem 0.5rem 2.4rem;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 15px;
+    text-align: left;
 }
 
 
@@ -332,81 +353,8 @@
 
 
     
-/*Footer*/
-footer {
-    background-color: #000000;
-    color: #fff;
-    width: 100%;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .conteiner_footer{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-
-  }
-
-
-  .footer-section.about {
-    width: 90%;
-    margin:1rem 0 2rem 0;
-  }
-  
-  .footer-section.about h3 {
-    color: #818181;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .footer-section.about p {
-    color: #666;
-    font-size: 1rem; 
-    line-height: 1.5;
-  }
-
-  .container_redesSociales{
-    width: 500px;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .Icono_Redes_Sociales{
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 6px;
-    background-color: #fff;
-  }
 
 
 
-  .columna_Nuestras_Clases{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 1rem 2rem;
-  }
-
-  .Texto_Footer_n_c{
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-  }
 
   /* Estilos para responsive */
-  .contenedor_imagen_App{
-    width: 100%;
-    display: flex;
-    justify-content: end;
-}
-
-.imagen_mockup_App{
-    width: 550px;
-    margin-right: 3rem;
-}
-
