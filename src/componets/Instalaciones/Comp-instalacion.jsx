@@ -35,7 +35,6 @@ const Instalaciones = () => (
         <TitleSection
             title="Experimenta la calidad de entrenamiento en"
             highlight="CEC - FGI"
-            subtitle="junto a profesionales en el área."
             linkText="Encuentra más ambientes..."
             linkHref="/paginaExtra"
         />

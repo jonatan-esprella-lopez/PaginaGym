@@ -1,5 +1,4 @@
-
-
+/* Base Styles */
 .footer {
     width: 100%;
     background-color: #000000;
@@ -24,6 +23,7 @@
 }
 
 .footer-social-links {
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -82,4 +82,48 @@
 
 .footer-column a:hover {
     color: #fff;
+}
+
+@media (max-width: 992px) {
+    .footer-top, .footer-bottom {
+        width: 100%;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-column {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 10px;
+    }
+    .footer-title {
+        font-size: 1.3em;
+    }
+    .footer-column h4 {
+        font-size: 1.1em;
+    }
+    .footer-column a {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        padding: 20px 10px;
+    }
+    .footer-title {
+        font-size: 1.1em;
+    }
+    .footer-column h4 {
+        font-size: 1em;
+    }
+    .footer-column a {
+        font-size: 0.8em;
+    }
 }

@@ -1,30 +1,30 @@
-.conteiner_header{
-    background-color:var(--secondary-color1);
+.conteiner_header {
+    background-color: var(--secondary-color1);
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.Contenedor_credenciales{
+.Contenedor_credenciales {
     display: flex;
     align-self: flex-end;
     margin-right: 13px;
 }
 
-.logo_header{
+.logo_header {
     width: 22rem;
     margin-bottom: 17px;
     position: relative;
     top: -15px;
 }
 
-.contenedor_Link_Paginas{
+.contenedor_Link_Paginas {
     display: flex;
     border-top: 1px solid var(--text-color);
 }
 
-.Link_Paginas{
+.Link_Paginas {
     color: var(--text-color);
     margin: 0 25px;
     padding-bottom: 1rem;
@@ -32,46 +32,69 @@
     justify-content: center;
 }
 
-.Link_Paginas:hover{
+.Link_Paginas:hover {
     color: #8e8e8e;
     text-decoration: none;
 }
 
-
-/*______________________________________________Responsive______________________________________________*/
-
 @media (max-width: 768px) {
-
-    .conteiner_header{
+    .conteiner_header {
         height: 200px;
     }
 
-    .logo_header{
+    .logo_header {
         width: 15rem;
         padding-top: 1rem;
     }
 
-    /* .menu_toggle {
-      display: block;
-      padding: 0.5rem;
-
-    } */
-    
-    /* .contenedor_Link_Paginas {
-      display: none;
-      flex-direction: column;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.9);
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
+    .Contenedor_credenciales {
+        margin-right: 5px;
     }
-     */
-    /* .contenedor_Link_Paginas.open {
-      display: flex;
-    } */
-  }
+
+    .contenedor_Link_Paginas {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--secondary-color1);
+        border-top: none;
+    }
+
+    .Link_Paginas {
+        margin: 10px 0;
+        font-size: var(--font-size-medium);
+    }
+
+    .menu_toggle {
+        display: block;
+        padding: 0.5rem;
+        font-size: var(--font-size-large);
+        cursor: pointer;
+    }
+
+    .contenedor_Link_Paginas.open {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+}
+
+@media (max-width: 480px) {
+    .conteiner_header {
+    }
+
+    .logo_header {
+        width: 12rem;
+        padding-top: 0.5rem;
+    }
+
+    .Link_Paginas {
+        font-size: var(--font-size-small);
+    }
+}

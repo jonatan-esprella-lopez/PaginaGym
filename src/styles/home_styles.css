@@ -1,32 +1,31 @@
-/*css Unico*/
-
-.contenedor-App-Mobil{
+.contenedor-App-Mobil {
     width: 100%;
     height: 650px;
     background-color: var(--backgrounf-color2);
     display: flex;
-    margin:4rem 0 0 0;
+    margin: 4rem 0 0 0;
     align-items: center;
     padding: 0 4rem;
+    flex-wrap: wrap;
 }
 
-.contenedor-App-Mobil article{
+.contenedor-App-Mobil article {
     max-width: 450px;
 }
- 
-.texto-titulo-App{
+
+.texto-titulo-App {
     font-size: 25px;
     padding-bottom: 1rem;
 }
 
-.texto-descripcion-App{
-    text-align:left;
+.texto-descripcion-App {
+    text-align: left;
     font-size: 18px;
     padding: 1rem 0 0 0;
     margin-bottom: 2rem;
 }
 
-.contenido-App{
+.contenido-App {
     display: flex;
     width: 100%;
     height: 110px;
@@ -35,7 +34,7 @@
     align-items: start;
 }
 
-.contenedor-imagen-App{
+.contenedor-imagen-App {
     width: 100%;
     display: flex;
     justify-content: end;
@@ -43,18 +42,75 @@
     top: 13px;
 }
 
-.imagen-mockup-App{
+.imagen-mockup-App {
     width: 700px;
     margin-right: 3rem;
+    position: relative;
+    top: -513px;
 }
 
+@media (max-width: 1200px) {
+    .contenedor-App-Mobil {
+        padding: 0 2rem;
+        height: auto;
+    }
+    .imagen-mockup-App {
+        width: 600px;
+        margin-right: 2rem;
+    }
+}
 
+@media (max-width: 992px) {
+    .contenedor-App-Mobil {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .contenedor-App-Mobil article {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+    .contenedor-imagen-App {
+        justify-content: center;
+        top: 0;
+    }
+    .imagen-mockup-App {
+        width: 500px;
+        top: 17px;
+        margin-right: 0;
+    }
+}
 
+@media (max-width: 768px) {
+    .contenedor-App-Mobil {
+        padding: 0 1rem;
+    }
+    .texto-titulo-App {
+        font-size: 22px;
+    }
+    .texto-descripcion-App {
+        font-size: 16px;
+    }
+    .imagen-mockup-App {
+        width: 400px;
+    }
+}
 
-
-
-
-
+@media (max-width: 576px) {
+    .contenedor-App-Mobil {
+        padding: 0;
+    }
+    .texto-titulo-App {
+        font-size: 20px;
+    }
+    .texto-descripcion-App {
+        font-size: 14px;
+    }
+    .imagen-mockup-App {
+        width: 300px;
+    }
+}
 
 
 

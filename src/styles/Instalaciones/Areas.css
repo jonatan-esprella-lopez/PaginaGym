@@ -1,190 +1,224 @@
 
-
-.container-cards{
-    display: flex;
-    width: 85%;
-    justify-content: space-around;
+.container-cards {
+  display: flex;
+  width: 85%;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.Text_instalaciones{
-    padding: 0.5rem 0.4rem 0 0.4rem;
-    font-size: 14px;
-    font-weight: 500;
-    color: #111;
+.Text_instalaciones {
+  padding: 0.5rem 0.4rem 0 0.4rem;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111;
 }
 
-.imagen-instalacion{
-    width: 100%;
-    height: 270px;
-    position: relative;
-    object-fit: cover;
-    border-radius: 13px 13px 0 0;
-    filter: saturate(1.2);
-    filter: contrast(1.2);
+.imagen-instalacion,
+.ambiente-image {
+  width: 100%;
+  border-radius: 8px;
+  filter: contrast(1.2) saturate(1.2);
 }
 
+.imagen-instalacion {
+  height: 270px;
+  border-radius: 13px 13px 0 0;
+}
 
+.ambiente-image {
+  max-width: 800px;
+  height: 300px;
+  margin: 20px 0;
+  filter: contrast(1.4);
+}
 
+.gym-details-container,
+.al {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
 
-/*______________________________________________Responsive______________________________________________*/
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
 
+.info-card {
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.info-card h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.info-card p,
+.info-card a {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.info-card a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.info-card a:hover {
+  text-decoration: underline;
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.carousel-button {
+  position: absolute;
+  font-size: medium;
+  top: 43%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: white;
+  border: none;
+  padding: 13px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-indicator {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-indicator.active {
+  background-color: #717171;
+}
+
+.carousel-slide:not(.active) {
+  opacity: 0.5;
+  transform: scale(0.8);
+}
+
+@media (max-width: 1200px) {
+  .info-card {
+      width: 48%;
+  }
+}
+
+@media (max-width: 992px) {
+  .info-card {
+      width: 100%;
+  }
+  .info-container {
+      flex-direction: column;
+  }
+}
 
 @media (max-width: 768px) {
-    .Instalacion_Containers {
-        flex-direction: row;
-        padding: 1rem;
-        overflow-x: scroll;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none; 
-        -ms-overflow-style: none;
-    }
+  .container-cards {
+      width: 100%;
+  }
+  
+  .Instalacion_Containers {
+      flex-direction: row;
+      padding: 1rem;
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+  }
 
-    .instalacion_container {
-        width: 80%;
-        margin-right: 1rem;
-        flex: 0 0 auto;
-    }
-    .Instalaciones_container{
-        width: 100%;
-    }
+  .instalacion_container {
+      width: 80%;
+      margin-right: 1rem;
+      flex: 0 0 auto;
+  }
+
+  .Instalaciones_container {
+      width: 100%;
+  }
+
+  .imagen-instalacion {
+    height: 100px;
+    border-radius: 13px 13px 0 0;
+  }
 }
 
-
-
-/*Nuevo codigo a revisar refactorizar*/
-
-  .gym-details-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  
-.al{
-  margin: 0 auto;
-}
-  
-  .ambiente-image {
-    max-width: 800px;
-    height: 300px;
-    margin: 20px 0;
-    filter: contrast(1.4);
-    border-radius: 8px;
-  }
-  
-  .info-container {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-  }
-  
-  .info-card {
-    background-color: #fff;
-    border: 1px solid #e1e1e1;
-    border-radius: 8px;
-    padding: 20px;
-    width: 45%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .info-card h3 {
-    font-size: 20px;
-    color: #333;
-  }
-  
-  .info-card p {
-    font-size: 16px;
-    color: #666;
-    margin: 10px 0;
-  }
-  
-  .info-card a {
-    font-size: 16px;
-    color: #1e90ff;
-    text-decoration: none;
-  }
-  
-  .info-card a:hover {
-    text-decoration: underline;
-  }
-  
-
-  
-
-
-  /*code nuew*/
-
+@media (max-width: 576px) {
   .carousel {
-    position: relative;
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-  }
-  
-  .carousel-slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .carousel-slide {
-    min-width: 100%;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .carousel-slide img {
-    width: 100%;
-    border-radius: 5px;
-  }
-  
-  .carousel-button {
-    position: absolute;
-    font-size: medium;
-    top: 43%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    color: white;
-    border: none;
-    padding: 13px;
-    cursor: pointer;
-    z-index: 1;
+      width: 100%;
   }
 
-  .carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+  .carousel-button {
+      padding: 10px;
+      font-size: small;
   }
-  
-  .carousel-button.prev {
-    left: 10px;
+
+  .Text_instalaciones {
+      font-size: 12px;
+      padding: 0 5px;
+      height: 1.1rem;
+
   }
-  
-  .carousel-button.next {
-    right: 10px;
+
+  .info-card h3 {
+      font-size: 18px;
   }
-  
-  .carousel-indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+
+  .info-card p,
+  .info-card a {
+      font-size: 14px;
   }
-  
-  .carousel-indicator {
-    height: 10px;
-    width: 10px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  
-  .carousel-indicator.active {
-    background-color: #717171;
-  }
-  
-  .carousel-slide:not(.active) {
-    opacity: 0.5;
-    transform: scale(0.8);
-  }
-  
+}

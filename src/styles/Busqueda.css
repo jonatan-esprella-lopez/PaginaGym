@@ -1,8 +1,8 @@
-Banner_boton_gimnasioBanner_boton_gimnasio.content_Find_Center{
+.Banner_boton_gimnasio.content_Find_Center {
     text-decoration: none;
 }
 
-.image_Find_Center{
+.image_Find_Center {
     width: 86%;
     flex-wrap: nowrap;
     display: flex;
@@ -17,7 +17,7 @@ Banner_boton_gimnasioBanner_boton_gimnasio.content_Find_Center{
     background-size: cover;
 }
 
-.Banner_boton_gimnasio{
+.Banner_boton_gimnasio {
     background-color: #7f83882d;
     backdrop-filter: blur(10px);
     padding: 3.2rem 7rem;
@@ -31,14 +31,13 @@ Banner_boton_gimnasioBanner_boton_gimnasio.content_Find_Center{
     border: 1px solid rgba(255, 255, 255, 0.573);
 }
 
-.contenedor-titulo-FC{
+.contenedor-titulo-FC {
     padding: 0 0 0.5rem 0.4rem;
     color: white;
     align-self: flex-start;
-    
 }
 
-.Boton-buscar-centro{
+.Boton-buscar-centro {
     margin: 0.5rem;
     padding: 0.5rem 1.5rem;
     background-color: #161a00;
@@ -48,13 +47,13 @@ Banner_boton_gimnasioBanner_boton_gimnasio.content_Find_Center{
     border-radius: 4px;
 }
 
-.Boton-buscar-centro:hover{
+.Boton-buscar-centro:hover {
     color: black;
     background-color: #f2ff01;
     cursor: pointer;
 }
 
-.busqueda-input{
+.busqueda-input {
     width: 19rem;
     padding: 0.6rem 0.9rem 0.5rem 2.4rem;
     font-size: 16px;
@@ -66,19 +65,18 @@ Banner_boton_gimnasioBanner_boton_gimnasio.content_Find_Center{
 }
 
 .busqueda-input:focus {
-    border-color: #161a00; 
-  }
-
-.Banner_boton_gimnasio p{
-    margin: 0;
-    
+    border-color: #161a00;
 }
 
-.contenedor-Busqueda{
+.Banner_boton_gimnasio p {
+    margin: 0;
+}
+
+.contenedor-Busqueda {
     position: relative;
 }
 
-.iconos{
+.iconos {
     color: black;
     width: 25px;
     height: 25px;
@@ -87,14 +85,73 @@ Banner_boton_gimnasioBanner_boton_gimnasio.content_Find_Center{
     position: absolute;
 }
 
-
-
-/*______________________________________________Responsive______________________________________________*/
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .Banner_boton_gimnasio{
+    .Banner_boton_gimnasio {
         padding: 0.2rem 2rem;
         font-size: 16px;
-    }  
+    }
 
-    
+    .image_Find_Center {
+        width: 100%;
+        height: 250px;
+        margin-top: 1rem;
+    }
+
+    .contenedor-titulo-FC {
+        padding: 0 0 0.3rem 0.2rem;
+        font-size: 18px;
+    }
+
+    .Boton-buscar-centro {
+        margin: 0.3rem;
+        padding: 0.4rem 1.2rem;
+        font-size: 14px;
+    }
+
+    .busqueda-input {
+        width: 100%;
+        padding: 0.5rem 0.8rem 0.4rem 2rem;
+        font-size: 14px;
+    }
+
+    .iconos {
+        width: 20px;
+        height: 20px;
+        top: 5px;
+        left: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Banner_boton_gimnasio {
+        padding: 0.1rem 1rem;
+        font-size: 14px;
+    }
+
+    .image_Find_Center {
+        height: 200px;
+    }
+
+    .contenedor-titulo-FC {
+        font-size: 16px;
+    }
+
+    .Boton-buscar-centro {
+        margin: 0.2rem;
+        padding: 0.3rem 1rem;
+        font-size: 12px;
+    }
+
+    .busqueda-input {
+        padding: 0.4rem 0.7rem 0.3rem 1.8rem;
+        font-size: 13px;
+    }
+
+    .iconos {
+        width: 18px;
+        height: 18px;
+        top: 4.5px;
+        left: 5px;
+    }
 }
