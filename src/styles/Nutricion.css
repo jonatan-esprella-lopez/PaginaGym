@@ -350,6 +350,7 @@ body {
   
   .header .bold {
     font-weight: 700;
+
     color: #ec880d;
   }
   
@@ -375,3 +376,138 @@ body {
     font-weight: 700;
     color: #ec8b0d;
   }
+
+
+
+  @media (max-width: 768px) {
+    .nutricion-container {
+      height: auto;
+      background-position: center;
+      padding: 20px;
+    }
+  
+    .nutricion-container h3 {
+      font-size: var(--font-size-medium);
+    }
+  
+    .Imagen_Tarjeta_Nutricion {
+      height: 150px;
+    }
+  
+    .cont-general-Nutricion {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Titulo_Principal {
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+  
+    .Listado_Tarjeta {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .contenedor_Tarjetas {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Titulo_Tarjeta_Tipo_Nut, .Detalle_Tarjeta_Tipo_Nut {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .Iconos_Nutricion {
+      width: 25px;
+    }
+  
+    .contenedor_Porcion_Nutricional {
+      width: 100%;
+    }
+  
+    .contenedor_tarjeta {
+      padding: 1rem;
+    }
+  
+    .plan {
+      max-width: 100%;
+      margin: 10px 0;
+    }
+  
+    .plan-header {
+      font-size: var(--font-size-small);
+    }
+  
+    .cont-valor-nuttricional {
+      margin-bottom: 1rem;
+    }
+  
+    .plan img {
+      max-height: 150px;
+    }
+  
+    .plan h3 {
+      padding: 10px 0;
+    }
+  
+    .plan-details {
+      padding: 10px;
+    }
+  
+    .button-nutricion {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .plan-descripcion {
+      height: auto;
+      padding: 10px;
+    }
+  
+    .cont-head-plan {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .group-plan {
+      padding: 10px;
+    }
+  
+    .group-plan h2 {
+      text-align: center;
+    }
+  
+    .plan-container {
+      flex-direction: column;
+    }
+  
+    .cont-plan-image, .plan-image {
+      height: auto;
+      width: 100%;
+    }
+  
+    .plan-type {
+      font-size: var(--font-size-small);
+      padding: 6px 8px;
+    }
+  
+    .plan-details li {
+      font-size: 12px;
+    }
+  
+    .price {
+      font-size: 20px;
+    }
+  
+    .container {
+      padding: 1.5rem;
+    }
+  
+    .divider {
+      width: 100%;
+    }
+  }
+  

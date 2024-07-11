@@ -172,3 +172,173 @@
     cursor: pointer;
   }
   
+
+
+  @media (max-width: 1024px) {
+    .search-bar input {
+      width: 250px;
+    }
+  
+    main {
+      flex-direction: column;
+    }
+  
+    .filters,
+    .training-list {
+      width: 100%;
+    }
+  
+    .filters {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .training-search-container {
+      padding: 10px;
+    }
+  
+    .header h1 {
+      font-size: 20px;
+    }
+  
+    .header h4 {
+      font-size: 16px;
+    }
+  
+    .search-bar {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .search-bar input,
+    .search-bar select,
+    .search-bar button {
+      width: 100%;
+      padding: 8px;
+    }
+  
+    .filters,
+    .training-list {
+      width: 100%;
+      padding: 10px;
+      box-shadow: none;
+    }
+  
+    .filters h2 {
+      font-size: 16px;
+    }
+  
+    .filters label,
+    .training-info p {
+      font-size: 14px;
+    }
+  
+    .qualification {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+    }
+  
+    .training-list h2 {
+      font-size: 20px;
+    }
+  
+    .training-list p {
+      font-size: 14px;
+    }
+  
+    .training img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .training-info h3 {
+      font-size: 16px;
+    }
+  
+    .tags span {
+      font-size: 10px;
+    }
+  
+    .more-info {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .training-search-container {
+      padding: 10px;
+    }
+  
+    .header h1 {
+      font-size: 20px;
+    }
+  
+    .header h4 {
+      font-size: 16px;
+    }
+  
+    .search-bar {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .search-bar input,
+    .search-bar select,
+    .search-bar button {
+      width: 100%;
+      padding: 8px;
+    }
+  
+    .filters,
+    .training-list {
+      width: 100%;
+      padding: 10px;
+      box-shadow: none;
+    }
+  
+    .filters h2 {
+      font-size: 16px;
+    }
+  
+    .filters label,
+    .training-info p {
+      font-size: 14px;
+    }
+  
+    .qualification {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+    }
+  
+    .training-list h2 {
+      font-size: 20px;
+    }
+  
+    .training-list p {
+      font-size: 14px;
+    }
+  
+    .training img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .training-info h3 {
+      font-size: 16px;
+    }
+  
+    .tags span {
+      font-size: 10px;
+    }
+  
+    .more-info {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  

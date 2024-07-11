@@ -42,6 +42,7 @@
 .contendor_principal_gym{
     width: 85%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -245,3 +246,100 @@
   .contenedor-buscador button:hover {
     background-color: #0d8dec;
   }
+
+
+
+
+  @media (max-width: 1024px) {
+    .contenedor_buscador {
+      width: 60%;
+    }
+  
+    .contenedor_buscador input {
+      width: 60%;
+    }
+  
+    .cont-gyms {
+      justify-content: center;
+    }
+  
+    .card-gym {
+      width: 45%;
+      height: auto;
+    }
+  
+    .contenedor-buscador {
+      width: 600px;
+    }
+  
+    .contenedor-buscador input {
+      width: 60%;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .contenedor_buscador {
+      width: 80%;
+      flex-direction: column;
+    }
+  
+    .contenedor_buscador input {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .cont-gyms {
+      justify-content: center;
+    }
+  
+    .card-gym {
+      width: 90%;
+      margin: 1rem 0;
+    }
+  
+    .contenedor-buscador {
+      width: 90%;
+      gap: 5px;
+    }
+  
+    .contenedor-buscador input {
+      width: 100%;
+    }
+  
+    .contenedor-buscador button {
+      width: 100%;
+    }
+  }
+
+  
+
+  @media (max-width: 480px) {
+    .contenedor_buscador input {
+      padding-left: 40px;
+      background-size: 15px;
+    }
+  
+    .card-gym {
+      width: 100%;
+    }
+  
+    .contenedor-buscador {
+      width: 100%;
+      gap: 5px;
+    }
+  
+    .contenedor-buscador input {
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .contenedor-buscador button {
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  

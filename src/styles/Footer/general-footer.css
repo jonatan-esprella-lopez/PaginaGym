@@ -36,15 +36,19 @@
     text-decoration: none;
     font-size: var(--font-size-small);
     padding: 10px;
+    transition: 0.3s;
 }
 
 .social-icon {
     width: 17px;
     height: 17px;
     margin-right: 12px;
+    filter:contrast(0) brightness(3);
+    transition: 0.3s;
 }
 
 .social-link:hover .social-icon {
+    filter:contrast(1) brightness(1);
 }
 
 .social-link:hover {

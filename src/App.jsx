@@ -38,7 +38,7 @@ function App() {
         <Route path="/paginaExtra" element={<PaginaConstruccion />} />
         <Route path="/Aerobicos" element={<AreaAerobica />} />
         
-        <Route path="/Shop CEC trainnig" element={<Tienda />} />
+        <Route path="/Shop-CEC-trainnig" element={<Tienda />} />
 
         <Route path="/" element={<ProtectedRoute />}>
           <Route path="PerfilUser" element={<PerfilPublico />} />

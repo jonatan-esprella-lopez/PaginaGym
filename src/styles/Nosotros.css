@@ -157,21 +157,80 @@
 }
 
 @media (max-width: 768px) {
+  .about-us-header {
+    padding: 0 10px;
+  }
+
+  .about-us-content {
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+
+  .instructor-cards-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .about-us-content h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .about-us-content ul {
+    margin-left: 20px;
+  }
+
+  .about-us-content ul li {
+    margin-bottom: 8px;
+  }
+
+  .instructor-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .instructor-info h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .instructor-info p {
+    font-size: 14px;
+  }
+
+  .cont-Mis-Vis {
+    flex-direction: column;
+    padding: 0 10px;
+    margin-bottom: 2rem;
+  }
+
   .about-us-section {
     height: 200px;
   }
+
+
 
   .overlay h1 {
     font-size: 1.8rem;
   }
 
   .overlay p {
-    font-size: 1rem;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .underline-central {
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .overlay-bienvenida {
+    width: 100%;
   }
 }
-
-
-
 
 
 

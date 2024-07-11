@@ -87,9 +87,14 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .Banner_boton_gimnasio {
-        padding: 0.2rem 2rem;
-        font-size: 16px;
+    .Banner_boton_gimnasio div{
+        padding: 0.2rem 0;
+        font-size: 12px;
+    }
+
+    .Banner_boton_gimnasio div button{
+        padding: 0;
+        margin-top: 10px;
     }
 
     .image_Find_Center {

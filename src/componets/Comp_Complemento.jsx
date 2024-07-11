@@ -53,7 +53,7 @@ const Complementos = () => (
                 description="Lleva tu entrenamiento a donde quieras y cuando quieras con nuestra plataforma virtual de clases y contenido fitness."
                 benefit="Beneficio gratuito para los clientes."
                 buttonText="Tienda"
-                link="/Shop CEC training"
+                link="/Shop-CEC-trainnig"
             />
             <Card
                 icon={NutriComp}
@@ -62,7 +62,7 @@ const Complementos = () => (
                 benefit="Come saludable"
                 price={{ amount: 150, cents: '.99', period: 'Mes' }}
                 buttonText="Más información"
-                link="/Shop CEC training"
+                link="/Shop-CEC-trainnig"
                 special
             />
             <Card
@@ -72,7 +72,7 @@ const Complementos = () => (
                 benefit="Sientete muy bien al entrenar."
                 price={{ amount: 150, cents: '.99', period: 'Mes' }}
                 buttonText="Conoce más"
-                link="/Shop CEC training"
+                link="/Shop-CEC-trainnig"
             />
         </section>
     </section>

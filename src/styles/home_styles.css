@@ -215,11 +215,18 @@
 
 
 
-
+.descripcion-App{
+    color: #00000091;
+    font-size: 14px;
+}
 
 @media (max-width: 1024px) {
     .contenedor-App-Mobil {
         padding: 1rem 4rem;
+    }
+    .descripcion-App{
+        color: #00000091;
+        font-size: 10px;
     }
 
     .contenedor-titulo-App {
@@ -241,6 +248,9 @@
         display: flex;
         flex-direction: column;
     }
+    
+
+
     
     .contenedor-imagen-App{
         width: 40%;
@@ -324,10 +334,7 @@
     align-items: center;
 }
 
-.descripcion-App{
-    color: #00000091;
-    font-size: 14px;
-}
+
 
 .contenedor-Links-App{
     display: flex;
@@ -353,7 +360,7 @@
 }
 
 .Boton-Prices{
-    padding: 10px 45px ;
+    padding: 10px 45p-x ;
     border-radius: 8px;
     background-color: #ffa600;
     font-size: 15px;
@@ -407,4 +414,18 @@
 
 
 
+
   /* Estilos para responsive */
+
+  @media (max-width: 768px) {
+
+    .contenedor-Registro-Home button{
+        padding: 0 5px;
+    }
+
+    .contenedor-Registro-Home input{
+        font-size: 11px;
+    }
+
+}
+

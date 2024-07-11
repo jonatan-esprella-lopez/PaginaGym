@@ -41,6 +41,12 @@
     .conteiner_header {
         height: 200px;
     }
+    .Contenedor_credenciales {
+    display: flex;
+    align-self: center;
+    margin-right: 13px;
+}
+
 
     .logo_header {
         width: 15rem;

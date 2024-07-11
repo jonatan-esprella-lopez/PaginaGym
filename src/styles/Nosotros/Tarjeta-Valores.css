@@ -86,4 +86,8 @@
     .value p {
       font-size: 0.9rem;
     }
+    
+  .overlay1{
+    padding: 0px;
+  }
   }
