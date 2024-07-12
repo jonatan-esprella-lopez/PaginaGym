@@ -8,7 +8,7 @@ import Intensidad from "../assets/images/intensidad.svg";
 
 const Card = ({ image, title, duration, intensity, description }) => (
     <article className="estructura-card-2">
-        <div>
+        <div className="contenedor-imagen-1">
             <img src={image} alt={title} className="imagen-instalacion" />
             
         </div>

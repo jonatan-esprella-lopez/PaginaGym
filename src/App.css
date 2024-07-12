@@ -434,9 +434,28 @@ a:hover{
   .estructura-principal-cards{
     margin: 0;
   }
+
+
+
+  .estructura-card-3{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    border: 0.3px solid #343434;
+    border-radius: 15px;
+    outline: 2px solid transparent;
+    box-shadow: 3px 3px 10px -1px rgba(22, 22, 22, 0.398);
+    transition: .30s;
+    cursor: pointer;
+    width: 175px;
+    height: 280px;
+    margin: 10px 0 0 0;
+    align-items: center;
+}
+  .estructura-card-3 img{
+    width: 100%;
+    border-radius: 13px 13px 0 0;
+
+  }
 }
 
-
-@media (max-width: 480px) {
-
-}

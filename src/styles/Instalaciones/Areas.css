@@ -21,6 +21,11 @@
   filter: contrast(1.2) saturate(1.2);
 }
 
+.contenedor-imagen-1{
+  width: 100%;
+  display: flex;
+}
+
 .imagen-instalacion {
   object-fit: cover;
   height: 270px;
@@ -181,7 +186,6 @@
   .imagen-instalacion {
     height: 200px;
     width: 160px;
-    margin-top: 3px;
     border-radius: 13px 0 0 13px;
   }
 }
