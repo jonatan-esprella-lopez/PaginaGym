@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/home_styles.css";
 import QR from "../assets/images/qr.png";
-import AppMockup from "../assets/images/app.webp";
+import AppMockup from "../assets/images/app.jpg";
 
 const Title = ({ text, highlight }) => (
     <h3 className="texto-titulo-App">

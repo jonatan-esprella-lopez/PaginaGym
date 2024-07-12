@@ -17,7 +17,9 @@ const TitleSection = ({ title, highlight, subtitle, linkText, linkHref }) => (
             </h4>
             <p>{subtitle}</p>
         </div>
-        <a href={linkHref}>{linkText}</a>
+        <Link to={linkHref} >
+            {linkText}
+        </Link>
     </div>
 );
 

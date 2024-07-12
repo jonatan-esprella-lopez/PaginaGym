@@ -21,6 +21,7 @@
 }
 
 .imagen-instalacion {
+  object-fit: cover;
   height: 270px;
   border-radius: 13px 13px 0 0;
 }
@@ -151,20 +152,6 @@
   transform: scale(0.8);
 }
 
-@media (max-width: 1200px) {
-  .info-card {
-      width: 48%;
-  }
-}
-
-@media (max-width: 992px) {
-  .info-card {
-      width: 100%;
-  }
-  .info-container {
-      flex-direction: column;
-  }
-}
 
 @media (max-width: 768px) {
   .container-cards {
@@ -191,34 +178,7 @@
   }
 
   .imagen-instalacion {
-    height: 100px;
+    height: 150px;
     border-radius: 13px 13px 0 0;
-  }
-}
-
-@media (max-width: 576px) {
-  .carousel {
-      width: 100%;
-  }
-
-  .carousel-button {
-      padding: 10px;
-      font-size: small;
-  }
-
-  .Text_instalaciones {
-      font-size: 12px;
-      padding: 0 5px;
-      height: 1.1rem;
-
-  }
-
-  .info-card h3 {
-      font-size: 18px;
-  }
-
-  .info-card p,
-  .info-card a {
-      font-size: 14px;
   }
 }

@@ -3,8 +3,8 @@ import '../styles/Nutricion.css';
 import {Link} from 'react-router-dom'
 import Header from "../componets/Header_Main"
 import Footer from "../componets/Footer_Main"
-import image from "../assets/images/Nutricion/NutricionHipertrofia.webp"
-import ImagenHipertrofia from "../assets/images/Nutricion/NutricionHipertrofia.webp"
+import image from "../assets/images/Nutricion/NutricionHipertrofia.jpg"
+import ImagenHipertrofia from "../assets/images/Nutricion/NutricionHipertrofia.jpg"
 import Proteina from "../assets/images/Nutricion/Proteina.svg"
 import Carbohidrato from "../assets/images/Nutricion/Carbohidrato.svg"
 import Grasas from "../assets/images/Nutricion/Grasa.svg"
