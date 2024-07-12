@@ -8,27 +8,33 @@ import Intensidad from "../assets/images/intensidad.svg";
 
 const Card = ({ image, title, duration, intensity, description }) => (
     <article className="estructura-card-2">
-        <img src={image} alt={title} className="imagen-instalacion" />
+        <div>
+            <img src={image} alt={title} className="imagen-instalacion" />
+            
+        </div>
+        
+        <div>
         <div className="Clases-titulo-container">
-            <a>{title}</a>
-        </div>
-        <div className="contenido-clases-detalle">
-            <div className="detalle-clase">
-                <img src={Duracion} alt="Duración" className="Iconos-detalle" />
-                <p className="detalle-title">Duración</p>
-                <p className="detalle-descripcion">{duration}</p>
+                <a>{title}</a>
+            </div>  
+            <div className="contenido-clases-detalle">
+                <div className="detalle-clase">
+                    <img src={Duracion} alt="Duración" className="Iconos-detalle" />
+                    <p className="detalle-title">Duración</p>
+                    <p className="detalle-descripcion">{duration}</p>
+                </div>
+                <div className="detalle-clase">
+                    <img src={Intensidad} alt="Intensidad" className="Iconos-detalle" />
+                    <p className="detalle-title">Intensidad</p>
+                    <p className="detalle-descripcion">{intensity}</p>
+                </div>
             </div>
-            <div className="detalle-clase">
-                <img src={Intensidad} alt="Intensidad" className="Iconos-detalle" />
-                <p className="detalle-title">Intensidad</p>
-                <p className="detalle-descripcion">{intensity}</p>
+            <div className="contenedor-Apartador">
+                <hr className="Apartador" />
             </div>
-        </div>
-        <div className="contenedor-Apartador">
-            <hr className="Apartador" />
-        </div>
-        <div className="contenedor-Texto">
-            <p className="Text-programas">{description}</p>
+            <div className="contenedor-Texto">
+                <p className="Text-programas">{description}</p>
+            </div>
         </div>
     </article>
 );
@@ -42,8 +48,8 @@ const ProgramaMain = () => (
                     <div className="underline"></div>
                 </h4>
             </div>
-            <a href="/paginaExtra">
-                Encuentra más Programas de entrenamiento...
+            <a href="/paginaExtra" className="">
+                Mas...
             </a>
         </div>
         <section className="container-cards">

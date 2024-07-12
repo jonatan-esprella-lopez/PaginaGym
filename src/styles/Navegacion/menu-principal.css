@@ -9,6 +9,7 @@
 .Contenedor_credenciales {
     display: flex;
     align-self: flex-end;
+    align-items: center;
     margin-right: 13px;
 }
 
@@ -37,9 +38,19 @@
     text-decoration: none;
 }
 
+.menu-button{
+    width: 2rem;
+    height: 2.2rem;
+    margin-left: 12px;
+    border-radius: 5px;
+    border: 1px solid #eeff00;
+    background-color: #ffffff00;
+    color: #fff700;
+}
+
 @media (max-width: 768px) {
     .conteiner_header {
-        height: 200px;
+        height: 150px;
     }
     .Contenedor_credenciales {
     display: flex;

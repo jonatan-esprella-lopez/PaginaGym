@@ -16,6 +16,7 @@
 .imagen-instalacion,
 .ambiente-image {
   width: 100%;
+  object-fit: cover;
   border-radius: 8px;
   filter: contrast(1.2) saturate(1.2);
 }
@@ -178,7 +179,9 @@
   }
 
   .imagen-instalacion {
-    height: 150px;
-    border-radius: 13px 13px 0 0;
+    height: 200px;
+    width: 160px;
+    margin-top: 3px;
+    border-radius: 13px 0 0 13px;
   }
 }

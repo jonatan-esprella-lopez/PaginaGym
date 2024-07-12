@@ -44,7 +44,7 @@ const Complementos = () => (
                     <div className="underline"></div>
                 </h4>
             </div>
-            <a href="/paginaExtra">Encuentra todos los complementos...</a>
+            <a href="/paginaExtra">Mas...</a>
         </div>
         <section className="container-cards">
             <Card

@@ -22,25 +22,29 @@ function HeaderMain() {
     };
 
     return (
-        <header className="conteiner_header">
-            <div className="Contenedor_credenciales">
-                <Credenciales />
-            </div>
-            <a href="/">
-                <img src={Logo} alt="" className="logo_header" />
-            </a>
-            <div className="contenedorNav">
+         <header className="conteiner_header">
+         <div className="Contenedor_credenciales">
+             <Credenciales />
+             <button className="menu-button" onClick={toggleMenu}>
+                    ☰
+                </button>
+         </div>
+         <a href="/">
+             <img src={Logo} alt="" className="logo_header" />
+         </a>
+         <div className="contenedorNav">
+         
                 <nav className={`contenedor_Link_Paginas ${isMenuOpen ? 'open' : ''}`}>
                     {links.map(link => (
                         <p key={link.path}>
-                            <Link to={link.path} className={`Link_Paginas`}>
+                            <Link to={link.path} className="Link_Paginas">
                                 {link.label}
                             </Link>
                         </p>
                     ))}
                 </nav>
-            </div>
-        </header>
+         </div>
+     </header>
     );
 }
 
