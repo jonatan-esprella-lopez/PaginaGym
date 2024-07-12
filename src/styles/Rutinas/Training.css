@@ -104,7 +104,10 @@
 
 .highlighted-card h3 {
     margin: 0;
-    padding: 10px 0;
+    color: #000;
+    font-weight: bold;
+    padding: 12px 0;
+
     font-size: var(--font-size-medium);
 }
 
@@ -122,7 +125,8 @@
 
 .highlighted-button {
     background-color: var(--primary-color);
-    color: #fff;
+    color: #000;
+    font-weight: bold;
     padding: 10px 20px;
     border: 0;
     border-radius: 5px;
@@ -152,6 +156,7 @@
 
 .cont-head-table p {
     opacity: 66%;
+
 }
 
 .table-general {
@@ -223,6 +228,16 @@ th {
     display: flex;
     align-items: center;
     padding-right: 4rem;
+    justify-content: space-between;
+}
+
+.contenedor-th-icons{
+    width: 23rem;
+}
+
+.contenedor-th-icons{
+    display: flex;
+    padding: 0 50px;
     justify-content: space-between;
 }
 
@@ -318,7 +333,10 @@ th {
 }
 
 
-@media (max-width: 480px) {
+
+@media (max-width: 768px) {
+
+
     .training-title {
         font-size: 1.2em;
     }
@@ -335,11 +353,8 @@ th {
     .cont-dia {
         transform: rotate(0);
         height: auto;
+        margin: 0;
     }
-}
-
-
-@media (max-width: 768px) {
     .table-general thead {
         display: none;
     }
@@ -376,13 +391,18 @@ th {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 300px;
+        width: 350px;
+        padding: 20px;
     }
-    .cont-gen-dia {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .cont-dia {
+        justify-content: left;
         width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cont-gen-dia{
+        width: 170px;
     }
 
     .cont-espaciado {
@@ -394,12 +414,16 @@ th {
 
 
 
-    
+    .card-header{
+        margin-bottom: 30px;
+    }
 
 
 
     
-  
+  .tipo-entrenamiento{
+    margin: 0;
+  }
 
     .training-intro,
     .training-cards {
@@ -407,9 +431,14 @@ th {
     }
 
     .cont-head-table {
-        width: 300px;
+        width: 380px;
         font-size: 12px;
         justify-content: space-between;
+    }
+
+
+    .underline-dia{
+        width: 100px;
     }
 
 }

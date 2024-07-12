@@ -44,7 +44,11 @@ const Complementos = () => (
                     <div className="underline"></div>
                 </h4>
             </div>
-            <a href="/paginaExtra">Mas...</a>
+            <Link to="/paginaExtra">
+                <a>
+                    Mas...
+                </a>
+            </Link>
         </div>
         <section className="container-cards">
             <Card

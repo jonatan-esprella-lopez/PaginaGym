@@ -26,29 +26,37 @@ function NutricionPage() {
       <h1 className='Titulo_Principal'>Planes Pre-armados</h1>
       <section className='cont-general-Nutricion'>
 
-        <article class="plan estructure-card-1">
-          <p class="plan-header">Plan proteico</p>
-          <img src={ImagenHipertrofia} alt="Aumenta tu masa muscular"/>
-          <h3>Aumenta tu masa muscular</h3>
-          <p className="plan-descripcion">Un plan nutricional diseñado para personas que buscan aumentar su masa muscular a través de una dieta rica en proteínas y calorías controladas.</p>
-          <div className="cont-valor-nuttricional">
-            <div class="plan-details">
-                <p> <strong>Proteínas:</strong> 150g por día</p>
-                <p> <strong>Carbohidratos:</strong> 300g por día</p>
-                <p> <strong>Grasas:</strong> 80g por día</p>
-                <p> <strong>Calorías:</strong> 3000 kcal por día</p>
+        <article className="plan structure-card-1">
+          <div className='contenedor-1-nutri'>
+            <p className="plan-header">Plan proteico</p>
+            <img src={ImagenHipertrofia} alt="Aumenta tu masa muscular"/>
+            <h3>Aumenta tu masa muscular</h3>
+          </div>
+          <div className='contenedor-2-nutri'>
+            <p className="plan-descripcion">Un plan nutricional diseñado para personas que buscan aumentar su masa muscular a través de una dieta rica en proteínas y calorías controladas.</p>
+            <div className="cont-valor-nuttricional">
+              <div className="plan-details">
+                  <p> <strong>Proteínas:</strong> 150g por día</p>
+                  <p> <strong>Carbohidratos:</strong> 300g por día</p>
+                  <p> <strong>Grasas:</strong> 80g por día</p>
+                  <p> <strong>Calorías:</strong> 3000 kcal por día</p>
+              </div>
+              <button className='button-nutricion'>Más Información</button>
             </div>
-            <button className='button-nutricion'>Más Información</button>
           </div>
         </article>
 
-        <article class="plan estructure-card-1">
-            <div class="plan-header">Plan bajo en grasa</div>
+        <article className="plan structure-card-1">
+        <div className='contenedor-1-nutri'>
+            <div className="plan-header">Plan bajo en grasa</div>
             <img src={ImagenHipertrofia} alt="Pérdida de grasa"/>
             <h3>Pérdida de grasa</h3>
+            </div>
+            <div className='contenedor-2-nutri'>
+
             <p className="plan-descripcion">Un plan nutricional enfocado en la reducción de grasa corporal mediante un déficit calórico y la ingesta de alimentos saludables.</p>
             <div className="cont-valor-nuttricional">
-              <div class="plan-details">
+              <div className="plan-details">
                   <p> <strong>Proteínas:</strong> 120g por día</p>
                   <p> <strong>Carbohidratos:</strong> 200g por día</p>
                   <p> <strong>Grasas:</strong> 60g por día</p>
@@ -57,15 +65,20 @@ function NutricionPage() {
             
             <button className='button-nutricion'>Más Información</button>
             </div>
+            </div>
         </article>
 
-        <article class="plan estructure-card-1">
-            <div class="plan-header">Plan de tonificación</div>
+        <article className="plan structure-card-1">
+        <div className='contenedor-1-nutri'> 
+            <div className="plan-header">Plan de tonificación</div>
             <img src={ImagenHipertrofia} alt="Tonificación"/>
             <h3>Tonificación</h3>
+            </div>
+            <div className='contenedor-2-nutri'>
+              
             <p className="plan-descripcion">Un plan equilibrado que ayuda a mejorar la definición muscular y mantener una buena salud general.</p>
             <div className="cont-valor-nuttricional">
-              <div class="plan-details">
+              <div className="plan-details">
                   <p> <strong>Proteínas:</strong> 130g por día</p>
                   <p> <strong>Carbohidratos:</strong> 250g por día</p>
                   <p> <strong>Grasas:</strong> 70g por día</p>
@@ -73,15 +86,20 @@ function NutricionPage() {
               </div>
               <button className='button-nutricion'>Más Información</button>
               </div>
+            </div>
         </article>
 
-        <article class="plan estructure-card-1">
-            <div class="plan-header">Plan saludable</div>
+        <article className="plan structure-card-1">
+        <div className='contenedor-1-nutri'>
+            <div className="plan-header">Plan saludable</div>
             <img src={ImagenHipertrofia} alt="Salud normal"/>
             <h3>Nutricion Tradicional</h3>
+            </div>
+            <div className='contenedor-2-nutri'>
+
             <p className="plan-descripcion">Un plan nutricional para mantener un estilo de vida saludable y una dieta balanceada.</p>
             <div className="cont-valor-nuttricional">
-              <div class="plan-details">
+              <div className="plan-details">
                   <p> <strong>Proteínas:</strong> 100g por día</p>
                   <p> <strong>Carbohidratos:</strong> 300g por día</p>
                   <p> <strong>Grasas:</strong> 70g por día</p>
@@ -89,6 +107,7 @@ function NutricionPage() {
               </div>
               <button className='button-nutricion'>Más Información</button>
               </div>
+            </div>
         </article>
           </section>
           <section>

@@ -1,10 +1,10 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import Fb from '../assets/images/facebook.svg';
 import IG from "../assets/images/instagram.svg";
 import Spotify from "../assets/images/spotify.svg";
 import Twitter from "../assets/images/twitter.svg";
 import YouTube from "../assets/images/youtube.svg";
-
 import "../styles/Footer/general-footer.css";
 
 const SocialLink = ({ href, icon: Icon, children }) => (
@@ -14,14 +14,18 @@ const SocialLink = ({ href, icon: Icon, children }) => (
     </a>
 );
 
+const FooterLink = ({ href, text }) => (
+    <Link to={href} className="footer-link">
+        {text}
+    </Link>
+);
+
 const FooterColumn = ({ title, links }) => (
     <div className="footer-column">
         <h4>{title}</h4>
         <div>
             {links.map((link, index) => (
-                <a href={link.href} key={index}>
-                    {link.text}
-                </a>
+                <FooterLink href={link.href} key={index} text={link.text} />
             ))}
         </div>
     </div>

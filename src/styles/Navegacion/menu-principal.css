@@ -50,7 +50,7 @@
 
 @media (max-width: 768px) {
     .conteiner_header {
-        height: 150px;
+        height: 180px;
     }
     .Contenedor_credenciales {
     display: flex;
@@ -99,19 +99,5 @@
         justify-content: center;
         align-items: center;
         z-index: 1000;
-    }
-}
-
-@media (max-width: 480px) {
-    .conteiner_header {
-    }
-
-    .logo_header {
-        width: 12rem;
-        padding-top: 0.5rem;
-    }
-
-    .Link_Paginas {
-        font-size: var(--font-size-small);
     }
 }

@@ -96,7 +96,8 @@ body {
 
 
 .plan {
-    border: 1px solid #ddd;
+  
+  border: 1px solid #ff7700;
     border-radius: 10px;
     margin: 20px;
     max-width: 300px;
@@ -123,20 +124,20 @@ body {
 .cont-valor-nuttricional{
     display: flex;
     margin-bottom: 2rem;
-    height: 100%;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 
-.plan img {
+.contenedor-1-nutri img {
     width: 100%;
     border-radius: 10px 10px 0 0 ;
     max-height: 200px;
     object-fit: cover;
 }
 
-.plan h3 {
+.contenedor-1-nutri h3 {
     width: 100%;
     background-color: var(--primary-color);;
     padding: 14px 0;
@@ -147,6 +148,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
+    padding-left: 20px;
     
 }
 
@@ -160,6 +162,8 @@ body {
     color: white;
     padding: 10px 20px;
     border: none;
+    width: 70%;
+    margin-top: 1rem;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -170,9 +174,17 @@ body {
 }
 
 
+.contenedor-1-nutri{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.contenedor-2-nutri{
+}
 
 .plan-descripcion{
-    height: 370px;
     padding: 10px 20px;
     opacity: 70%;
 }
@@ -187,6 +199,9 @@ body {
     text-align: center;
     padding: 20px;
     max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
 }
 
@@ -200,6 +215,7 @@ body {
 
 .plan-container {
     height: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     background-color: white;
@@ -380,6 +396,25 @@ body {
 
 
   @media (max-width: 768px) {
+
+
+
+.contenedor-1-nutri{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+
+.contenedor-1-nutri h3{
+    border-radius: 0 0 0 9px;  
+}
+
+.contenedor-2-nutri{
+  width:380px;
+  padding: 0 10px;
+}
+
     .nutricion-container {
       height: auto;
       background-position: center;
@@ -433,38 +468,57 @@ body {
     }
   
     .plan {
-      max-width: 100%;
+      flex-direction: row;
+      max-width: 90%;
+      height: 100%;
       margin: 10px 0;
+      padding: 0;
     }
   
     .plan-header {
       font-size: var(--font-size-small);
+      left: center;
     }
   
     .cont-valor-nuttricional {
-      margin-bottom: 1rem;
+      display: flex;
+      margin-bottom: 0;
+      justify-content: center;
+      align-items: center;
     }
   
-    .plan img {
-      max-height: 150px;
+    .contenedor-1-nutri img {
+      object-fit: cover;
+      border-radius: 9px 0 0 0;
     }
   
-    .plan h3 {
+    .contenedor-1-nutri h3 {
       padding: 10px 0;
+    }
+    .contenedor-2-nutri{
+      font-size: 15px
     }
   
     .plan-details {
-      padding: 10px;
+      padding: 0 10px 10px 10px;
+      margin: 0 auto;
+    }
+
+    .plan-details p{
+      font-size: 11px;
     }
   
     .button-nutricion {
       font-size: 14px;
-      padding: 8px 16px;
+      width: 69%;
+      padding: 8px 7px;
     }
   
     .plan-descripcion {
       height: auto;
-      padding: 10px;
+      padding: 10px 0 5px 0;
+      font-size: 11px;
+      margin: 0;
     }
   
     .cont-head-plan {

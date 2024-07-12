@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Clases/Programas.css";
 import Entrenamiento from "../assets/images/Clases/Entrenamiento.jpg";
 import FullKombat from "../assets/images/Clases/FullKombat.jpg";
@@ -48,9 +49,11 @@ const ProgramaMain = () => (
                     <div className="underline"></div>
                 </h4>
             </div>
-            <a href="/paginaExtra" className="">
-                Mas...
-            </a>
+            <Link to="/paginaExtra">
+                <a>
+                    Mas...
+                </a>
+            </Link>
         </div>
         <section className="container-cards">
             <Card

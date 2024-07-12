@@ -119,14 +119,16 @@ function RutinasPage() {
                     <th>
                       <p className='tipo-entrenamiento'>CHIPPER</p>
                     </th>
-                    <th>
-                      <img src={Duracion} alt="" className='icono-duracion-rutina'/>
-                      <p>30/40 min</p>
-                    </th>
-                    <th>
-                      <img src={Imagen_Intensidad} alt="" className='icono-duracion-rutina' />
-                      <p>Moderada</p>
-                    </th>
+                    <div className='contenedor-th-icons'>
+                      <th>
+                        <img src={Duracion} alt="" className='icono-duracion-rutina'/>
+                        <p>30/40 min</p>
+                      </th>
+                      <th>
+                        <img src={Imagen_Intensidad} alt="" className='icono-duracion-rutina' />
+                        <p>Moderada</p>
+                      </th>
+                    </div>
                     <th className='cont-button-rutinas'>
                       <img src={iconFuerza} alt=""/>
                       <button className='highlighted-button'>Mas información</button>
@@ -149,14 +151,16 @@ function RutinasPage() {
                     <th>
                       <p className='tipo-entrenamiento'>CHIPPER</p>
                     </th>
-                    <th>
-                      <img src={Duracion} alt="" className='icono-duracion-rutina'/>
-                      <p>30/40 min</p>
-                    </th>
-                    <th>
-                      <img src={Imagen_Intensidad} alt="" className='icono-duracion-rutina' />
-                      <p>Moderada</p>
-                    </th>
+                    <div className='contenedor-th-icons'>
+                      <th>
+                        <img src={Duracion} alt="" className='icono-duracion-rutina'/>
+                        <p>30/40 min</p>
+                      </th>
+                      <th>
+                        <img src={Imagen_Intensidad} alt="" className='icono-duracion-rutina' />
+                        <p>Moderada</p>
+                      </th>
+                    </div>
                     <th className='cont-button-rutinas'>
                       <img src={iconFuerza} alt=""/>
                       <button className='highlighted-button'>Mas información</button>
@@ -179,14 +183,16 @@ function RutinasPage() {
                     <th>
                       <p className='tipo-entrenamiento'>WOD</p>
                     </th>
-                    <th>
-                      <img src={Duracion} alt="" className='icono-duracion-rutina'/>
-                      <p>40/50 min</p>
-                    </th>
-                    <th>
-                      <img src={Imagen_IntensidadC1} alt="" className='icono-duracion-rutina' />
-                      <p>Moderada</p>
-                    </th>
+                    <div className='contenedor-th-icons'>
+                      <th>
+                        <img src={Duracion} alt="" className='icono-duracion-rutina'/>
+                        <p>30/40 min</p>
+                      </th>
+                      <th>
+                        <img src={Imagen_Intensidad} alt="" className='icono-duracion-rutina' />
+                        <p>Moderada</p>
+                      </th>
+                    </div>
                     <th className='cont-button-rutinas'>
                       <img src={iconFuerza} alt=""/>
                       <button className='highlighted-button'>Mas información</button>
@@ -209,14 +215,16 @@ function RutinasPage() {
                     <th>
                       <p className='tipo-entrenamiento'>SERIES</p>
                     </th>
-                    <th>
-                      <img src={Duracion} alt="" className='icono-duracion-rutina'/>
-                      <p>20/40 min</p>
-                    </th>
-                    <th>
-                      <img src={Imagen_Intensidad} alt="" className='icono-duracion-rutina' />
-                      <p>Moderada</p>
-                    </th>
+                    <div className='contenedor-th-icons'>
+                      <th>
+                        <img src={Duracion} alt="" className='icono-duracion-rutina'/>
+                        <p>30/40 min</p>
+                      </th>
+                      <th>
+                        <img src={Imagen_Intensidad} alt="" className='icono-duracion-rutina' />
+                        <p>Moderada</p>
+                      </th>
+                    </div>
                     <th className='cont-button-rutinas'>
                       <img src={iconFuerza} alt=""/>
                       <button className='highlighted-button'>Mas información</button>
@@ -239,14 +247,16 @@ function RutinasPage() {
                     <th>
                       <p className='tipo-entrenamiento'>CHIPPER</p>
                     </th>
-                    <th>
-                      <img src={Duracion} alt="" className='icono-duracion-rutina'/>
-                      <p>40/60 min</p>
-                    </th>
-                    <th>
-                      <img src={Imagen_IntensidadC1} alt="" className='icono-duracion-rutina' />
-                      <p>Moderada</p>
-                    </th>
+                    <div className='contenedor-th-icons'>
+                      <th>
+                        <img src={Duracion} alt="" className='icono-duracion-rutina'/>
+                        <p>30/40 min</p>
+                      </th>
+                      <th>
+                        <img src={Imagen_Intensidad} alt="" className='icono-duracion-rutina' />
+                        <p>Moderada</p>
+                      </th>
+                    </div>
                     <th className='cont-button-rutinas'>
                       <img src={iconFuerza} alt=""/>
                       <button className='highlighted-button'>Mas información</button>

@@ -42,6 +42,7 @@ function App() {
 
         <Route path="/" element={<ProtectedRoute />}>
           <Route path="PerfilUser" element={<PerfilPublico />} />
+          
         </Route>
       </Routes>
     </Router>
