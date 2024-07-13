@@ -45,3 +45,18 @@
 .cont-Mision-text p{
     text-align: left;
 }
+
+
+
+
+@media (max-width: 768px) {
+    .cont-Mision-Nos{
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 25px;
+    }
+
+    .cont-Mision-text{
+        font-size: 13px;
+    }
+}

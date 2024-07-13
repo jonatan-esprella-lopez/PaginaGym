@@ -90,4 +90,8 @@
   .overlay1{
     padding: 0px;
   }
+
+  .cont-valores p{
+    font-size: 13px;
+  }
   }

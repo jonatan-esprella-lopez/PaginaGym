@@ -6,7 +6,7 @@ function InstructorCard({ name, specialization, rating, experience }) {
   return (
     <div className="instructor-card">
       <div className="img-tarjeta-coach">
-        <h3>A-34</h3>
+        <h3>A-33</h3>
       </div>
       <article className="text-tarjeta-coach">
         <h5>
@@ -17,7 +17,7 @@ function InstructorCard({ name, specialization, rating, experience }) {
         </p>
         <div className="icons-tarjeta-coach">
           <img src="" alt="" />
-          <p>Entrenadora {specialization}</p>
+          <p>Entrenador de : {specialization}</p>
         </div>
       </article>
     </div>

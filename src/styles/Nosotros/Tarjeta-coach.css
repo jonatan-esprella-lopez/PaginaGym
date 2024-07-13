@@ -84,17 +84,23 @@
     }
   
     .text-tarjeta-coach {
-      font-size: 12px;
+      font-size: 13px;
       padding: 0.4rem;
     }
   
-    .icons-tarjeta-coach {
+    .icons-tarjeta-coach p{
+      width: 230px;
       font-size: 14px;
+      padding: 2px 5px 1px 5px;
+      border-radius: 4px;
+      border: 1px solid #ff6600;
+      background-color: #ff6600a3;
+      color: rgb(240, 240, 240);
     }
   
     .text-tarjeta-coach h5 {
-      font-size: 12px;
-      padding: 8px 8px 0 4px;
+      font-size: 15px;
+      padding: 0 12px;
     }
   
     .text-tarjeta-coach h5 p {

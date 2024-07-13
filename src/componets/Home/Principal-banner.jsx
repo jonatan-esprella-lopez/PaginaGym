@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+
 import BannerVideoHome from "../../assets/videos/BannerHome.mp4"
+
 import "../../styles/Home/banner-principal.css"
 
 function Banner() {

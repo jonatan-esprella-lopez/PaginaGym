@@ -225,9 +225,9 @@ function Evaluation() {
             readOnly
           />
         </div>
-        <button type="submit" className="btn-submit">
-          Enviar
-        </button>
+        {/* <button type="submit" className="btn-submit">
+          Enviar para analisis
+        </button> */}
       </form>
       <Footer/>
     </div>
