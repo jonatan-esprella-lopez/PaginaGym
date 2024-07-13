@@ -142,7 +142,7 @@ function GimnasioPage() {
             <span className="discounted-price">$0.00*</span>
           </div>
         </div>
-        <button className="subscribe-button">¡Inscríbete ya!</button>
+        <button className="estructure-size estructure-button-1 button-type-4">¡Inscríbete ya!</button>
       </div>
     </div>
     <div className="card-gym estructura-card-2">
@@ -177,7 +177,7 @@ function GimnasioPage() {
             <span className="discounted-price">$0.00*</span>
           </div>
         </div>
-        <button className="subscribe-button">¡Inscríbete ya!</button>
+        <button className="estructure-size estructure-button-1 button-type-4">¡Inscríbete ya!</button>
       </div>
     </div>
     <div className="card-gym estructura-card-2">
@@ -212,7 +212,7 @@ function GimnasioPage() {
             <span className="discounted-price">$0.00*</span>
           </div>
         </div>
-        <button className="subscribe-button">¡Inscríbete ya!</button>
+        <button className="estructure-size estructure-button-1 button-type-4">¡Inscríbete ya!</button>
       </div>
     </div>
     <div className="card-gym estructura-card-2">
@@ -247,7 +247,7 @@ function GimnasioPage() {
             <span className="discounted-price">$0.00*</span>
           </div>
         </div>
-        <button className="subscribe-button">¡Inscríbete ya!</button>
+        <button className="estructure-size estructure-button-1 button-type-4">¡Inscríbete ya!</button>
       </div>
     </div>
                     </div>

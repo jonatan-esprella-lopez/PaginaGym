@@ -1,10 +1,10 @@
 import React from "react";
-import "../styles/home_styles.css";
-import "../styles/Complementos/complementos.css";
+import "../../styles/home_styles.css";
+import "../../styles/Complementos/complementos.css";
 
-import App from "../assets/images/Complementos/app.svg";
-import Energy from "../assets/images/Complementos/Energy.svg";
-import NutriComp from "../assets/images/Complementos/Nutricion.svg";
+import App from "../../assets/images/Complementos/app.svg";
+import Energy from "../../assets/images/Complementos/Energy.svg";
+import NutriComp from "../../assets/images/Complementos/Nutricion.svg";
 import { Link } from "react-router-dom";
 
 const Card = ({ icon, title, description, benefit, price, buttonText, link, special }) => (
