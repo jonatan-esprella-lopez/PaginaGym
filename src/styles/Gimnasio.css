@@ -93,6 +93,7 @@
     margin: 1rem 0.5rem;
     border-radius: 10px;
     overflow: hidden;
+    flex-direction: column;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
   }
@@ -222,6 +223,7 @@
     width: 70%;
     padding: 10px;
     font-size: 16px;
+      text-align: left;
     border: 1px solid #e1e8ed;
     border-radius: 4px;
     outline: none;
@@ -234,11 +236,12 @@
   
   .contenedor-buscador button {
     padding: 10px 20px;
+    margin-top: 15px;
     font-size: 16px;
     color: #fff;
-    background-color: #1da1f2;
+    background-color: #008cff;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
@@ -268,10 +271,6 @@
       height: auto;
     }
   
-    .contenedor-buscador {
-      width: 600px;
-    }
-  
     .contenedor-buscador input {
       width: 60%;
     }
@@ -294,22 +293,22 @@
       justify-content: center;
     }
   
+    .contenedor-buscador-gimna
+
     .card-gym {
       width: 90%;
       margin: 1rem 0;
     }
   
-    .contenedor-buscador {
-      width: 90%;
-      gap: 5px;
-    }
-  
     .contenedor-buscador input {
       width: 100%;
+      padding: 2px 0;
     }
   
     .contenedor-buscador button {
       width: 100%;
+      padding: 10px;
+      font-size: 15px;
     }
   }
 
@@ -328,6 +327,9 @@
     .contenedor-buscador {
       width: 100%;
       gap: 5px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
     }
   
     .contenedor-buscador input {
@@ -336,10 +338,6 @@
       font-size: 14px;
     }
   
-    .contenedor-buscador button {
-      width: 100%;
-      padding: 8px;
-      font-size: 14px;
-    }
+   
   }
   

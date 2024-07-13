@@ -420,7 +420,7 @@ a:hover{
 
 
   .button-type-4{
-    width: 5rem;
+    width: 9rem;
     padding: 19px;
     background-color: #008cff;
     color: var(--text-color);
@@ -447,7 +447,7 @@ a:hover{
     box-shadow: 3px 3px 10px -1px rgba(22, 22, 22, 0.398);
     transition: .30s;
     cursor: pointer;
-    width: 175px;
+    width: 196px;
     height: 280px;
     margin: 10px 0 0 0;
     align-items: center;
