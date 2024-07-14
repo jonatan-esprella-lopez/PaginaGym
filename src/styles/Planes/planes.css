@@ -20,3 +20,79 @@
 .planes-title-container span{
     color: #ffaa00;
 }
+
+/*______________________________________________Responsive______________________________________________*/
+
+
+@media (max-width: 768px) {
+    .table-Prices-Service {
+        border: 1px solid #ffaa00;
+        padding: 20px;
+    }
+
+    .planes-title-container h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .colum-Prices-Service-up {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .row-Prices-Services-up,
+    .row-Prices-Services-principal {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .head-Colum-Prices p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .detalle-descripcion1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .colum-Prices-Service {
+        padding: 0;
+    }
+
+    .row-Prices-Services-titles,
+    .row-Prices-Services {
+        font-size: 1rem;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .row-Prices-Services-Final {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detalle-descripcion3 {
+        font-size: 1rem;
+    }
+
+    .detalle-descripcion {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .estructure-div-1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .button-prices button {
+        font-size: 1rem;
+        padding: 10px 20px;
+        width: 80%;
+        margin: 10px 0;
+    }
+}

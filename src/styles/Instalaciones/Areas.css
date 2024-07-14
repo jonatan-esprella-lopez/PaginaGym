@@ -159,33 +159,34 @@
 }
 
 /*______________________________________________Responsive______________________________________________*/
+
 @media (max-width: 768px) {
-  .container-cards {
-      width: 100%;
-  }
-  
-  .Instalacion_Containers {
-      flex-direction: row;
-      padding: 1rem;
-      overflow-x: scroll;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-  }
+    .container-cards {
+        width: 100%;
+    }
+    
+    .Instalacion_Containers {
+        flex-direction: row;
+        padding: 1rem;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
 
-  .instalacion_container {
-      width: 80%;
-      margin-right: 1rem;
-      flex: 0 0 auto;
-  }
+    .instalacion_container {
+        width: 80%;
+        margin-right: 1rem;
+        flex: 0 0 auto;
+    }
 
-  .Instalaciones_container {
-      width: 100%;
-  }
+    .Instalaciones_container {
+        width: 100%;
+    }
 
-  .imagen-instalacion {
-    height: 200px;
-    width: 160px;
-    border-radius: 13px 0 0 13px;
-  }
+    .imagen-instalacion {
+        height: 200px;
+        width: 160px;
+        border-radius: 13px 0 0 13px;
+    }
 }

@@ -88,7 +88,10 @@
     color: #fff;
 }
 
-@media (max-width: 992px) {
+/*______________________________________________Responsive______________________________________________*/
+
+@media (max-width: 768px) {
+
     .footer-top, .footer-bottom {
         width: 100%;
     }
@@ -100,11 +103,9 @@
         max-width: 100%;
         margin-bottom: 20px;
     }
-}
 
-@media (max-width: 768px) {
     .footer {
-        padding: 30px 10px;
+        padding: 20px 10px;
     }
     .footer-title {
         font-size: 1.3em;
@@ -114,20 +115,5 @@
     }
     .footer-column a {
         font-size: 0.85em;
-    }
-}
-
-@media (max-width: 576px) {
-    .footer {
-        padding: 20px 10px;
-    }
-    .footer-title {
-        font-size: 1.1em;
-    }
-    .footer-column h4 {
-        font-size: 1em;
-    }
-    .footer-column a {
-        font-size: 0.8em;
     }
 }
