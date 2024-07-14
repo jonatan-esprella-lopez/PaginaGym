@@ -1,8 +1,15 @@
-# React + Vite
+## Manual Técnico para la Creación de la App Web – CEC FGI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Introducción
 
-Currently, two official plugins are available:
+La aplicación web CEC FGI está destinada para la implementación de módulos virtuales de un centro de entrenamiento. Su objetivo es ofrecer planes de entrenamiento y nutricionales personalizados para los alumnos, incluyendo evaluaciones detalladas como el porcentaje de grasa corporal, consumo de proteínas, agua y creatina.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Tecnologías Utilizadas
+
+- **React (Node.js)**
+- **CSS**
+- **HTML**
+- **Express**
+- **TypeScript**
+
+
