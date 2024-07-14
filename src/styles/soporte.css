@@ -157,22 +157,9 @@
   }
   
   .contact-section form button {
-    
-    width: 200px;
-    margin-top: 20px;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    background-color: #28a745;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    margin: 0 auto;
   }
   
-  .contact-section form button:hover {
-    background-color: #218838;
-  }
   
   .video-tutorials-section  {
     width: 100%;

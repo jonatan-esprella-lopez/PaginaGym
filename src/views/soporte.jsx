@@ -64,7 +64,7 @@ function SoportePage() {
               <label htmlFor="message">Mensaje:</label>
               <textarea id="message" name="message" rows="5" required></textarea>
               
-              <button type="submit">Enviar</button>
+              <button type="submit" className="estructure-size estructure-button-1 button-type-4">Enviar</button>
             </form>
           </div>
         </div>
