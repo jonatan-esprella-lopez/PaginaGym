@@ -40,12 +40,10 @@
 
 
 .contendor_principal_gym{
-    width: 83%;
+    width: 86%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
-
 
 
 
@@ -239,6 +237,7 @@
     background-color: #0d8dec;
   }
 
+/*______________________________________________Responsive______________________________________________*/
 
 
 
@@ -267,6 +266,12 @@
   
 
   @media (max-width: 768px) {
+
+    .contendor_principal_gym{
+      
+    flex-wrap: wrap;
+    }
+    
     .contenedor_buscador {
       width: 80%;
       flex-direction: column;

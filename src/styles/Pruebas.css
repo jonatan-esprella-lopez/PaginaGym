@@ -68,7 +68,11 @@
     background-color: #0056b3;
   }
   
-  @media (max-width: 600px) {
+
+
+  /*______________________________________________Responsive______________________________________________*/
+
+  @media (max-width: 768px) {
     .evaluation-form {
       padding: 20px;
     }

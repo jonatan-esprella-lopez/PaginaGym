@@ -49,7 +49,7 @@ const Instalaciones = () => (
             <Card
                 image={Lacteos}
                 text="Instalación de Hidratación y Evaluación"
-                link="/Lacteos"
+                link="/Aerobicos"
             />
             <Card
                 image={Aerobicos}
@@ -59,7 +59,7 @@ const Instalaciones = () => (
             <Card
                 image={FindCenter}
                 text="Instalación de Full Kombat"
-                link="/FullKombat"
+                link="/Aerobicos"
             />
         </div>
     </section>

@@ -3,13 +3,6 @@ import "../styles/Pruebas.css";
 import Header from "../componets/Header_Main";
 import Footer from "../componets/Footer_Main";
 
-
-// "<h1>Calculadora de IMC y Porcentaje de Grasa Corporal</h1>
-// <Calculadora calcularResultados={calcularResultados} />
-// {imc !== null && porcentajeGrasa !== null && (
-//   <Resultado imc={imc} porcentajeGrasa={porcentajeGrasa} />
-// )}"
-   
 function Evaluation() {
   const [formData, setFormData] = useState({
     height: "",
@@ -40,45 +33,37 @@ function Evaluation() {
     if (formData.weight && formData.height) {
       const heightInMeters = formData.height / 100;
       const calculatedBMI = parseFloat(formData.weight) / (heightInMeters * heightInMeters);
-      setFormData((prevData) => ({ ...prevData, bmi: calculatedBMI.toFixed(2) }));
-
-      // Calculadora de Peso Ideal
       const idealWeight = 22.5 * (heightInMeters * heightInMeters);
-      setFormData((prevData) => ({ ...prevData, idealWeight: idealWeight.toFixed(2) }));
-
-      // Calculadora de Consumo de Proteína (normal, medio, máximo)
-      const proteinIntake = {
-        normal: 1 * formData.weight,
-        medium: 1.5 * formData.weight,
-        maximum: 2 * formData.weight
-      };
-      setFormData((prevData) => ({ ...prevData, proteinIntake }));
-
-      // Calculadora de Consumo de Agua
       const waterIntake = formData.weight * 0.033;
-      setFormData((prevData) => ({ ...prevData, waterIntake: waterIntake.toFixed(2) }));
-
-      // Calculadora de Consumo de Creatina
       const creatineIntake = formData.weight * 0.03;
-      setFormData((prevData) => ({ ...prevData, creatineIntake: creatineIntake.toFixed(2) }));
-
-      // Calculadora de Máxima Ganancia Muscular
       const maxMuscleGain = formData.weight * 0.015;
-      setFormData((prevData) => ({ ...prevData, maxMuscleGain: maxMuscleGain.toFixed(2) }));
-
-      // Calculadora de Máxima Pérdida de Grasa
       const maxFatLoss = formData.weight * 0.01;
-      setFormData((prevData) => ({ ...prevData, maxFatLoss: maxFatLoss.toFixed(2) }));
+
+      setFormData((prevData) => ({
+        ...prevData,
+        bmi: calculatedBMI.toFixed(2),
+        idealWeight: idealWeight.toFixed(2),
+        proteinIntake: {
+          normal: 1 * formData.weight,
+          medium: 1.5 * formData.weight,
+          maximum: 2 * formData.weight
+        },
+        waterIntake: waterIntake.toFixed(2),
+        creatineIntake: creatineIntake.toFixed(2),
+        maxMuscleGain: maxMuscleGain.toFixed(2),
+        maxFatLoss: maxFatLoss.toFixed(2)
+      }));
     }
 
     if (formData.bodyFatPercentage) {
-      // Calculadora de IMC Ideal
-      const idealBMI = 21.75; // Este valor puede variar según la recomendación médica
-      setFormData((prevData) => ({ ...prevData, idealBMI: idealBMI.toFixed(2) }));
-
-      // Calculadora de Porcentaje de Grasa Corporal Ideal
+      const idealBMI = 21.75;
       const idealBodyFatPercentage = formData.bodyFatPercentage < 15 ? 15 : 20;
-      setFormData((prevData) => ({ ...prevData, idealBodyFatPercentage: idealBodyFatPercentage.toFixed(2) }));
+
+      setFormData((prevData) => ({
+        ...prevData,
+        idealBMI: idealBMI.toFixed(2),
+        idealBodyFatPercentage: idealBodyFatPercentage.toFixed(2)
+      }));
     }
   };
 
@@ -89,7 +74,7 @@ function Evaluation() {
 
   return (
     <div className="evaluation-container">
-      <Header/>
+      <Header />
       <form className="evaluation-form" onSubmit={handleSubmit}>
         <h2>Evaluación</h2>
         <div className="form-group">
@@ -115,16 +100,6 @@ function Evaluation() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="bmi">IMC</label>
-          <input
-            type="text"
-            id="bmi"
-            name="bmi"
-            value={formData.bmi}
-            readOnly
-          />
-        </div>
-        <div className="form-group">
           <label htmlFor="bodyFatPercentage">% Graso</label>
           <input
             type="number"
@@ -146,7 +121,18 @@ function Evaluation() {
             required
           />
         </div>
-        {/* Campos de datos ideales */}
+        
+        <h3>Resultados</h3>
+        <div className="form-group">
+          <label htmlFor="bmi">IMC</label>
+          <input
+            type="text"
+            id="bmi"
+            name="bmi"
+            value={formData.bmi}
+            readOnly
+          />
+        </div>
         <div className="form-group">
           <label htmlFor="idealWeight">Peso Ideal (kg)</label>
           <input
@@ -177,6 +163,8 @@ function Evaluation() {
             readOnly
           />
         </div>
+
+        <h3>Consumos Recomendados</h3>
         <div className="form-group">
           <label>Consumo de Proteína (g)</label>
           <input
@@ -205,6 +193,8 @@ function Evaluation() {
             readOnly
           />
         </div>
+
+        <h3>Máximos Permitidos</h3>
         <div className="form-group">
           <label htmlFor="maxMuscleGain">Máxima Ganancia Muscular (kg)</label>
           <input
@@ -225,11 +215,12 @@ function Evaluation() {
             readOnly
           />
         </div>
+
         {/* <button type="submit" className="btn-submit">
           Enviar para analisis
         </button> */}
       </form>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

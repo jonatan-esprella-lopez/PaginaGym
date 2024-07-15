@@ -180,6 +180,14 @@
         flex: 0 0 auto;
     }
 
+    .gym-details-container{
+        font-size: 10px;
+    }
+
+    .gym-details-container h2{
+      font-size: 12px;
+    }
+
     .Instalaciones_container {
         width: 100%;
     }

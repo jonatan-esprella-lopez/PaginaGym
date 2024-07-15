@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "../styles/Navegacion/menu-principal.css";
 import { Link } from 'react-router-dom';
 import Logo from "../assets/images/Logotipo-cec/Entrenamiento-Funcional.png";
@@ -6,6 +6,7 @@ import Credenciales from "./Elements-login/Boton-inicio-sesion";
 
 function HeaderMain() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const menuRef = useRef(null);
 
     const links = [
         { path: "/", label: "Inicio" },
@@ -21,6 +22,10 @@ function HeaderMain() {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleClickOutside = (event) => {
+            setIsMenuOpen(false);
+    };
+
     return (
          <header className="conteiner_header">
          <div className="Contenedor_credenciales">
@@ -34,7 +39,7 @@ function HeaderMain() {
          </a>
          <div className="contenedorNav">
          
-                <nav className={`contenedor_Link_Paginas ${isMenuOpen ? 'open' : ''}`}>
+                <nav className={`contenedor_Link_Paginas ${isMenuOpen ? 'open' : ''}`} onClick={handleClickOutside}>
                     {links.map(link => (
                         <p key={link.path}>
                             <Link to={link.path} className="Link_Paginas">

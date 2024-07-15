@@ -85,7 +85,8 @@
     position: absolute;
 }
 
-/* Responsive Styles */
+/*______________________________________________Responsive______________________________________________*/
+
 @media (max-width: 768px) {
     .Banner_boton_gimnasio div{
         padding: 0.2rem 0;

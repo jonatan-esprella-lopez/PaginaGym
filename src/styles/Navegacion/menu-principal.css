@@ -39,9 +39,10 @@
 }
 
 .menu-button{
-    width: 2rem;
+    display: none;
+    width: 3.2rem;
     height: 2.2rem;
-    margin-left: 12px;
+    margin-left: 4px;
     border-radius: 5px;
     border: 1px solid #eeff00;
     background-color: #ffffff00;
@@ -53,6 +54,11 @@
     .conteiner_header {
         height: 180px;
     }
+        
+    .menu-button {
+        display: block;
+    }
+    
 
     .Contenedor_credenciales {
         display: flex;
