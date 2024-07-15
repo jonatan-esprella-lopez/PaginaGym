@@ -17,34 +17,30 @@ function Evaluation() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
 
-    if (name === "weight" || name === "height" || name === "bodyFatPercentage") {
-      calculateIdealData(name, value);
+    if (name === "weight" || name === "height") {
+      calculateBMI(name, value);
     }
   };
 
-  const calculateIdealData = (name, value) => {
-    let idealWeight = "";
-    let idealBMI = "";
-    let idealBodyFatPercentage = "";
+  const calculateBMI = (name, value) => {
+    setFormData((prevData) => {
+      let heightInMeters = prevData.height / 100;
+      let weight = prevData.weight;
 
-    if (name === "weight" && formData.height) {
-      const heightInMeters = formData.height / 100;
-      const calculatedBMI = parseFloat(value) / (heightInMeters * heightInMeters);
-      setFormData({ ...formData, bmi: calculatedBMI.toFixed(2) });
-    } else if (name === "height" && formData.weight) {
-      const heightInMeters = value / 100;
-      const calculatedBMI = formData.weight / (heightInMeters * heightInMeters);
-      setFormData({ ...formData, bmi: calculatedBMI.toFixed(2) });
-    } else if (name === "bodyFatPercentage") {
-    }
+      if (name === "height") {
+        heightInMeters = value / 100;
+      } else if (name === "weight") {
+        weight = value;
+      }
 
-    setFormData({
-      ...formData,
-      idealWeight: idealWeight.toFixed(2),
-      idealBMI: idealBMI.toFixed(2),
-      idealBodyFatPercentage: idealBodyFatPercentage.toFixed(2)
+      const bmi = weight / (heightInMeters * heightInMeters);
+
+      return {
+        ...prevData,
+        bmi: isNaN(bmi) ? "" : bmi.toFixed(2)
+      };
     });
   };
 

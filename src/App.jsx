@@ -18,6 +18,8 @@ import Soporte from "./views/soporte";
 import PaginaConstruccion from "./views/PaginasExtra/PaginaExtra.jsx";
 import Tienda from "./views/Tienda-clases/TiendaCEC.jsx";
 import AreaAerobica from "./views/Instalaciones/Aerobicos.jsx";
+import PrivacyP from "./views/Privacy.jsx";
+
 
 function App() {
   return (
@@ -36,7 +38,11 @@ function App() {
         <Route path="/Registro" element={<Registro />} />
         <Route path="/Soporte" element={<Soporte />} />
         <Route path="/paginaExtra" element={<PaginaConstruccion />} />
+        
         <Route path="/Aerobicos" element={<AreaAerobica />} />
+        <Route path="/Politica de privacidad" element={<PrivacyP />} />
+        
+        
         
         <Route path="/Shop-CEC-trainnig" element={<Tienda />} />
 

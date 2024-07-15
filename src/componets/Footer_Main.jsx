@@ -46,7 +46,7 @@ function FooterMain() {
             links: [
                 { href: "/Nosotros", text: "Quienes somos" },
                 { href: "/Nosotros", text: "Hable con nosotros" },
-                { href: "#", text: "Aviso de Privacidad" }
+                { href: "/Politica de privacidad", text: "Aviso de Privacidad" }
             ]
         },
         {
