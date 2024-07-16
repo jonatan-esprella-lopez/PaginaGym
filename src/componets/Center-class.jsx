@@ -16,7 +16,7 @@ const Card = ({ image, title, duration, intensity, description }) => (
         
         <div>
         <div className="Clases-titulo-container">
-                <a>{title}</a>
+                {title}
             </div>  
             <div className="contenido-clases-detalle">
                 <div className="detalle-clase">
@@ -59,21 +59,21 @@ const ProgramaMain = () => (
                 title="Entrenamiento Funcional"
                 duration="30/40/50 min"
                 intensity="Alta"
-                description="Diviértete y combina el baile con una rutina de ejercicio al ritmo de la música, mejora tu condición y coordinación"
+                description="Diviértete y combina el baile con una rutina de ejercicio al ritmo de la música, mejora tu condición"
             />
             <Card
                 image={FullKombat}
                 title="Aeróbicos"
                 duration="30/40/50 min"
                 intensity="Alta"
-                description="Diviértete y combina el baile con una rutina de ejercicio al ritmo de la música, mejora tu condición y coordinación"
+                description="Diviértete y combina el baile con una rutina de ejercicio al ritmo de la música, mejora tu condición"
             />
             <Card
                 image={Fexibilidad}
                 title="Flexibilidad"
                 duration="30/40/50 min"
                 intensity="Alta"
-                description="Diviértete y combina el baile con una rutina de ejercicio al ritmo de la música, mejora tu condición y coordinación"
+                description="Diviértete y combina el baile con una rutina de ejercicio al ritmo de la música, mejora tu condición"
             />
         </section>
     </section>

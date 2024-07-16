@@ -100,15 +100,17 @@
 
 .button-type-4{
   width: 12rem;
-  background-color: #008cff;
+  background-color: #0062ff;
+  border: 2px solid #0062ff;
   color: var(--text-color);
-  font-size: small+1  ;
+  font-size: small+1 ;
   cursor: pointer;
   font-weight: 600;
 }
 
 .button-type-4:hover {
   border: 2px solid #008cff;
+  background-color: #0044ff;
   box-shadow: 0 0 10px 0px #00a6ff;
 }
 
@@ -172,11 +174,6 @@
 }
 
 
-.card-type-1{
-
-}
-
-
 /*iconos o imagenes*/
 
 .contenedor-iconos-type-1{
@@ -223,6 +220,15 @@
   font-weight: normal;
 }
 
+.container-head-section h4 {
+  position: relative;
+  margin: 0;
+  padding: 0 2rem 0 2rem;
+  font-size: var(--font-size-extralarge);
+  font-weight: normal;
+}
+
+
 .container-head-section1 .underline {
   position: absolute;
   bottom: -12px;
@@ -232,7 +238,7 @@
   background-color: var(--primary-color); 
 }
 
-.container-head-section h4 {
+.container-head-section h5 {
   position: relative;
   margin: 0;
   padding: 0 1rem 0 5rem;
@@ -376,7 +382,7 @@ a:hover{
 
 
   .estructure-card-especial{
-    font-size: 10px;
+    font-size: 12px;
   }
   .container-head-section {
     width: 100%;
@@ -427,7 +433,6 @@ a:hover{
   .button-type-4{
     width: 9rem;
     padding: 19px;
-    background-color: #008cff;
     color: var(--text-color);
     font-size: small+1  ;
     cursor: pointer;

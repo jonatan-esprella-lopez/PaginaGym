@@ -43,22 +43,22 @@ const Instalaciones = () => (
         <div className="container-cards">
             <Card
                 image={Funcional}
-                text="Instalación de Entrenamiento Funcional"
+                text="Zona Entrena y Fortalece"
                 link="/Aerobicos"
             />
             <Card
                 image={Lacteos}
-                text="Instalación de Hidratación y Evaluación"
+                text="Zona hidrate tu cuerpo"
                 link="/Aerobicos"
             />
             <Card
                 image={Aerobicos}
-                text="Instalación de Aeróbicos"
+                text="Zona Aeróbica"
                 link="/Aerobicos"
             />
             <Card
                 image={FindCenter}
-                text="Instalación de Full Kombat"
+                text="Zona de full kombat"
                 link="/Aerobicos"
             />
         </div>

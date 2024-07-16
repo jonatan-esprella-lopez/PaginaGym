@@ -225,6 +225,7 @@ th {
 
 .cont-details {
     padding: 0;
+    width: 0;
 }
 
 .cont-espaciado {
@@ -331,7 +332,6 @@ th {
     }
 
     .card {
-        min-width: 100%;
         max-width: 100%;
     }
 
@@ -350,10 +350,12 @@ th {
 
     .table-general, .table-general tbody, .table-general tr, .table-general td {
         display: flex;
+        width: 95%;
+        margin: 0 auto;
         flex-direction: column;
+        padding: 0;
         align-items: center;
         justify-content: center;
-
     }
 
     .table-general tr {
@@ -429,5 +431,6 @@ th {
     .underline-dia{
         width: 100px;
     }
+
 
 }

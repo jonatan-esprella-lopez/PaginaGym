@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import "../styles/Navegacion/menu-principal.css";
 import { Link } from 'react-router-dom';
-import Logo from "../assets/images/Logotipo-cec/Entrenamiento-Funcional.png";
+import Logo from "../assets/images/Logotipo-cec/logotipo.svg";
 import Credenciales from "./Elements-login/Boton-inicio-sesion";
 
 function HeaderMain() {
@@ -34,9 +34,9 @@ function HeaderMain() {
                     ☰
                 </button>
          </div>
-         <a href="/">
-             <img src={Logo} alt="" className="logo_header" />
-         </a>
+         <Link to="/" aria-label="Ir a la página de inicio" >
+             <img src={Logo} alt="Logotipo CEC-FGI" className="logo_header" loading="eager"/>
+        </Link>
          <div className="contenedorNav">
          
                 <nav className={`contenedor_Link_Paginas ${isMenuOpen ? 'open' : ''}`} onClick={handleClickOutside}>
@@ -54,3 +54,4 @@ function HeaderMain() {
 }
 
 export default HeaderMain;
+

@@ -44,7 +44,7 @@ function App() {
         
         
         
-        <Route path="/Shop-CEC-trainnig" element={<Tienda />} />
+        <Route path="/Tienda de entrenamientos" element={<Tienda />} />
 
         <Route path="/" element={<ProtectedRoute />}>
           <Route path="PerfilUser" element={<PerfilPublico />} />

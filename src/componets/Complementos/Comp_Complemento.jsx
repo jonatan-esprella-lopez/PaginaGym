@@ -22,7 +22,7 @@ const Card = ({ icon, title, description, benefit, price, buttonText, link, spec
                 <div className="container-price">
                     <p>Bs</p>
                     <h2>{price.amount}</h2>
-                    <h5>{price.cents}</h5>
+                    <p>{price.cents}</p>
                     <p>/{price.period}</p>
                 </div>
             )}
@@ -55,16 +55,16 @@ const Complementos = () => (
                 description="Lleva tu entrenamiento a donde quieras y cuando quieras con nuestra plataforma virtual de clases y contenido fitness."
                 benefit="Beneficio gratuito para los clientes."
                 buttonText="Tienda"
-                link="/Shop-CEC-trainnig"
+                link="/Tienda de entrenamientos"
             />
             <Card
                 icon={NutriComp}
                 title="Nutri-Fit by CEC"
-                description="Si quieres resultados rápidos, también debes cuidar la alimentación. Prueba de nuestras comidas, con los macronutrientes necesarios para progresar."
+                description="Si quieres resultados rápidos, también debes cuidar la alimentación. Prueba de nuestras comidas."
                 benefit="Come saludable"
                 price={{ amount: 150, cents: '.99', period: 'Mes' }}
-                buttonText="Más información"
-                link="/Shop-CEC-trainnig"
+                buttonText="Tienda"
+                link="/Tienda de entrenamientos"
                 special
             />
             <Card
@@ -74,7 +74,7 @@ const Complementos = () => (
                 benefit="Sientete muy bien al entrenar."
                 price={{ amount: 150, cents: '.99', period: 'Mes' }}
                 buttonText="Conoce más"
-                link="/Shop-CEC-trainnig"
+                link="/Tienda de entrenamientos"
             />
         </section>
     </section>

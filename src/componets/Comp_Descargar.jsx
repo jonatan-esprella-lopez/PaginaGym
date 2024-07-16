@@ -32,11 +32,13 @@ const AppMobil = () => (
                 <QRCode src={QR} alt="Código QR" />
                 <div className="contenido-App">
                     <AppLink
+                        href="https://play.google.com/store/apps/"
                         src="https://assets.smartfit.com.br/production/newHome/google-play-badge-es.png"
                         alt="Icono Google Play"
                         className="GooplePlay"
                     />
                     <AppLink
+                        href="https://apps.apple.com/app/"
                         src="https://assets.smartfit.com.br/production/newHome/apple-badge-es.png"
                         alt="Icono Apple Store"
                     />

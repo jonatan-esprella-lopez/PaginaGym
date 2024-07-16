@@ -31,26 +31,30 @@ const WeeklyTrainingTable = () => (
                 <div className="underline-dia"></div>
               </div>
             </th>
-            <th>
-              <img src={Imagen_C1} alt="Entrenamiento" />
-            </th>
-            <th>
-              <p className="tipo-entrenamiento">CHIPPER</p>
-            </th>
-            <th>
-              <img src={Duracion} alt="Duración" className="icono-duracion-rutina" />
-              <p>30/40 min</p>
-            </th>
-            <th>
-              <img src={Imagen_Intensidad} alt="Intensidad" className="icono-duracion-rutina" />
-              <p>Moderada</p>
-            </th>
-            <th className="cont-button-rutinas">
-              <img src={iconFuerza} alt="Fuerza" />
-              <button className="highlighted-button">Más información</button>
-            </th>
+            <div className='cont-espaciado'>
+              <th>
+                <img src={Imagen_C1} alt="Entrenamiento" />
+              </th>
+              <th>
+                <p className="tipo-entrenamiento">CHIPPER</p>
+              </th>
+              <div className='contenedor-th-icons'>
+                <th>
+                  <img src={Duracion} alt="Duración" className="icono-duracion-rutina" />
+                  <p>30/40 min</p>
+                </th>
+                <th>
+                  <img src={Imagen_Intensidad} alt="Intensidad" className="icono-duracion-rutina" />
+                  <p>Moderada</p>
+                </th>
+              </div>
+              <th className="cont-button-rutinas">
+                <img src={iconFuerza} alt="Fuerza" />
+                <button className="highlighted-button">Más información</button>
+              </th>
+            </div>
           </tr>
-        ))}
+        ))}      
       </tbody>
     </table>
   </section>
