@@ -1,40 +1,32 @@
-
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-
 import '../styles/Gimnasio.css';
-import Header from "../componets/Header_Main"
-import Novedades from "../componets/Comp_Noti_Nov"
-import Footer from "../componets/Footer_Main"
-import RitmosFitness from "../assets/images/Clases/Ritmos.jpg"
-import FullKombat from "../assets/images/Clases/FullKombat.jpg"
-import Rebound from "../assets/images/Clases/Rebound.jpg"
-import Duracion from "../assets/images/duracion-clases.svg";
-import Intensidad from "../assets/images/intensidad.svg"
+import Header from "../componets/Header_Main";
+import Novedades from "../componets/Comp_Noti_Nov";
+import Footer from "../componets/Footer_Main";
+import RitmosFitness from "../assets/images/Clases/Ritmos.jpg";
 
 function GimnasioPage() {
   
   const location = useLocation();
   const [searchTerm, setSearchTerm] = useState("");
   const [checks, setChecks] = useState([
-      { isChecked: false, text: 'Estructuras' },
-      { isChecked: false, text: 'Estacionamiento' },
-      { isChecked: false, text: 'Elevador' },
-      { isChecked: false, text: 'Lacto - Bar' },
-      { isChecked: false, text: 'Nutricionista' },
-      { isChecked: false, text: 'Full Kombat' },
-      { isChecked: false, text: 'Ritmos Fitness' },
-      { isChecked: false, text: 'Rebound Xtreme' },
-      { isChecked: false, text: 'Step-Z' },
-      { isChecked: false, text: 'Entrenamiento Funcional' },
+      { id: 'estructura', isChecked: false, text: 'Estructuras' },
+      { id: 'estacionamiento', isChecked: false, text: 'Estacionamiento' },
+      { id: 'elevador', isChecked: false, text: 'Elevador' },
+      { id: 'lacto-bar', isChecked: false, text: 'Lacto - Bar' },
+      { id: 'nutricionista', isChecked: false, text: 'Nutricionista' },
+      { id: 'full-kombat', isChecked: false, text: 'Full Kombat' },
+      { id: 'ritmos-fitness', isChecked: false, text: 'Ritmos Fitness' },
+      { id: 'rebound-xtreme', isChecked: false, text: 'Rebound Xtreme' },
+      { id: 'step-z', isChecked: false, text: 'Step-Z' },
+      { id: 'entrenamiento-funcional', isChecked: false, text: 'Entrenamiento Funcional' },
     ]);
 
     useEffect(() => {
       const queryParams = new URLSearchParams(location.search);
       const query = queryParams.get("query");
       setSearchTerm(query || "");
-
-
       if (query) {
         console.log("Búsqueda automática con término:", query);
       }
@@ -45,7 +37,6 @@ function GimnasioPage() {
       newChecks[index].isChecked = !newChecks[index].isChecked;
       setChecks(newChecks);
     };
-
 
     const handleFilterSubmit = () => {
       const selectedFilters = checks.filter(check => check.isChecked).map(check => check.text);
@@ -73,196 +64,265 @@ function GimnasioPage() {
 
     const handleSubmit = (event) => {
       event.preventDefault();
-      handleFilterSubmit(searchTerm);
+      handleFilterSubmit();
     };        
 
   return (
     <div className='Container_Main'>
-            <Header />
-            <div className="contenedor-buscador-gimnasio">
-              <h2>Elige Alguno de Nuestros Centros de Entrenamiento</h2>
-              <form className="contenedor-buscador" onSubmit={handleSubmit}>
-                <input
-                  type="text"
-                  placeholder="Encuentra un gimnasio"
-                  value={searchTerm}
-                  onChange={handleInputChange}
-                />
+      <Header />
+      <div className="contenedor-buscador-gimnasio">
+        <h2>Elige Alguno de Nuestros Centros de Entrenamiento</h2>
+        <form className="contenedor-buscador" onSubmit={handleSubmit}>
+          <label htmlFor="search-gym">Encuentra un gimnasio</label>
+          <input
+            id="search-gym"
+            type="text"
+            placeholder="Encuentra un gimnasio"
+            value={searchTerm}
+            onChange={handleInputChange}
+          />
+          <button type="submit">Filtrar</button>
+        </form>
+      </div>
 
-                <button type="submit">
-                  Filtrar
-                </button>
-              </form>
+      <div className='contendor_principal_gym'>
+        <div className='contenedor_1_gimnasios'>
+          {checks.map((item, index) => (
+            <div key={item.id} className='Lista-filtro'>
+              <label htmlFor={item.id}>{item.text}</label>
+              <input
+                id={item.id}
+                type="checkbox"
+                checked={item.isChecked}
+                onChange={() => handleCheckChange(index)}
+              />
             </div>
+          ))}
+        </div>
 
-            <div className='contendor_principal_gym'>
-                <div className='contenedor_1_gimnasios'>
-                    {checks.map((item, index) => (
-                        <div key={index} className='Lista-filtro'>
-                            <label>{item.text}</label>
-                            <input
-                                type="checkbox"
-                                checked={item.isChecked}
-                                onChange={() => handleCheckChange(index)}
-                            />
-                        </div>
-                    ))}
+        <div className='cont-gyms'>
+          <div className="card-gym estructura-card-2 ">
+            <img src={RitmosFitness} alt="Gym" className="card-image" />
+            <div className="card-content">
+              <h2 className="card-title">Averanda</h2>
+              <p className="card-address">
+                AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR
+              </p>
+              <a href="#" className="card-link">Ver gimnasio</a>
+              <div className="card-offer">1ER MES GRATIS + INSCRIPCIÓN $10</div>
+              <div className="card-prices">
+                <div className="price">
+                  <span className="price-type">SMART</span>
+                  <span className="original-price">$499.00</span>
+                  <span className="discounted-price">$0.00*</span>
                 </div>
-                <div className='cont-gyms'>
-                    
-        <div className="card-gym estructura-card-2">
-      <img
-        src={RitmosFitness}
-        alt="Gym"
-        className="card-image"
-      />
-      <div className="card-content">
-        <h2 className="card-title">Averanda</h2>
-        <p className="card-address">
-          AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR
-        </p>
-        <a href="#" className="card-link">
-          Ver gimnasio
-        </a>
-        <div className="card-offer">1ER MES GRATIS + INSCRIPCIÓN $10</div>
-        <div className="card-prices">
-          <div className="price">
-            <span className="price-type">SMART</span>
-            <span className="original-price">$499.00</span>
-            <span className="discounted-price">$0.00*</span>
-          </div>
-          <div className="price">
-            <span className="price-type">BLACK</span>
-            <span className="original-price">$599.00</span>
-            <span className="discounted-price">$0.00*</span>
-          </div>
-          <div className="price">
-            <span className="price-type">FIT</span>
-            <span className="original-price">$399.00</span>
-            <span className="discounted-price">$0.00*</span>
-          </div>
-        </div>
-        <button className="estructure-size estructure-button-1 button-type-4">¡Inscríbete ya!</button>
-      </div>
-    </div>
-    <div className="card-gym estructura-card-2">
-      <img
-        src={RitmosFitness} 
-        alt="Gym"
-        className="card-image"
-      />
-      <div className="card-content">
-        <h2 className="card-title">Averanda</h2>
-        <p className="card-address">
-          AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR
-        </p>
-        <a href="#" className="card-link">
-          Ver gimnasio
-        </a>
-        <div className="card-offer">1ER MES GRATIS + INSCRIPCIÓN $10</div>
-        <div className="card-prices">
-          <div className="price">
-            <span className="price-type">SMART</span>
-            <span className="original-price">$499.00</span>
-            <span className="discounted-price">$0.00*</span>
-          </div>
-          <div className="price">
-            <span className="price-type">BLACK</span>
-            <span className="original-price">$599.00</span>
-            <span className="discounted-price">$0.00*</span>
-          </div>
-          <div className="price">
-            <span className="price-type">FIT</span>
-            <span className="original-price">$399.00</span>
-            <span className="discounted-price">$0.00*</span>
-          </div>
-        </div>
-        <button className="estructure-size estructure-button-1 button-type-4">¡Inscríbete ya!</button>
-      </div>
-    </div>
-    <div className="card-gym estructura-card-2">
-      <img
-        src={RitmosFitness} 
-        alt="Gym"
-        className="card-image"
-      />
-      <div className="card-content">
-        <h2 className="card-title">Averanda</h2>
-        <p className="card-address">
-          AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR
-        </p>
-        <a href="#" className="card-link">
-          Ver gimnasio
-        </a>
-        <div className="card-offer">1ER MES GRATIS + INSCRIPCIÓN $10</div>
-        <div className="card-prices">
-          <div className="price">
-            <span className="price-type">SMART</span>
-            <span className="original-price">$499.00</span>
-            <span className="discounted-price">$0.00*</span>
-          </div>
-          <div className="price">
-            <span className="price-type">BLACK</span>
-            <span className="original-price">$599.00</span>
-            <span className="discounted-price">$0.00*</span>
-          </div>
-          <div className="price">
-            <span className="price-type">FIT</span>
-            <span className="original-price">$399.00</span>
-            <span className="discounted-price">$0.00*</span>
-          </div>
-        </div>
-        <button className="estructure-size estructure-button-1 button-type-4">¡Inscríbete ya!</button>
-      </div>
-    </div>
-    <div className="card-gym estructura-card-2">
-      <img
-        src={RitmosFitness} 
-        alt="Gym"
-        className="card-image"
-      />
-      <div className="card-content">
-        <h2 className="card-title">Averanda</h2>
-        <p className="card-address">
-          AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR
-        </p>
-        <a href="#" className="card-link">
-          Ver gimnasio
-        </a>
-        <div className="card-offer">1ER MES GRATIS + INSCRIPCIÓN $10</div>
-        <div className="card-prices">
-          <div className="price">
-            <span className="price-type">SMART</span>
-            <span className="original-price">$499.00</span>
-            <span className="discounted-price">$0.00*</span>
-          </div>
-          <div className="price">
-            <span className="price-type">BLACK</span>
-            <span className="original-price">$599.00</span>
-            <span className="discounted-price">$0.00*</span>
-          </div>
-          <div className="price">
-            <span className="price-type">FIT</span>
-            <span className="original-price">$399.00</span>
-            <span className="discounted-price">$0.00*</span>
-          </div>
-        </div>
-        <button className="estructure-size estructure-button-1 button-type-4">¡Inscríbete ya!</button>
-      </div>
-    </div>
-                    </div>
+                <div className="price">
+                  <span className="price-type">BLACK</span>
+                  <span className="original-price">$599.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+                <div className="price">
+                  <span className="price-type">FIT</span>
+                  <span className="original-price">$399.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+              </div>
+              <button className="estructure-size estructure-button-1 button-type-4">¡Inscríbete ya!</button>
             </div>
+          </div>
 
+          <div className="card-gym estructura-card-2 ">
+            <img src={RitmosFitness} alt="Gym" className="card-image" />
+            <div className="card-content">
+              <h2 className="card-title">Averanda</h2>
+              <p className="card-address">
+                AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR
+              </p>
+              <a href="#" className="card-link">Ver gimnasio</a>
+              <div className="card-offer">1ER MES GRATIS + INSCRIPCIÓN $10</div>
+              <div className="card-prices">
+                <div className="price">
+                  <span className="price-type">SMART</span>
+                  <span className="original-price">$499.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+                <div className="price">
+                  <span className="price-type">BLACK</span>
+                  <span className="original-price">$599.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+                <div className="price">
+                  <span className="price-type">FIT</span>
+                  <span className="original-price">$399.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+              </div>
+              <button className="estructure-size estructure-button-1 button-type-4">¡Inscríbete ya!</button>
+            </div>
+          </div>
 
-       
+          <div className="card-gym estructura-card-2 ">
+            <img src={RitmosFitness} alt="Gym" className="card-image" />
+            <div className="card-content">
+              <h2 className="card-title">Averanda</h2>
+              <p className="card-address">
+                AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR
+              </p>
+              <a href="#" className="card-link">Ver gimnasio</a>
+              <div className="card-offer">1ER MES GRATIS + INSCRIPCIÓN $10</div>
+              <div className="card-prices">
+                <div className="price">
+                  <span className="price-type">SMART</span>
+                  <span className="original-price">$499.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+                <div className="price">
+                  <span className="price-type">BLACK</span>
+                  <span className="original-price">$599.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+                <div className="price">
+                  <span className="price-type">FIT</span>
+                  <span className="original-price">$399.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+              </div>
+              <button className="estructure-size estructure-button-1 button-type-4">¡Inscríbete ya!</button>
+            </div>
+          </div>
 
-            <Novedades />
-            <Footer />
+          <div className="card-gym estructura-card-2 ">
+            <img src={RitmosFitness} alt="Gym" className="card-image" />
+            <div className="card-content">
+              <h2 className="card-title">Averanda</h2>
+              <p className="card-address">
+                AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR
+              </p>
+              <a href="#" className="card-link">Ver gimnasio</a>
+              <div className="card-offer">1ER MES GRATIS + INSCRIPCIÓN $10</div>
+              <div className="card-prices">
+                <div className="price">
+                  <span className="price-type">SMART</span>
+                  <span className="original-price">$499.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+                <div className="price">
+                  <span className="price-type">BLACK</span>
+                  <span className="original-price">$599.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+                <div className="price">
+                  <span className="price-type">FIT</span>
+                  <span className="original-price">$399.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+              </div>
+              <button className="estructure-size estructure-button-1 button-type-4">¡Inscríbete ya!</button>
+            </div>
+          </div>
+
+          <div className="card-gym estructura-card-2 ">
+            <img src={RitmosFitness} alt="Gym" className="card-image" />
+            <div className="card-content">
+              <h2 className="card-title">Averanda</h2>
+              <p className="card-address">
+                AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR
+              </p>
+              <a href="#" className="card-link">Ver gimnasio</a>
+              <div className="card-offer">1ER MES GRATIS + INSCRIPCIÓN $10</div>
+              <div className="card-prices">
+                <div className="price">
+                  <span className="price-type">SMART</span>
+                  <span className="original-price">$499.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+                <div className="price">
+                  <span className="price-type">BLACK</span>
+                  <span className="original-price">$599.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+                <div className="price">
+                  <span className="price-type">FIT</span>
+                  <span className="original-price">$399.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+              </div>
+              <button className="estructure-size estructure-button-1 button-type-4">¡Inscríbete ya!</button>
+            </div>
+          </div>
+
+          <div className="card-gym estructura-card-2 ">
+            <img src={RitmosFitness} alt="Gym" className="card-image" />
+            <div className="card-content">
+              <h2 className="card-title">Averanda</h2>
+              <p className="card-address">
+                AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR
+              </p>
+              <a href="#" className="card-link">Ver gimnasio</a>
+              <div className="card-offer">1ER MES GRATIS + INSCRIPCIÓN $10</div>
+              <div className="card-prices">
+                <div className="price">
+                  <span className="price-type">SMART</span>
+                  <span className="original-price">$499.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+                <div className="price">
+                  <span className="price-type">BLACK</span>
+                  <span className="original-price">$599.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+                <div className="price">
+                  <span className="price-type">FIT</span>
+                  <span className="original-price">$399.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+              </div>
+              <button className="estructure-size estructure-button-1 button-type-4">¡Inscríbete ya!</button>
+            </div>
+          </div>
+
+          <div className="card-gym estructura-card-2 ">
+            <img src={RitmosFitness} alt="Gym" className="card-image" />
+            <div className="card-content">
+              <h2 className="card-title">Averanda</h2>
+              <p className="card-address">
+                AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR
+              </p>
+              <a href="#" className="card-link">Ver gimnasio</a>
+              <div className="card-offer">1ER MES GRATIS + INSCRIPCIÓN $10</div>
+              <div className="card-prices">
+                <div className="price">
+                  <span className="price-type">SMART</span>
+                  <span className="original-price">$499.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+                <div className="price">
+                  <span className="price-type">BLACK</span>
+                  <span className="original-price">$599.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+                <div className="price">
+                  <span className="price-type">FIT</span>
+                  <span className="original-price">$399.00</span>
+                  <span className="discounted-price">$0.00*</span>
+                </div>
+              </div>
+              <button className="estructure-size estructure-button-1 button-type-4">¡Inscríbete ya!</button>
+            </div>
+          </div>
         </div>
+
+        
+      </div>
+
+      <Novedades />
+      <Footer />
+    </div>
   );
 }
 
 export default GimnasioPage;
+
 
 
 {/* <div className="Diseno-tarjetas-1">

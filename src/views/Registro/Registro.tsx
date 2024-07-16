@@ -71,6 +71,7 @@ export default function Register() {
               id="username"
               placeholder="Ingrese su nombre de usuario"
               name="username"
+              autoComplete="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
@@ -83,6 +84,7 @@ export default function Register() {
               placeholder="Ingrese su correo electrónico"
               name="email"
               value={email}
+              autoComplete="email"
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
@@ -147,6 +149,7 @@ export default function Register() {
             <label htmlFor="phone">Celular</label>
             <input
               type="text"
+              autoComplete="phone"
               id="phone"
               placeholder="Ingrese su número de celular"
               name="phone"

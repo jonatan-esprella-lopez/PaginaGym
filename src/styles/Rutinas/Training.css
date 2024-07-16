@@ -174,17 +174,20 @@
     padding: 0 21% 0 1%;
 }
 
-tr {
+.table-general tr {
     border-radius: 10px;
     width: 66rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     box-shadow: 0 2px 8px -3px;
+    padding-right: 60px;
     margin: 20px 0;
 }
 
 th {
     padding: 10px 0;
+    
 }
 
 .cont-dia {

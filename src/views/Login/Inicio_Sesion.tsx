@@ -63,9 +63,11 @@ function Login() {
           <input
             type="email"
             id="email"
+            placeholder="Ingrese correo electronico"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            
+            autoComplete="email"
+            required
           />
         </div>
         <div className="form-group1">
@@ -73,16 +75,15 @@ function Login() {
           <input
             type="password"
             id="password"
+            placeholder="Ingresa tu contraseña"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            
           />
         </div>
         <button type="submit" className="btn-login">
           Iniciar sesión
         </button>
       </form>
-      
       <Footer />
     </div>
   );

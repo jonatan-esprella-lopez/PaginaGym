@@ -1,6 +1,4 @@
-import React from "react";
-import { Link } from 'react-router-dom';
-import BannerVideoHome from "../assets/videos/BannerHome.mp4"
+import {React , useEffect , useState} from "react";
 
 import "../styles/home_styles.css"
 
@@ -15,13 +13,20 @@ import BuscarcentroCEC from "../componets/Find-center"
 import Banner from "../componets/Home/Principal-banner";
 
 function Home(){
-    const[data, setData] = React.useState(null);
+    const[data, setData] = useState(null);
+    const [error, setError] = useState(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
         fetch("/api")
-          .then((res) => res.json())
-          .then((data) => setData(data.message));
-      }, []);
+            .then((res) => {
+                if (!res.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return res.json();
+            })
+            .then((data) => setData(data.message))
+            .catch((error) => setError(error));
+    }, []);
     
     return( 
         <div className="App-header">

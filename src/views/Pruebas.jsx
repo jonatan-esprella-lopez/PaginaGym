@@ -166,8 +166,10 @@ function Evaluation() {
 
         <h3>Consumos Recomendados</h3>
         <div className="form-group">
-          <label>Consumo de Proteína (g)</label>
+          <label htmlFor="proteinIntake">Consumo de Proteína (g)</label>
           <input
+            id="proteinIntake"
+            name="proteinIntake"
             type="text"
             value={`Normal: ${formData.proteinIntake.normal || ""}, Medio: ${formData.proteinIntake.medium || ""}, Máximo: ${formData.proteinIntake.maximum || ""}`}
             readOnly

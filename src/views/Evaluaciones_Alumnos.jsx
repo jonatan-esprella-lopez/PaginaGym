@@ -1,5 +1,3 @@
-// Evaluation.js
-
 import React, { useState } from "react";
 import "../styles/Pruebas.css";
 
@@ -24,6 +22,7 @@ function Evaluation() {
     }
   };
 
+  // Calculo de ICM
   const calculateBMI = (name, value) => {
     setFormData((prevData) => {
       let heightInMeters = prevData.height / 100;
@@ -137,9 +136,9 @@ function Evaluation() {
             readOnly
           />
         </div>
-        <button type="submit" className="btn-submit">
+        {/* <button type="submit" className="btn-submit">
           Enviar
-        </button>
+        </button> */}
       </form>
     </div>
   );

@@ -45,9 +45,7 @@ const Complementos = () => (
                 </h4>
             </div>
             <Link to="/paginaExtra">
-                <a>
                     Mas...
-                </a>
             </Link>
         </div>
         <section className="container-cards">
