@@ -135,7 +135,8 @@
 }
 
 .highlighted-button:hover {
-    background-color: #ff4500;
+    background-color: #ffbd24;
+    box-shadow: 0 0 20px 0 #ffb300;
 }
 
 .contend-card-text {
@@ -315,21 +316,6 @@ th {
 
 .rutinas-container h3 {
     font-size: var(--font-size-big);
-}
-
-@media (max-width: 1200px) {
-    .training-cards {
-        justify-content: center;
-    }
-
-    .card {
-        min-width: 300px;
-        max-width: 300px;
-    }
-
-    .highlighted-card {
-        max-width: 260px;
-    }
 }
 
 

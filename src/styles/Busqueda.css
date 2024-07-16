@@ -81,7 +81,7 @@
     width: 25px;
     height: 25px;
     left: 8px;
-    top: 5.4px;
+    top: 5.1px;
     position: absolute;
 }
 
@@ -121,16 +121,8 @@
         font-size: 14px;
     }
 
-    .iconos {
-        width: 20px;
-        height: 20px;
-        top: 5px;
-        left: 6px;
-    }
-}
 
-@media (max-width: 480px) {
-    .Banner_boton_gimnasio {
+     .Banner_boton_gimnasio {
         padding: 0.1rem 1rem;
         font-size: 14px;
     }
@@ -155,9 +147,10 @@
     }
 
     .iconos {
+        top: 8px;
         width: 18px;
         height: 18px;
-        top: 4.5px;
         left: 5px;
     }
 }
+

@@ -15,7 +15,9 @@
 
 .texto-titulo-App {
     font-size: 25px;
-    padding-bottom: 1rem;
+    background-color: #ffd579;
+    border-radius: 13px;
+    padding: 1rem;
 }
 
 .texto-descripcion-App {
@@ -39,7 +41,7 @@
     display: flex;
     justify-content: end;
     position: relative;
-    top: 13px;
+    top: 0px;
 }
 
 .imagen-mockup-App {
@@ -433,6 +435,20 @@
         display:flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+    
+
+    .descripcion-App{
+        font-size: 11px;
+    }
+
+    .container-price{
+        font-size: 15px;
+    }
+
+
+    .estructure-card-1 h4{
+        font-size: 15px;
     }
 }
 

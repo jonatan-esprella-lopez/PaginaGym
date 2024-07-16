@@ -24,7 +24,7 @@ const AppImage = ({ src, alt, className }) => <img src={src} alt={alt} className
 const AppMobil = () => (
     <section className="contenedor-App-Mobil">
         <article>
-            <Title text="En" highlight="CEC-FGI App" />
+            <Title  highlight="CEC-FGI App" />
             <Description text="Nos preocupamos porque entrenes siempre, descarga la App" />
             <Description text="No importa si ya tienes experiencia o si recién estás comenzando en el Entrenamiento Funcional, descargar gratis la aplicación del centro de entrenamiento CEC, obtien al mejor aliado para tus rutinas de entrenamiento. Exclusivo para miembros." />
             <Description text="Escanea el código para descargar gratis." />
@@ -32,13 +32,11 @@ const AppMobil = () => (
                 <QRCode src={QR} alt="Código QR" />
                 <div className="contenido-App">
                     <AppLink
-                        href="https://play.google.com/store/apps/details?id=com.eokoe.smartfitcoach"
                         src="https://assets.smartfit.com.br/production/newHome/google-play-badge-es.png"
                         alt="Icono Google Play"
                         className="GooplePlay"
                     />
                     <AppLink
-                        href="https://apps.apple.com/app/smart-fit-app/id1308265270"
                         src="https://assets.smartfit.com.br/production/newHome/apple-badge-es.png"
                         alt="Icono Apple Store"
                     />

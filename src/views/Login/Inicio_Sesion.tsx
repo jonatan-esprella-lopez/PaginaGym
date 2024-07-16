@@ -58,7 +58,7 @@ function Login() {
         <h2>Iniciar sesión</h2>
         
         {!! errorResponse && <div className="errorMessage">{errorResponse}</div>}
-        <div className="form-group">
+        <div className="form-group1">
           <label htmlFor="email">Correo electrónico</label>
           <input
             type="email"
@@ -68,7 +68,7 @@ function Login() {
             
           />
         </div>
-        <div className="form-group">
+        <div className="form-group1">
           <label htmlFor="password">Contraseña</label>
           <input
             type="password"

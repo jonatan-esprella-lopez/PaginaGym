@@ -5,6 +5,7 @@
     justify-content: center;
     background-image: url("../../assets/images//Planes/background.jpg");
     background-size: cover;
+    object-fit: cover;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -25,9 +26,9 @@
 
 
 @media (max-width: 768px) {
-    .table-Prices-Service {
-        border: 1px solid #ffaa00;
-        padding: 20px;
+
+    .planes-title-container{
+        background-position: 0px;
     }
 
     .planes-title-container h3 {
@@ -45,11 +46,14 @@
     .row-Prices-Services-up,
     .row-Prices-Services-principal {
         width: 100%;
+        border: 2px solid #ffaa00;
+        border-radius: 13px;
         margin-bottom: 20px;
+        padding: 20px;
     }
 
     .head-Colum-Prices p {
-        font-size: 1.2rem;
+        font-size: 12px;
         text-align: center;
     }
 
