@@ -1,21 +1,41 @@
 import React from "react";
-import "../App.css"
-import "../styles/home_styles.css"
+import "../App.css";
+import "../styles/home_styles.css";
+
+const TitleSection = ({ title, highlight }) => (
+    <div className="container-head-section1">
+        <div className="head-section-underline">
+            <p>
+                {title} <span>{highlight}</span>
+            </p>
+            <div className="underline"></div>
+        </div>
+    </div>
+);
 
 
-function Novedades(){
+const SubscriptionForm = () => (
+    <div className="contenedor-Registro-Home">
+        <input
+            type="serch"
+            placeholder="Ingresá tu correo electrónico"
+            id="input-correo"
+            className="input-correo-home"
+        />
+        <button className="button-type-4 estructura-size2">
+            Registrate
+        </button>
+    </div>
+);
 
-    
-    return( 
-        <section className="contenedor_Registro_Main">
-                <h3>
-                Recibie las novedades y promociones exclusivas de CEC-FGI.
-                </h3>
-                <div className="contenedor_Registro_Home">
-                    <input type="text" placeholder="Ingresá tu correo electrónico" id="input_correo" className="input_correo_home"/>
-                    <input type="submit"  className="Boton_Prices" value="Registrate"/>
-                </div>
-            </section>
-    )
-}
-export default Novedades
+const Novedades = () => (
+    <section className="contenedor-Registro-Main">
+        <TitleSection
+            title="Recibe las novedades y promociones exclusivas de"
+            highlight="CEC-FGI."
+        />
+        <SubscriptionForm />
+    </section>
+);
+
+export default Novedades;

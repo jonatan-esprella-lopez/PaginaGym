@@ -1,15 +1,13 @@
-/* aboutUs_styles.css */
 
 .about-us-container {
   background-color: #e6e6e6;
-    padding: 20px;
   }
   
   .about-us-header {
     text-align: center;
     
   }
-  
+   
   .about-us-content {
     margin-top: 20px;
   }
@@ -20,13 +18,6 @@
     gap: 20px;
   }
   
-  /* instructorCard_styles.css */
-  
-  .instructor-card {
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    padding: 20px;
-  }
   
   .instructor-photo {
     width: 100%;
@@ -41,62 +32,207 @@
   .instructor-info p {
     color: #666;
   }
-  /* aboutUsContent_styles.css */
 
-.about-us-content {
-    margin-top: 40px; /* Aumentamos el espacio superior */
-  }
-  
   .about-us-content h2 {
-    font-size: 28px; /* Aumentamos el tamaño de la fuente */
-    margin-top: 30px; /* Aumentamos el espacio superior */
+    font-size: 28px; 
+    margin-top: 30px; 
     margin-bottom: 20px;
-    color: #333; /* Cambiamos el color del título */
+    color: #333;
   }
   
   
   .about-us-content ul {
     list-style-type: disc;
-    margin-left: 30px; /* Aumentamos la sangría */
-    margin-bottom: 20px; /* Agregamos espacio inferior */
+    margin-left: 30px; 
+    margin-bottom: 20px; 
   }
   
   .about-us-content ul li {
-    margin-bottom: 10px; /* Reducimos el espacio entre elementos de la lista */
+    margin-bottom: 10px; 
   }
   
   .instructor-cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Ajustamos el ancho de las tarjetas */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
     gap: 20px;
   }
   
-  /* instructorCard_styles.css */
   
   .instructor-card {
-    background-color: #f9f9f9; /* Cambiamos el color de fondo */
-    border-radius: 8px; /* Reducimos el radio de la esquina */
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Agregamos sombra */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    width: 15rem;
+    height: 26rem;
+    background-color: black;
+    border-radius: 23px 23px 23px 0;
+    border: 2px solid #ff6600;
+    box-shadow: 0 0 10px 3px #ff660079;
+    display: flex;
+    flex-direction: column;
+  
   }
   
   .instructor-photo {
     width: 100%;
-    border-radius: 8px; /* Reducimos el radio de la esquina */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Agregamos sombra */
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   }
   
   .instructor-info h3 {
-    margin-top: 15px; /* Reducimos el espacio superior */
+    margin-top: 15px; 
     margin-bottom: 10px;
-    font-size: 18px; /* Ajustamos el tamaño de la fuente */
+    font-size: 18px;
   }
   
   .instructor-info p {
-    color: #777; /* Cambiamos el color del texto */
+    color: #777;
   }
   
 
   .cont-Mis-Vis{
+    padding: 0 7rem;
     display: flex;
+    margin-bottom: 5rem;
   }
+
+
+
+  /*Nuebvo codigo de head*/
+
+.about-us-section {
+  background-image: url(../assets/images/Nosotros/background.jpg);
+  fill: #777;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.underline-central{
+  height: 5px;
+  width: 400px;
+  margin: 15px 35rem;
+  border-radius: 10px;
+  background-color: #ff8800;
+}
+
+
+
+
+.overlay h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.overlay p {
+  text-align: left;
+  width: 1200px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+.overlay-bienvenida{
+  text-align: left;
+  width: 85%;
+  font-weight: bold;
+}
+
+.overlay p:first-of-type {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .about-us-header {
+    padding: 0 10px;
+  }
+
+  .about-us-content {
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+
+  .instructor-cards-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .about-us-content h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .about-us-content ul {
+    margin-left: 20px;
+  }
+
+  .about-us-content ul li {
+    margin-bottom: 8px;
+  }
+
+  .instructor-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .instructor-info h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .instructor-info p {
+    font-size: 14px;
+  }
+
+  .cont-Mis-Vis {
+    flex-direction: column;
+    padding: 0 10px;
+    margin-bottom: 2rem;
+  }
+
+  .about-us-section {
+    height: 200px;
+  }
+
+
+
+  .overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .overlay p {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+  }
+
+  .underline-central {
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .overlay-bienvenida {
+    width: 100%;
+  }
+}
+
+
+

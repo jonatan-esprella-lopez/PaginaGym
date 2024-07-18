@@ -1,43 +1,63 @@
-.Clases_titulo_Container{
-    background-color: #ffa600;
+.Clases-titulo-container{
+    width: 100%;
+    background-color: var(--primary-color) ;
     padding: 10px 0;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 8px;
 }
 
-.contenido_clases_detalle{
+.contenido-clases-detalle{
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    margin: 1rem 0 0 0;
     padding: 0 1.5rem;
     flex-wrap: wrap;
 }
 
-.detalle_clase{
+.detalle-clase{
     
     font-size: 15px;
-    padding: 0.4rem 0.4rem;
+    padding: 2rem 0.4rem 0.8rem 0.4rem;
     border-radius: 10px;
     margin: 0.2rem;
 }
 
-.Iconos_detalle{
-    width: 1.5rem;
-    opacity: 50%;
+.Iconos-detalle{
+    height: 36px;
+    opacity: 70%;
 }
 
-.detalle_title{
-    font-weight: 500;
-    
+.detalle-title{
+    font-weight: 600;
+    margin: 10px 0;
 }
 
-.detalle_descripcion{
-    font-size: 12px;
+.detalle-descripcion{
+    opacity: 1;
+    margin-top: 3px;
+    font-size: 13px;
+    font-weight: 10;
+    color: #000000;
+}
+
+.detalle-descripcion1{
+    opacity: 0.8;
     margin: 0;
+    font-size: 12px;
+    color: #000000;
 }
 
-.contenedor_Apartador{
+.detalle-descripcion3{
+    opacity: 0.8;
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+.contenedor-Apartador{
     width: 90%;
     display: flex;
     align-items: center;
@@ -51,16 +71,59 @@
     border-bottom: 1px solid #999;
 }
 
-.contenedor_Texto{
+.contenedor-Texto{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Text_programas{
-    padding: 0 0.6rem 1rem 0.6rem;
-    width: 80%;
+.Text-programas{
+    color: #6c6c6c;
+    padding: 0 2rem 0 2rem;
     font-size: 13px;
     font-weight: 500;
+    text-align: center;
+}
+
+.Text-complemento{
+    color: #6c6c6c;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.button-prices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-prices button{
+    background-color: #008cff;
+    padding: 0.4rem 2rem;
+    border-radius: 7px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    font-size: 14px;
+    margin: 1rem;
+    transition: .2s;
+}
+
+.button-prices button:hover{
+    cursor: pointer;
+  box-shadow: 0 0 10px 0px #00a6ff;
+}
+
+/*-__________________________________________Responsive______________________________________________*/
+
+
+@media (max-width: 768px) {
+
+    .Text-complemento{
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: 500;
+    margin:0;
     text-align: center;
 }
 
@@ -68,17 +131,73 @@
 
 
 
-/*______________________________________________Responsive______________________________________________*/
 
 
-@media (max-width: 768px) {
-    .Programas_container {
+
+
+
+    .Programas-container {
         width: 100%;
     }
 
+.detalle-clase{
+    
+    font-size: 15px;
+    padding: 0.5rem 0.4rem 0rem 0.4rem;
+    border-radius: 10px;
+    margin: 0.2rem;
+}
+    .contenido-clases-detalle{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    flex-wrap: wrap;
+}
 
-    .Text_programas {
-        width: 100%;
-        font-size: 14px;
-    }
+.Text-programas{
+    color: #6c6c6c;
+    padding: 0 0.6rem;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+}
+
+    .Clases-titulo-container{
+    width: 100%;
+    background-color: var(--primary-color) ;
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.Iconos-detalle{
+    height: 20px;
+    opacity: 70%;
+}
+
+.detalle-title{
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.detalle-descripcion{
+    opacity: 1;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 10;
+    color: #000000;
+}
+
+.contenedor-Apartador{
+    width: 0;
+}
+.Apartador{
+    width: 0;
+    margin:0;
+    border: 0;
+    border-bottom: 1px solid #999;
+}
 }

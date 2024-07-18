@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { useAuth } from "../../auth/AuthProvider.tsx";
-import "../../styles/Login.css"
-import Header from "../../componets/Header_Main"
-import Footer from "../../componets/Footer_Main"
+import "../../styles/Login.css";
+import Header from "../../componets/Header_Main";
+import Footer from "../../componets/Footer_Main";
 import { Navigate } from "react-router-dom";
-
-
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -26,20 +24,20 @@ function Login() {
     console.log("Password:", password);
     console.log(isAuthenticated);
   };
-  if (isAuthenticated){
-    return <Navigate to="/PerfilUser"/>;
+
+  if (isAuthenticated) {
+    return <Navigate to="/PerfilUser" />;
   }
+
   return (
     <div className="login-container">
-        <Header />
+      <Header />
       <form onSubmit={handleSubmit} className="login-form">
-
         <div className="contenedor-header-Login">
           <h2>Iniciar sesión</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit harum exercitationem perspiciatis eveniet </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit harum exercitationem perspiciatis eveniet</p>
         </div>
-        
-        <div className="form-group">
+        <div className="form-group1">
           <label htmlFor="email">Correo electrónico</label>
           <input
             type="email"
@@ -65,7 +63,6 @@ function Login() {
           Iniciar sesión
         </button>
       </form>
-      
       <Footer />
     </div>
   );

@@ -1,15 +1,12 @@
-import React, { useState, ReactNode} from "react";
+import React, { useState, useRef } from "react";
+import "../styles/Navegacion/menu-principal.css";
 import { Link } from 'react-router-dom';
-import "../App.css"
-import Logo from "../assets/images/Logotipo-cec/Entrenamiento-Funcional.png"
-import Credenciales from "../componets/ElementosLogin/BotonInicioSesion"
-import "../styles/Navegacion/Menu_Nav.css"
+import Logo from "../assets/images/Logotipo-cec/logotipo.svg";
+import Credenciales from "./Elements-login/Boton-inicio-sesion";
 
-
-
-
-function HeaderMain(){
+function HeaderMain() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const menuRef = useRef(null);
 
     const links = [
         { path: "/", label: "Inicio" },
@@ -19,33 +16,42 @@ function HeaderMain(){
         { path: "/Evaluaciones", label: "Evaluaciones" },
         { path: "/Nosotros", label: "Nosotros" },
         { path: "/Soporte", label: "Soporte" }
-      ];
+    ];
 
     const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-    return( 
-    <header className="conteiner_header">
-        <div className="Contenedor_credenciales"><Credenciales/></div>
-            <a href="/">
-                <img src={Logo} alt="" className="logo_header"/>
-            </a>
-        <div className="contenedorNav">
-        {/* <button className="menu_toggle" onClick={toggleMenu}>
-            &#9776;
-        </button> */}
-            <nav className={`contenedor_Link_Paginas ${isMenuOpen ? 'open' : ''}`}>
-                        
-            {links.map(link => (
-                <p >
-                <Link key={link.path} to={link.path} className={`Link_Paginas`}>
-                    {link.label} 
-                </Link>
-            </p>
-            ))}
-            </nav>
-        </div>
-    </header>
-    )
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const handleClickOutside = (event) => {
+            setIsMenuOpen(false);
+    };
+
+    return (
+         <header className="conteiner_header">
+         <div className="Contenedor_credenciales">
+             <Credenciales />
+             <button className="menu-button" onClick={toggleMenu}>
+                    ☰
+                </button>
+         </div>
+         <Link to="/" aria-label="Ir a la página de inicio" >
+             <img src={Logo} alt="Logotipo CEC-FGI" className="logo_header" loading="eager"/>
+        </Link>
+         <div className="contenedorNav">
+         
+                <nav className={`contenedor_Link_Paginas ${isMenuOpen ? 'open' : ''}`} onClick={handleClickOutside}>
+                    {links.map(link => (
+                        <p key={link.path}>
+                            <Link to={link.path} className="Link_Paginas">
+                                {link.label}
+                            </Link>
+                        </p>
+                    ))}
+                </nav>
+         </div>
+     </header>
+    );
 }
-export default HeaderMain
+
+export default HeaderMain;
+

@@ -1,4 +1,4 @@
-.Banner_Home_Main{
+.Banner-home-main{
     width: 100%;
     background-image: url("");
     height: 513px;
@@ -6,7 +6,7 @@
     overflow: hidden;
     
 }
-.Banner_video{
+.Banner-video{
     min-width: 100%;
     min-height: 100%;
     height: auto;
@@ -18,7 +18,7 @@
     filter:brightness(70%);
 }
 
-.Banner_content{
+.Banner-content{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,6 +42,7 @@
 }
 
 /*______________________________________________Responsive______________________________________________*/
+
 @media (max-width: 768px){
     .Banner_Home_Main{
         height: 27rem;

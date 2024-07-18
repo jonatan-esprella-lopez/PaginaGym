@@ -15,6 +15,7 @@
   --secondary-color1: #000000; 
   --secondary-color2: #FAFF00;
   --background-color: #FAFF00; 
+  --backgrounf-color2: #ffe6af;
   --text-color: #ffffff; 
   --text-color2:#000000;
   --error-color: #e74c3c; 
@@ -40,6 +41,14 @@
   height: 2.3rem;
 }
 
+.estructura-size2{
+  width: 3rem;
+  height: 2.3rem;
+  margin: 0 1rem ;
+  border-radius: 6px;
+  border: 1px solid #00000000;
+}
+
 .estructure-button-1{
   display: flex;
   justify-content: center;
@@ -48,7 +57,7 @@
   font-weight: 550;
   font-size: var(--font-size-medium);
   margin: 10px;
-  cursor: pointer;
+  cursor: pointer;  
   border: none;
 }
 
@@ -80,15 +89,30 @@
 .buton-type-3{
   background-color: var(--primary-color);
   color: var(--secondary-color1);
-  padding: 0 3rem;
-  height: 2.3rem;
-  font-size: var(--font-size-large);
+  padding: 0.8rem 3rem;
+  font-size: 17px;
+  margin: 10px;
 }
 
 .buton-type-3:hover {
   background-color: #ffcc00;
 }
 
+.button-type-4{
+  width: 12rem;
+  background-color: #0062ff;
+  border: 2px solid #0062ff;
+  color: var(--text-color);
+  font-size: small+1 ;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button-type-4:hover {
+  border: 2px solid #008cff;
+  background-color: #0044ff;
+  box-shadow: 0 0 10px 0px #00a6ff;
+}
 
 
 /*______________________________________________Tarjetas______________________________________________*/
@@ -97,16 +121,46 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
-  border: 0.7px solid #585858;
+  border: 0.3px solid #343434;
   border-radius: 15px;
   outline: 2px solid transparent;
-  box-shadow: 0 3px 17px rgba(22, 22, 22, 0.1);
-  transition: .25s;
+  box-shadow: 3px 3px 10px -1px rgba(22, 22, 22, 0.398);
+  transition: .30s;
   cursor: pointer;
-  width: 23.4%;
+  width: 290px;
+  align-items: center;
 }
 
-.estructure-card-1:hover{
+.estructura-card-2{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  border: 0.3px solid #343434;
+  border-radius: 15px;
+  outline: 2px solid transparent;
+  box-shadow: 3px 3px 10px -1px rgba(22, 22, 22, 0.398);
+  transition: .30s;
+  cursor: pointer;
+  align-items: center;
+  width: 350px;
+}
+
+
+.estructura-card-3{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    border: 0.3px solid #343434;
+    border-radius: 15px;
+    outline: 2px solid transparent;
+    box-shadow: 3px 3px 10px -1px rgba(22, 22, 22, 0.398);
+    transition: .30s;
+    cursor: pointer;
+    width: 290px;
+    align-items: center;
+}
+
+.estructure-card-1:hover , .estructura-card-2:hover ,.estructura-card-3:hover{
   border: 0.3px solid #ffcc00;
   box-shadow: 0 0 5px 1px var(--primary-color);
 }
@@ -120,9 +174,18 @@
 }
 
 
-.card-type-1{
+/*iconos o imagenes*/
+
+.contenedor-iconos-type-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  max-height: 100px;
 
 }
+
 
 
 /*______________________________________________Titulos______________________________________________*/
@@ -130,16 +193,59 @@
 
 .container-head-section {
   width: 100%;
-  margin: 5rem 0 7rem 0;
+  margin: 3rem 0 3rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.container-head-section a{
+    background-color: #ffa600;
+    padding: 10px 15px 10px 20px;
+    border-radius: 10px 10px;
+}
+
+.container-head-section a:hover{
+  background-color: #ffdb25;
+}
+.container-head-section1 {
+  width: 100%;
+  margin: 5rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-head-section1 p {
+  position: relative;
+  margin: 0;
+  padding: 0 2rem 0 2rem;
+  font-size: var(--font-size-extralarge);
+  font-weight: normal;
+}
+
 .container-head-section h4 {
   position: relative;
   margin: 0;
-  padding: 0 1rem 0 0.2rem;
+  padding: 0 2rem 0 2rem;
+  font-size: var(--font-size-extralarge);
+  font-weight: normal;
+}
+
+
+.container-head-section1 .underline {
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-color); 
+}
+
+.container-head-section h5 {
+  position: relative;
+  margin: 0;
+  padding: 0 1rem 0 2rem;
   font-size: var(--font-size-extralarge);
   font-weight: normal;
 }
@@ -155,7 +261,6 @@
 
 .container-head-section a{
   color: var(--secondary-color1);
-  opacity: 60%;
   margin-right: 4rem;
 }
 
@@ -201,3 +306,170 @@ a:hover{
   display: flex;
  justify-content: space-around;
 }
+
+.estructure-card-especial {
+  position: relative;
+}
+
+.estructure-card-especial::before {
+  content: "Suscripción mensual";
+  display: block;
+  width: 80%;
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 2px 0;
+  position: absolute;
+  top: -10px;
+  left: 50;
+  border-radius: 6px;
+}
+
+
+/*______________________________________________Responsive______________________________________________*/
+
+@media (max-width: 768px) {
+
+
+.estructura-card-2{
+  flex-direction:row;
+}
+
+
+
+.contenedor-iconos-type-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  max-height: 60px;
+
+}
+
+.container-head-section1{
+  width: 90%;
+}
+
+
+.container-head-section1 p{
+  font-size: 13px;
+  padding: 0 10px;
+}
+
+
+
+
+  
+  .estructure-size{
+    padding: 1px;
+    margin: 0.2rem;
+    font-size: 12px;
+  }
+
+
+  .Contenedor_credenciales div{
+    display: flex;
+    width: 100%;
+  }
+
+  .container-head-section a{
+    color: var(--secondary-color1);
+    font-size: 14px;
+    margin: 0;
+    padding-right: 10px;
+    text-align: end;
+    color: #000000;
+    background-color: #ffa600;
+    padding: 10px 15px 10px 20px;
+    border-radius: 10px 0 0 10px;
+  }
+
+
+  .estructure-card-especial{
+    font-size: 12px;
+  }
+  .container-head-section {
+    width: 100%;
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container-head-section div {
+    width: 60%;
+  }
+
+  
+  .container-head-section h4 {
+    position: relative;
+    margin: 0;
+    text-align: left;
+    padding: 0 0 0 10px;
+    font-size: 13.5px;
+    font-weight: normal;
+  }
+  
+  .container-head-section .underline {
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary-color); 
+  }
+  
+  .estructura-card-2{
+    width: 90%;
+    height: 200px;
+    margin: 10px;
+    padding: 0;
+  }  
+
+
+  .estructure-card-1{
+    width: 190px;
+    margin-top: 1rem;
+
+  }
+
+
+  .button-type-4{
+    width: 9rem;
+    padding: 19px;
+    color: var(--text-color);
+    font-size: small+1  ;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+
+
+  .estructura-principal-cards{
+    margin: 0;
+  }
+
+
+
+  .estructura-card-3{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    border: 0.3px solid #343434;
+    border-radius: 15px;
+    outline: 2px solid transparent;
+    box-shadow: 3px 3px 10px -1px rgba(22, 22, 22, 0.398);
+    transition: .30s;
+    cursor: pointer;
+    width: 196px;
+    height: 280px;
+    margin: 10px 0 0 0;
+    align-items: center;
+}
+  .estructura-card-3 img{
+    width: 100%;
+    border-radius: 13px 13px 0 0;
+
+  }
+}
+

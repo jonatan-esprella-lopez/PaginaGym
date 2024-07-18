@@ -58,31 +58,32 @@ function Login() {
         <h2>Iniciar sesión</h2>
         
         {!! errorResponse && <div className="errorMessage">{errorResponse}</div>}
-        <div className="form-group">
+        <div className="form-group1">
           <label htmlFor="email">Correo electrónico</label>
           <input
             type="email"
             id="email"
+            placeholder="Ingrese correo electronico"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            
+            autoComplete="email"
+            required
           />
         </div>
-        <div className="form-group">
+        <div className="form-group1">
           <label htmlFor="password">Contraseña</label>
           <input
             type="password"
             id="password"
+            placeholder="Ingresa tu contraseña"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            
           />
         </div>
         <button type="submit" className="btn-login">
           Iniciar sesión
         </button>
       </form>
-      
       <Footer />
     </div>
   );

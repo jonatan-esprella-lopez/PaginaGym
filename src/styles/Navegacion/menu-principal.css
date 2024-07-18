@@ -1,0 +1,113 @@
+.conteiner_header {
+    background-color: var(--secondary-color1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Contenedor_credenciales {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    margin-right: 13px;
+}
+
+.logo_header {
+    width: 352px;
+    height: 97px;
+    margin-bottom: 17px;
+    position: relative;
+    top: -15px;
+}
+
+.contenedor_Link_Paginas {
+    display: flex;
+    border-top: 1px solid var(--text-color);
+}
+
+.Link_Paginas {
+    color: var(--text-color);
+    margin: 0 25px;
+    padding-bottom: 1rem;
+    font-size: var(--font-size-large);
+    justify-content: center;
+}
+
+.Link_Paginas:hover {
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+.menu-button{
+    display: none;
+    width: 3.2rem;
+    height: 2.2rem;
+    margin-left: 4px;
+    border-radius: 5px;
+    border: 1px solid #eeff00;
+    background-color: #ffffff00;
+    color: #fff700;
+}
+/*______________________________________________Responsive______________________________________________*/
+
+@media (max-width: 768px) {
+    .conteiner_header {
+        height: 180px;
+    }
+        
+    .menu-button {
+        display: block;
+    }
+    
+
+    .Contenedor_credenciales {
+        display: flex;
+        align-self: center;
+        margin-right: 13px;
+    }
+
+
+    .logo_header {
+        width: 15rem;
+        padding-top: 1rem;
+    }
+
+    .Contenedor_credenciales {
+        margin-right: 5px;
+    }
+
+    .contenedor_Link_Paginas {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--secondary-color1);
+        border-top: none;
+    }
+
+    .Link_Paginas {
+        margin: 15px;
+        padding: 10px;
+        font-size: var(--font-size-medium);
+    }
+
+    .menu_toggle {
+        display: block;
+        padding: 0.5rem;
+        font-size: var(--font-size-large);
+        cursor: pointer;
+    }
+
+    .contenedor_Link_Paginas.open {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+}

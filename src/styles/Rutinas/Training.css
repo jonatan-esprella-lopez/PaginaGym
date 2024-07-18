@@ -1,0 +1,442 @@
+
+.container-rutinas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.training-section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.training-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.training-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.training-intro {
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+}
+
+.training-intro p {
+    padding: 1rem;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+    max-width: 800px;
+    text-align: left;
+}
+
+.training-cards {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.training-cards p {
+    margin-top: 0;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 15px;
+    max-width: 340px;
+    min-width: 340px;
+    text-align: left;
+    margin: 10px;
+}
+
+.card-header {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.titulo-card {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px 14px 0 0;
+    padding: 12px 0;
+    background-color: #000;
+    font-size: var(--font-size-medium);
+    color: #fff;
+}
+
+.titulo-card h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.card p {
+    padding: 25px 25px 0 25px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.highlighted-card {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    max-height: 370px;
+    max-width: 300px;
+}
+
+.highlighted-card h3 {
+    margin: 0;
+    color: #000;
+    font-weight: bold;
+    padding: 12px 0;
+
+    font-size: var(--font-size-medium);
+}
+
+.trainer-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.highlighted-content p {
+    font-size: 0.9em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.highlighted-button {
+    background-color: var(--primary-color);
+    color: #000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.highlighted-button:hover {
+    background-color: #ffbd24;
+    box-shadow: 0 0 20px 0 #ffb300;
+}
+
+.contend-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    padding: 0 10px 25px 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.cont-head-table {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.cont-head-table p {
+    opacity: 66%;
+
+}
+
+.table-general {
+    border-collapse: collapse;
+    display: block;
+}
+
+.cond-head-column {
+    background-color: var(--secondary-color1);
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 21% 0 1%;
+}
+
+.table-general tr {
+    border-radius: 10px;
+    width: 66rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px -3px;
+    padding-right: 60px;
+    margin: 20px 0;
+}
+
+th {
+    padding: 10px 0;
+    
+}
+
+.cont-dia {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    transform: rotate(-90deg);
+    height: 100px;
+}
+
+.cont-gen-dia {
+    width: 120px;
+}
+
+.cont-dia p {
+    padding-top: 20px;
+    margin: 0;
+}
+
+.underline-dia {
+    background-color: var(--primary-color);
+    height: 6px;
+    width: 60px;
+    margin-top: 26px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+}
+
+.tipo-entrenamiento {
+    border: 2px solid black;
+    padding: 7px 20px 5px;
+    border-radius: 15px;
+}
+
+.cont-details {
+    padding: 0;
+    width: 0;
+}
+
+.cont-details td{
+    width: 100%;
+}
+
+.cont-espaciado {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 4rem;
+    justify-content: space-between;
+}
+
+.contenedor-th-icons{
+    width: 23rem;
+}
+
+.contenedor-th-icons{
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+}
+
+.icono-duracion-rutina {
+    margin-top: 20px;
+    height: 25px;
+    opacity: 70%;
+}
+
+.cont-button-rutinas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-button-rutinas img {
+    padding-bottom: 10px;
+    width: 50px;
+}
+
+.info-sections {
+    width: 80%;
+    margin: 30px 20px 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info-sections div {
+    margin-bottom: 20px;
+}
+
+.info-sections h3 {
+    text-align: left;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.info-sections p {
+    text-align: left;
+    font-size: 16px;
+    color: #657786;
+    margin: 5px 0 5px 15px;
+}
+
+.info-sections input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #E1E8ED;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #657786;
+    background-color: #fff;
+}
+
+.info-sections div:last-child {
+    margin-bottom: 0;
+}
+
+.rutinas-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/images/Rutinas/background.jpg");
+    background-size:cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+}
+
+.rutinas-container h3 {
+    font-size: var(--font-size-big);
+}
+
+
+
+@media (max-width: 768px) {
+
+
+    .training-title {
+        font-size: 1.2em;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .highlighted-card {
+        max-width: 100%;
+    }
+
+    .cont-dia {
+        transform: rotate(0);
+        height: auto;
+        margin: 0;
+    }
+    .table-general thead {
+        display: none;
+    }
+
+    .table-general, .table-general tbody, .table-general tr, .table-general td {
+        display: flex;
+        width: 95%;
+        margin: 0 auto;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .table-general tr {
+        margin-bottom: 15px;
+    }
+
+    .table-general td {
+        padding: 20px;
+        text-align: right;
+        position: relative;
+    }
+
+    .table-general td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .cont-details{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        padding: 20px;
+    }
+    .cont-dia {
+        justify-content: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cont-gen-dia{
+        width: 170px;
+    }
+
+    .cont-espaciado {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+    }
+
+
+
+    .card-header{
+        margin-bottom: 30px;
+    }
+
+
+
+    
+  .tipo-entrenamiento{
+    margin: 0;
+  }
+
+    .training-intro,
+    .training-cards {
+        width: 100%;
+    }
+
+    .cont-head-table {
+        width: 380px;
+        font-size: 12px;
+        justify-content: space-between;
+    }
+
+
+    .underline-dia{
+        width: 100px;
+    }
+
+
+}
+
+

@@ -1,41 +1,91 @@
 import React from "react";
-import "../App.css"
-import "../styles/home_styles.css"
-import Fb from "../assets/images/facebook.svg"
-import IG from "../assets/images/instagram.svg"
+import { Link } from 'react-router-dom';
+import Fb from '../assets/images/facebook.svg';
+import IG from "../assets/images/instagram.svg";
+import Spotify from "../assets/images/spotify.svg";
+import Twitter from "../assets/images/twitter.svg";
+import YouTube from "../assets/images/youtube.svg";
+import "../styles/Footer/general-footer.css";
 
+const SocialLink = ({ href, icon: Icon, children }) => (
+    <a href={href} className="social-link">
+        <img src={Icon} alt="social icon" className="social-icon" />
+        {children}
+    </a>
+);
 
-function FooterMain(){
+const FooterLink = ({ href, text }) => (
+    <Link to={href} className="footer-link">
+        {text}
+    </Link>
+);
 
-    
-    return( 
-        <footer>
-            
-            <div className="footer-section about">
-                <h3>Acerca de CEC-FGI</h3>
-                <p>En Mundo Nutrición queremos ayudarte con tus entrenamientos, para ello te ofrecemos varios ejemplos de programas que puedes seguir para poder alcanzar tus objetivos. Es importante que tengas en cuenta que en Mundo Nutrición creamos estos programas a modo de sugerencia, para que tengas una guía de cómo puedes entrenar. Cada persona tiene condiciones físicas y mentales distintas, por lo que puede que algunos de estos programas no se ajusten a tus necesidades, intenta conocer y respetar tus límites para evitar lesiones y otro tipo de daños.</p>
+const FooterColumn = ({ title, links }) => (
+    <div className="footer-column">
+        <h4>{title}</h4>
+        <div>
+            {links.map((link, index) => (
+                <FooterLink href={link.href} key={index} text={link.text} />
+            ))}
+        </div>
+    </div>
+);
+
+function FooterMain() {
+    const socialLinks = [
+        { href: "https://www.facebook.com/CEC.FGI", icon: Fb, text: "FACEBOOK" },
+        { href: "https://www.instagram.com/cecfgi/", icon: IG, text: "INSTAGRAM" },
+        { href: "https://open.spotify.com/user/31g2vmorc4wigjwrhjrqiax7g3je", icon: Spotify, text: "SPOTIFY" },
+        { href: "https://x.com/Cec_Fgi", icon: Twitter, text: "TWITTER" },
+        { href: "https://www.youtube.com/@CecFGI", icon: YouTube, text: "YOUTUBE" }
+    ];
+
+    const footerColumns = [
+        {
+            title: "CEC - FGI",
+            links: [
+                { href: "/Nosotros", text: "Quienes somos" },
+                { href: "/Nosotros", text: "Hable con nosotros" },
+                { href: "/Politica de privacidad", text: "Aviso de Privacidad" }
+            ]
+        },
+        {
+            title: "Planes",
+            links: [
+                { href: "#", text: "Planes" },
+                { href: "#", text: "Documentos" }
+            ]
+        },
+        {
+            title: "Nuestra Compañía",
+            links: [
+                { href: "#", text: "Quiero ser franquiciatario" },
+                { href: "#", text: "Promociona tu marca" },
+                { href: "#", text: "Indica un local" },
+                { href: "#", text: "Trabaja con nosotros" }
+            ]
+        }
+    ];
+
+    return (
+        <footer className="footer">
+            <div className="footer-top">
+                <h3 className="footer-title">Síguenos</h3>
+                <div className="footer-social-links">
+                    {socialLinks.map((link, index) => (
+                        <SocialLink href={link.href} icon={link.icon} key={index}>
+                            {link.text}
+                        </SocialLink>
+                    ))}
+                </div>
             </div>
-            <img src="" alt="" />
-            <div className="conteiner_footer">
-                <div>
-                    <div className="columna_Nuestras_Clases">
-                        <h3>Clases</h3>
-                        <a href="" className="Texto_Footer_n_c">Acerca de nuestras clases</a>
-                        
-                        <a href="" className="Texto_Footer_n_c">Programas</a>
-                        <a href="" className="Texto_Footer_n_c">Horarios</a>
-                        <a href="" className="Texto_Footer_n_c">Instructores</a>
-                        <a href="" className="Texto_Footer_n_c">Precios</a>
-                    </div>
-                </div>
-                <div className="container_redesSociales">
-                    <img src={Fb} alt="" className="Icono_Redes_Sociales"/>
-                    <img src={IG} alt="" className="Icono_Redes_Sociales"/>
-                    <img src={Fb} alt="" className="Icono_Redes_Sociales"/>
-                    <img src={IG} alt="" className="Icono_Redes_Sociales"/>
-                </div>
+            <div className="footer-bottom">
+                {footerColumns.map((column, index) => (
+                    <FooterColumn key={index} title={column.title} links={column.links} />
+                ))}
             </div>
         </footer>
-    )
+    );
 }
-export default FooterMain
+
+export default FooterMain;

@@ -1,5 +1,3 @@
-// Evaluation.js
-
 import React, { useState } from "react";
 import "../styles/Pruebas.css";
 
@@ -17,46 +15,36 @@ function Evaluation() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
 
-    // Calcular datos ideales en tiempo real
-    if (name === "weight" || name === "height" || name === "bodyFatPercentage") {
-      calculateIdealData(name, value);
+    if (name === "weight" || name === "height") {
+      calculateBMI(name, value);
     }
   };
 
-  const calculateIdealData = (name, value) => {
-    let idealWeight = "";
-    let idealBMI = "";
-    let idealBodyFatPercentage = "";
+  // Calculo de ICM
+  const calculateBMI = (name, value) => {
+    setFormData((prevData) => {
+      let heightInMeters = prevData.height / 100;
+      let weight = prevData.weight;
 
-    if (name === "weight" && formData.height) {
-      const heightInMeters = formData.height / 100;
-      const calculatedBMI = parseFloat(value) / (heightInMeters * heightInMeters);
-      setFormData({ ...formData, bmi: calculatedBMI.toFixed(2) });
-    } else if (name === "height" && formData.weight) {
-      const heightInMeters = value / 100;
-      const calculatedBMI = formData.weight / (heightInMeters * heightInMeters);
-      setFormData({ ...formData, bmi: calculatedBMI.toFixed(2) });
-    } else if (name === "bodyFatPercentage") {
-      // Aquí implementa la lógica para calcular el peso ideal y el BMI ideal basado en el porcentaje de grasa corporal
-      // Por ejemplo:
-      // idealWeight = ...;
-      // idealBMI = ...;
-      // idealBodyFatPercentage = ...;
-    }
+      if (name === "height") {
+        heightInMeters = value / 100;
+      } else if (name === "weight") {
+        weight = value;
+      }
 
-    setFormData({
-      ...formData,
-      idealWeight: idealWeight.toFixed(2),
-      idealBMI: idealBMI.toFixed(2),
-      idealBodyFatPercentage: idealBodyFatPercentage.toFixed(2)
+      const bmi = weight / (heightInMeters * heightInMeters);
+
+      return {
+        ...prevData,
+        bmi: isNaN(bmi) ? "" : bmi.toFixed(2)
+      };
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes implementar la lógica para enviar los datos del formulario al servidor
     console.log(formData);
   };
 
@@ -118,7 +106,6 @@ function Evaluation() {
             required
           />
         </div>
-        {/* Campos de datos ideales */}
         <div className="form-group">
           <label htmlFor="idealWeight">Peso Ideal (kg)</label>
           <input
@@ -149,9 +136,9 @@ function Evaluation() {
             readOnly
           />
         </div>
-        <button type="submit" className="btn-submit">
+        {/* <button type="submit" className="btn-submit">
           Enviar
-        </button>
+        </button> */}
       </form>
     </div>
   );
