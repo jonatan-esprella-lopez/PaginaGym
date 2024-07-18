@@ -11,10 +11,10 @@ import FindCenter from "../../assets/images/findCenter.jpg";
 const TitleSection = ({ title, highlight, subtitle, linkText, linkHref }) => (
     <div className="container-head-section">
         <div>
-            <h4>
+            <h5>
                 {title} <span>{highlight}</span>
                 <div className="underline"></div>
-            </h4>
+            </h5>
             <p>{subtitle}</p>
         </div>
         <Link to={linkHref} >

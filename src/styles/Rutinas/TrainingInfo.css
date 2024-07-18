@@ -1,0 +1,53 @@
+.training-info-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+
+  .training-info-container button{
+    margin: 0 auto;
+  }
+  .training-details {
+    
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .training-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .training-text {
+    flex: 1;
+  }
+  
+  .training-text h3 {
+    margin-top: 0;
+    background-color: #ff9500;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .training-text h4 {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  .training-text p, .training-text ul {
+    margin-top: 0;
+    text-align: left;
+  }
+  
+  .training-text ul {
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 0px;
+  }
+  

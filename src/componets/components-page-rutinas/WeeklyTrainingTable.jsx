@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Duracion from '../../assets/images/duracion-clases.svg';
 import Intensidad from '../../assets/images/intensidad.svg';
 import iconFuerza from '../../assets/images/Rutinas/Fuerza.png';
@@ -31,30 +32,34 @@ const WeeklyTrainingTable = () => (
                 <div className="underline-dia"></div>
               </div>
             </th>
-            <div className='cont-espaciado'>
-              <th>
-                <img src={Imagen_C1} alt="Entrenamiento" />
-              </th>
-              <th>
-                <p className="tipo-entrenamiento">CHIPPER</p>
-              </th>
-              <div className='contenedor-th-icons'>
-                <th>
-                  <img src={Duracion} alt="Duración" className="icono-duracion-rutina" />
-                  <p>30/40 min</p>
-                </th>
-                <th>
-                  <img src={Imagen_Intensidad} alt="Intensidad" className="icono-duracion-rutina" />
-                  <p>Moderada</p>
-                </th>
+            <td>
+              <div className='cont-espaciado'>
+                <div>
+                  <img src={Imagen_C1} alt="Entrenamiento" />
+                </div>
+                <div>
+                  <p className="tipo-entrenamiento">CHIPPER</p>
+                </div>
+                <div className='contenedor-th-icons'>
+                  <div>
+                    <img src={Duracion} alt="Duración" className="icono-duracion-rutina" />
+                    <p>30/40 min</p>
+                  </div>
+                  <div>
+                    <img src={Imagen_Intensidad} alt="Intensidad" className="icono-duracion-rutina" />
+                    <p>Moderada</p>
+                  </div>
+                </div>
+                <div className="cont-button-rutinas">
+                  <img src={iconFuerza} alt="Fuerza" />
+                  <Link to="/Informacion Rutina">
+                    <button className="highlighted-button">Más información</button>
+                  </Link>
+                </div>
               </div>
-              <th className="cont-button-rutinas">
-                <img src={iconFuerza} alt="Fuerza" />
-                <button className="highlighted-button">Más información</button>
-              </th>
-            </div>
+            </td>
           </tr>
-        ))}      
+        ))}
       </tbody>
     </table>
   </section>

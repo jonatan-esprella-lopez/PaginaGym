@@ -8,9 +8,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../assets/images/findCenter.jpg);
+    background-image: url(../assets/images/FondoGimnasio.webp);
     background-position: 50%;
-    border-radius: 7px;
+    border-radius:15px;
     height: 350px;
     margin-top: 2rem;
     background-repeat: no-repeat;

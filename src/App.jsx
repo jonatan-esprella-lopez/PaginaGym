@@ -20,6 +20,7 @@ import Tienda from "./views/Tienda-clases/TiendaCEC.jsx";
 import AreaAerobica from "./views/Instalaciones/Aerobicos.jsx";
 import PrivacyP from "./views/Privacy.jsx";
 
+import TrainingInfo from "./views/Training/Training-info.jsx";
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
         <Route path="/Aerobicos" element={<AreaAerobica />} />
         <Route path="/Politica de privacidad" element={<PrivacyP />} />
         
-        
+        <Route path="/Informacion Rutina" element={<TrainingInfo />} />
         
         <Route path="/Tienda de entrenamientos" element={<Tienda />} />
 

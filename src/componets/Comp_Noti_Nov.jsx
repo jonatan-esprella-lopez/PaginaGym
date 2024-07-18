@@ -4,14 +4,15 @@ import "../styles/home_styles.css";
 
 const TitleSection = ({ title, highlight }) => (
     <div className="container-head-section1">
-        <div>
-            <h4>
+        <div className="head-section-underline">
+            <p>
                 {title} <span>{highlight}</span>
-                <div className="underline"></div>
-            </h4>
+            </p>
+            <div className="underline"></div>
         </div>
     </div>
 );
+
 
 const SubscriptionForm = () => (
     <div className="contenedor-Registro-Home">

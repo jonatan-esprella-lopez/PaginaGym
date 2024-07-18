@@ -228,6 +228,10 @@ th {
     width: 0;
 }
 
+.cont-details td{
+    width: 100%;
+}
+
 .cont-espaciado {
     width: 100%;
     display: flex;
@@ -363,7 +367,7 @@ th {
     }
 
     .table-general td {
-        padding-left: 50%;
+        padding: 20px;
         text-align: right;
         position: relative;
     }
@@ -434,3 +438,5 @@ th {
 
 
 }
+
+

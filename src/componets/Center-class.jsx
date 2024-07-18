@@ -44,10 +44,10 @@ const ProgramaMain = () => (
     <section className="estructura-principal-cards">
         <div className="container-head-section">
             <div>
-                <h4>
+                <h5>
                     Conoce los tipos de entrenamiento en <span>CEC - FGI</span>
                     <div className="underline"></div>
-                </h4>
+                </h5>
             </div>
             <Link to="/paginaExtra">
                     Mas...
