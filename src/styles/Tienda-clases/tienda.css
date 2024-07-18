@@ -174,7 +174,9 @@
   
 
 
-  @media (max-width: 1024px) {
+  
+  @media (max-width: 768px) {
+
     .search-bar input {
       width: 250px;
     }
@@ -191,9 +193,6 @@
     .filters {
       margin-bottom: 20px;
     }
-  }
-  
-  @media (max-width: 768px) {
     .training-search-container {
       padding: 10px;
     }
@@ -265,10 +264,6 @@
       width: 25px;
       height: 25px;
     }
-  }
-  
-
-  @media (max-width: 768px) {
     .training-search-container {
       padding: 10px;
     }

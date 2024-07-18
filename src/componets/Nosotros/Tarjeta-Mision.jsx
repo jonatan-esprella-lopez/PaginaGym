@@ -1,4 +1,4 @@
-// Mision.js
+
 import React from "react";
 import "../../styles/Nosotros/Tarjeta-mision.css";
 import Misione from "../../assets/images/Nosotros/Mision.jpg";

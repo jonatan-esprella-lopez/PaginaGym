@@ -1,15 +1,12 @@
-// src/contexts/AuthContext.js
+
 import React, { createContext, useState, useContext, useEffect } from 'react';
 
-// Crear el contexto
 const AuthContext = createContext();
 
-// Proveedor del contexto
 export const AuthProvider = ({ children }) => {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
 
     useEffect(() => {
-        // Aquí puedes verificar el estado de autenticación inicial (por ejemplo, revisar un token en el localStorage)
         const token = localStorage.getItem('token');
         if (token) {
             setIsAuthenticated(true);
@@ -33,7 +30,6 @@ export const AuthProvider = ({ children }) => {
     );
 };
 
-// Hook personalizado para usar el contexto de autenticación
 export const useAuth = () => {
     return useContext(AuthContext);
 };

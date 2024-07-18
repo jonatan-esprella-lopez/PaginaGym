@@ -1,4 +1,3 @@
-// AboutUsPage.js
 
 import React from "react";
 import HeaderMain from "../componets/Header_Main";

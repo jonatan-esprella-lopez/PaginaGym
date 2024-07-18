@@ -233,7 +233,7 @@
 }
 
 
-.head-section-underline .underline {
+.container-head-section1 .underline {
   position: absolute;
   bottom: -12px;
   left: 0;
@@ -335,9 +335,6 @@ a:hover{
 }
 
 
-.head-section-underline .underline{
-  width: 100%;
-}
 
 .contenedor-iconos-type-1{
   display: flex;
