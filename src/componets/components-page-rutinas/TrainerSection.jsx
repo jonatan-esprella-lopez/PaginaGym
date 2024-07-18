@@ -1,4 +1,3 @@
-import React from 'react';
 import TrainerImage from '../../assets/images/Rutinas/trainer.png';
 
 const TrainerSection = () => (

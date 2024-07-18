@@ -1,5 +1,3 @@
-
-import React from "react";
 import "../../styles/Nosotros/Tarjeta-coach.css";
 import InstructorCard from "./components-generic/card-instructor";
 

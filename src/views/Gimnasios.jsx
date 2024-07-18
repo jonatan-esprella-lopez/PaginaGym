@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import '../styles/Gimnasio.css';
 import Header from "../componets/Header_Main";

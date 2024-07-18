@@ -1,4 +1,3 @@
-import React from "react";
 import "../../styles/Nosotros/Tarjeta-Valores.css";
 import value1Icon from '../../assets/images/Nosotros/respeto.png';
 import value2Icon from '../../assets/images/Nosotros/integridad.png';

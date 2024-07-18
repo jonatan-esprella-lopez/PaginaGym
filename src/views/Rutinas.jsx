@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/Rutinas.css';
 import '../styles/Rutinas/Training.css';
 import Header from '../componets/Header_Main';

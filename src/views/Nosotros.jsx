@@ -1,5 +1,3 @@
-
-import React from "react";
 import HeaderMain from "../componets/Header_Main";
 import FooterMain from "../componets/Footer_Main";
 import "../styles/Nosotros.css";

@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../styles/PaginasExtra/UnderConstruction.css';
 
 const UnderConstruction = () => {

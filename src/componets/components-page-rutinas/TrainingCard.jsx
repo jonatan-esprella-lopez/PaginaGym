@@ -1,4 +1,3 @@
-import React from 'react';
 
 const TrainingCard = ({ title, text }) => (
   <div className="card">

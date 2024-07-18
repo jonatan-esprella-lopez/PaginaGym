@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../styles/Rutinas/TrainingInfo.css';
 import Entrenamiento from "../../assets/images/Rutinas/Entrenamiento1.jpeg"; 
 import FooterMain from '../../componets/Footer_Main';

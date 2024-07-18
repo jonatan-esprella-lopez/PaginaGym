@@ -1,5 +1,4 @@
 
-import React from "react";
 import "../../../styles/Nosotros.css";
 
 function InstructorCard({ name, specialization, rating, experience }) {

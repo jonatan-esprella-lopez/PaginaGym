@@ -1,4 +1,3 @@
-import React from 'react';
 
 const TrainingIntro = () => (
   <div className="training-intro">

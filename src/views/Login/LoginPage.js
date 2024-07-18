@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 //import { useAuth } from '../contexts/AuthContext';
 
 const LoginPage = () => {
@@ -9,7 +9,7 @@ const LoginPage = () => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        // Aquí puedes agregar la lógica de autenticación (por ejemplo, una llamada a una API)
+        // agregar la lógica de autenticación (por ejemplo, una llamada a una API)
         const token = 'dummy-token'; // Este token debería ser obtenido del servidor
         login(token);
     };

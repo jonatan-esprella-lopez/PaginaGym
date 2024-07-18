@@ -1,8 +1,6 @@
-import React from "react";
 import Header from "../../componets/Header_Main"
 import Footer from "../../componets/Footer_Main"
 import "../../styles/PerfilUsuarios.css"
-import Portada from "../../assets/images/Perfiles/Portada1.jpeg"
 
 function PerfilPublico(){
     return(

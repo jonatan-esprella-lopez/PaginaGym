@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../componets/Header_Main"
 import Footer from "../componets/Footer_Main"
 import "../styles/PlanNutricional.css"

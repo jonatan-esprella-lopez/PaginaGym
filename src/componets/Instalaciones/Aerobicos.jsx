@@ -1,4 +1,3 @@
-import React from "react";
 import "../../styles/Instalaciones/Areas.css";
 import Aerobicos from "../../assets/images/CEC/ambienteAerobicos.jpg";
 import FullKombat from "../../assets/images/Clases/Entrenamiento.jpg";

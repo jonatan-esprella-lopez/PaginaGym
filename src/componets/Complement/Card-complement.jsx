@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Card = ({ icon, title, description, benefit, price, buttonText, link, special }) => (

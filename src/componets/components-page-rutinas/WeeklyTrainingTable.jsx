@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import Duracion from '../../assets/images/duracion-clases.svg';
 import Intensidad from '../../assets/images/intensidad.svg';

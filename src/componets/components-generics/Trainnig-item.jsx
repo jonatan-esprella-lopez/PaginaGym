@@ -1,4 +1,3 @@
-import React from 'react';
 import Icon1 from "../../assets/images/Tienda-clases/Icono-1-Entrenamiento.svg";
 
 const TrainingItem = ({ title, description, tags }) => {

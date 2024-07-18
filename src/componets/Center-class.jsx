@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Clases/Programas.css";
 import Entrenamiento from "../assets/images/Clases/Entrenamiento.jpg";

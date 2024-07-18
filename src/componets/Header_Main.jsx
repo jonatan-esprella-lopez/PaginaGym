@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import "../styles/Navegacion/menu-principal.css";
 import { Link } from 'react-router-dom';
 import Logo from "../assets/images/Logotipo-cec/logotipo.svg";

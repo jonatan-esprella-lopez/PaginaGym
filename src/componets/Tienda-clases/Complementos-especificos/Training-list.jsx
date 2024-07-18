@@ -1,4 +1,3 @@
-import React from 'react';
 import TrainingItem from '../../components-generics/Trainnig-item';
 
 const trainingData = [

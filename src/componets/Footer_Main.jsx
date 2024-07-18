@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from 'react-router-dom';
 import Fb from '../assets/images/facebook.svg';
 import IG from "../assets/images/instagram.svg";

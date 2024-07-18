@@ -1,4 +1,3 @@
-import React from 'react';
 
 const FooterInfoSection = () => (
   <section className="Container-footer-Rutinas">

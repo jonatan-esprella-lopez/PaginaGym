@@ -1,4 +1,3 @@
-import React from "react";
 import "../../styles/Nosotros/Tarjeta-mision.css";
 import Visione from "../../assets/images/Nosotros/Vision.jpg";
 
