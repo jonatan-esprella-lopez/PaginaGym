@@ -1,7 +1,6 @@
-
-import React from "react";
-import "../../styles/Nosotros/Tarjeta-mision.css";
-import Misione from "../../assets/images/Nosotros/Mision.jpg";
+import React from 'react';
+import '../../styles/Nosotros/Tarjeta-mision.css';
+import Misione from '../../assets/images/Nosotros/Mision.jpg';
 
 const missionText = `
   En **CEC-FGI**, nos comprometemos a transformar vidas a través del fitness y el bienestar. Creemos en el poder del ejercicio para mejorar la salud física y mental, fomentar la confianza y crear una comunidad fuerte y solidaria.

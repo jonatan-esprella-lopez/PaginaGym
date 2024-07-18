@@ -1,169 +1,153 @@
-.ContenedorPerfilUser{
-    display: flex;
-    height: 100%;
-    background-color: rgb(29, 29, 29);
+.ContenedorPerfilUser {
+  display: flex;
+  height: 100%;
+  background-color: rgb(29, 29, 29);
 }
 
-
-.FondoNavIzquierda{
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 4rem;
-    color: white;
+.FondoNavIzquierda {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 4rem;
+  color: white;
 }
 
-.NavIPerfil1{
-    display: flex;
-    flex-direction: column;
+.NavIPerfil1 {
+  display: flex;
+  flex-direction: column;
 }
 
-.contendorImagenPerfil{
-    height: 10rem;
-    width: 25rem;
-    border: 1px solid #000;
-    background-image: url('../assets/images/Perfiles/Julieta.jpg');
-    background-size: cover;
-
+.contendorImagenPerfil {
+  height: 10rem;
+  width: 25rem;
+  border: 1px solid #000;
+  background-image: url('../assets/images/Perfiles/Julieta.jpg');
+  background-size: cover;
 }
-.contendorImagenPerfil:hover{
-    
-    font-size: 40px;
-    background-blend-mode: multiply;
-    background-color: #00ff6e9a ;
-    border-left: 10px solid #b0ff13;
+.contendorImagenPerfil:hover {
+  font-size: 40px;
+  background-blend-mode: multiply;
+  background-color: #00ff6e9a;
+  border-left: 10px solid #b0ff13;
 }
 
-
-.PosicionNombrePerfil{
-    height: 100%;
-    display: flex;
-    justify-content: start;
-    margin: 0;
-    color: white;
-    align-items: end;
-    padding: 1.5rem;
-    font-size: 25px;
-    font-weight: 600;
+.PosicionNombrePerfil {
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  margin: 0;
+  color: white;
+  align-items: end;
+  padding: 1.5rem;
+  font-size: 25px;
+  font-weight: 600;
 }
 
-
-
-.Contenedor-Imagen{
-    
-    background-image: url(../assets/images/Perfiles/Portada1.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
-    background-color: #00000060;
-    background-repeat: no-repeat;
+.Contenedor-Imagen {
+  background-image: url(../assets/images/Perfiles/Portada1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: #00000060;
+  background-repeat: no-repeat;
 }
 
-.contenedorPerfil{
-    display: flex;
-
+.contenedorPerfil {
+  display: flex;
 }
 
-
-
-.imagenPortadaPerfil{
-    width: 100%;
-    
+.imagenPortadaPerfil {
+  width: 100%;
 }
-.contenedorDatosPortada{
-    width: 100%;
-    padding: 1rem;
+.contenedorDatosPortada {
+  width: 100%;
+  padding: 1rem;
 }
-.contenedeorSectionPerfil{
-    color: white;
-    height: 100%;
+.contenedeorSectionPerfil {
+  color: white;
+  height: 100%;
 }
 
-.contenedorNombre{
-    font-size: 60px;
-    display: flex;
-    justify-content: center;
-    padding: 6rem 0 2rem 0;
-    border-bottom: 1px solid rgb(255, 208, 0);
+.contenedorNombre {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  padding: 6rem 0 2rem 0;
+  border-bottom: 1px solid rgb(255, 208, 0);
 }
-.contenedorDescripcion{
-    font-size: 15px;
-    background-color: #00000089;
-    border-radius: 0 0 15px 15px;
-    padding: 1rem;
-    
-
+.contenedorDescripcion {
+  font-size: 15px;
+  background-color: #00000089;
+  border-radius: 0 0 15px 15px;
+  padding: 1rem;
 }
 
-.contenedorDescripcion p{
-    text-align: start;
+.contenedorDescripcion p {
+  text-align: start;
 }
 
-.contenedorLinksperfil{
-    display: flex;
+.contenedorLinksperfil {
+  display: flex;
 }
 
-.contenedorLinksperfil p{
-    padding: 1rem;
+.contenedorLinksperfil p {
+  padding: 1rem;
 }
 
-
-.contenedorLateralDerecho{
-    background-color: #ff8000;;
-    display: flex;
-    flex-direction: column;
+.contenedorLateralDerecho {
+  background-color: #ff8000;
+  display: flex;
+  flex-direction: column;
 }
 
-.contenedorSection{
-    height: 100%;
-    display: flex;
+.contenedorSection {
+  height: 100%;
+  display: flex;
 }
 
-
-.textoVertical{
-    writing-mode: vertical-rl; 
-    align-items: center;
-    font-size: 15px;
-    font-weight: 800;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 3.6rem;
-    border: none;
-    border-bottom: 1px solid black;
-    height: 10rem;
-    background-color: #ff8000;
+.textoVertical {
+  writing-mode: vertical-rl;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 3.6rem;
+  border: none;
+  border-bottom: 1px solid black;
+  height: 10rem;
+  background-color: #ff8000;
 }
 
-.textoExtremos{
-    writing-mode: vertical-rl; 
-    align-items: center;
-    font-size: 15px;
-    font-weight: 800;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 3.6rem;
-    border: none;
-    border-bottom: 1px solid black;
-    height: 5rem;
-    background-color: #ff8000;
+.textoExtremos {
+  writing-mode: vertical-rl;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 3.6rem;
+  border: none;
+  border-bottom: 1px solid black;
+  height: 5rem;
+  background-color: #ff8000;
 }
 
-.IconosNavIzquierdo{
-    background-color: #ff8000;
-    border-bottom: 1px solid white;
-    padding: 2rem 0;
+.IconosNavIzquierdo {
+  background-color: #ff8000;
+  border-bottom: 1px solid white;
+  padding: 2rem 0;
 }
 
-
-
-
-.BotonRedes{
-    background-color: #ff9900;
-    padding: 0.6rem 2rem;
-    border: none;
-    border-radius: 10px;
-    margin: 1rem 0.2rem;
+.BotonRedes {
+  background-color: #ff9900;
+  padding: 0.6rem 2rem;
+  border: none;
+  border-radius: 10px;
+  margin: 1rem 0.2rem;
 }
 
-.BotonRedes:hover{
-    background-color: #ff7b00;
+.BotonRedes:hover {
+  background-color: #ff7b00;
 }

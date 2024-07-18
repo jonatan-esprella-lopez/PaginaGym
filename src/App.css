@@ -2,25 +2,24 @@
   text-align: center;
   box-sizing: border-box;
   padding: 0;
-  font-family: DM Sans, sans-serif;
+  font-family:
+    DM Sans,
+    sans-serif;
   text-decoration: none;
 }
 
-
-
 /*______________________________________________Variables______________________________________________*/
 
-:root{
-  --primary-color: #ffa600; 
-  --secondary-color1: #000000; 
-  --secondary-color2: #FAFF00;
-  --background-color: #FAFF00; 
+:root {
+  --primary-color: #ffa600;
+  --secondary-color1: #000000;
+  --secondary-color2: #faff00;
+  --background-color: #faff00;
   --backgrounf-color2: #ffe6af;
-  --text-color: #ffffff; 
-  --text-color2:#000000;
-  --error-color: #e74c3c; 
+  --text-color: #ffffff;
+  --text-color2: #000000;
+  --error-color: #e74c3c;
 
-  
   --font-size-small: 10px;
   --font-size-medium: 14px;
   --font-size-large: 16px;
@@ -32,24 +31,22 @@
   --transition-duration: 0.3s;
 }
 
-
-
 /*______________________________________________Botones______________________________________________*/
 
-.estructure-size{
+.estructure-size {
   width: 8.5rem;
   height: 2.3rem;
 }
 
-.estructura-size2{
+.estructura-size2 {
   width: 3rem;
   height: 2.3rem;
-  margin: 0 1rem ;
+  margin: 0 1rem;
   border-radius: 6px;
   border: 1px solid #00000000;
 }
 
-.estructure-button-1{
+.estructure-button-1 {
   display: flex;
   justify-content: center;
   border-radius: 5px;
@@ -57,36 +54,32 @@
   font-weight: 550;
   font-size: var(--font-size-medium);
   margin: 10px;
-  cursor: pointer;  
+  cursor: pointer;
   border: none;
 }
 
-.button-type-1{
+.button-type-1 {
   background-color: var(--secondary-color2);
   color: var(--secondary-color1);
 }
 
-.button-type-1:hover{
-    background-color: #ffcc00;
-    text-decoration: none;
+.button-type-1:hover {
+  background-color: #ffcc00;
+  text-decoration: none;
 }
 
-
-
-.button-type-2{
+.button-type-2 {
   background-color: var(--secondary-color1);
   color: var(--secondary-color2);
   border: 1px solid var(--secondary-color2);
 }
 
-.button-type-2:hover{
+.button-type-2:hover {
   border: 1px solid #ffcc00;
   color: #ffcc00;
-  
 }
 
-
-.buton-type-3{
+.buton-type-3 {
   background-color: var(--primary-color);
   color: var(--secondary-color1);
   padding: 0.8rem 3rem;
@@ -98,12 +91,12 @@
   background-color: #ffcc00;
 }
 
-.button-type-4{
+.button-type-4 {
   width: 12rem;
   background-color: #0062ff;
   border: 2px solid #0062ff;
   color: var(--text-color);
-  font-size: small+1 ;
+  font-size: small + 1;
   cursor: pointer;
   font-weight: 600;
 }
@@ -114,10 +107,9 @@
   box-shadow: 0 0 10px 0px #00a6ff;
 }
 
-
 /*______________________________________________Tarjetas______________________________________________*/
 
-.estructure-card-1{
+.estructure-card-1 {
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
@@ -125,13 +117,13 @@
   border-radius: 15px;
   outline: 2px solid transparent;
   box-shadow: 3px 3px 10px -1px rgba(22, 22, 22, 0.398);
-  transition: .30s;
+  transition: 0.3s;
   cursor: pointer;
   width: 290px;
   align-items: center;
 }
 
-.estructura-card-2{
+.estructura-card-2 {
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
@@ -139,33 +131,34 @@
   border-radius: 15px;
   outline: 2px solid transparent;
   box-shadow: 3px 3px 10px -1px rgba(22, 22, 22, 0.398);
-  transition: .30s;
+  transition: 0.3s;
   cursor: pointer;
   align-items: center;
   width: 350px;
 }
 
-
-.estructura-card-3{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1rem;
-    border: 0.3px solid #343434;
-    border-radius: 15px;
-    outline: 2px solid transparent;
-    box-shadow: 3px 3px 10px -1px rgba(22, 22, 22, 0.398);
-    transition: .30s;
-    cursor: pointer;
-    width: 290px;
-    align-items: center;
+.estructura-card-3 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  border: 0.3px solid #343434;
+  border-radius: 15px;
+  outline: 2px solid transparent;
+  box-shadow: 3px 3px 10px -1px rgba(22, 22, 22, 0.398);
+  transition: 0.3s;
+  cursor: pointer;
+  width: 290px;
+  align-items: center;
 }
 
-.estructure-card-1:hover , .estructura-card-2:hover ,.estructura-card-3:hover{
+.estructure-card-1:hover,
+.estructura-card-2:hover,
+.estructura-card-3:hover {
   border: 0.3px solid #ffcc00;
   box-shadow: 0 0 5px 1px var(--primary-color);
 }
 
-.estructura-principal-cards{
+.estructura-principal-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -173,23 +166,18 @@
   margin: 2rem 0;
 }
 
-
 /*iconos o imagenes*/
 
-.contenedor-iconos-type-1{
+.contenedor-iconos-type-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100px;
   max-height: 100px;
-
 }
 
-
-
 /*______________________________________________Titulos______________________________________________*/
-
 
 .container-head-section {
   width: 100%;
@@ -199,13 +187,13 @@
   align-items: center;
 }
 
-.container-head-section a{
-    background-color: #ffa600;
-    padding: 10px 15px 10px 20px;
-    border-radius: 10px 10px;
+.container-head-section a {
+  background-color: #ffa600;
+  padding: 10px 15px 10px 20px;
+  border-radius: 10px 10px;
 }
 
-.container-head-section a:hover{
+.container-head-section a:hover {
   background-color: #ffdb25;
 }
 .container-head-section1 {
@@ -232,14 +220,13 @@
   font-weight: normal;
 }
 
-
 .container-head-section1 .underline {
   position: absolute;
   bottom: -12px;
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: var(--primary-color); 
+  background-color: var(--primary-color);
 }
 
 .container-head-section h5 {
@@ -256,26 +243,13 @@
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: var(--primary-color); 
+  background-color: var(--primary-color);
 }
 
-.container-head-section a{
+.container-head-section a {
   color: var(--secondary-color1);
   margin-right: 4rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .App-header {
   min-height: 100vh;
@@ -286,25 +260,21 @@
   color: #000000;
 }
 
-
-span{
+span {
   color: #000000;
   font-weight: 700;
-  
 }
 
-a:hover{
+a:hover {
   pointer-events: painted;
   cursor: pointer;
 }
 
-
-
 /*______________________________________________Efectos Predeterminados______________________________________________*/
 
-.EFX1{
+.EFX1 {
   display: flex;
- justify-content: space-around;
+  justify-content: space-around;
 }
 
 .estructure-card-especial {
@@ -312,7 +282,7 @@ a:hover{
 }
 
 .estructure-card-especial::before {
-  content: "Suscripción mensual";
+  content: 'Suscripción mensual';
   display: block;
   width: 80%;
   background-color: #ff8c00;
@@ -324,55 +294,43 @@ a:hover{
   border-radius: 6px;
 }
 
-
 /*______________________________________________Responsive______________________________________________*/
 
 @media (max-width: 768px) {
+  .estructura-card-2 {
+    flex-direction: row;
+  }
 
+  .contenedor-iconos-type-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    max-height: 60px;
+  }
 
-.estructura-card-2{
-  flex-direction:row;
-}
+  .container-head-section1 {
+    width: 90%;
+  }
 
+  .container-head-section1 p {
+    font-size: 13px;
+    padding: 0 10px;
+  }
 
-
-.contenedor-iconos-type-1{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 60px;
-  max-height: 60px;
-
-}
-
-.container-head-section1{
-  width: 90%;
-}
-
-
-.container-head-section1 p{
-  font-size: 13px;
-  padding: 0 10px;
-}
-
-
-
-
-  
-  .estructure-size{
+  .estructure-size {
     padding: 1px;
     margin: 0.2rem;
     font-size: 12px;
   }
 
-
-  .Contenedor_credenciales div{
+  .Contenedor_credenciales div {
     display: flex;
     width: 100%;
   }
 
-  .container-head-section a{
+  .container-head-section a {
     color: var(--secondary-color1);
     font-size: 14px;
     margin: 0;
@@ -384,8 +342,7 @@ a:hover{
     border-radius: 10px 0 0 10px;
   }
 
-
-  .estructure-card-especial{
+  .estructure-card-especial {
     font-size: 12px;
   }
   .container-head-section {
@@ -395,12 +352,11 @@ a:hover{
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .container-head-section div {
     width: 60%;
   }
 
-  
   .container-head-section h4 {
     position: relative;
     margin: 0;
@@ -409,49 +365,42 @@ a:hover{
     font-size: 13.5px;
     font-weight: normal;
   }
-  
+
   .container-head-section .underline {
     position: absolute;
     bottom: -12px;
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: var(--primary-color); 
+    background-color: var(--primary-color);
   }
-  
-  .estructura-card-2{
+
+  .estructura-card-2 {
     width: 90%;
     height: 200px;
     margin: 10px;
     padding: 0;
-  }  
-
-
-  .estructure-card-1{
-    width: 190px;
-    margin-top: 1rem;
-
   }
 
+  .estructure-card-1 {
+    width: 190px;
+    margin-top: 1rem;
+  }
 
-  .button-type-4{
+  .button-type-4 {
     width: 9rem;
     padding: 19px;
     color: var(--text-color);
-    font-size: small+1  ;
+    font-size: small + 1;
     cursor: pointer;
     font-weight: 600;
   }
 
-
-
-  .estructura-principal-cards{
+  .estructura-principal-cards {
     margin: 0;
   }
 
-
-
-  .estructura-card-3{
+  .estructura-card-3 {
     display: flex;
     flex-direction: column;
     padding-bottom: 1rem;
@@ -459,17 +408,15 @@ a:hover{
     border-radius: 15px;
     outline: 2px solid transparent;
     box-shadow: 3px 3px 10px -1px rgba(22, 22, 22, 0.398);
-    transition: .30s;
+    transition: 0.3s;
     cursor: pointer;
     width: 196px;
     height: 280px;
     margin: 10px 0 0 0;
     align-items: center;
-}
-  .estructura-card-3 img{
+  }
+  .estructura-card-3 img {
     width: 100%;
     border-radius: 13px 13px 0 0;
-
   }
 }
-

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import "../styles/Busqueda.css";
-import Busqueda from "../assets/images/busqueda.svg";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import '../styles/Busqueda.css';
+import Busqueda from '../assets/images/busqueda.svg';
 
 function BusquedaCEC() {
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
 
   const handleSearch = () => {
@@ -44,7 +44,10 @@ function BusquedaCEC() {
                 className="busqueda-input"
                 aria-label="Buscar centro por ciudad o provincia"
               />
-              <button className="button-type-4 estructura-size2" onClick={handleSearch}>
+              <button
+                className="button-type-4 estructura-size2"
+                onClick={handleSearch}
+              >
                 Buscar
               </button>
             </div>

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const Calculadora = ({ calcularResultados }) => {
-  const [peso, setPeso] = useState("");
-  const [estatura, setEstatura] = useState("");
+  const [peso, setPeso] = useState('');
+  const [estatura, setEstatura] = useState('');
 
   const handleCalcular = () => {
     calcularResultados(parseFloat(peso), parseFloat(estatura));

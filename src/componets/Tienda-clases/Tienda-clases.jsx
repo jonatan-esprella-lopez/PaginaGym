@@ -2,7 +2,7 @@ import React from 'react';
 import '../../styles/Tienda-clases/tienda.css';
 import Header from './Complementos-especificos/Header';
 import Sidebar from './Complementos-especificos/Sidebar';
-import TrainingList from "./Complementos-especificos/Training-list";
+import TrainingList from './Complementos-especificos/Training-list';
 
 const TiendaClases = () => {
   return (

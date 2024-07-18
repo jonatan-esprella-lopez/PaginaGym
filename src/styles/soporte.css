@@ -10,7 +10,7 @@
   font-weight: 700;
 }
 
-.cont-support{
+.cont-support {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,16 +67,16 @@
   background-color: #0056b3;
 }
 
-.faq-section, 
+.faq-section,
 .additional-resources-section {
   width: 100%;
   margin-top: 30px;
   background-color: #e3e3e3;
   border-radius: 15px;
-  padding: 20px 40px 50px ;
+  padding: 20px 40px 50px;
 }
 
-.cont-form-support{
+.cont-form-support {
   width: 100%;
   height: 350px;
   display: flex;
@@ -102,8 +102,8 @@
   border-radius: 8px;
   font-size: 16px;
   margin-bottom: 10px;
-  width: 100%; 
-  box-sizing: border-box; 
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-form1 textarea {
@@ -112,7 +112,7 @@
   border-radius: 8px;
   font-size: 16px;
   margin-bottom: 10px;
-  width: 100%; 
+  width: 100%;
 }
 
 .cont-img-from {
@@ -128,147 +128,140 @@
   box-shadow: 0 0 10px 0 #444;
 }
 
-  
-  .faq-section ul {
-    list-style-type: none;
-    padding: 0;
+.faq-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq-section li {
+  text-align: start;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.contact-section {
+  border-radius: 10px;
+  margin: 2rem 0;
+  background-color: #d2d2d2;
+  padding: 1rem 0 2rem 0;
+}
+
+.contact-section form label {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contact-section form button {
+  margin: 0 auto;
+}
+
+.video-tutorials-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.video-tutorials-section .video-container iframe {
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.additional-resources-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.additional-resources-section li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.additional-resources-section a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.additional-resources-section a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/*______________________________________________Responsive______________________________________________*/
+
+@media (max-width: 768px) {
+  .support-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
   }
-  
-  .faq-section li {
-    text-align: start;
-    margin: 10px 0;
+
+  .contact-section {
+    width: 100%;
+  }
+  .cont-support {
+    height: 200px;
+    background-position: center;
+  }
+
+  .support-section p {
+    width: 80%;
     font-size: 16px;
   }
-  
-  .contact-section{
-    border-radius: 10px;
-    margin: 2rem 0;
-    background-color: #d2d2d2;
-    padding: 1rem 0 2rem 0;
+
+  .support-buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
-  
-  .contact-section form label {
-    margin: 10px 0 5px;
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .contact-section form input, .contact-section form textarea {
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
+
+  .support-buttons button {
+    width: 80%;
     margin-bottom: 10px;
   }
-  
-  .contact-section form button {
-    margin: 0 auto;
+
+  .faq-section,
+  .additional-resources-section {
+    padding: 20px;
   }
-  
-  
-  .video-tutorials-section  {
-    width: 100%;
-    display: flex;
+
+  .cont-form-support {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contact-form1 {
+    width: 90%;
+    margin: 0;
+  }
+
+  .cont-img-from img {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .video-container {
     flex-direction: column;
     align-items: center;
   }
-  
 
-  .video-container{
-    width: 80%;
-    display: flex;
-    justify-content: space-between; 
-  }
   .video-tutorials-section .video-container iframe {
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 122%;
   }
-  
-  .additional-resources-section ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .additional-resources-section li {
-    margin: 10px 0;
-    font-size: 16px;
-  }
-  
-  .additional-resources-section a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: 500;
-  }
-  
-  .additional-resources-section a:hover {
-    text-decoration: underline;
-    color: #0056b3;
-  }
-  
-
-
-  /*______________________________________________Responsive______________________________________________*/
-
-
-  @media (max-width: 768px) {
-    .support-container h1 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-  
-    .contact-section{
-      width: 100%;
-    }
-    .cont-support {
-      height: 200px;
-      background-position: center;
-    }
-  
-    .support-section p {
-      width: 80%;
-      font-size: 16px;
-    }
-  
-    .support-buttons {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-  
-    .support-buttons button {
-      width: 80%;
-      margin-bottom: 10px;
-    }
-  
-    .faq-section, .additional-resources-section {
-      padding: 20px;
-    }
-  
-    .cont-form-support {
-      flex-direction: column;
-      height: auto;
-    }
-  
-    .contact-form1 {
-      width: 90%;
-      margin: 0;
-    }
-  
-  
-    .cont-img-from img {
-      width: 80%;
-      margin-top: 20px;
-    }
-  
-    .video-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .video-tutorials-section .video-container iframe {
-      width: 122%;
-    }
-  }
-
-  
+}

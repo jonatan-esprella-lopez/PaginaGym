@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon1 from "../../assets/images/Tienda-clases/Icono-1-Entrenamiento.svg";
+import Icon1 from '../../assets/images/Tienda-clases/Icono-1-Entrenamiento.svg';
 
 const TrainingItem = ({ title, description, tags }) => {
   return (
@@ -9,12 +9,12 @@ const TrainingItem = ({ title, description, tags }) => {
         <h3>{title}</h3>
         <p>{description}</p>
         <div className="tags">
-          {tags.map(tag => (
+          {tags.map((tag) => (
             <span key={tag}>{tag}</span>
           ))}
         </div>
       </div>
-      <button className="more-info">{">"}</button>
+      <button className="more-info">{'>'}</button>
     </div>
   );
 };

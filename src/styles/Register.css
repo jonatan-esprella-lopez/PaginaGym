@@ -47,16 +47,14 @@
   margin-right: auto;
 }
 
-.form-group1 input{
+.form-group1 input {
   color: #fff;
 }
 
-
-
-.form-group1 input[type="text"],
-.form-group1 input[type="email"],
-.form-group1 input[type="password"],
-.form-group1 input[type="date"],
+.form-group1 input[type='text'],
+.form-group1 input[type='email'],
+.form-group1 input[type='password'],
+.form-group1 input[type='date'],
 .form-group1 select {
   text-align: left;
   background-color: #000000;
@@ -71,7 +69,7 @@
 #gender {
   width: 100%;
   text-align: left;
-  text-align-last: center; 
+  text-align-last: center;
   background-color: #000000;
   color: #fff;
   padding: 10px;
@@ -119,5 +117,4 @@
   .form-group {
     align-items: center;
   }
-
 }

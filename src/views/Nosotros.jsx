@@ -1,20 +1,14 @@
-
-import React from "react";
-import HeaderMain from "../componets/Header_Main";
-import FooterMain from "../componets/Footer_Main";
-import "../styles/Nosotros.css";
-import "../App.css"
-import Tarjeta from "../componets/Nosotros/Tarjeta-coach";
-import Mision from "../componets/Nosotros/Tarjeta-Mision";
-import Vision from "../componets/Nosotros/Tarjeta-Vision";
-import ValoresCEC from "../componets/Nosotros/Tarjeta-Valores";
-
-
-
+import React from 'react';
+import HeaderMain from '../componets/Header_Main';
+import FooterMain from '../componets/Footer_Main';
+import '../styles/Nosotros.css';
+import '../App.css';
+import Tarjeta from '../componets/Nosotros/Tarjeta-coach';
+import Mision from '../componets/Nosotros/Tarjeta-Mision';
+import Vision from '../componets/Nosotros/Tarjeta-Vision';
+import ValoresCEC from '../componets/Nosotros/Tarjeta-Valores';
 
 function AboutUsPage() {
-  
-
   return (
     <div>
       <HeaderMain />
@@ -25,41 +19,39 @@ function AboutUsPage() {
             <h1>¿Quienes somos?</h1>
             <div className="underline-central"></div>
             <p>
-                Nuestra historia comenzó en 2020 con una misión clara: proporcionar un espacio donde las personas pudieran
-                transformar sus vidas a través del fitness. Desde nuestros humildes comienzos, hemos crecido para convertirnos
-                en un referente en la comunidad de Cochabamba, gracias a nuestro compromiso con la salud y el bienestar.
+              Nuestra historia comenzó en 2020 con una misión clara:
+              proporcionar un espacio donde las personas pudieran transformar
+              sus vidas a través del fitness. Desde nuestros humildes comienzos,
+              hemos crecido para convertirnos en un referente en la comunidad de
+              Cochabamba, gracias a nuestro compromiso con la salud y el
+              bienestar.
             </p>
           </div>
         </div>
 
-
-        <div className="cont-valores">            
-            <h4>
-              Conoce de nuestros valores
-              <div className="underline-central"></div>
-            </h4>
-            <p>
-            Somos un equipo de colaboradores trabajando juntos con emociones compartidas, buscando transformar el mundo, a través de la cultura fisica y haciendo la diferencia en cada uno de nosotros y de nuestros clientes.
-            </p>
+        <div className="cont-valores">
+          <h4>
+            Conoce de nuestros valores
+            <div className="underline-central"></div>
+          </h4>
+          <p>
+            Somos un equipo de colaboradores trabajando juntos con emociones
+            compartidas, buscando transformar el mundo, a través de la cultura
+            fisica y haciendo la diferencia en cada uno de nosotros y de
+            nuestros clientes.
+          </p>
         </div>
 
         <div className="cont-Mis-Vis">
-          <Mision/>
-          <Vision/>
+          <Mision />
+          <Vision />
         </div>
-        
-        <ValoresCEC/>
 
+        <ValoresCEC />
 
-
-
-
-       
-        
         <h2>Nuestros Instructores</h2>
 
-      
-        <Tarjeta/>
+        <Tarjeta />
       </div>
 
       <FooterMain />
@@ -68,9 +60,6 @@ function AboutUsPage() {
 }
 
 export default AboutUsPage;
-
-
-
 
 // <div className="instructor-cards-container">
 //           {instructors.map((instructor) => (

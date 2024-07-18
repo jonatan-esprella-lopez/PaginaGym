@@ -6,7 +6,10 @@ const TrainerSection = () => (
     <img src={TrainerImage} alt="Entrenador" className="trainer-image" />
     <h3>Encuentra un entrenador</h3>
     <div className="contend-card-text">
-      <p>Un entrenador personal te podrá ayudar a llegar mucho más rápido a tu objetivo.</p>
+      <p>
+        Un entrenador personal te podrá ayudar a llegar mucho más rápido a tu
+        objetivo.
+      </p>
       <button className="highlighted-button">Encontrar Entrenador</button>
     </div>
   </div>

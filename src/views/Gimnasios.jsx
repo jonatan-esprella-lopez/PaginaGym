@@ -1,22 +1,23 @@
-import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import '../styles/Gimnasio.css';
-import Header from "../componets/Header_Main";
-import Novedades from "../componets/Comp_Noti_Nov";
-import Footer from "../componets/Footer_Main";
-import RitmosFitness from "../assets/images/Clases/Ritmos.jpg";
-import FullKombat from "../assets/images/Clases/FullKombat.jpg"
+import Header from '../componets/Header_Main';
+import Novedades from '../componets/Comp_Noti_Nov';
+import Footer from '../componets/Footer_Main';
+import RitmosFitness from '../assets/images/Clases/Ritmos.jpg';
+import FullKombat from '../assets/images/Clases/FullKombat.jpg';
 
 const initialGyms = [
   {
     id: 1,
     name: 'Averanda',
-    address: 'AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR',
+    address:
+      'AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR',
     offers: '1ER MES GRATIS + INSCRIPCIÓN $10',
     prices: {
       SMART: '$499.00',
       BLACK: '$599.00',
-      FIT: '$399.00'
+      FIT: '$399.00',
     },
     image: FullKombat,
     features: ['Estructuras', 'Estacionamiento', 'Elevador', 'Ritmos Fitness'],
@@ -29,7 +30,7 @@ const initialGyms = [
     prices: {
       SMART: '$599.00',
       BLACK: '$699.00',
-      FIT: '$499.00'
+      FIT: '$499.00',
     },
     image: RitmosFitness,
     features: ['Lacto - Bar', 'Nutricionista', 'Full Kombat'],
@@ -42,7 +43,7 @@ const initialGyms = [
     prices: {
       SMART: '$399.00',
       BLACK: '$499.00',
-      FIT: '$299.00'
+      FIT: '$299.00',
     },
     image: FullKombat,
     features: ['Estacionamiento', 'Elevador', 'Entrenamiento Funcional'],
@@ -55,7 +56,7 @@ const initialGyms = [
     prices: {
       SMART: '$299.00',
       BLACK: '$399.00',
-      FIT: '$199.00'
+      FIT: '$199.00',
     },
     image: RitmosFitness,
     features: ['Nutricionista', 'Step-Z', 'Rebound Xtreme'],
@@ -68,17 +69,16 @@ const initialGyms = [
     prices: {
       SMART: '$799.00',
       BLACK: '$899.00',
-      FIT: '$699.00'
+      FIT: '$699.00',
     },
     image: RitmosFitness,
     features: ['Elevador', 'Ritmos Fitness', 'Full Kombat'],
-  }
-  
+  },
 ];
 
 function GimnasioPage() {
   const location = useLocation();
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState('');
   const [checks, setChecks] = useState([
     { id: 'estructura', isChecked: false, text: 'Estructuras' },
     { id: 'estacionamiento', isChecked: false, text: 'Estacionamiento' },
@@ -89,17 +89,21 @@ function GimnasioPage() {
     { id: 'ritmos-fitness', isChecked: false, text: 'Ritmos Fitness' },
     { id: 'rebound-xtreme', isChecked: false, text: 'Rebound Xtreme' },
     { id: 'step-z', isChecked: false, text: 'Step-Z' },
-    { id: 'entrenamiento-funcional', isChecked: false, text: 'Entrenamiento Funcional' },
+    {
+      id: 'entrenamiento-funcional',
+      isChecked: false,
+      text: 'Entrenamiento Funcional',
+    },
   ]);
   const [gyms, setGyms] = useState(initialGyms);
   const [filteredGyms, setFilteredGyms] = useState(initialGyms);
 
   useEffect(() => {
     const queryParams = new URLSearchParams(location.search);
-    const query = queryParams.get("query");
-    setSearchTerm(query || "");
+    const query = queryParams.get('query');
+    setSearchTerm(query || '');
     if (query) {
-      console.log("Búsqueda automática con término:", query);
+      console.log('Búsqueda automática con término:', query);
     }
   }, [location.search]);
 
@@ -121,15 +125,17 @@ function GimnasioPage() {
     let filtered = gyms;
 
     if (searchTerm) {
-      filtered = filtered.filter(gym =>
-        gym.name.toLowerCase().includes(searchTerm.toLowerCase())
+      filtered = filtered.filter((gym) =>
+        gym.name.toLowerCase().includes(searchTerm.toLowerCase()),
       );
     }
 
-    const selectedFilters = checks.filter(check => check.isChecked).map(check => check.text);
+    const selectedFilters = checks
+      .filter((check) => check.isChecked)
+      .map((check) => check.text);
     if (selectedFilters.length > 0) {
-      filtered = filtered.filter(gym =>
-        selectedFilters.every(filter => gym.features.includes(filter))
+      filtered = filtered.filter((gym) =>
+        selectedFilters.every((filter) => gym.features.includes(filter)),
       );
     }
 
@@ -142,7 +148,7 @@ function GimnasioPage() {
   };
 
   return (
-    <div className='Container_Main'>
+    <div className="Container_Main">
       <Header />
       <div className="contenedor-buscador-gimnasio">
         <h2>Elige Alguno de Nuestros Centros de Entrenamiento</h2>
@@ -159,10 +165,10 @@ function GimnasioPage() {
         </form>
       </div>
 
-      <div className='contendor_principal_gym'>
-        <div className='contenedor_1_gimnasios'>
+      <div className="contendor_principal_gym">
+        <div className="contenedor_1_gimnasios">
           {checks.map((item, index) => (
-            <div key={item.id} className='Lista-filtro'>
+            <div key={item.id} className="Lista-filtro">
               <label htmlFor={item.id}>{item.text}</label>
               <input
                 id={item.id}
@@ -174,14 +180,16 @@ function GimnasioPage() {
           ))}
         </div>
 
-        <div className='cont-gyms'>
-          {filteredGyms.map(gym => (
+        <div className="cont-gyms">
+          {filteredGyms.map((gym) => (
             <div key={gym.id} className="card-gym estructura-card-2">
               <img src={gym.image} alt="Gym" className="card-image" />
               <div className="card-content">
                 <h2 className="card-title">{gym.name}</h2>
                 <p className="card-address">{gym.address}</p>
-                <a href="#" className="card-link">Ver gimnasio</a>
+                <a href="#" className="card-link">
+                  Ver gimnasio
+                </a>
                 <div className="card-offer">{gym.offers}</div>
                 <div className="card-prices">
                   {Object.entries(gym.prices).map(([type, price]) => (
@@ -192,7 +200,9 @@ function GimnasioPage() {
                     </div>
                   ))}
                 </div>
-                <button className="estructure-size estructure-button-1 button-type-4">¡Inscríbete ya!</button>
+                <button className="estructure-size estructure-button-1 button-type-4">
+                  ¡Inscríbete ya!
+                </button>
               </div>
             </div>
           ))}
@@ -207,9 +217,8 @@ function GimnasioPage() {
 
 export default GimnasioPage;
 
-
-
-{/* <div className="Diseno-tarjetas-1">
+{
+  /* <div className="Diseno-tarjetas-1">
                             <img src={RitmosFitness} alt="" className="imagen_Instalacion" />
                             <div className="Clases_titulo_Container">
                                 <a>CEC-FGI GOLD</a>
@@ -287,4 +296,5 @@ export default GimnasioPage;
                                     Diviértete y combina el baile con una rutina de ejercicio al ritmo de la música, mejora tu condición y coordinación
                                 </p>
                             </div>
-                        </div> */}
+                        </div> */
+}

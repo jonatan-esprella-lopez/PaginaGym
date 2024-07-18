@@ -14,4 +14,4 @@ La aplicación web CEC FGI está destinada para la implementación de módulos v
 
 ### Inicializar la AppWeb del gimnasio
 
-  -**npm run dev**
+-**npm run dev**

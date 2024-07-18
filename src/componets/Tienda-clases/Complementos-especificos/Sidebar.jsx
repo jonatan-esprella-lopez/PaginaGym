@@ -4,9 +4,15 @@ const Sidebar = () => {
   return (
     <aside className="filters">
       <h2>Mostrar solamente</h2>
-      <label><input type="checkbox" checked readOnly /> Presencial</label>
-      <label><input type="checkbox" checked readOnly /> Livestream</label>
-      <label><input type="checkbox" checked readOnly /> Entrenamiento con licencia</label>
+      <label>
+        <input type="checkbox" checked readOnly /> Presencial
+      </label>
+      <label>
+        <input type="checkbox" checked readOnly /> Livestream
+      </label>
+      <label>
+        <input type="checkbox" checked readOnly /> Entrenamiento con licencia
+      </label>
 
       <h2>Rangos de un Alumno</h2>
       <div className="qualifications">

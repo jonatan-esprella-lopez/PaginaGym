@@ -34,16 +34,15 @@
   align-items: start;
 }
 
-
-input[type="email"],
-input[type="password"] {
+input[type='email'],
+input[type='password'] {
   text-align: left;
   background-color: #000000;
   color: #fff;
   width: 100%;
   padding: 10px;
   border-radius: 4px;
-  border: 1px solid #fffb00; 
+  border: 1px solid #fffb00;
 }
 
 .btn-login {
@@ -71,14 +70,14 @@ input[type="password"] {
 
   .login-form {
     margin: 8rem 0;
-    padding: 30px 20px; 
+    padding: 30px 20px;
   }
 
   .contenedor-header-Login p {
-    text-align: center; 
+    text-align: center;
   }
 
   .login-form h2 {
-    text-align: center; 
+    text-align: center;
   }
 }

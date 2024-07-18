@@ -1,18 +1,16 @@
-.contenedor-texto-1{
-    width: 80%;
-    border-bottom: 1px solid #3d3d3d;
-    min-height: 100px;
+.contenedor-texto-1 {
+  width: 80%;
+  border-bottom: 1px solid #3d3d3d;
+  min-height: 100px;
 }
 
-.title-component{
-    font-weight: bold;
-    font-size: 20px;
+.title-component {
+  font-weight: bold;
+  font-size: 20px;
 }
-
-
 
 @media (max-width: 768px) {
-    .contenedor-texto-1{
-        min-height: 80px;
-    }
+  .contenedor-texto-1 {
+    min-height: 80px;
+  }
 }

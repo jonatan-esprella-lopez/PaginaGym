@@ -1,4 +1,3 @@
-
 .container-cards {
   display: flex;
   width: 85%;
@@ -21,7 +20,7 @@
   filter: contrast(1.2) saturate(1.2);
 }
 
-.contenedor-imagen-1{
+.contenedor-imagen-1 {
   width: 100%;
   display: flex;
 }
@@ -161,40 +160,40 @@
 /*______________________________________________Responsive______________________________________________*/
 
 @media (max-width: 768px) {
-    .container-cards {
-        width: 100%;
-    }
-    
-    .Instalacion_Containers {
-        flex-direction: row;
-        padding: 1rem;
-        overflow-x: scroll;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-    }
+  .container-cards {
+    width: 100%;
+  }
 
-    .instalacion_container {
-        width: 80%;
-        margin-right: 1rem;
-        flex: 0 0 auto;
-    }
+  .Instalacion_Containers {
+    flex-direction: row;
+    padding: 1rem;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 
-    .gym-details-container{
-        font-size: 10px;
-    }
+  .instalacion_container {
+    width: 80%;
+    margin-right: 1rem;
+    flex: 0 0 auto;
+  }
 
-    .gym-details-container h2{
-      font-size: 12px;
-    }
+  .gym-details-container {
+    font-size: 10px;
+  }
 
-    .Instalaciones_container {
-        width: 100%;
-    }
+  .gym-details-container h2 {
+    font-size: 12px;
+  }
 
-    .imagen-instalacion {
-        height: 200px;
-        width: 160px;
-        border-radius: 13px 0 0 13px;
-    }
+  .Instalaciones_container {
+    width: 100%;
+  }
+
+  .imagen-instalacion {
+    height: 200px;
+    width: 160px;
+    border-radius: 13px 0 0 13px;
+  }
 }

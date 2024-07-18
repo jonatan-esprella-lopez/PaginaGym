@@ -1,55 +1,46 @@
-
-.contenedor_tipos_entrenamiento{
-    margin: 2rem 0;
-    padding: 30px 0;
-    background-color: hsl(0, 0%, 84%);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contenedor_tipos_entrenamiento {
+  margin: 2rem 0;
+  padding: 30px 0;
+  background-color: hsl(0, 0%, 84%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.contenedor_metodologia{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 15px;
+.contenedor_metodologia {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
 }
 
-.container-metodologia h2{
-    
-    font-size: 20px;
+.container-metodologia h2 {
+  font-size: 20px;
 }
 
-.container-metodologia{
-    background-color: rgb(255, 255, 255);
-    padding: 0.7rem 2rem 0;
-    border-radius: 15px;
+.container-metodologia {
+  background-color: rgb(255, 255, 255);
+  padding: 0.7rem 2rem 0;
+  border-radius: 15px;
 }
 
-.container-metodologia:hover{
-    cursor: pointer;
-    background-color: rgb(183, 183, 183) ;
+.container-metodologia:hover {
+  cursor: pointer;
+  background-color: rgb(183, 183, 183);
 }
 
-.Imagen_Metodologia{
-    width: 130px;
-    height: 130px;
-    fill: black;
+.Imagen_Metodologia {
+  width: 130px;
+  height: 130px;
+  fill: black;
 }
 
-
-
-.Container_footer_Rutinas{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.Container_footer_Rutinas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-
-
-
-
 
 @media (max-width: 768px) {
-    
 }

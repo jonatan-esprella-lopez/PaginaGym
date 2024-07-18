@@ -1,6 +1,5 @@
-
-import React from "react";
-import "../../../styles/Nosotros.css";
+import React from 'react';
+import '../../../styles/Nosotros.css';
 
 function InstructorCard({ name, specialization, rating, experience }) {
   return (
@@ -13,7 +12,8 @@ function InstructorCard({ name, specialization, rating, experience }) {
           {name} <p>{rating} ✩</p>
         </h5>
         <p>
-          {name}, instructora de {specialization} con {experience} años de experiencia y capacitadora en varios países de Bolivia
+          {name}, instructora de {specialization} con {experience} años de
+          experiencia y capacitadora en varios países de Bolivia
         </p>
         <div className="icons-tarjeta-coach">
           <img src="" alt="" />

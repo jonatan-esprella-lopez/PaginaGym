@@ -1,102 +1,93 @@
-
 .about-us-container {
   background-color: #e6e6e6;
-  }
-  
-  .about-us-header {
-    text-align: center;
-    
-  }
-   
-  .about-us-content {
-    margin-top: 20px;
-  }
-  
-  .instructor-cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  
-  .instructor-photo {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .instructor-info h3 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
-  
-  .instructor-info p {
-    color: #666;
-  }
+}
 
-  .about-us-content h2 {
-    font-size: 28px; 
-    margin-top: 30px; 
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  
-  .about-us-content ul {
-    list-style-type: disc;
-    margin-left: 30px; 
-    margin-bottom: 20px; 
-  }
-  
-  .about-us-content ul li {
-    margin-bottom: 10px; 
-  }
-  
-  .instructor-cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
-    gap: 20px;
-  }
-  
-  
-  .instructor-card {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
-    width: 15rem;
-    height: 26rem;
-    background-color: black;
-    border-radius: 23px 23px 23px 0;
-    border: 2px solid #ff6600;
-    box-shadow: 0 0 10px 3px #ff660079;
-    display: flex;
-    flex-direction: column;
-  
-  }
-  
-  .instructor-photo {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .instructor-info h3 {
-    margin-top: 15px; 
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-  
-  .instructor-info p {
-    color: #777;
-  }
-  
+.about-us-header {
+  text-align: center;
+}
 
-  .cont-Mis-Vis{
-    padding: 0 7rem;
-    display: flex;
-    margin-bottom: 5rem;
-  }
+.about-us-content {
+  margin-top: 20px;
+}
 
+.instructor-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
 
+.instructor-photo {
+  width: 100%;
+  border-radius: 10px;
+}
 
-  /*Nuebvo codigo de head*/
+.instructor-info h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.instructor-info p {
+  color: #666;
+}
+
+.about-us-content h2 {
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-us-content ul {
+  list-style-type: disc;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.about-us-content ul li {
+  margin-bottom: 10px;
+}
+
+.instructor-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.instructor-card {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 15rem;
+  height: 26rem;
+  background-color: black;
+  border-radius: 23px 23px 23px 0;
+  border: 2px solid #ff6600;
+  box-shadow: 0 0 10px 3px #ff660079;
+  display: flex;
+  flex-direction: column;
+}
+
+.instructor-photo {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.instructor-info h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.instructor-info p {
+  color: #777;
+}
+
+.cont-Mis-Vis {
+  padding: 0 7rem;
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+/*Nuebvo codigo de head*/
 
 .about-us-section {
   background-image: url(../assets/images/Nosotros/background.jpg);
@@ -122,16 +113,13 @@
   text-align: center;
 }
 
-.underline-central{
+.underline-central {
   height: 5px;
   width: 400px;
   margin: 15px 35rem;
   border-radius: 10px;
   background-color: #ff8800;
 }
-
-
-
 
 .overlay h1 {
   margin: 0;
@@ -145,7 +133,7 @@
   margin-top: 10px;
   font-size: 1rem;
 }
-.overlay-bienvenida{
+.overlay-bienvenida {
   text-align: left;
   width: 85%;
   font-weight: bold;
@@ -211,8 +199,6 @@
     height: 200px;
   }
 
-
-
   .overlay h1 {
     font-size: 1.8rem;
   }
@@ -233,6 +219,3 @@
     width: 100%;
   }
 }
-
-
-

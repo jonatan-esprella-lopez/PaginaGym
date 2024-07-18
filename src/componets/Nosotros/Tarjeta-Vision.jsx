@@ -1,6 +1,6 @@
-import React from "react";
-import "../../styles/Nosotros/Tarjeta-mision.css";
-import Visione from "../../assets/images/Nosotros/Vision.jpg";
+import React from 'react';
+import '../../styles/Nosotros/Tarjeta-mision.css';
+import Visione from '../../assets/images/Nosotros/Vision.jpg';
 
 const visionText = `
   Queremos ser reconocidos como el gimnasio líder en nuestra comunidad,

@@ -1,23 +1,23 @@
-import React, { useState } from "react";
-import "../styles/Pruebas.css";
+import React, { useState } from 'react';
+import '../styles/Pruebas.css';
 
 function Evaluation() {
   const [formData, setFormData] = useState({
-    height: "",
-    weight: "",
-    bmi: "",
-    bodyFatPercentage: "",
-    goal: "",
-    idealWeight: "",
-    idealBMI: "",
-    idealBodyFatPercentage: ""
+    height: '',
+    weight: '',
+    bmi: '',
+    bodyFatPercentage: '',
+    goal: '',
+    idealWeight: '',
+    idealBMI: '',
+    idealBodyFatPercentage: '',
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
 
-    if (name === "weight" || name === "height") {
+    if (name === 'weight' || name === 'height') {
       calculateBMI(name, value);
     }
   };
@@ -28,9 +28,9 @@ function Evaluation() {
       let heightInMeters = prevData.height / 100;
       let weight = prevData.weight;
 
-      if (name === "height") {
+      if (name === 'height') {
         heightInMeters = value / 100;
-      } else if (name === "weight") {
+      } else if (name === 'weight') {
         weight = value;
       }
 
@@ -38,7 +38,7 @@ function Evaluation() {
 
       return {
         ...prevData,
-        bmi: isNaN(bmi) ? "" : bmi.toFixed(2)
+        bmi: isNaN(bmi) ? '' : bmi.toFixed(2),
       };
     });
   };

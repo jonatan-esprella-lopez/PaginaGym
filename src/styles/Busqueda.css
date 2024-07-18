@@ -1,156 +1,154 @@
 .Banner_boton_gimnasio.content_Find_Center {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .image_Find_Center {
-    width: 86%;
-    flex-wrap: nowrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../assets/images/FondoGimnasio.webp);
-    background-position: 50%;
-    border-radius:15px;
-    height: 350px;
-    margin-top: 2rem;
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 86%;
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/images/FondoGimnasio.webp);
+  background-position: 50%;
+  border-radius: 15px;
+  height: 350px;
+  margin-top: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Banner_boton_gimnasio {
-    background-color: #7f83882d;
-    backdrop-filter: blur(10px);
-    padding: 3.2rem 7rem;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.573);
+  background-color: #7f83882d;
+  backdrop-filter: blur(10px);
+  padding: 3.2rem 7rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.573);
 }
 
 .contenedor-titulo-FC {
-    padding: 0 0 0.5rem 0.4rem;
-    color: white;
-    align-self: flex-start;
+  padding: 0 0 0.5rem 0.4rem;
+  color: white;
+  align-self: flex-start;
 }
 
 .Boton-buscar-centro {
-    margin: 0.5rem;
-    padding: 0.5rem 1.5rem;
-    background-color: #161a00;
-    color: #f2ff01;
-    font-weight: 400;
-    border: 1px solid #f2ff01;
-    border-radius: 4px;
+  margin: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #161a00;
+  color: #f2ff01;
+  font-weight: 400;
+  border: 1px solid #f2ff01;
+  border-radius: 4px;
 }
 
 .Boton-buscar-centro:hover {
-    color: black;
-    background-color: #f2ff01;
-    cursor: pointer;
+  color: black;
+  background-color: #f2ff01;
+  cursor: pointer;
 }
 
 .busqueda-input {
-    width: 19rem;
-    padding: 0.6rem 0.9rem 0.5rem 2.4rem;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
-    font-size: 15px;
-    text-align: left;
+  width: 19rem;
+  padding: 0.6rem 0.9rem 0.5rem 2.4rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 15px;
+  text-align: left;
 }
 
 .busqueda-input:focus {
-    border-color: #161a00;
+  border-color: #161a00;
 }
 
 .Banner_boton_gimnasio p {
-    margin: 0;
+  margin: 0;
 }
 
 .contenedor-Busqueda {
-    position: relative;
+  position: relative;
 }
 
 .iconos {
-    color: black;
-    width: 25px;
-    height: 25px;
-    left: 8px;
-    top: 5.1px;
-    position: absolute;
+  color: black;
+  width: 25px;
+  height: 25px;
+  left: 8px;
+  top: 5.1px;
+  position: absolute;
 }
 
 /*______________________________________________Responsive______________________________________________*/
 
 @media (max-width: 768px) {
-    .Banner_boton_gimnasio div{
-        padding: 0.2rem 0;
-        font-size: 12px;
-    }
+  .Banner_boton_gimnasio div {
+    padding: 0.2rem 0;
+    font-size: 12px;
+  }
 
-    .Banner_boton_gimnasio div button{
-        padding: 0;
-        margin-top: 10px;
-    }
+  .Banner_boton_gimnasio div button {
+    padding: 0;
+    margin-top: 10px;
+  }
 
-    .image_Find_Center {
-        width: 100%;
-        height: 250px;
-        margin-top: 1rem;
-    }
+  .image_Find_Center {
+    width: 100%;
+    height: 250px;
+    margin-top: 1rem;
+  }
 
-    .contenedor-titulo-FC {
-        padding: 0 0 0.3rem 0.2rem;
-        font-size: 18px;
-    }
+  .contenedor-titulo-FC {
+    padding: 0 0 0.3rem 0.2rem;
+    font-size: 18px;
+  }
 
-    .Boton-buscar-centro {
-        margin: 0.3rem;
-        padding: 0.4rem 1.2rem;
-        font-size: 14px;
-    }
+  .Boton-buscar-centro {
+    margin: 0.3rem;
+    padding: 0.4rem 1.2rem;
+    font-size: 14px;
+  }
 
-    .busqueda-input {
-        width: 100%;
-        padding: 0.5rem 0.8rem 0.4rem 2rem;
-        font-size: 14px;
-    }
+  .busqueda-input {
+    width: 100%;
+    padding: 0.5rem 0.8rem 0.4rem 2rem;
+    font-size: 14px;
+  }
 
+  .Banner_boton_gimnasio {
+    padding: 0.1rem 1rem;
+    font-size: 14px;
+  }
 
-     .Banner_boton_gimnasio {
-        padding: 0.1rem 1rem;
-        font-size: 14px;
-    }
+  .image_Find_Center {
+    height: 200px;
+  }
 
-    .image_Find_Center {
-        height: 200px;
-    }
+  .contenedor-titulo-FC {
+    font-size: 16px;
+  }
 
-    .contenedor-titulo-FC {
-        font-size: 16px;
-    }
+  .Boton-buscar-centro {
+    margin: 0.2rem;
+    padding: 0.3rem 1rem;
+    font-size: 12px;
+  }
 
-    .Boton-buscar-centro {
-        margin: 0.2rem;
-        padding: 0.3rem 1rem;
-        font-size: 12px;
-    }
+  .busqueda-input {
+    padding: 0.4rem 0.7rem 0.3rem 1.8rem;
+    font-size: 13px;
+  }
 
-    .busqueda-input {
-        padding: 0.4rem 0.7rem 0.3rem 1.8rem;
-        font-size: 13px;
-    }
-
-    .iconos {
-        top: 8px;
-        width: 18px;
-        height: 18px;
-        left: 5px;
-    }
+  .iconos {
+    top: 8px;
+    width: 18px;
+    height: 18px;
+    left: 5px;
+  }
 }
-

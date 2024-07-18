@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from "react";
-import "../styles/Pruebas.css";
-import Header from "../componets/Header_Main";
-import Footer from "../componets/Footer_Main";
+import React, { useState, useEffect } from 'react';
+import '../styles/Pruebas.css';
+import Header from '../componets/Header_Main';
+import Footer from '../componets/Footer_Main';
 
 function Evaluation() {
   const [formData, setFormData] = useState({
-    height: "",
-    weight: "",
-    bmi: "",
-    bodyFatPercentage: "",
-    goal: "",
-    idealWeight: "",
-    idealBMI: "",
-    idealBodyFatPercentage: "",
-    proteinIntake: "",
-    waterIntake: "",
-    creatineIntake: "",
-    maxMuscleGain: "",
-    maxFatLoss: ""
+    height: '',
+    weight: '',
+    bmi: '',
+    bodyFatPercentage: '',
+    goal: '',
+    idealWeight: '',
+    idealBMI: '',
+    idealBodyFatPercentage: '',
+    proteinIntake: '',
+    waterIntake: '',
+    creatineIntake: '',
+    maxMuscleGain: '',
+    maxFatLoss: '',
   });
 
   const handleChange = (e) => {
@@ -32,7 +32,8 @@ function Evaluation() {
   const calculateAllData = () => {
     if (formData.weight && formData.height) {
       const heightInMeters = formData.height / 100;
-      const calculatedBMI = parseFloat(formData.weight) / (heightInMeters * heightInMeters);
+      const calculatedBMI =
+        parseFloat(formData.weight) / (heightInMeters * heightInMeters);
       const idealWeight = 22.5 * (heightInMeters * heightInMeters);
       const waterIntake = formData.weight * 0.033;
       const creatineIntake = formData.weight * 0.03;
@@ -46,12 +47,12 @@ function Evaluation() {
         proteinIntake: {
           normal: 1 * formData.weight,
           medium: 1.5 * formData.weight,
-          maximum: 2 * formData.weight
+          maximum: 2 * formData.weight,
         },
         waterIntake: waterIntake.toFixed(2),
         creatineIntake: creatineIntake.toFixed(2),
         maxMuscleGain: maxMuscleGain.toFixed(2),
-        maxFatLoss: maxFatLoss.toFixed(2)
+        maxFatLoss: maxFatLoss.toFixed(2),
       }));
     }
 
@@ -62,7 +63,7 @@ function Evaluation() {
       setFormData((prevData) => ({
         ...prevData,
         idealBMI: idealBMI.toFixed(2),
-        idealBodyFatPercentage: idealBodyFatPercentage.toFixed(2)
+        idealBodyFatPercentage: idealBodyFatPercentage.toFixed(2),
       }));
     }
   };
@@ -121,7 +122,7 @@ function Evaluation() {
             required
           />
         </div>
-        
+
         <h3>Resultados</h3>
         <div className="form-group">
           <label htmlFor="bmi">IMC</label>
@@ -171,7 +172,7 @@ function Evaluation() {
             id="proteinIntake"
             name="proteinIntake"
             type="text"
-            value={`Normal: ${formData.proteinIntake.normal || ""}, Medio: ${formData.proteinIntake.medium || ""}, Máximo: ${formData.proteinIntake.maximum || ""}`}
+            value={`Normal: ${formData.proteinIntake.normal || ''}, Medio: ${formData.proteinIntake.medium || ''}, Máximo: ${formData.proteinIntake.maximum || ''}`}
             readOnly
           />
         </div>

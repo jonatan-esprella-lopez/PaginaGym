@@ -1,14 +1,14 @@
-
 .gym-values-section {
-    position: relative;
-    background: url('../../assets//images/Nosotros/background1.jpg') no-repeat center center/cover;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  position: relative;
+  background: url('../../assets//images/Nosotros/background1.jpg') no-repeat
+    center center/cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
-  
+
 .overlay1 {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 200px;
@@ -28,7 +28,7 @@
 }
 
 .value img {
-  filter:invert();
+  filter: invert();
   width: 80px;
   height: 80px;
   margin-bottom: 10px;
@@ -46,7 +46,7 @@
   padding: 5px 15px;
 }
 
-.cont-valores{
+.cont-valores {
   margin: 2rem 0 0 0;
   text-align: center;
   display: flex;
@@ -54,7 +54,7 @@
   align-items: center;
 }
 
-.cont-valores p{
+.cont-valores p {
   text-align: left;
   width: 80%;
 }
@@ -89,7 +89,7 @@
     font-size: 0.9rem;
   }
 
-  .cont-valores p{
+  .cont-valores p {
     font-size: 13px;
   }
 }
