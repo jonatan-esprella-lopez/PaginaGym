@@ -1,0 +1,92 @@
+import React, { useState } from "react";
+import { useAuth } from "../../../auth/AuthProvider.tsx";
+import "../../../styles/Login.css"
+import HeaderMain from '../../../components/common/header/Header-main';
+import FooterMain from '../../../components/common/footer/Footer-main';
+import { Navigate, useNavigate } from "react-router-dom";
+import { API_URL } from "../../../auth/constans.jsx";
+import type { AuthResponseError } from "../../../types/Types.ts";
+
+
+
+
+function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { isAuthenticated } = useAuth();
+  
+  const goTo = useNavigate();
+  const [errorResponse, setErrorResponse] = useState("");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>){
+    e.preventDefault();
+
+    try {
+      const response = await fetch(`${API_URL}/login`, {
+        method: "POST",
+        headers:  {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          password,
+       }),
+      });
+      if (response.ok) {
+        console.log("Usuario logueado correctamente");
+        setErrorResponse("");
+        goTo("/PerfilUser");
+      } else {
+        console.log("Ocurrio algun error: ");
+        const json = (await response.json()) as AuthResponseError;
+        setErrorResponse(json.body.error);
+        return;
+      }
+    } catch (error) {
+      console.log(error);
+      
+    }
+  }
+
+  if (isAuthenticated){
+    return <Navigate to="/PerfilUser"/>;
+  }
+  return (
+    <div className="login-container">
+        <HeaderMain />
+      <form onSubmit={handleSubmit} className="login-form">
+        <h2>Iniciar sesión</h2>
+        
+        {!! errorResponse && <div className="errorMessage">{errorResponse}</div>}
+        <div className="form-group1">
+          <label htmlFor="email">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Ingrese correo electronico"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            autoComplete="email"
+            required
+          />
+        </div>
+        <div className="form-group1">
+          <label htmlFor="password">Contraseña</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Ingresa tu contraseña"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        <button type="submit" className="btn-login">
+          Iniciar sesión
+        </button>
+      </form>
+      <FooterMain />
+    </div>
+  );
+}
+
+export default Login;
