@@ -48,7 +48,9 @@ function NutricionPage() {
                   <p> <strong>Grasas:</strong> 80g por día</p>
                   <p> <strong>Calorías:</strong> 3000 kcal por día</p>
               </div>
-              <button className='button-nutricion'>Más Información</button>
+              <Link to="/Plan Nutricional">
+                <button className='button-nutricion'>Más Información</button>
+              </Link>
             </div>
           </div>
         </article>
@@ -69,9 +71,10 @@ function NutricionPage() {
                   <p> <strong>Grasas:</strong> 60g por día</p>
                   <p> <strong>Calorías:</strong> 2000 kcal por día</p>
               </div>
-            
-            <button className='button-nutricion'>Más Información</button>
-            </div>
+              <Link to="/Plan Nutricional">
+                <button className='button-nutricion'>Más Información</button>
+              </Link>
+              </div>
             </div>
         </article>
 
@@ -91,7 +94,9 @@ function NutricionPage() {
                   <p> <strong>Grasas:</strong> 70g por día</p>
                   <p> <strong>Calorías:</strong> 2500 kcal por día</p>
               </div>
-              <button className='button-nutricion'>Más Información</button>
+              <Link to="/Plan Nutricional">
+                <button className='button-nutricion'>Más Información</button>
+              </Link>
               </div>
             </div>
         </article>
@@ -112,7 +117,9 @@ function NutricionPage() {
                   <p> <strong>Grasas:</strong> 70g por día</p>
                   <p> <strong>Calorías:</strong> 2200 kcal por día</p>
               </div>
-              <button className='button-nutricion'>Más Información</button>
+              <Link to="/Plan Nutricional">
+                <button className='button-nutricion'>Más Información</button>
+              </Link>
               </div>
             </div>
         </article>
@@ -139,7 +146,7 @@ function NutricionPage() {
                         <li><img src={checkIcon} alt="check" /> Guía y descuentos de suplementación</li>
                         <li><img src={checkIcon} alt="check" /> Recetas fáciles de hacer</li>
                     </ul>
-                    <p className="price">340 Bs</p>
+                    <p className="prices-nutrition">340 Bs</p>
                     <div className="plan-price">
                         <div className="whatsapp-group">
                             <img src={whatsappIcon} alt="WhatsApp" /> 
@@ -176,7 +183,7 @@ function NutricionPage() {
                         <li><img src={checkIcon} alt="check" /> Charla online sobre dieta Keto/Ayuno intermitente</li>
                         <li><img src={checkIcon} alt="check" /> Recomendación de ejercicios</li>
                     </ul>
-                    <p className="price">340 Bs</p>
+                    <p className="prices-nutrition">340 Bs</p>
                     <div className="plan-price">
                         <div className="whatsapp-group">
                             <img src={whatsappIcon} alt="WhatsApp" /> 
@@ -235,7 +242,7 @@ function NutricionPage() {
                         <li><img src={checkIcon} alt="check" /> Guía de ejercicios gym/casa</li>
                         <li><img src={checkIcon} alt="check" /> Apoyo personal diario</li>
                     </ul>
-                    <p className="price">800 Bs</p>
+                    <p className="prices-nutrition">800 Bs</p>
                     <div className="plan-price">
                         <div className="whatsapp-group">
                             <img src={whatsappIcon} alt="WhatsApp" /> 

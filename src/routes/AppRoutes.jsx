@@ -9,7 +9,7 @@ import Evaluaciones from "../pages/evaluations/Evaluation";
 import Login from "../pages/credentials/sing-in/Sing-in.tsx";
 import Registro from "../pages/credentials/sing-up/sing-up.tsx";
 import Nosotros from "../pages/about-us/Us-Information";
-import Plan from "../pages/nutrition/Nutrition-plan";
+import Plan from "../pages/nutrition/Details-nutrition-plan";
 import PerfilPublico from "../pages/users/profile-user/Profile-user";
 import Soporte from "../pages/support/Support";
 import PaginaConstruccion from "../pages/Page-construction/Building-page";

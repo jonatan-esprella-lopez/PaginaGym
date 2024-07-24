@@ -124,7 +124,6 @@ body {
 
 .cont-valor-nuttricional{
     display: flex;
-    margin-bottom: 2rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -151,7 +150,7 @@ body {
     flex-direction: column;
     align-items: start;
     padding-left: 20px;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     
 }
 
@@ -166,8 +165,7 @@ body {
     font-weight: bold;
     padding: 10px 20px;
     border: none;
-    width: 70%;
-    margin-top: 1rem;
+    width: 200px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -187,6 +185,15 @@ body {
 }
 
 .contenedor-2-nutri{
+  height: 290px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contenedor-2-nutri p{
+  margin: 0;
 }
 
 .plan-descripcion{
@@ -210,7 +217,14 @@ body {
     margin: 0 auto;
 }
 
+.prices-nutrition{
+  font-size: 20px;
+  width: 100%;
+  font-weight: bold;
+}
+
 .group-plan h2 {
+  width: 120%;
     text-align: left;
     color: #000000;
     margin-bottom: 20px;
@@ -219,14 +233,15 @@ body {
 }
 
 .plan-container {
-    height: 100%;
-    width: 90%;
+    max-height: 470px;
+    width: 100%;
     display: flex;
     align-items: center;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    border: 1px solid #ec880d;
 }
 
 .cont-plan-image{
@@ -317,6 +332,12 @@ body {
 }
 
 
+.plan-details-v1 .prices-nutrition{
+  text-align: end;
+  width: 90%;
+
+}
+
 .plan-details-v1 h3 {
     margin: 0;
 }
@@ -329,10 +350,16 @@ body {
 .plan-details-v1 ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 1.5rem 1rem 0 1rem;
+    max-height: 180px;
+    min-height: 180px;
 }
 
 .plan-details-v1 li {
-    margin: 10px 0;
+    margin: 4px 0;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -497,6 +524,8 @@ body {
       align-items: center;
     }
   
+
+
     .contenedor-1-nutri img {
       object-fit: cover;
       border-radius: 9px 0 0 0;
@@ -520,7 +549,7 @@ body {
   
     .button-nutricion {
       font-size: 14px;
-      width: 69%;
+      width: 150px;
       margin: 0;
       padding: 8px 7px;
     }
@@ -542,11 +571,21 @@ body {
     }
   
     .group-plan h2 {
-      text-align: center;
+      width: 100%;
+      text-align: left;
+      font-size: 17px;
     }
   
     .plan-container {
       flex-direction: column;
+      max-height: 100%;
+      width: 97%;
+    }
+
+    .plan-details-v1 ul {
+      flex-direction: column;
+      max-height: 100%;
+      margin: 1rem 0rem;
     }
   
     .cont-plan-image, .plan-image {
@@ -582,5 +621,11 @@ body {
     .plan-price button{
      padding: 0;
     }
+    
+    .contenedor-2-nutri{
+      height: 200px;
+    }
+
+
   }
   
