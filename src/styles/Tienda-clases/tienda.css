@@ -150,6 +150,11 @@
     flex-wrap: wrap;
     gap: 10px;
   }
+
+  .tags span:hover {
+    cursor:default;
+    background-color: hsl(27, 100%, 89%);
+  }
   
   .tags span {
     background-color: #e0e0e0;

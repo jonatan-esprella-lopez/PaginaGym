@@ -11,7 +11,19 @@ const trainingData = [
     id: 2,
     title: 'Básico 2 - Entrenamiento de Fuerza nivel 1',
     description: 'Aprende sobre cómo ganar más fuerza, aprenderás los principios básicos de una rutina pre-programada para el máximo rendimiento en la fuerza.',
-    tags: ['Presencial', 'Livestream', 'Licencia de']
+    tags: ['Presencial', 'Livestream']
+  },
+  {
+    id: 3,
+    title: 'Intermedio 2 - Entrenamiento de Fuerza nivel 3',
+    description: 'Aprende sobre cómo ganar más fuerza, aprenderás los principios básicos de una rutina pre-programada para el máximo rendimiento en la fuerza.',
+    tags: ['Presencial', 'Livestream', 'Licencia de FDA']
+  },
+  {
+    id: 4,
+    title: 'Intermedio 2 - Entrenamiento de Fuerza nivel 4',
+    description: 'Aprende sobre cómo ganar más fuerza, aprenderás los principios básicos de una rutina pre-programada para el máximo rendimiento en la fuerza.',
+    tags: ['Presencial', 'Livestream', 'Licencia de FDA']
   }
 ];
 
