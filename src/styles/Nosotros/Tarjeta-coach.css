@@ -71,10 +71,14 @@
       width: 90%;
       margin: 0 auto;
       align-items: center;
+      border-radius: 15px;
     }
   
     .img-tarjeta-coach {
-      height: 10rem;
+      height: 237px;
+      border-radius: 22px 0 0 22px;
+      width: 100%;
+
     }
   
     .img-tarjeta-coach h3 {

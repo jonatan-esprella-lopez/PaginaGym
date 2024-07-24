@@ -292,6 +292,7 @@ body {
 
 .whatsapp-group p{
     opacity: 70%;
+    width: 350px;
 }
 
 
@@ -450,7 +451,9 @@ body {
       width: 90%;
       margin-bottom: 20px;
     }
-  
+      
+   
+
     .contenedor_Tarjetas {
       width: 100%;
       flex-direction: column;
@@ -570,6 +573,14 @@ body {
   
     .divider {
       width: 100%;
+    }
+     .whatsapp-group p {
+      width: 130px;
+    }
+
+
+    .plan-price button{
+     padding: 0;
     }
   }
   

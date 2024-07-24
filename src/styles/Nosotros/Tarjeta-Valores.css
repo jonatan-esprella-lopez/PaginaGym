@@ -12,7 +12,6 @@
 .overlay1 {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 200px;
-  border-radius: 10px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -68,15 +67,15 @@
 @media (max-width: 768px) {
   .gym-values-section {
     height: auto;
-    padding: 20px 0;
   }
 
   .overlay1 {
-    flex-direction: column;
-    padding: 0px;
+    padding: 50px 0 0 0;
+    flex-wrap: wrap; 
   }
 
   .value {
+    width: 50%;
     margin-bottom: 20px;
   }
 
