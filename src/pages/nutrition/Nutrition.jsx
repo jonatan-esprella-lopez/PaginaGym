@@ -7,7 +7,15 @@ import ImagenHipertrofia from "../../assets/images/Nutricion/NutricionHipertrofi
 import Proteina from "../../assets/images/Nutricion/Proteina.svg"
 import Carbohidrato from "../../assets/images/Nutricion/Carbohidrato.svg"
 import Grasas from "../../assets/images/Nutricion/Grasa.svg"
-import planImage from '../../assets/images/Nutricion/plan-simple.png';
+
+import plan1 from "../../assets/images/Nutricion/proteina.jpg";
+import plan2 from "../../assets/images/Nutricion/grasas.jpg";
+import plan3 from "../../assets/images/Nutricion/tonificacion.jpg";
+import plan4 from "../../assets/images/Nutricion/tradicional.jpg";
+
+import planImage1 from '../../assets/images/Nutricion/plan-1.jpg';
+import planImage2 from '../../assets/images/Nutricion/plan-2.jpg';
+import planImage3 from '../../assets/images/Nutricion/plan-3.jpg';
 import checkIcon from '../../assets/images/correcto.png'; 
 import whatsappIcon from '../../assets/images/WhatsApp.png'; 
 
@@ -28,7 +36,7 @@ function NutricionPage() {
         <article className="plan structure-card-1">
           <div className='contenedor-1-nutri'>
             <p className="plan-header">Plan proteico</p>
-            <img src={ImagenHipertrofia} alt="Aumenta tu masa muscular"/>
+            <img src={plan1} alt="Aumenta tu masa muscular"/>
             <h3>Aumenta tu masa muscular</h3>
           </div>
           <div className='contenedor-2-nutri'>
@@ -48,7 +56,7 @@ function NutricionPage() {
         <article className="plan structure-card-1">
         <div className='contenedor-1-nutri'>
             <div className="plan-header">Plan bajo en grasa</div>
-            <img src={ImagenHipertrofia} alt="Pérdida de grasa"/>
+            <img src={plan2} alt="Pérdida de grasa"/>
             <h3>Pérdida de grasa</h3>
             </div>
             <div className='contenedor-2-nutri'>
@@ -70,7 +78,7 @@ function NutricionPage() {
         <article className="plan structure-card-1">
         <div className='contenedor-1-nutri'> 
             <div className="plan-header">Plan de tonificación</div>
-            <img src={ImagenHipertrofia} alt="Tonificación"/>
+            <img src={plan3} alt="Tonificación"/>
             <h3>Tonificación</h3>
             </div>
             <div className='contenedor-2-nutri'>
@@ -91,7 +99,7 @@ function NutricionPage() {
         <article className="plan structure-card-1">
         <div className='contenedor-1-nutri'>
             <div className="plan-header">Plan saludable</div>
-            <img src={ImagenHipertrofia} alt="Salud normal"/>
+            <img src={plan4} alt="Salud normal"/>
             <h3>Nutricion Tradicional</h3>
             </div>
             <div className='contenedor-2-nutri'>
@@ -115,7 +123,7 @@ function NutricionPage() {
             <h2>Consigue tus objetivos nutricionales en grupo</h2>
             <div className="plan-container">
                 <div className='cont-plan-image'>
-                  <img src={planImage} alt="Reto de 30 Días" className="plan-image" />
+                  <img src={planImage1} alt="Reto de 30 Días" className="plan-image" />
                 </div>
                 <div className="plan-details-v1">
                   <div className='cont-head-plan'>
@@ -150,7 +158,7 @@ function NutricionPage() {
             <h2>Consigue tus objetivos nutricionales en grupo</h2>
             <div className="plan-container">
                 <div className='cont-plan-image'>
-                  <img src={planImage} alt="Reto de 60 Días" className="plan-image" />
+                  <img src={planImage2} alt="Reto de 60 Días" className="plan-image" />
                 </div>
                 <div className="plan-details-v1">
                   <div className='cont-head-plan'>
@@ -205,7 +213,7 @@ function NutricionPage() {
             <h2>Consigue tus objetivos nutricionales en grupo</h2>
             <div className="plan-container">
                 <div className='cont-plan-image'>
-                  <img src={planImage} alt="Reto Personalizado" className="plan-image" />
+                  <img src={planImage3} alt="Reto Personalizado" className="plan-image" />
                 </div>
                 <div className="plan-details-v1">
                   <div className='cont-head-plan'>

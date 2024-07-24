@@ -400,13 +400,17 @@ a:hover{
   }
 
   
-  .container-head-section h4 {
+  .container-head-section h4,h5 {
     position: relative;
     margin: 0;
     text-align: left;
     padding: 0 0 0 10px;
     font-size: 13.5px;
     font-weight: normal;
+  }
+
+  .container-head-section h5{
+    font-size: 13.5px;
   }
   
   .container-head-section .underline {

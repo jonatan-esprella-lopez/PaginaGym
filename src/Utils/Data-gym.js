@@ -1,31 +1,34 @@
-import RitmosFitness from "../assets/images/Clases/Ritmos.jpg";
-import FullKombat from "../assets/images/Clases/FullKombat.jpg";
+import gimnasio1 from "../assets/images/Gym/gimnasio-1.jpeg";
+import gimnasio2 from "../assets/images/Gym/gimnasio-2.jpg";
+import gimnasio3 from "../assets/images/Gym/gimnasio-3.jpg";
+import gimnasio4 from "../assets/images/Gym/gimnasio-4.jpeg";
+import gimnasio5 from "../assets/images/Gym/gimnasio-5.jpg";
 
 export const initialGyms = [
   {
     id: 1,
     name: 'Averanda',
     address: 'AUTOPISTA MÉXICO – CUERNAVACA KM 87.5 – FLORES MAGON, Cuernavaca - MOR',
-    offers: '1ER MES GRATIS + INSCRIPCIÓN $10',
+    offers: '1ER MES GRATIS + INSCRIPCIÓN Bs10',
     prices: {
-      SMART: '$499.00',
-      BLACK: '$599.00',
-      FIT: '$399.00'
+      SMART: 'Bs199.00',
+      BLACK: 'Bs299.00',
+      FIT: 'Bs199.00'
     },
-    image: FullKombat,
+    image: gimnasio1,
     features: ['Estructuras', 'Estacionamiento', 'Elevador', 'Ritmos Fitness'],
   },
   {
     id: 2,
     name: 'Cocha',
     address: 'AVENIDA DE LOS INSURGENTES SUR 1234, Ciudad de México - CDMX',
-    offers: '2 MESES GRATIS + INSCRIPCIÓN $5',
+    offers: '2 MESES GRATIS + INSCRIPCIÓN Bs5',
     prices: {
-      SMART: '$599.00',
-      BLACK: '$699.00',
-      FIT: '$499.00'
+      SMART: 'Bs199.00',
+      BLACK: 'Bs299.00',
+      FIT: 'Bs199.00'
     },
-    image: RitmosFitness,
+    image: gimnasio2,
     features: ['Lacto - Bar', 'Nutricionista', 'Full Kombat'],
   },
   {
@@ -34,11 +37,11 @@ export const initialGyms = [
     address: 'CALLE DE LA FORTALEZA 789, Monterrey - NL',
     offers: 'DESCUENTO DEL 50% EN EL PRIMER MES',
     prices: {
-      SMART: '$399.00',
-      BLACK: '$499.00',
-      FIT: '$299.00'
+      SMART: 'Bs199.00',
+      BLACK: 'Bs299.00',
+      FIT: 'Bs199.00'
     },
-    image: FullKombat,
+    image: gimnasio3,
     features: ['Estacionamiento', 'Elevador', 'Entrenamiento Funcional'],
   },
   {
@@ -47,24 +50,24 @@ export const initialGyms = [
     address: 'BOULEVARD DE LA SALUD 456, Guadalajara - JAL',
     offers: 'INSCRIPCIÓN GRATIS',
     prices: {
-      SMART: '$299.00',
-      BLACK: '$399.00',
-      FIT: '$199.00'
+      SMART: 'Bs199.00',
+      BLACK: 'Bs119.00',
+      FIT: 'Bs199.00'
     },
-    image: RitmosFitness,
+    image: gimnasio4,
     features: ['Nutricionista', 'Step-Z', 'Rebound Xtreme'],
   },
   {
     id: 5,
     name: 'Health Hub',
     address: 'CALLE DEL BIENESTAR 123, Puebla - PUE',
-    offers: '3 MESES GRATIS + INSCRIPCIÓN $15',
+    offers: '3 MESES GRATIS + INSCRIPCIÓN Bs15',
     prices: {
-      SMART: '$799.00',
-      BLACK: '$899.00',
-      FIT: '$699.00'
+      SMART: 'Bs199.00',
+      BLACK: 'Bs199.00',
+      FIT: 'Bs299.00'
     },
-    image: RitmosFitness,
+    image: gimnasio5,
     features: ['Elevador', 'Ritmos Fitness', 'Full Kombat'],
   }
 ];

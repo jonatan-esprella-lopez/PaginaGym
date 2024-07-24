@@ -27,7 +27,14 @@
  .loader {
   width: 29rem;
   margin: 0 auto;
+  filter: saturate(4);
  }
 /*______________________________________________Responsive______________________________________________*/
 
+
+@media (max-width: 768px) {
+  .loader{
+    width: 20rem;
+  }
+}
 
