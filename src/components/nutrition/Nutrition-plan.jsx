@@ -1,8 +1,7 @@
-import React from 'react';
 import Day from './Day';
 import ShoppingList from './ShoppingList';
 import Notes from './Notes';
-import { meals, shoppingList, notes } from './data';
+import { meals, shoppingList, notes } from '../../utils/Data-Nutrition.js';
 
 function MealPlan() {
   return (
