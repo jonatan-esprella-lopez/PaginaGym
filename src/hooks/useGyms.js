@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { initialGyms } from "../utils/gymData";
+import { initialGyms } from "../utils/Data-gym";
 
 const useGyms = () => {
   const location = useLocation();
@@ -60,7 +60,7 @@ const useGyms = () => {
     }
 
     setFilteredGyms(filtered);
-  };
+  };  
 
   return {
     searchTerm,
