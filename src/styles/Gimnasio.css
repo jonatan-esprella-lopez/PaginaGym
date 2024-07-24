@@ -221,20 +221,11 @@
     border-color: #000000;
   }
   
-  .contenedor-buscador button {
-    padding: 10px 20px;
-    margin-top: 15px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #008cff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
   
-  .contenedor-buscador button:hover {
-    background-color: #0d8dec;
+  
+  .contenedor-buscador button {
+    border-radius: 7px;
+    
   }
 
 /*______________________________________________Responsive______________________________________________*/
@@ -302,6 +293,7 @@
     .contenedor-buscador button {
       width: 100%;
       padding: 10px;
+      margin-top: 10px;
       font-size: 15px;
     }
   }

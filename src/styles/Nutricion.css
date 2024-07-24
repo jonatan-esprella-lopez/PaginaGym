@@ -129,6 +129,12 @@ body {
     align-items: center;
 }
 
+.cont-valor-nuttricional button{
+  border-radius: 7px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 
 .contenedor-1-nutri img {
     width: 100%;
@@ -159,22 +165,7 @@ body {
 }
 
 
-.button-nutricion {
-    background-color:var(--primary-color);;
-    color: #000000;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: none;
-    width: 200px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
 
-.button-nutricion:hover {
-  background-color: #ffbd24;
-  box-shadow: 0 0 20px 0 #ffb300;
-}
 
 
 .contenedor-1-nutri{

@@ -12,7 +12,7 @@ const GymSearchForm = ({ searchTerm, handleInputChange, handleSubmit }) => (
         value={searchTerm}
         onChange={handleInputChange}
       />
-      <button type="submit">Filtrar</button>
+      <button type="submit" className="button-type-4 estructure-size">Filtrar</button>
     </form>
   </div>
 );

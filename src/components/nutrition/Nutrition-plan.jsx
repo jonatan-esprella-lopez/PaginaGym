@@ -1,4 +1,5 @@
 import Day from './Day';
+import "../../styles/Nutrition/plan.css"
 import ShoppingList from './ShoppingList';
 import Notes from './Notes';
 import { meals, shoppingList, notes } from '../../utils/Data-Nutrition.js';
@@ -6,7 +7,7 @@ import { meals, shoppingList, notes } from '../../utils/Data-Nutrition.js';
 function MealPlan() {
   return (
     <div className="meal-plan">
-      <h1>semana de Lorena</h1>
+      <h1>Programacion semanal</h1>
       <h2>PLAN DE COMIDAS</h2>
       <div className="days">
         {meals.map((dayInfo) => (
