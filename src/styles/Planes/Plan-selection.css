@@ -78,6 +78,7 @@
   
   .details li {
     margin: 5px 0;
+    text-align: left;
   }
   
   .description {
@@ -125,14 +126,7 @@
     border-radius: 7px;
   }
   
-  .add-button, .toggle-coupon {
-    
-    border-radius: 7px;
-    background-color: #ccc;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
+
   
   .charges {
     margin-top: 20px;
@@ -140,12 +134,28 @@
   
   .charges h3 {
     margin: 10px 0;
+    text-align: left;
   }
   
   .charge-details {
     display: flex;
     justify-content: space-between;
     margin: 5px 0;
+  }
+
+  .charge-details p{
+    margin: 5px;
+    padding: 0;
+  }
+
+  .button-add{
+    margin: 10px;
+    
+  }
+
+  .button-add-normal{
+    width: 80px;
+    margin: 0;
   }
   
 
@@ -200,17 +210,12 @@
     }
   
     .coupon-input {
-      flex-direction: column;
     }
   
     .coupon-input input {
-      margin-right: 0;
-      margin-bottom: 10px;
+      margin: 0 10px 0 0;
     }
   
-    .add-button {
-      width: 100%;
-    }
   
     .charge-details {
       flex-direction: column;
@@ -220,4 +225,13 @@
     .charge-details div {
       margin: 5px 0;
     }
+
+
+    .button-add{
+    padding-top: 10px;
+  }
+
+  .button-add-normal{
+    padding-top: 10px;
+  }
   }

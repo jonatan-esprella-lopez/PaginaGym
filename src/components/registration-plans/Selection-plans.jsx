@@ -82,28 +82,28 @@ const PlanSelector = () => {
 
         <section className="purchase-details">
             <h2>Detalles de la compra</h2>
-            <div className="gym">Gimnasio elegido: <strong>Averanda</strong></div>
+            <p className="gym">Gimnasio elegido: <strong>Averanda</strong></p>
             <button className="continue-button">Continuar Inscripción</button>
             <div className="coupon-section">
-            <button className="toggle-coupon">Añadir cupón</button>
+            <button className="button-add estructura-size2 button-type-4">Añadir cupón</button>
             <div className="coupon-input">
                 <input type="text" placeholder="Cupón" />
-                <button className="add-button">Añadir</button>
+                <button className="button-add-normal estructura-size2 button-type-4">Añadir</button>
             </div>
             </div>
             <div className="charges">
             <h3>1er COBRO</h3>
             <div className="charge-details">
-                <div>Mensualidad: Bs49.00</div>
-                <div>Inscripción: Bs0.00</div>
+                <p>Mensualidad: Bs49.00</p>
+                <p>Inscripción: Bs0.00</p>
             </div>
             <h3>2º COBRO</h3>
             <div className="charge-details">
-                <div>Mensualidad: Bs399.00</div>
+                <p>Mensualidad: Bs399.00</p>
             </div>
             <h3>3er COBRO</h3>
             <div className="charge-details">
-                <div>Mensualidad: Bs1098.00</div>
+                <p>Mensualidad: Bs1098.00</p>
             </div>
             </div>
         </section>
