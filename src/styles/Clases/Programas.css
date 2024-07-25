@@ -26,6 +26,7 @@
 .Iconos-detalle{
     height: 36px;
     opacity: 70%;
+    filter: drop-shadow(1px 1px 0px rgb(255, 157, 0));
 }
 
 .detalle-title{
@@ -126,15 +127,6 @@
     margin:0;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
 
     .Programas-container {
         width: 100%;

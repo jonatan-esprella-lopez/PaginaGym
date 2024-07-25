@@ -151,6 +151,10 @@
   margin-bottom: 10px;
 }
 
+
+
+  /*______________________________________________Responsive______________________________________________*/
+
 @media (max-width: 768px) {
   .about-us-header {
     padding: 0 10px;

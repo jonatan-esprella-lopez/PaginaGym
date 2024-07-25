@@ -102,6 +102,8 @@
   text-align: center;
 }
 
+  /*______________________________________________Responsive______________________________________________*/
+  
 @media (max-width: 768px) {
   .register-container {
     padding: 10px;

@@ -51,7 +51,7 @@ function FooterMain() {
         {
             title: "Planes",
             links: [
-                { href: "#", text: "Planes" },
+                { href: "/Planes de inscripcion", text: "Planes" },
                 { href: "#", text: "Documentos" }
             ]
         },

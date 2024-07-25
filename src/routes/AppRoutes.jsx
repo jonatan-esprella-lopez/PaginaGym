@@ -6,6 +6,7 @@ import Nutricion from "../pages/nutrition/Nutrition";
 import Gimnasio from "../pages/gym/Gym";
 import Inscripcion from "../pages/registration-plans/Registration-plans";
 import Evaluaciones from "../pages/evaluations/Evaluation";
+import Evaluaciones1 from "../pages/evaluations/Evaluation1.jsx";
 import Login from "../pages/credentials/sing-in/Sing-in.tsx";
 import Registro from "../pages/credentials/sing-up/sing-up.tsx";
 import Nosotros from "../pages/about-us/Us-Information";
@@ -28,6 +29,8 @@ function App() {
         <Route path="/Nuestros Gimnasios" element={<Gimnasio />} />
         <Route path="/Planes de inscripcion" element={<Inscripcion />} />
         <Route path="/Evaluaciones" element={<Evaluaciones />} />
+        <Route path="/Evaluaciones1" element={<Evaluaciones1 />} />
+        
         <Route path="/Nosotros" element={<Nosotros />} />
         <Route path="/Plan Nutricional" element={<Plan />} />
         <Route path="/Login" element={<Login />} />
