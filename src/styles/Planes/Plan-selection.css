@@ -57,13 +57,15 @@
     margin-left: 10px;
   }
   
-  .price {
-    font-size: 24px;
+  .price-inscription {
+    font-size: 22px;
+    padding: 5px;
     color: #000;
   }
   
   .old-price {
     text-decoration: line-through;
+    display: flex;
     color: #999;
   }
   

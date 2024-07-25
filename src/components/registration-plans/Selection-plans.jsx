@@ -19,7 +19,7 @@ const PlanSelector = () => {
                         <input type="radio" checked={selectedPlan === 'BASIC'} readOnly />
                         <h2>PLAN BASICO</h2>
                     </div>
-                    <p className="price">
+                    <p className="price-inscription">
                         <span className="old-price">Bs599.00</span> <span className="new-price">Bs49.00*</span>
                     </p>
                     <ul className="details">
@@ -41,7 +41,7 @@ const PlanSelector = () => {
                         <input type="radio" checked={selectedPlan === 'BASIC+'} readOnly />
                         <h2>PLAN BASICO <span>+</span></h2>
                     </div>
-                    <p className="price">
+                    <p className="price-inscription">
                         <span className="old-price">Bs599.00</span> <span className="new-price">Bs49.00*</span>
                     </p>
                     <ul className="details">
@@ -63,7 +63,7 @@ const PlanSelector = () => {
                         <input type="radio" checked={selectedPlan === 'PLATA'} readOnly />
                         <h2>PLAN PLATA</h2>
                     </div>
-                    <p className="price">
+                    <p className="price-inscription">
                         <span className="old-price">Bs599.00</span> <span className="new-price">Bs49.00*</span>
                     </p>
                     <ul className="details">
