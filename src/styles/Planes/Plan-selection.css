@@ -1,0 +1,237 @@
+.plan-selector-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan-selector {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+  }
+  
+  .title {
+    text-align: center;
+    color: #444;
+  }
+  
+  .plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+.plan-details-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+  .plan-inscription {
+    background-color: #ececec;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .plan.selected {
+    
+    border: 2px solid #000;
+    background-color: #f7f7f7;
+  }
+  
+  .plan-header-ins {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+  }
+  .plan-header-ins input{
+    width: 20px;
+  }
+  
+  .plan-header-ins h2 {
+    margin-left: 10px;
+  }
+  
+  .price {
+    font-size: 24px;
+    color: #000;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .new-price {
+    color: #ff4c4c;
+  }
+  
+  .details {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .details li {
+    margin: 5px 0;
+    text-align: left;
+  }
+  
+  .description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+  }
+  
+  .purchase-details {
+    margin: 20px;
+  }
+  
+  .purchase-details h2 {
+    font-size: 20px;
+  }
+  
+  .purchase-details .gym {
+    margin: 10px 0;
+  }
+  
+  .continue-button{
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .coupon-section {
+    margin: 20px 0;
+  }
+  
+  .coupon-input {
+    display: flex;
+    border-radius: 7px;
+  }
+  
+  .coupon-input input {
+    flex: 1;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 7px;
+  }
+  
+
+  
+  .charges {
+    margin-top: 20px;
+  }
+  
+  .charges h3 {
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  .charge-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+
+  .charge-details p{
+    margin: 5px;
+    padding: 0;
+  }
+
+  .button-add{
+    margin: 10px;
+    
+  }
+
+  .button-add-normal{
+    width: 80px;
+    margin: 0;
+  }
+  
+
+  /*______________________________________________Responsive______________________________________________*/
+
+  @media (max-width: 768px) {
+
+    .plan-details-container{
+      flex-direction: column;
+    }
+
+    .plan-selector {
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .plans {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .plan-inscription {
+      width: 90%;
+      margin: 10px auto;
+    }
+  
+    .plan-header-ins {
+      justify-content: center;
+    }
+  
+    .plan-header-ins h2 {
+      font-size: 18px;
+    }
+  
+    .price {
+      font-size: 20px;
+    }
+  
+    .title{
+      font-size: 15px;
+    }
+    
+    .purchase-details {
+      width: 90%;
+      margin: 20px auto;
+    }
+  
+    .continue-button {
+      width: 100%;
+    }
+  
+    .coupon-input {
+    }
+  
+    .coupon-input input {
+      margin: 0 10px 0 0;
+    }
+  
+  
+    .charge-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .charge-details div {
+      margin: 5px 0;
+    }
+
+
+    .button-add{
+    padding-top: 10px;
+  }
+
+  .button-add-normal{
+    padding-top: 10px;
+  }
+  }

@@ -114,13 +114,19 @@ body {
   font-size: small;
 }
 
-.cont-valor-nuttricional {
-  display: flex;
-  margin-bottom: 2rem;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.cont-valor-nuttricional{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.cont-valor-nuttricional button{
+  border-radius: 7px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 
 .contenedor-1-nutri img {
   width: 100%;
@@ -138,34 +144,19 @@ body {
 }
 
 .plan-details {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding-left: 20px;
-  margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 20px;
+    margin-bottom: 1rem;
+    
 }
 
 .plan-details p {
   margin: 0;
 }
 
-.button-nutricion {
-  background-color: var(--primary-color);
-  color: #000000;
-  font-weight: bold;
-  padding: 10px 20px;
-  border: none;
-  width: 70%;
-  margin-top: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
 
-.button-nutricion:hover {
-  background-color: #ffbd24;
-  box-shadow: 0 0 20px 0 #ffb300;
-}
 
 .contenedor-1-nutri {
   display: flex;
@@ -174,7 +165,16 @@ body {
   margin: 0;
 }
 
-.contenedor-2-nutri {
+.contenedor-2-nutri{
+  height: 290px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contenedor-2-nutri p{
+  margin: 0;
 }
 
 .plan-descripcion {
@@ -197,23 +197,31 @@ body {
   margin: 0 auto;
 }
 
+.prices-nutrition{
+  font-size: 20px;
+  width: 100%;
+  font-weight: bold;
+}
+
 .group-plan h2 {
-  text-align: left;
-  color: #000000;
-  margin-bottom: 20px;
-  padding: 5px 0 5px 20px;
-  border-left: 6px solid #000000;
+  width: 120%;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 20px;
+    padding: 5px 0 5px 20px;
+    border-left: 6px solid #000000;
 }
 
 .plan-container {
-  height: 100%;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+    max-height: 470px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #ec880d;
 }
 
 .cont-plan-image {
@@ -276,8 +284,9 @@ body {
   align-items: center;
 }
 
-.whatsapp-group p {
-  opacity: 70%;
+.whatsapp-group p{
+    opacity: 70%;
+    width: 350px;
 }
 
 .whatsapp-group img {
@@ -299,6 +308,13 @@ body {
   padding: 2rem;
 }
 
+
+.plan-details-v1 .prices-nutrition{
+  text-align: end;
+  width: 90%;
+
+}
+
 .plan-details-v1 h3 {
   margin: 0;
 }
@@ -309,15 +325,21 @@ body {
 }
 
 .plan-details-v1 ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 1.5rem 1rem 0 1rem;
+    max-height: 180px;
+    min-height: 180px;
 }
 
 .plan-details-v1 li {
-  margin: 10px 0;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
+    margin: 4px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
 }
 
 .plan-details-v1 li img {
@@ -393,155 +415,182 @@ body {
     padding: 0 10px;
   }
 
-  .nutricion-container {
-    height: auto;
-    background-position: center;
-    padding: 20px;
-  }
+    .nutricion-container {
+      height: auto;
+      background-position: center;
+      padding: 20px;
+    }
+  
+    .nutricion-container h3 {
+      font-size: var(--font-size-medium);
+    }
+  
+    .Imagen_Tarjeta_Nutricion {
+      height: 150px;
+    }
+  
+    .cont-general-Nutricion {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Titulo_Principal {
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+  
+    .Listado_Tarjeta {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+      
+   
 
-  .nutricion-container h3 {
-    font-size: var(--font-size-medium);
-  }
+    .contenedor_Tarjetas {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Titulo_Tarjeta_Tipo_Nut, .Detalle_Tarjeta_Tipo_Nut {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .Iconos_Nutricion {
+      width: 25px;
+    }
+  
+    .contenedor_Porcion_Nutricional {
+      width: 100%;
+    }
+  
+    .contenedor_tarjeta {
+      padding: 1rem;
+    }
+  
+    .plan {
+      flex-direction: row;
+      max-width: 90%;
+      height: 100%;
+      margin: 10px 0;
+      padding: 0;
+    }
+  
+    .plan-header {
+      font-size: var(--font-size-small);
+      left: center;
+    }
+  
+    .cont-valor-nuttricional {
+      display: flex;
+      margin-bottom: 0;
+      justify-content: center;
+      align-items: center;
+    }
+  
 
-  .Imagen_Tarjeta_Nutricion {
-    height: 150px;
-  }
 
-  .cont-general-Nutricion {
-    flex-direction: column;
-    align-items: center;
-  }
+    .contenedor-1-nutri img {
+      object-fit: cover;
+      border-radius: 9px 0 0 0;
+    }
+  
+    .contenedor-1-nutri h3 {
+      padding: 10px 0;
+    }
+    .contenedor-2-nutri{
+      font-size: 15px
+    }
+  
+    .plan-details {
+      padding: 0 10px 10px 10px;
+      margin: 0 auto;
+    }
 
-  .Titulo_Principal {
-    margin: 1.5rem 0;
-    text-align: center;
-  }
+    .plan-details p{
+      font-size: 11px;
+    }
+  
+    .button-nutricion {
+      font-size: 14px;
+      width: 150px;
+      margin: 0;
+      padding: 8px 7px;
+    }
+  
+    .plan-descripcion {
+      height: auto;
+      padding: 10px 0 5px 0;
+      font-size: 11px;
+      margin: 0;
+    }
+  
+    .cont-head-plan {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .group-plan {
+      padding: 10px;
+    }
+  
+    .group-plan h2 {
+      width: 100%;
+      text-align: left;
+      font-size: 17px;
+    }
+  
+    .plan-container {
+      flex-direction: column;
+      max-height: 100%;
+      width: 97%;
+    }
 
-  .Listado_Tarjeta {
-    width: 90%;
-    margin-bottom: 20px;
-  }
+    .plan-details-v1 ul {
+      flex-direction: column;
+      max-height: 100%;
+      margin: 1rem 0rem;
+    }
+  
+    .cont-plan-image, .plan-image {
+      height: auto;
+      width: 100%;
+    }
+  
+    .plan-type {
+      font-size: var(--font-size-small);
+      padding: 6px 8px;
+    }
+  
+    .plan-details li {
+      font-size: 12px;
+    }
+  
+    .price {
+      font-size: 20px;
+    }
+  
+    .container {
+      padding: 1.5rem;
+    }
+  
+    .divider {
+      width: 100%;
+    }
+     .whatsapp-group p {
+      width: 130px;
+    }
 
-  .contenedor_Tarjetas {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .Titulo_Tarjeta_Tipo_Nut,
-  .Detalle_Tarjeta_Tipo_Nut {
-    text-align: center;
-    padding: 10px;
-  }
+    .plan-price button{
+     padding: 0;
+    }
+    
+    .contenedor-2-nutri{
+      height: 200px;
+    }
 
-  .Iconos_Nutricion {
-    width: 25px;
-  }
 
-  .contenedor_Porcion_Nutricional {
-    width: 100%;
   }
-
-  .contenedor_tarjeta {
-    padding: 1rem;
-  }
-
-  .plan {
-    flex-direction: row;
-    max-width: 90%;
-    height: 100%;
-    margin: 10px 0;
-    padding: 0;
-  }
-
-  .plan-header {
-    font-size: var(--font-size-small);
-    left: center;
-  }
-
-  .cont-valor-nuttricional {
-    display: flex;
-    margin-bottom: 0;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .contenedor-1-nutri img {
-    object-fit: cover;
-    border-radius: 9px 0 0 0;
-  }
-
-  .contenedor-1-nutri h3 {
-    padding: 10px 0;
-  }
-  .contenedor-2-nutri {
-    font-size: 15px;
-  }
-
-  .plan-details {
-    padding: 0 10px 10px 10px;
-    margin: 0 auto;
-  }
-
-  .plan-details p {
-    font-size: 11px;
-  }
-
-  .button-nutricion {
-    font-size: 14px;
-    width: 69%;
-    margin: 0;
-    padding: 8px 7px;
-  }
-
-  .plan-descripcion {
-    height: auto;
-    padding: 10px 0 5px 0;
-    font-size: 11px;
-    margin: 0;
-  }
-
-  .cont-head-plan {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .group-plan {
-    padding: 10px;
-  }
-
-  .group-plan h2 {
-    text-align: center;
-  }
-
-  .plan-container {
-    flex-direction: column;
-  }
-
-  .cont-plan-image,
-  .plan-image {
-    height: auto;
-    width: 100%;
-  }
-
-  .plan-type {
-    font-size: var(--font-size-small);
-    padding: 6px 8px;
-  }
-
-  .plan-details li {
-    font-size: 12px;
-  }
-
-  .price {
-    font-size: 20px;
-  }
-
-  .container {
-    padding: 1.5rem;
-  }
-
-  .divider {
-    width: 100%;
-  }
-}
+  

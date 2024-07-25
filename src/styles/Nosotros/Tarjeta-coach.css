@@ -60,45 +60,50 @@
 /*______________________________________________Responsive______________________________________________*/
 
 @media (max-width: 768px) {
-  .contenedor-coach {
-    flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
-    align-items: center;
-  }
+    .contenedor-coach {
+      flex-direction: column;
+      width: 90%;
+      margin: 0 auto;
+      align-items: center;
+      border-radius: 15px;
+    }
+  
+    .img-tarjeta-coach {
+      height: 237px;
+      border-radius: 22px 0 0 22px;
+      width: 100%;
 
-  .img-tarjeta-coach {
-    height: 10rem;
+    }
+  
+    .img-tarjeta-coach h3 {
+      font-size: 0.9rem;
+      margin: 0.3rem;
+      padding: 0.2rem 0.4rem;
+    }
+  
+    .text-tarjeta-coach {
+      font-size: 13px;
+      padding: 0.4rem;
+    }
+  
+    .icons-tarjeta-coach p{
+      width: 230px;
+      font-size: 14px;
+      padding: 2px 5px 1px 5px;
+      border-radius: 4px;
+      border: 1px solid #ff6600;
+      background-color: #ff6600a3;
+      color: rgb(240, 240, 240);
+    }
+  
+    .text-tarjeta-coach h5 {
+      font-size: 15px;
+      padding: 0 12px;
+    }
+  
+    .text-tarjeta-coach h5 p {
+      font-size: 12px;
+      padding: 3px 5px;
+    }
   }
-
-  .img-tarjeta-coach h3 {
-    font-size: 0.9rem;
-    margin: 0.3rem;
-    padding: 0.2rem 0.4rem;
-  }
-
-  .text-tarjeta-coach {
-    font-size: 13px;
-    padding: 0.4rem;
-  }
-
-  .icons-tarjeta-coach p {
-    width: 230px;
-    font-size: 14px;
-    padding: 2px 5px 1px 5px;
-    border-radius: 4px;
-    border: 1px solid #ff6600;
-    background-color: #ff6600a3;
-    color: rgb(240, 240, 240);
-  }
-
-  .text-tarjeta-coach h5 {
-    font-size: 15px;
-    padding: 0 12px;
-  }
-
-  .text-tarjeta-coach h5 p {
-    font-size: 12px;
-    padding: 3px 5px;
-  }
-}
+  

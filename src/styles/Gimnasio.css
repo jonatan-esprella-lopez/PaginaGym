@@ -74,153 +74,148 @@
 }
 
 .card-gym {
-  width: 310px;
-  height: 455px;
-  margin: 1rem 0.5rem;
-  border-radius: 10px;
-  overflow: hidden;
-  flex-direction: column;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
-}
+    width: 310px;
+    height: 455px;
+    margin: 1rem 0.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .card-gym button{
+    margin: 0 auto;
+    margin-top: 14px;
+  }
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .card-title {
+    text-align: left;
+    font-size: 1em;
+    margin: 0;
+    color: #000;
+  }
+  
+  .card-address {
+    text-align: left;
+    font-size: 0.7em;
+    color: #777;
+  }
+  
+  .card-link {
+    text-align: left;
+    font-weight: bold;
+    display: block;
+    font-size: 0.8em;
+    margin: 10px 0;
+    color: #004cff;
+    text-decoration: none;
+  }
+  
+  .card-link:hover {
+    color: #000;
+  }
+  
+  .card-offer {
+    font-size: 0.7em;
+    background-color: #e0ffe0;
+    color: #008000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .card-prices {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+  }
+  
+  .price {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.7em;
+  }
+  
+  .price-type {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .discounted-price {
+    color: #000;
+    font-weight: bold;
+  }
+  
 
-.card-gym button {
-  margin: 0 auto;
-  margin-top: 14px;
-}
-.card-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
+  
 
-.card-content {
-  padding: 20px;
-  background-color: #fff;
-}
-
-.card-title {
-  text-align: left;
-  font-size: 1em;
-  margin: 0;
-  color: #000;
-}
-
-.card-address {
-  text-align: left;
-  font-size: 0.7em;
-  color: #777;
-}
-
-.card-link {
-  text-align: left;
-  font-weight: bold;
-  display: block;
-  font-size: 0.8em;
-  margin: 10px 0;
-  color: #004cff;
-  text-decoration: none;
-}
-
-.card-link:hover {
-  color: #000;
-}
-
-.card-offer {
-  font-size: 0.7em;
-  background-color: #e0ffe0;
-  color: #008000;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin: 10px 0;
-  font-weight: bold;
-}
-
-.card-prices {
-  display: flex;
-  justify-content: space-around;
-  margin: 10px 0;
-}
-
-.price {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 0.7em;
-}
-
-.price-type {
-  display: block;
-  font-weight: bold;
-}
-
-.original-price {
-  text-decoration: line-through;
-  color: #999;
-}
-
-.discounted-price {
-  color: #000;
-  font-weight: bold;
-}
-
-.contenedor-buscador-gimnasio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin: 40px auto;
-  padding: 20px;
-  border: 1px solid #e1e8ed;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.contenedor-buscador-gimnasio h2 {
-  font-size: 24px;
-  color: #000000;
-  margin-bottom: 20px;
-}
-
-.contenedor-buscador {
-  width: 800px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.contenedor-buscador input {
-  width: 70%;
-  padding: 10px;
-  font-size: 16px;
-  text-align: left;
-  border: 1px solid #e1e8ed;
-  border-radius: 4px;
-  outline: none;
-  transition: border-color 0.3s;
-}
-
-.contenedor-buscador input:focus {
-  border-color: #000000;
-}
-
-.contenedor-buscador button {
-  padding: 10px 20px;
-  margin-top: 15px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #008cff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.contenedor-buscador button:hover {
-  background-color: #0d8dec;
-}
+  .contenedor-buscador-gimnasio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .contenedor-buscador-gimnasio h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  .contenedor-buscador {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contenedor-buscador input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+      text-align: left;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .contenedor-buscador input:focus {
+    border-color: #000000;
+  }
+  
+  
+  
+  .contenedor-buscador button {
+    border-radius: 7px;
+    
+  }
 
 /*______________________________________________Responsive______________________________________________*/
 
@@ -250,39 +245,44 @@
 @media (max-width: 768px) {
   .contendor_principal_gym {
     flex-wrap: wrap;
+    }
+    
+    .contenedor_buscador {
+      width: 80%;
+      flex-direction: column;
+    }
+  
+    .contenedor_buscador input {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .cont-gyms {
+      justify-content: center;
+    }
+  
+    .contenedor-buscador-gimna
+
+    .card-gym {
+      width: 90%;
+      margin: 1rem 0;
+    }
+  
+    .contenedor-buscador input {
+      width: 100%;
+      padding: 2px 0;
+    }
+  
+    .contenedor-buscador button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 15px;
+    }
   }
 
-  .contenedor_buscador {
-    width: 80%;
-    flex-direction: column;
-  }
-
-  .contenedor_buscador input {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 1rem;
-  }
-
-  .cont-gyms {
-    justify-content: center;
-  }
-
-  .contenedor-buscador-gimna .card-gym {
-    width: 90%;
-    margin: 1rem 0;
-  }
-
-  .contenedor-buscador input {
-    width: 100%;
-    padding: 2px 0;
-  }
-
-  .contenedor-buscador button {
-    width: 100%;
-    padding: 10px;
-    font-size: 15px;
-  }
-}
+  
 
 @media (max-width: 480px) {
   .contenedor_buscador input {

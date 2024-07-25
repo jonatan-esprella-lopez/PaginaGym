@@ -20,9 +20,3 @@
   color: #fff;
 }
 
-.TablaAlimentacion tr:nth-child(odd) {
-  background-color: #f0f0f0;
-}
-.TablaAlimentacion tr:nth-child(even) {
-  background-color: #d9d9d9;
-}

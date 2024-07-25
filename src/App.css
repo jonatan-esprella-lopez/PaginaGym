@@ -221,7 +221,6 @@
 }
 
 .container-head-section1 .underline {
-  position: absolute;
   bottom: -12px;
   left: 0;
   width: 100%;
@@ -357,7 +356,8 @@ a:hover {
     width: 60%;
   }
 
-  .container-head-section h4 {
+  
+  .container-head-section h4,h5 {
     position: relative;
     margin: 0;
     text-align: left;
@@ -366,6 +366,10 @@ a:hover {
     font-weight: normal;
   }
 
+  .container-head-section h5{
+    font-size: 13.5px;
+  }
+  
   .container-head-section .underline {
     position: absolute;
     bottom: -12px;
@@ -419,4 +423,5 @@ a:hover {
     width: 100%;
     border-radius: 13px 13px 0 0;
   }
+
 }

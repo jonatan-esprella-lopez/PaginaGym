@@ -1,34 +1,32 @@
-.about-us-container {
-  background-color: #e6e6e6;
-}
-
-.about-us-header {
-  text-align: center;
-}
-
-.about-us-content {
-  margin-top: 20px;
-}
-
-.instructor-cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.instructor-photo {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.instructor-info h3 {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-
-.instructor-info p {
-  color: #666;
-}
+  .about-us-header {
+    text-align: center;
+    
+  }
+   
+  .about-us-content {
+    margin-top: 20px;
+  }
+  
+  .instructor-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  
+  .instructor-photo {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .instructor-info h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .instructor-info p {
+    color: #666;
+  }
 
 .about-us-content h2 {
   font-size: 28px;
@@ -94,7 +92,7 @@
   fill: #777;
   position: relative;
   background-size: cover;
-  background-position: center;
+  background-position: 0 -100px;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -144,6 +142,10 @@
   margin-bottom: 10px;
 }
 
+
+
+  /*______________________________________________Responsive______________________________________________*/
+
 @media (max-width: 768px) {
   .about-us-header {
     padding: 0 10px;
@@ -175,9 +177,12 @@
 
   .instructor-card {
     width: 100%;
+    display: flex;
+    flex-direction: row;
     height: auto;
     margin-bottom: 20px;
   }
+
 
   .instructor-info h3 {
     margin-top: 10px;
