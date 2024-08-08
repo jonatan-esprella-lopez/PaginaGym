@@ -7,7 +7,7 @@ import "../../styles/Home/banner-principal.css"
 function Banner() {
     return (
         <section className="Banner-home-main">
-            <video autoPlay muted className="Banner-video">
+            <video autoPlay muted className="Banner-video card-skeleton">
                 <source src={BannerVideoHome} type="video/mp4" />
             </video>
 

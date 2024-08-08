@@ -1,0 +1,29 @@
+.Main-test-burpee {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .Main-test-burpee label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .Main-test-burpee input, select {
+    margin-left: 10px;
+  }
+  
+  .Main-test-burpee button {
+    margin: 20px 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .Main-test-burpee .timer {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  
+  .Main-test-burpee h2 {
+    margin-top: 20px;
+  }
+  

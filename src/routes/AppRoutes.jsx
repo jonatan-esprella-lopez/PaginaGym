@@ -18,6 +18,10 @@ import Tienda from "../pages/class-store/Class-store";
 import AreaAerobica from "../pages/facilities/Installation";
 import PrivacyP from "../pages/credentials/Privacy";
 import TrainingInfo from "../pages/Training/Training-info";
+import Prueba from "../prueba.jsx";
+
+import PlanEditor from "../pages/nutrition/plans-nutritions/Plan-editor.jsx";
+import PlanView from "../pages/nutrition/plans-nutritions/Plan-view.jsx";
 
 function App() {
   return (
@@ -40,7 +44,13 @@ function App() {
         <Route path="/Aerobicos" element={<AreaAerobica />} />
         <Route path="/Politica de privacidad" element={<PrivacyP />} />
         <Route path="/Informacion Rutina" element={<TrainingInfo />} />
+
         <Route path="/Tienda de entrenamientos" element={<Tienda />} />
+        <Route path="/Prueba" element={<Prueba />} />
+
+        <Route path="/PlanEditor" element={<PlanEditor />} />
+        <Route path="/PlanView" element={<PlanView />} />
+
         <Route path="/" element={<ProtectedRoute />}>
           <Route path="PerfilUser" element={<PerfilPublico />} />
         </Route>

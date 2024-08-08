@@ -1,0 +1,76 @@
+
+.hrmax-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.hrmax-description {
+    margin-bottom: 20px;
+}
+
+.hrmax-form {
+    width: 100%;
+}
+
+.hrmax-input {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.hrmax-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.hrmax-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.hrmax-main button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #ff5e62;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hrmax-main button:hover {
+    background: #e0433d;
+}
+
+.hrmax-result {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.hrmax-result h2 {
+    margin-bottom: 10px;
+}
+
+.hrmax-result p {
+    font-size: 18px;
+}
+
+.hrmax-result span {
+    font-weight: bold;
+}

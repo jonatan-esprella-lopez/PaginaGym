@@ -2,6 +2,9 @@
 const FooterInfoSection = () => (
   <section className="Container-footer-Rutinas">
     <div className="info-sections">
+        <div className="head-card-skeleton">
+
+        </div>
       <div>
         <h3>Entrenadores</h3>
         <div>

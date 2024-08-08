@@ -63,9 +63,19 @@
   margin-bottom: 20px;
 }
 
-.info-card h3 {
-  font-size: 20px;
-  color: #333;
+.container-head-zone{
+  display: flex;
+  align-items: center;
+}
+
+.container-head-zone img{
+  width: 20px;
+  height: 20px;
+  margin: 0 15px;
+}
+
+.container-head-zone h3{
+  margin: 0;
 }
 
 .info-card p,

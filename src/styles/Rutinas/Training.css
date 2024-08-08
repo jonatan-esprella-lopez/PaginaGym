@@ -326,7 +326,28 @@ th {
     font-size: var(--font-size-big);
 }
 
+.card-skeleton {
+    background-image: 
+        linear-gradient(
+            90deg, 
+            var(--shimmer-color) 6px, 
+            var(--shimmer-background) 40px, 
+            var(--shimmer-color) 80px
+        );
+    background-size: 300%;
+    background-position: 100% 0;
+    animation: shimmer 1.5s infinite;
+}
 
+.title-skeleton {
+    height: 25px;
+}
+
+@keyframes shimmer {
+    to {
+        background-position: -100% 0;
+    }
+}
 
   /*______________________________________________Responsive______________________________________________*/
 @media (max-width: 768px) {

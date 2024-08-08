@@ -27,6 +27,7 @@ function EvaluationUser() {
     <div className="EvaluationUser">
       <UserDataForm userData={userData} onUserDataChange={handleUserDataChange} />
       <IdealData userData={userData} />
+      
     </div>
   );
 }

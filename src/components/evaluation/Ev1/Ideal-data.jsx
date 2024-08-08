@@ -1,4 +1,7 @@
 import { useEffect, useState } from 'react';
+import TestBurpee from "../../../pages/evaluations/test/Test-burpee";
+import TestDavies from '../../../pages/evaluations/test/Test-davies';
+import TestVO2MAX from "../../../pages/evaluations/test/Test-Rockport";
 
 function IdealData({ userData }) {
   const [idealWeight, setIdealWeight] = useState(0);
@@ -19,6 +22,10 @@ function IdealData({ userData }) {
 
   return (
     <div className="ideal-data">
+      <TestVO2MAX/>
+      <TestBurpee/>
+      <TestDavies/>
+
       <h3>Datos Ideales</h3>
       <label>Peso</label>
       <input type="text" value={userData.weight} disabled />

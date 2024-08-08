@@ -1,0 +1,80 @@
+
+
+.vo2max-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.vo2max-description {
+    margin-bottom: 20px;
+}
+
+.vo2max-form {
+    width: 100%;
+}
+
+.vo2max-input {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.vo2max-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.vo2max-input input,
+.vo2max-input select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.vo2max-main button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #28a745;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+.vo2max-main button:hover {
+    background: #218838;
+}
+
+.vo2max-result {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.vo2max-result h2 {
+    margin-bottom: 10px;
+}
+
+.vo2max-result p {
+    font-size: 18px;
+}
+
+.vo2max-result span {
+    font-weight: bold;
+}

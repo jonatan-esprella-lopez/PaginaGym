@@ -25,7 +25,7 @@ const TitleSection = ({ title, highlight, subtitle, linkText, linkHref }) => (
 const Card = ({ image, text, link }) => (
     <Link to={link}>
         <article className="estructura-card-3">
-            <img src={image} alt={text} className="imagen-instalacion" />
+            <img src={image} alt={text} className="imagen-instalacion card-skeleton" />
             <p className="Text_instalaciones">{text}</p>
         </article>
     </Link>

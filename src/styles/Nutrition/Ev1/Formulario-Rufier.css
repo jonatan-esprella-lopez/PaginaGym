@@ -1,0 +1,79 @@
+
+.Main-Ts-ruffier {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .Main-Ts-ruffier p{
+    text-align: left;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 20px 0;
+  }
+  
+  .Main-Ts-ruffier h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .Main-Ts-ruffier h4{
+    text-align: center;
+  } 
+  
+  .Main-Ts-ruffier label {
+    font-size: 16px;
+    color: #000;
+    font-weight: bolder;
+    text-align: left;
+  }
+  
+  .Main-Ts-ruffier input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .Main-Ts-ruffier button {
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Main-Ts-ruffier button:hover {
+    background-color: #0056b3;
+  }
+  
+  .Main-Ts-ruffier h2 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .Main-Ts-ruffier span {
+    font-size: 16px;
+    color: #fa4300;
+    border: 1px solid #fa4300;
+    padding: 8px 20px;
+    border-radius: 7px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+  

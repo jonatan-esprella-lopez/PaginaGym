@@ -1,3 +1,10 @@
+import React, { useState } from 'react';
+import "../../../styles/Nutrition/Ev1/Formulario-Rufier.css"
+import TestRuffier from '../../../pages/evaluations/test/Test-ruffier';
+import TestLagartijas from '../../../pages/evaluations/test/Test-Lagartijas';
+import TestSharkDrills from '../../../pages/evaluations/test/Test-shark-drills';
+import TestEscalon from "../../../pages/evaluations/test/Test-escalon";
+import TestHrmax from '../../../pages/evaluations/test/Test-Hrmax';
 
 function UserDataForm({ userData, onUserDataChange }) {
   const handleChange = (e) => {
@@ -8,8 +15,15 @@ function UserDataForm({ userData, onUserDataChange }) {
     });
   };
 
+
+
   return (
     <div className="user-data-form">
+      <TestHrmax/>
+      <TestEscalon/>
+      <TestRuffier/>
+      <TestLagartijas/> 
+      <TestSharkDrills/>
       <div className="personal-data">
         <h3>Datos Personales</h3>
         <label>Nombre Completo</label>

@@ -1,0 +1,29 @@
+.Main-test-Lagartijas {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .Main-test-Lagartijas label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .Main-test-Lagartijas input, select {
+    margin-left: 10px;
+  }
+  
+  .Main-test-Lagartijas button {
+    margin: 20px 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .Main-test-Lagartijas .timer {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  
+  .Main-test-Lagartijas h2 {
+    margin-top: 20px;
+  }
+  

@@ -23,6 +23,17 @@ function NutricionPage() {
   return (
     <div>
       <HeaderMain/>
+
+      <Link to="/PlanEditor">
+      <button>
+        Edicion de nutricion diaria
+      </button>
+      </Link>
+      <Link to="/PlanView">
+      <button>
+        Receta de nutricion diaria
+      </button>
+      </Link>
       <div className='nutricion-container'>            
                 <h3>
                     Planes Nutricionales
